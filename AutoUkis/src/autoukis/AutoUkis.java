@@ -1,9 +1,11 @@
 package autoukis;
 
 import java.awt.CardLayout;
+import java.awt.Label;
 import java.awt.List;
 import java.awt.Point;
 import java.util.ArrayList;
+import javax.swing.JLabel;
 
 public class AutoUkis extends javax.swing.JFrame {
 
@@ -240,8 +242,6 @@ public class AutoUkis extends javax.swing.JFrame {
                 .addGroup(panelOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(buttonOne, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonTwo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-
-
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panelOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(buttonThree, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -271,7 +271,6 @@ public class AutoUkis extends javax.swing.JFrame {
                     .addComponent(buttonSixteen, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonSeventeen, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(148, Short.MAX_VALUE))
-
         );
 
         mainPanel.add(panelOne, "panelOne");
@@ -389,7 +388,7 @@ public class AutoUkis extends javax.swing.JFrame {
                 .addGroup(panelTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelTwoLayout.createSequentialGroup()
                         .addGap(70, 70, 70)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 616, Short.MAX_VALUE))
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 616, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTwoLayout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(panelTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -444,6 +443,9 @@ public class AutoUkis extends javax.swing.JFrame {
             }
         });
         panelThree.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                panelThreeMouseClicked(evt);
+            }
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 panelThreeMousePressed(evt);
             }
@@ -511,7 +513,7 @@ public class AutoUkis extends javax.swing.JFrame {
             .addGroup(panelThreeLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 435, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 432, Short.MAX_VALUE)
                 .addComponent(ariama, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -942,7 +944,7 @@ public class AutoUkis extends javax.swing.JFrame {
         }
         Point x = panelThree.getMousePosition();
         Map.taskai[0] = x;
-        
+
     }//GEN-LAST:event_panelThreeMousePressed
 
     private void panelThreeMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelThreeMouseDragged
@@ -966,7 +968,7 @@ public class AutoUkis extends javax.swing.JFrame {
 
     private void ganyklosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ganyklosActionPerformed
 
-        Map.spalva = 1;
+        Map.spalva = 2;
         Ukiniai.setSelected(false);
         ariama.setSelected(false);
 
@@ -974,16 +976,49 @@ public class AutoUkis extends javax.swing.JFrame {
     }//GEN-LAST:event_ganyklosActionPerformed
 
     private void UkiniaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UkiniaiActionPerformed
-        Map.spalva = 0;
+        Map.spalva = 1;
         ganyklos.setSelected(false);
         ariama.setSelected(false);
     }//GEN-LAST:event_UkiniaiActionPerformed
 
     private void ariamaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ariamaActionPerformed
-        Map.spalva = 2;
+        Map.spalva = 3;
         Ukiniai.setSelected(false);
         ganyklos.setSelected(false);
     }//GEN-LAST:event_ariamaActionPerformed
+
+    private void panelThreeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelThreeMouseClicked
+
+        JLabel label = new JLabel();
+        
+        panelThree.add(label);
+        String text;
+        Point x = panelThree.getMousePosition();
+        int spalva = Map.pixels[x.x][x.y];
+        System.out.println(x);
+        System.out.println(spalva);
+        label.setBounds(x.x, x.y, 150, 30);
+        if (spalva == 1) {
+            text = "Ukiniai pastatai";
+        } else if (spalva == 2) {
+            text = "Ganyklos";
+        } else if (spalva == 3) {
+            text = "Ariama žemė";
+        } else {
+            text = "";
+        }
+        label.setText(text);
+        label.setVisible(true);
+        new java.util.Timer().schedule(
+                new java.util.TimerTask() {
+            @Override
+            public void run() {
+               label.setVisible(false);
+            }
+        },
+                2000
+        );
+    }//GEN-LAST:event_panelThreeMouseClicked
 
     /**
      * @param args the command line arguments
