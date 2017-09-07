@@ -135,9 +135,7 @@
                           <Component id="buttonSixteen" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                           <Component id="buttonSeventeen" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                       </Group>
-
                       <EmptySpace pref="148" max="32767" attributes="0"/>
-
                   </Group>
               </Group>
             </DimensionLayout>
@@ -462,6 +460,7 @@
         <Container class="javax.swing.JPanel" name="panelThree">
           <Events>
             <EventHandler event="mouseDragged" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="panelThreeMouseDragged"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="panelThreeMouseClicked"/>
             <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="panelThreeMousePressed"/>
             <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="panelThreeMouseReleased"/>
           </Events>
@@ -508,7 +507,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel3" min="-2" pref="60" max="-2" attributes="0"/>
-                      <EmptySpace pref="435" max="32767" attributes="0"/>
+                      <EmptySpace pref="432" max="32767" attributes="0"/>
                       <Component id="ariama" min="-2" pref="38" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">

@@ -13,6 +13,7 @@ import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import static java.lang.Math.abs;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -27,6 +28,7 @@ import javax.swing.JPanel;
 public class Map extends JPanel {
 
     int k = 1;
+    static int[][] pixels = new int[10000][10000];
     static ArrayList listX = new ArrayList<Integer>();
     static ArrayList listY = new ArrayList<Integer>();
     static ArrayList listSpalva = new ArrayList<Integer>();
@@ -58,21 +60,22 @@ public class Map extends JPanel {
         g.setColor(Color.MAGENTA);
         g.drawRect(4, 512, 10, 10);
         g.setColor(Color.BLACK);
-        if (spalva == 5)
+        if (spalva == 5) {
             return;
+        }
         for (j = 0; j < listX.size(); j++) {
             int x1 = (int) listX.get(j);
             int x2 = (int) listX.get(j + 1);
             int y1 = (int) listY.get(j);
             int y2 = (int) listY.get(j + 1);
             int spalva = (int) listSpalva.get(j);
-            if (spalva == 0) {
+            if (spalva == 1) {
                 g.setColor(Color.BLUE);
             }
-            if (spalva == 1) {
+            if (spalva == 2) {
                 g.setColor(Color.GREEN);
             }
-            if (spalva == 2) {
+            if (spalva == 3) {
                 g.setColor(Color.MAGENTA);
             }
             g.drawLine(x1, y1, x2, y1);
@@ -81,16 +84,23 @@ public class Map extends JPanel {
             g.drawLine(x2, y2, x2, y1);
             j++;
         }
-        if (spalva == 0) {
+        if (spalva == 1) {
             g.setColor(Color.BLUE);
         }
-        if (spalva == 1) {
+        if (spalva == 2) {
             g.setColor(Color.GREEN);
         }
-        if (spalva == 2) {
+        if (spalva == 3) {
             g.setColor(Color.MAGENTA);
         }
+
         if (taskai[0] != null && taskai[1] != null) {
+            if (pixels[taskai[0].x][taskai[0].y] != 0) {
+                return;
+            }
+            if (pixels[taskai[1].x][taskai[1].y] != 0) {
+                return;
+            }
             g.drawLine(taskai[0].x, taskai[0].y, taskai[1].x, taskai[0].y);
             g.drawLine(taskai[0].x, taskai[0].y, taskai[0].x, taskai[1].y);
             g.drawLine(taskai[1].x, taskai[1].y, taskai[0].x, taskai[1].y);
@@ -108,13 +118,46 @@ public class Map extends JPanel {
     }
 
     public static void updateList() {
-
+        int i, j;
+        int x1 = taskai[0].x;
+        int x2 = taskai[1].x;
+        int y1 = taskai[0].y;
+        int y2 = taskai[1].y;
+        if ((abs(taskai[0].x - taskai[1].x)) < 10) {
+            return;
+        }
+        if ((abs(taskai[0].y - taskai[1].y)) < 10) {
+            return;
+        }
+        if (x1 > x2) {
+            i = x1;
+            x1 = x2;
+            x2 = i;
+        }
+        if (y1 > y2) {
+            i = y1;
+            y1 = y2;
+            y2 = i;
+        }
+        for (i = x1; i < x2; i++) {
+            for (j = y1; j < y2; j++) {
+                if (pixels[i][j] != 0) {
+                    return;
+                }
+            }
+        }
         listX.add(taskai[0].x);
         listY.add(taskai[0].y);
         listX.add(taskai[1].x);
         listY.add(taskai[1].y);
         listSpalva.add(spalva);
         listSpalva.add(spalva);
-    }
 
+        for (i = x1; i < x2; i++) {
+            for (j = y1; j < y2; j++) {
+                pixels[i][j] = spalva;
+            }
+        }
+
+    }
 }
