@@ -59,37 +59,34 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel2" pref="676" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="208" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="buttonTwelve" min="-2" pref="243" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="buttonThirteen" pref="243" max="32767" attributes="0"/>
-                                      <Component id="buttonFourteen" max="32767" attributes="0"/>
-                                      <Component id="buttonFifteen" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="buttonSixteen" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="buttonSeventeen" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Component id="buttonEleven" alignment="0" min="-2" pref="243" max="-2" attributes="0"/>
-                                  <Component id="buttonTen" alignment="0" min="-2" pref="243" max="-2" attributes="0"/>
-                                  <Component id="buttonNine" alignment="0" min="-2" pref="243" max="-2" attributes="0"/>
-                                  <Component id="buttonEight" alignment="0" min="-2" pref="243" max="-2" attributes="0"/>
-                                  <Component id="buttonSeven" alignment="0" min="-2" pref="243" max="-2" attributes="0"/>
-                                  <Component id="buttonSix" alignment="0" min="-2" pref="243" max="-2" attributes="0"/>
-                                  <Component id="buttonFour" alignment="0" min="-2" pref="243" max="-2" attributes="0"/>
-                                  <Component id="buttonThree" alignment="0" min="-2" pref="243" max="-2" attributes="0"/>
-                                  <Component id="buttonTwo" alignment="0" min="-2" pref="243" max="-2" attributes="0"/>
-                                  <Component id="buttonOne" alignment="0" min="-2" pref="243" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel2" pref="676" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="buttonSixteen" min="-2" pref="243" max="-2" attributes="0"/>
+                          <Component id="buttonFourteen" min="-2" pref="243" max="-2" attributes="0"/>
+                          <Component id="buttonTwelve" min="-2" pref="243" max="-2" attributes="0"/>
+                          <Component id="buttonTen" min="-2" pref="243" max="-2" attributes="0"/>
+                          <Component id="buttonEight" min="-2" pref="243" max="-2" attributes="0"/>
+                          <Component id="buttonSix" min="-2" pref="243" max="-2" attributes="0"/>
+                          <Component id="buttonThree" min="-2" pref="243" max="-2" attributes="0"/>
+                          <Component id="buttonOne" min="-2" pref="243" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="buttonTwo" min="-2" pref="243" max="-2" attributes="0"/>
+                          <Component id="buttonFour" min="-2" pref="243" max="-2" attributes="0"/>
+                          <Component id="buttonSeven" min="-2" pref="243" max="-2" attributes="0"/>
+                          <Component id="buttonNine" min="-2" pref="243" max="-2" attributes="0"/>
+                          <Component id="buttonEleven" min="-2" pref="243" max="-2" attributes="0"/>
+                          <Component id="buttonThirteen" min="-2" pref="243" max="-2" attributes="0"/>
+                          <Component id="buttonFifteen" min="-2" pref="243" max="-2" attributes="0"/>
+                          <Component id="buttonSeventeen" min="-2" pref="243" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -99,38 +96,46 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" pref="60" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                      <Component id="buttonOne" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="buttonOne" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="buttonTwo" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="buttonTwo" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="buttonThree" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="buttonFour" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="buttonThree" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="buttonSix" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="buttonSeven" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="buttonFour" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="buttonEight" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="buttonNine" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="buttonSix" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="buttonTen" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="buttonEleven" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="buttonSeven" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="buttonTwelve" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="buttonThirteen" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="buttonEight" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="buttonFourteen" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="buttonFifteen" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="buttonNine" min="-2" pref="40" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="buttonTen" min="-2" pref="40" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="buttonEleven" min="-2" pref="40" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="buttonTwelve" min="-2" pref="40" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="buttonThirteen" min="-2" pref="40" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="buttonFourteen" min="-2" pref="40" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="buttonFifteen" min="-2" pref="40" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="buttonSixteen" min="-2" pref="40" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="buttonSeventeen" min="-2" pref="40" max="-2" attributes="0"/>
-                      <EmptySpace pref="108" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="buttonSixteen" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="buttonSeventeen" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="482" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
