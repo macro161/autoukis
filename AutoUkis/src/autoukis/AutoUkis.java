@@ -63,6 +63,9 @@ public class AutoUkis extends javax.swing.JFrame {
         ganyklos = new javax.swing.JRadioButton();
         Ukiniai = new javax.swing.JRadioButton();
         ariama = new javax.swing.JRadioButton();
+        mastelisSlider = new javax.swing.JSlider();
+        mastelisLabel = new javax.swing.JLabel();
+        done = new javax.swing.JButton();
         panelFour = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
@@ -486,6 +489,34 @@ public class AutoUkis extends javax.swing.JFrame {
             }
         });
 
+        mastelisSlider.setMajorTickSpacing(50);
+        mastelisSlider.setMinimum(500);
+        mastelisSlider.setMaximum(2000);
+        mastelisSlider.setMinorTickSpacing(20);
+        mastelisSlider.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+                mastelisSliderAncestorMoved(evt);
+            }
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+        mastelisSlider.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                mastelisSliderStateChanged(evt);
+            }
+        });
+
+        mastelisLabel.setText("Mąstelis: ");
+
+        done.setText("Žymėjimai baigti");
+        done.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                doneActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout panelThreeLayout = new javax.swing.GroupLayout(panelThree);
         panelThree.setLayout(panelThreeLayout);
         panelThreeLayout.setHorizontalGroup(
@@ -498,14 +529,23 @@ public class AutoUkis extends javax.swing.JFrame {
                         .addGap(19, 19, 19)
                         .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(panelThreeLayout.createSequentialGroup()
-                                .addComponent(ganyklos, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(ariama, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(panelThreeLayout.createSequentialGroup()
-                                .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(ariama, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Ukiniai, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 0, Short.MAX_VALUE)))))
+                                .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(panelThreeLayout.createSequentialGroup()
+                                        .addComponent(Ukiniai, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(mastelisLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(panelThreeLayout.createSequentialGroup()
+                                        .addComponent(ganyklos, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(mastelisSlider, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(26, 26, 26)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(done, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap())
         );
         panelThreeLayout.setVerticalGroup(
@@ -517,12 +557,21 @@ public class AutoUkis extends javax.swing.JFrame {
                 .addComponent(ariama, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(panelThreeLayout.createSequentialGroup()
+                        .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(panelThreeLayout.createSequentialGroup()
+                                .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Ukiniai, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(mastelisLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(ganyklos, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(mastelisSlider, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(11, 11, 11))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelThreeLayout.createSequentialGroup()
-                        .addComponent(Ukiniai, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(ganyklos, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(11, 11, 11))
+                        .addComponent(done, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(30, 30, 30))))
         );
 
         mainPanel.add(panelThree, "panelThree");
@@ -995,8 +1044,6 @@ public class AutoUkis extends javax.swing.JFrame {
         String text;
         Point x = panelThree.getMousePosition();
         int spalva = Map.pixels[x.x][x.y];
-        System.out.println(x);
-        System.out.println(spalva);
         label.setBounds(x.x, x.y, 150, 30);
         if (spalva == 1) {
             text = "Ukiniai pastatai";
@@ -1019,6 +1066,28 @@ public class AutoUkis extends javax.swing.JFrame {
                 2000
         );
     }//GEN-LAST:event_panelThreeMouseClicked
+
+    private void mastelisSliderAncestorMoved(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_mastelisSliderAncestorMoved
+
+    }//GEN-LAST:event_mastelisSliderAncestorMoved
+
+    private void mastelisSliderStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_mastelisSliderStateChanged
+        mastelisLabel.setText("Mąstelis: 1:" + mastelisSlider.getValue());
+    }//GEN-LAST:event_mastelisSliderStateChanged
+
+    private void doneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doneActionPerformed
+        Map.sleptiNustatymus = 1;
+        Map.mastelis = mastelisSlider.getValue();
+        
+        Ukiniai.setVisible(false);
+        ariama.setVisible(false);
+        ganyklos.setVisible(false);
+        mastelisSlider.setVisible(false);
+        mastelisLabel.setVisible(false);
+        done.setVisible(false);
+        panelThree.repaint();
+        
+    }//GEN-LAST:event_doneActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1088,6 +1157,7 @@ public class AutoUkis extends javax.swing.JFrame {
     private javax.swing.JButton buttonThree;
     private javax.swing.JButton buttonTwelve;
     private javax.swing.JButton buttonTwo;
+    private javax.swing.JButton done;
     private javax.swing.JRadioButton ganyklos;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
@@ -1100,6 +1170,8 @@ public class AutoUkis extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel mainPanel;
+    private javax.swing.JLabel mastelisLabel;
+    private javax.swing.JSlider mastelisSlider;
     private javax.swing.JPanel panelEight;
     private javax.swing.JPanel panelEleven;
     private javax.swing.JPanel panelFifteen;
