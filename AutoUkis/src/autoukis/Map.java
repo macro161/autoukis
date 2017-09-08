@@ -7,18 +7,13 @@ package autoukis;
 
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.Image;
 import java.awt.Point;
-import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import static java.lang.Math.abs;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
 /**
@@ -34,6 +29,8 @@ public class Map extends JPanel {
     static ArrayList listSpalva = new ArrayList<Integer>();
     static Point[] taskai = new Point[3];
     static int spalva = 5;
+    static int sleptiNustatymus = 0;
+    static int mastelis = 0;
     int j = 50;
     int p;
 
@@ -51,14 +48,17 @@ public class Map extends JPanel {
         setAlignmentY(BOTTOM_ALIGNMENT);
         setBackground(Color.WHITE);
         g.setColor(Color.LIGHT_GRAY);
-        g.fillRect(0, 500, 150, 150);
         g.fillRect(0, 0, 800, 70);
-        g.setColor(Color.BLUE);
-        g.drawRect(4, 567, 10, 10);
-        g.setColor(Color.GREEN);
-        g.drawRect(4, 606, 10, 10);
-        g.setColor(Color.MAGENTA);
-        g.drawRect(4, 512, 10, 10);
+        if (sleptiNustatymus == 0) {
+            g.fillRect(0, 500, 550, 150);
+            g.setColor(Color.BLUE);
+            g.drawRect(4, 567, 10, 10);
+            g.setColor(Color.GREEN);
+            g.drawRect(4, 606, 10, 10);
+            g.setColor(Color.MAGENTA);
+            g.drawRect(4, 512, 10, 10);
+        }
+
         g.setColor(Color.BLACK);
         if (spalva == 5) {
             return;
