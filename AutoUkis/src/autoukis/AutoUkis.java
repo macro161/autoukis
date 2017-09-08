@@ -4,8 +4,11 @@ import java.awt.CardLayout;
 import java.awt.Label;
 import java.awt.List;
 import java.awt.Point;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import javax.swing.JLabel;
+import javax.swing.Timer;
 
 public class AutoUkis extends javax.swing.JFrame {
 
@@ -490,8 +493,8 @@ public class AutoUkis extends javax.swing.JFrame {
         });
 
         mastelisSlider.setMajorTickSpacing(50);
-        mastelisSlider.setMinimum(500);
-        mastelisSlider.setMaximum(2000);
+        mastelisSlider.setMinimum(1000);
+        mastelisSlider.setMaximum(5000);
         mastelisSlider.setMinorTickSpacing(20);
         mastelisSlider.addAncestorListener(new javax.swing.event.AncestorListener() {
             public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
@@ -1075,10 +1078,22 @@ public class AutoUkis extends javax.swing.JFrame {
         mastelisLabel.setText("Mąstelis: 1:" + mastelisSlider.getValue());
     }//GEN-LAST:event_mastelisSliderStateChanged
 
+        Timer timer=new Timer(3000,new ActionListener(){
+         public void actionPerformed(ActionEvent e)
+     {
+        panelThree.repaint();
+        timer.start();
+     }
+
+
+
+     });
     private void doneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doneActionPerformed
         Map.sleptiNustatymus = 1;
         Map.mastelis = mastelisSlider.getValue();
-        
+        UkioTechnika.judejimoGreitis();
+          UkioTechnika.arimas();
+        timer.start();
         Ukiniai.setVisible(false);
         ariama.setVisible(false);
         ganyklos.setVisible(false);

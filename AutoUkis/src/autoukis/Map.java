@@ -6,6 +6,7 @@
 package autoukis;
 
 import java.awt.Color;
+import static java.awt.Component.BOTTOM_ALIGNMENT;
 import java.awt.Graphics;
 import java.awt.Point;
 import java.awt.image.BufferedImage;
@@ -84,38 +85,41 @@ public class Map extends JPanel {
             g.drawLine(x2, y2, x2, y1);
             j++;
         }
-        if (spalva == 1) {
-            g.setColor(Color.BLUE);
-        }
-        if (spalva == 2) {
-            g.setColor(Color.GREEN);
-        }
-        if (spalva == 3) {
-            g.setColor(Color.MAGENTA);
-        }
 
         if (taskai[0] != null && taskai[1] != null) {
+            int i;
+            g.setColor(Color.CYAN);
+            for (j = 0; j < 1000; j++) {
+                for (i = 100; i < 900; i++) {
+                    if (pixels[i][j] == 4) {
+                        g.fillRect(i, j, 1, 1);
+                        i += 3;
+                    }
+                }
+            }
             if (pixels[taskai[0].x][taskai[0].y] != 0) {
                 return;
             }
             if (pixels[taskai[1].x][taskai[1].y] != 0) {
                 return;
             }
+            if (spalva == 1) {
+                g.setColor(Color.BLUE);
+            }
+            if (spalva == 2) {
+                g.setColor(Color.GREEN);
+            }
+            if (spalva == 3) {
+                g.setColor(Color.MAGENTA);
+            }
             g.drawLine(taskai[0].x, taskai[0].y, taskai[1].x, taskai[0].y);
             g.drawLine(taskai[0].x, taskai[0].y, taskai[0].x, taskai[1].y);
             g.drawLine(taskai[1].x, taskai[1].y, taskai[0].x, taskai[1].y);
             g.drawLine(taskai[1].x, taskai[1].y, taskai[1].x, taskai[0].y);
         }
+
     }
 
-    public static double plotas(double lat1, double lon1, double lat2, double lon2) {
-        double p = 0.017453292519943295;    // Math.PI / 180
-        double a = 0.5 - Math.cos((lat2 - lat1) * p) / 2
-                + Math.cos(lat1 * p) * Math.cos(lat2 * p)
-                * (1 - Math.cos((lon2 - lon1) * p)) / 2;
-
-        return (12742 * Math.asin(Math.sqrt(a))) * (12742 * Math.asin(Math.sqrt(a))) / 2; // 2 * R; R = 6371 km
-    }
 
     public static void updateList() {
         int i, j;
@@ -160,4 +164,5 @@ public class Map extends JPanel {
         }
 
     }
+
 }
