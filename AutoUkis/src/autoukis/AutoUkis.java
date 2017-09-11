@@ -1,7 +1,7 @@
 package autoukis;
 
 import java.awt.CardLayout;
-import java.awt.Label;
+import java.awt.Color;
 import java.awt.List;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
@@ -13,7 +13,11 @@ import javax.swing.Timer;
 public class AutoUkis extends javax.swing.JFrame {
 
     ArrayList<Gyvunas> gyvunai = new ArrayList<>();
-
+    ZemesPlotas plotas;
+    Map map = new Map();
+    Point p1, p2;
+    Color spalva;
+    UkioTechnika tech = new UkioTechnika(map, 0);
     public AutoUkis() {
         initComponents();
     }
@@ -54,7 +58,7 @@ public class AutoUkis extends javax.swing.JFrame {
         jComboBox1 = new javax.swing.JComboBox<>();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
-        panelThree = new Map();
+        panelThree = map;
         jLabel3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         ganyklos = new javax.swing.JRadioButton();
@@ -507,12 +511,12 @@ public class AutoUkis extends javax.swing.JFrame {
         mastelisSlider.setMaximum(5000);
         mastelisSlider.setMinorTickSpacing(20);
         mastelisSlider.addAncestorListener(new javax.swing.event.AncestorListener() {
-            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
-                mastelisSliderAncestorMoved(evt);
-            }
             public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
             }
             public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+                mastelisSliderAncestorMoved(evt);
             }
         });
         mastelisSlider.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -1001,35 +1005,38 @@ public class AutoUkis extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void panelThreeMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelThreeMousePressed
-        if (Map.spalva == 5) {
-            return;
-        }
-        Point x = panelThree.getMousePosition();
-        Map.taskai[0] = x;
+        p1 = panelThree.getMousePosition();
     }//GEN-LAST:event_panelThreeMousePressed
 
     private void panelThreeMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelThreeMouseDragged
-        if (Map.spalva == 5) {
-            return;
-        }
-        Point x = panelThree.getMousePosition();
-        Map.taskai[1] = x;
+
+        p2 = panelThree.getMousePosition();
+        plotas = new ZemesPlotas(spalva, p1, p2, "");
+        map.setPlotas(plotas);
         panelThree.repaint();
     }//GEN-LAST:event_panelThreeMouseDragged
 
     private void panelThreeMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelThreeMouseReleased
-        if (Map.spalva == 5) {
-            return;
-        }
-        Point x = panelThree.getMousePosition();
-        Map.taskai[1] = x;
-        Map.updateList();
+        String msg;
+        msg = "";
+        if (spalva == Color.green)
+            msg = "Ganyklos";
+        if (spalva == Color.blue)
+            msg = "Ukiniai pastatai";
+        if (spalva == Color.magenta)
+            msg = "Ariami laukai";
+        if (msg != "") {
+        p2 = panelThree.getMousePosition();
+        plotas = new ZemesPlotas(spalva, p1, p2, msg);
+        map.setPlotas(plotas);
+        map.updateList(plotas);
         panelThree.repaint();
+        }
     }//GEN-LAST:event_panelThreeMouseReleased
 
     private void ganyklosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ganyklosActionPerformed
 
-        Map.spalva = 2;
+        spalva = Color.green;
         Ukiniai.setSelected(false);
         ariama.setSelected(false);
 
@@ -1037,13 +1044,13 @@ public class AutoUkis extends javax.swing.JFrame {
     }//GEN-LAST:event_ganyklosActionPerformed
 
     private void UkiniaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UkiniaiActionPerformed
-        Map.spalva = 1;
+        spalva = Color.blue;
         ganyklos.setSelected(false);
         ariama.setSelected(false);
     }//GEN-LAST:event_UkiniaiActionPerformed
 
     private void ariamaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ariamaActionPerformed
-        Map.spalva = 3;
+        spalva = Color.magenta;
         Ukiniai.setSelected(false);
         ganyklos.setSelected(false);
     }//GEN-LAST:event_ariamaActionPerformed
@@ -1055,18 +1062,10 @@ public class AutoUkis extends javax.swing.JFrame {
         panelThree.add(label);
         String text;
         Point x = panelThree.getMousePosition();
-        int spalva = Map.pixels[x.x][x.y];
+        
         label.setBounds(x.x, x.y, 150, 30);
-        if (spalva == 1) {
-            text = "Ukiniai pastatai";
-        } else if (spalva == 2) {
-            text = "Ganyklos";
-        } else if (spalva == 3) {
-            text = "Ariama žemė";
-        } else {
-            text = "";
-        }
-        label.setText(text);
+        if (!map.check(x))
+        label.setText(map.getPlotas().getMsg());
         label.setVisible(true);
         new java.util.Timer().schedule(
                 new java.util.TimerTask() {
@@ -1095,10 +1094,10 @@ public class AutoUkis extends javax.swing.JFrame {
 
     });
     private void doneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doneActionPerformed
-        Map.sleptiNustatymus = 1;
-        Map.mastelis = mastelisSlider.getValue();
-        UkioTechnika.judejimoGreitis();
-        UkioTechnika.arimas();
+        map.setSleptiNustatymus(1);
+        map.setMastelis(mastelisSlider.getValue());
+        tech.judejimoGreitis();
+        tech.arimas();
         timer.start();
         Ukiniai.setVisible(false);
         ariama.setVisible(false);
@@ -1112,7 +1111,6 @@ public class AutoUkis extends javax.swing.JFrame {
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         int x = jComboBox1.getSelectedIndex();
-
 
         String st = String.format("Gyvuno ID: " + gyvunai.get(x).getId()
                 + "%n%n"
