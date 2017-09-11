@@ -1113,6 +1113,7 @@ public class AutoUkis extends javax.swing.JFrame {
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         int x = jComboBox1.getSelectedIndex();
 
+
         String st = String.format("Gyvuno ID: " + gyvunai.get(x).getId()
                 + "%n%n"
                 + "Veisle: " + gyvunai.get(x).getVeisle()
