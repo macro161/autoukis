@@ -18,6 +18,7 @@ public class AutoUkis extends javax.swing.JFrame {
     Point p1, p2;
     Color spalva;
     UkioTechnika tech = new UkioTechnika(map, 0);
+
     public AutoUkis() {
         initComponents();
     }
@@ -977,13 +978,12 @@ public class AutoUkis extends javax.swing.JFrame {
     }//GEN-LAST:event_textFieldFiveActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        Gyvunas gyv = new Gyvunas(Integer.parseInt( textFieldOne.getText()), 
-                                                    textFieldTwo.getText(), 
-                                                    Integer.parseInt
-                                                    (textFieldThree.getText()), 
-                                                    textFieldFour.getText(), 
-                                                    Float.parseFloat(textFieldFive.getText()), 
-                                                    textFieldSix.getText());
+        Gyvunas gyv = new Gyvunas(Integer.parseInt(textFieldOne.getText()),
+                textFieldTwo.getText(),
+                Integer.parseInt(textFieldThree.getText()),
+                textFieldFour.getText(),
+                Float.parseFloat(textFieldFive.getText()),
+                textFieldSix.getText());
         gyvunai.add(gyv);
         textFieldOne.setText("ID");
         textFieldTwo.setText("Veisle");
@@ -1009,18 +1009,24 @@ public class AutoUkis extends javax.swing.JFrame {
     private void panelThreeMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelThreeMouseReleased
         String msg;
         msg = "";
-        if (spalva == Color.green)
-            msg = "Ganyklos";
-        if (spalva == Color.blue)
-            msg = "Ukiniai pastatai";
-        if (spalva == Color.magenta)
-            msg = "Ariami laukai";
-        if (msg != "") {
         p2 = panelThree.getMousePosition();
-        plotas = new ZemesPlotas(spalva, p1, p2, msg);
-        map.setPlotas(plotas);
-        map.updateList(plotas);
-        panelThree.repaint();
+        if (spalva == Color.green) {
+            msg = "ok";
+            plotas = new Ganyklos(spalva, p1, p2, "Ganyklos");
+
+        }
+        if (spalva == Color.blue) {
+            msg = "ok";
+            plotas = new UkiniaiPastatai(spalva, p1, p2, "Ukiniai Pastatai");
+        }
+        if (spalva == Color.magenta) {
+            msg = "ok";
+            plotas = new AriamiLaukai(spalva, p1, p2, "Ariami Laukai");
+        }
+        if (msg != "") {
+            map.setPlotas(plotas);
+            map.updateList(plotas);
+            panelThree.repaint();
         }
     }//GEN-LAST:event_panelThreeMouseReleased
 
@@ -1052,10 +1058,11 @@ public class AutoUkis extends javax.swing.JFrame {
         panelThree.add(label);
         String text;
         Point x = panelThree.getMousePosition();
-        
+
         label.setBounds(x.x, x.y, 150, 30);
-        if (!map.check(x))
-        label.setText(map.getPlotas().getMsg());
+        if (!map.check(x)) {
+            label.setText(map.getPlotas().getMsg());
+        }
         label.setVisible(true);
         new java.util.Timer().schedule(
                 new java.util.TimerTask() {
