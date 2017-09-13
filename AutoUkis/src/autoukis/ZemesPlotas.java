@@ -28,6 +28,7 @@ public class ZemesPlotas {
     /**
      * @return the spalva
      */
+    
     public Color getSpalva() {
         return spalva;
     }

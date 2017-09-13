@@ -66,6 +66,9 @@ public class Map extends JPanel {
                 g.drawLine(temp.getP1().x, temp.getP1().y, temp.getP1().x, temp.getP2().y);
                 g.drawLine(temp.getP2().x, temp.getP2().y, temp.getP1().x, temp.getP2().y);
                 g.drawLine(temp.getP2().x, temp.getP2().y, temp.getP2().x, temp.getP1().y);
+                if (temp instanceof AriamiLaukai) {
+                    System.out.println("Sveiki");
+                }
             }
         }
         if (getPlotas() != null) {
