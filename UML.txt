@@ -1,1 +1,34 @@
-www.plaintext.com
+@startuml
+
+title Automatinė Ūkio valdymo sistema
+
+class AriamiLaukai
+class AutoUkis
+class Ganyklos
+class Gyvunas
+class Map
+class Orai
+class UkiniaiPastatai
+class UkioTechnika
+class ZemesDetektorius
+class ZemesParametrai
+class ZemesPlotas
+class JPanel
+
+
+
+AutoUkis *-up- Gyvunas: Composition 
+AutoUkis *-down- ZemesPlotas: Composition
+AutoUkis *-up- Map: Composition
+AutoUkis *-down- UkioTechnika
+ZemesPlotas <|-down- AriamiLaukai: Inheritance
+ZemesPlotas <|-down- Ganyklos: Inheritance
+JPanel <|-down- Map: Inheritance
+Map *-up- ZemesPlotas: Composition
+ZemesPlotas <|-down- UkiniaiPastatai: Inheritance
+UkiniaiPastatai *-up- Gyvunas: Composition
+UkiniaiPastatai *-down- UkioTechnika: Composition
+UkioTechnika *-up- ZemesPlotas: Composition
+UkioTechnika *-up- Map: Composition
+ZemesParametrai *-down- Map: Composition
+ZemesParametrai *-up- Orai: Composition
