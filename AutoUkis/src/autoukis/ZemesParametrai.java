@@ -1,19 +1,18 @@
-
 package autoukis;
 
 public class ZemesParametrai {
-    
-    String plotoPavadinimas;
-    int sluoksnis;
-    int storis;
-    int smelisProcentais;
-    int dregme;
-    int ph;
 
-    Map map;
-    Orai orai = new Orai(); //Busimas obnjektas kuri naudosim nustatyti zemes dregmei
-    
-    public ZemesParametrai(Map map,String plotoPavadinimas, int sluoksnis, int storis, int smelisProcentais, int dregme, int ph) {
+    private String plotoPavadinimas;
+    private int sluoksnis;
+    private int storis;
+    private int smelisProcentais;
+    private int dregme;
+    private int ph;
+
+    private Map map;
+    private Orai orai = new Orai(); //Busimas obnjektas kuri naudosim nustatyti zemes dregmei
+
+    public ZemesParametrai(Map map, String plotoPavadinimas, int sluoksnis, int storis, int smelisProcentais, int dregme, int ph) {
         this.plotoPavadinimas = plotoPavadinimas;
         this.sluoksnis = sluoksnis;
         this.storis = storis;
@@ -23,11 +22,10 @@ public class ZemesParametrai {
         this.map = map;
     }
 
-    public void kadaIsdziusZeme(){
-    
-    
+    public void kadaIsdziusZeme() {
+
     }
-    
+
     public String getPlotoPavadinimas() {
         return plotoPavadinimas;
     }
@@ -84,16 +82,4 @@ public class ZemesParametrai {
         this.ph = ph;
     }
 
-  
-
-   
-    
-    
-    
-    
-    
-    
-    
- 
-    
 }

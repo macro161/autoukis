@@ -1,19 +1,18 @@
-
 package autoukis;
 
-
 public class Gyvunas {
+
     private String veisle;
     private int id;
     private int amzius;
     private String lytis;
     private float suvartojamasMaistas;
-    private String gps; 
+    private String gps;
 
-    public Gyvunas(){
-        
+    public Gyvunas() {
+
     }
-    
+
     public Gyvunas(int id, String veisle, int amzius, String lytis, float suvartojamasMaistas, String gps) {
         this.veisle = veisle;
         this.id = id;
@@ -62,9 +61,5 @@ public class Gyvunas {
     public float getSuvartojamasMaistas() {
         return suvartojamasMaistas;
     }
-    
-    
-    
-    
-    
+
 }

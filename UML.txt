@@ -1,18 +1,67 @@
-@startuml
+﻿@startuml
 
 title Automatinė Ūkio valdymo sistema
 
-class AriamiLaukai
-class AutoUkis
+class AriamiLaukai{
+	+public void kultivuoti()
+}
+class AutoUkis{
+	-ArrayList<Gyvunai> gyvunai
+	-ZemesPlotas plotas
+	-Map map
+	-Point p1,p2
+	-Color spalva;
+	-UkioTechnika tech
+	}
 class Ganyklos
-class Gyvunas
-class Map
+class Gyvunas{
+	-String veisle
+	-int id
+	-int amzius
+	-String lytis
+	-float suvartojamasMaistas
+	-String gps
+}
+class Map{
+	-ZemesPlotas plotas
+	-List<ZemesPlotai> plotai
+	-int sleptiNustatymus
+	-int mastelis
+	+void paintComponent(Graphics g)
+	+void updateList(ZemesPlotas plotas)
+	+boolean check(Point p)
+}
 class Orai
-class UkiniaiPastatai
-class UkioTechnika
+class UkiniaiPastatai{
+	-Gyvunas gyvunas
+	-UkioTechnika technika
+}
+class UkioTechnika{
+	-List<ZemesPlotas> plotai
+	-Map map
+	-double greitis
+	+void judejimoGreitis()
+	+void arimas()
+}
 class ZemesDetektorius
-class ZemesParametrai
-class ZemesPlotas
+class ZemesParametrai{
+	-String plotoPavadinimas
+	-int sluoksnis
+	-int storis
+	-int smelisProcentais
+	-int dregme
+	-int ph
+	-Map map
+	-Orai orai
+	+void kadaIsdziusZeme()
+	
+}
+class ZemesPlotas{
+	-Color spalva
+	-Point p1
+	-Point p2
+	-String msg
+}
 class JPanel
 
 

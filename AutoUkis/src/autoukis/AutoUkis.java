@@ -12,12 +12,12 @@ import javax.swing.Timer;
 
 public class AutoUkis extends javax.swing.JFrame {
 
-    ArrayList<Gyvunas> gyvunai = new ArrayList<>();
-    ZemesPlotas plotas;
-    Map map = new Map();
-    Point p1, p2;
-    Color spalva;
-    UkioTechnika tech = new UkioTechnika(map, 0);
+    private ArrayList<Gyvunas> gyvunai = new ArrayList<>();
+    private ZemesPlotas plotas;
+    private Map map = new Map();
+    private Point p1, p2;
+    private Color spalva;
+    private UkioTechnika tech = new UkioTechnika(map, 0);
 
     public AutoUkis() {
         initComponents();
