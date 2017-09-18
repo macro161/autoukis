@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package autoukis;
 
 import java.awt.Color;
@@ -18,10 +13,6 @@ import java.util.List;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
-/**
- *
- * @author Justas
- */
 public class Map extends JPanel {
 
     private ZemesPlotas plotas;
