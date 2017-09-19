@@ -1,29 +1,31 @@
 package autoukis;
 
-public class ZemesParametrai {
+import java.util.List;
 
+public class ZemesParametrai {
     private String plotoPavadinimas;
     private int sluoksnis;
     private int storis;
     private int smelisProcentais;
     private int dregme;
     private int ph;
-
-    private Map map;
+    private ZemesDetektorius detektorius;
     private Orai orai = new Orai(); //Busimas obnjektas kuri naudosim nustatyti zemes dregmei
 
-    public ZemesParametrai(Map map, String plotoPavadinimas, int sluoksnis, int storis, int smelisProcentais, int dregme, int ph) {
+    public ZemesParametrai(String plotoPavadinimas, int sluoksnis, int storis, int smelisProcentais, int dregme, int ph) {
         this.plotoPavadinimas = plotoPavadinimas;
         this.sluoksnis = sluoksnis;
         this.storis = storis;
         this.smelisProcentais = smelisProcentais;
         this.dregme = dregme;
         this.ph = ph;
-        this.map = map;
     }
 
     public void kadaIsdziusZeme() {
 
+    }
+    public void getParametrai(){
+        //storis = detektorius.getStoris(); 
     }
 
     public String getPlotoPavadinimas() {
@@ -48,10 +50,6 @@ public class ZemesParametrai {
 
     public int getPh() {
         return ph;
-    }
-
-    public Map getMap() {
-        return map;
     }
 
     public Object getOrai() {
