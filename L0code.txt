@@ -1,0 +1,17 @@
+@startuml
+
+skinparam componentStyle uml2
+
+title Packages - Component Diagram
+
+[Auto Ukis] -left--() UkininkoUI 
+[Auto Ukis] -right-() ProgramuotojoUI
+
+:Ukininkas: -down--( UkininkoUI
+:Programuotojas: -down-( ProgramuotojoUI
+:GreitojiPagalba: -right-() GreitosiosAPI
+:OruTarnyba:-down-() OruAPI
+[Auto Ukis] -down-( GreitosiosAPI
+[Auto Ukis] -up-( OruAPI
+
+@enduml
