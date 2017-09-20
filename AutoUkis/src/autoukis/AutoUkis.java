@@ -2,7 +2,7 @@ package autoukis;
 
 import java.awt.CardLayout;
 import java.awt.Color;
-import java.awt.List;
+import java.util.List;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,12 +11,14 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JLabel;
+import javax.swing.JTextArea;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
 public class AutoUkis extends javax.swing.JFrame {
 
     private ArrayList<Gyvunas> gyvunai = new ArrayList<>();
+    private List<AriamiLaukai> ariamiLaukai = new ArrayList<>();
     private ZemesPlotas plotas;
     private Map map = new Map();
     private Point p1, p2;
@@ -82,6 +84,10 @@ public class AutoUkis extends javax.swing.JFrame {
         panelFour = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         panelFive = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
@@ -672,27 +678,59 @@ public class AutoUkis extends javax.swing.JFrame {
             }
         });
 
+        jLabel6.setText("Ph:");
+
+        jLabel7.setText("Derlingos žemės sluoksnis:");
+
+        jLabel8.setText("Dregmė:");
+
+        jLabel9.setText("Smėlingumas(%):");
+
         javax.swing.GroupLayout panelFourLayout = new javax.swing.GroupLayout(panelFour);
         panelFour.setLayout(panelFourLayout);
         panelFourLayout.setHorizontalGroup(
             panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelFourLayout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 676, Short.MAX_VALUE)
                     .addGroup(panelFourLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 696, Short.MAX_VALUE))
+                    .addGroup(panelFourLayout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addGroup(panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFourLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
+            .addGroup(panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelFourLayout.createSequentialGroup()
+                    .addGap(47, 47, 47)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(516, Short.MAX_VALUE)))
         );
         panelFourLayout.setVerticalGroup(
             panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelFourLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 504, Short.MAX_VALUE)
+                .addGap(97, 97, 97)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(8, 8, 8)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 280, Short.MAX_VALUE)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
+            .addGroup(panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelFourLayout.createSequentialGroup()
+                    .addGap(125, 125, 125)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(479, Short.MAX_VALUE)))
         );
 
         mainPanel.add(panelFour, "panelFour");
@@ -936,7 +974,7 @@ public class AutoUkis extends javax.swing.JFrame {
 
     private void buttonSixActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSixActionPerformed
         CardLayout card = (CardLayout) mainPanel.getLayout();
-        card.show(mainPanel, "panelSix");
+        card.show(mainPanel, "panelFour");
     }//GEN-LAST:event_buttonSixActionPerformed
 
     private void buttonSevenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSevenActionPerformed
@@ -1099,7 +1137,12 @@ public class AutoUkis extends javax.swing.JFrame {
         }
         if (spalva == Color.magenta) {
             msg = "ok";
-            plotas = new AriamiLaukai(spalva, p1, p2, "Ariami Laukai");
+            plotas = new AriamiLaukai(spalva, p1, p2, "Ariami Laukai", new ZemesParametrai("Laukas", 0, 0, 0, 0, 0));
+            if (map.check(p1) && map.check(p2)) {
+                if ((Math.abs(plotas.getP1().x - plotas.getP2().x) > 5) && (Math.abs(plotas.getP1().y - plotas.getP2().y) > 5)) {
+                    ariamiLaukai.add((AriamiLaukai) plotas);
+                }
+            }
         }
         if (msg != "") {
             map.setPlotas(plotas);
@@ -1131,7 +1174,8 @@ public class AutoUkis extends javax.swing.JFrame {
 
     private void panelThreeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelThreeMouseClicked
 
-        JLabel label = new JLabel();
+        JTextArea label = new JTextArea();
+        label.setEditable(false);
 
         panelThree.add(label);
         String text;
@@ -1139,7 +1183,16 @@ public class AutoUkis extends javax.swing.JFrame {
 
         label.setBounds(x.x, x.y, 150, 30);
         if (!map.check(x)) {
-            label.setText(map.getPlotas().getMsg());
+            if (map.getPlotas() instanceof AriamiLaukai) {
+                AriamiLaukai laukai = (AriamiLaukai) map.getPlotas();
+                text = String.format(laukai.getMsg()
+                        + "Dregmė: " + (laukai.getParametrai().getDregme())
+                        + "Ph: " + (laukai.getParametrai().getPh())
+                        + "Storis: " + (laukai.getParametrai().getStoris())
+                        + "Smėlingumas: " + (laukai.getParametrai().getSmelisProcentais()) + "%");
+            } else {
+                label.setText(map.getPlotas().getMsg());
+            }
         }
         label.setVisible(true);
         new java.util.Timer().schedule(
@@ -1291,6 +1344,7 @@ public class AutoUkis extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea2;
