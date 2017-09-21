@@ -84,13 +84,21 @@ public class AutoUkis extends javax.swing.JFrame {
         panelFour = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         panelFive = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextArea3 = new javax.swing.JTextArea();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
         panelSix = new javax.swing.JPanel();
         panelSeven = new javax.swing.JPanel();
         panelEight = new javax.swing.JPanel();
@@ -140,7 +148,7 @@ public class AutoUkis extends javax.swing.JFrame {
                 .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(303, Short.MAX_VALUE)
+                .addContainerGap(427, Short.MAX_VALUE)
                 .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(283, 283, 283))
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -167,7 +175,7 @@ public class AutoUkis extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 213, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 320, Short.MAX_VALUE)
                 .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(163, 163, 163))
         );
@@ -289,7 +297,7 @@ public class AutoUkis extends javax.swing.JFrame {
             panelOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelOneLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 676, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 816, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(panelOneLayout.createSequentialGroup()
                 .addGap(40, 40, 40)
@@ -301,7 +309,7 @@ public class AutoUkis extends javax.swing.JFrame {
                     .addComponent(buttonEight, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonSix, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonOne, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 151, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 275, Short.MAX_VALUE)
                 .addGroup(panelOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(buttonTwo, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonFour, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -348,7 +356,7 @@ public class AutoUkis extends javax.swing.JFrame {
                     .addComponent(buttonSixteen, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(buttonSeventeen, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(170, Short.MAX_VALUE))
+                .addContainerGap(270, Short.MAX_VALUE))
         );
 
         mainPanel.add(panelOne, "panelOne");
@@ -475,7 +483,7 @@ public class AutoUkis extends javax.swing.JFrame {
                 .addGroup(panelTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelTwoLayout.createSequentialGroup()
                         .addGap(70, 70, 70)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 636, Short.MAX_VALUE))
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 758, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTwoLayout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(panelTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -522,7 +530,7 @@ public class AutoUkis extends javax.swing.JFrame {
                     .addComponent(jScrollPane2))
                 .addGap(37, 37, 37)
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 102, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 199, Short.MAX_VALUE)
                 .addComponent(buttonEighteen, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -585,12 +593,12 @@ public class AutoUkis extends javax.swing.JFrame {
         mastelisSlider.setMaximum(5000);
         mastelisSlider.setMinorTickSpacing(20);
         mastelisSlider.addAncestorListener(new javax.swing.event.AncestorListener() {
-            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
-                mastelisSliderAncestorMoved(evt);
-            }
             public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
             }
             public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+                mastelisSliderAncestorMoved(evt);
             }
         });
         mastelisSlider.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -615,7 +623,7 @@ public class AutoUkis extends javax.swing.JFrame {
             .addGroup(panelThreeLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 676, Short.MAX_VALUE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 816, Short.MAX_VALUE)
                     .addGroup(panelThreeLayout.createSequentialGroup()
                         .addGap(19, 19, 19)
                         .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -644,7 +652,7 @@ public class AutoUkis extends javax.swing.JFrame {
             .addGroup(panelThreeLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 432, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 558, Short.MAX_VALUE)
                 .addComponent(ariama, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -670,6 +678,7 @@ public class AutoUkis extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Žemės parametrų sekimas");
+        panelFour.add(jLabel4);
 
         jButton2.setText("Grįžti");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -677,61 +686,19 @@ public class AutoUkis extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
+        panelFour.add(jButton2);
 
-        jLabel6.setText("Ph:");
+        jLabel10.setText("Ph:");
+        panelFour.add(jLabel10);
 
-        jLabel7.setText("Derlingos žemės sluoksnis:");
+        jLabel11.setText("Derlingos žemės sluoksnis:");
+        panelFour.add(jLabel11);
 
-        jLabel8.setText("Dregmė:");
+        jLabel12.setText("Dregmė:");
+        panelFour.add(jLabel12);
 
         jLabel9.setText("Smėlingumas(%):");
-
-        javax.swing.GroupLayout panelFourLayout = new javax.swing.GroupLayout(panelFour);
-        panelFour.setLayout(panelFourLayout);
-        panelFourLayout.setHorizontalGroup(
-            panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelFourLayout.createSequentialGroup()
-                .addGroup(panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelFourLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 696, Short.MAX_VALUE))
-                    .addGroup(panelFourLayout.createSequentialGroup()
-                        .addGap(47, 47, 47)
-                        .addGroup(panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFourLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
-            .addGroup(panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panelFourLayout.createSequentialGroup()
-                    .addGap(47, 47, 47)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(516, Short.MAX_VALUE)))
-        );
-        panelFourLayout.setVerticalGroup(
-            panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelFourLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(97, 97, 97)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(8, 8, 8)
-                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 280, Short.MAX_VALUE)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-            .addGroup(panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panelFourLayout.createSequentialGroup()
-                    .addGap(125, 125, 125)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(479, Short.MAX_VALUE)))
-        );
+        panelFour.add(jLabel9);
 
         mainPanel.add(panelFour, "panelFour");
 
@@ -746,17 +713,70 @@ public class AutoUkis extends javax.swing.JFrame {
             }
         });
 
+        jComboBox2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "Alytus", "Vilnius", "Kaunas", "Klaipėda", "Panevėžys" }));
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
+
+        jTextArea1.setEditable(false);
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Monospaced", 0, 16)); // NOI18N
+        jTextArea1.setRows(5);
+        jTextArea1.setText("Nepasirinktas miestas");
+        jScrollPane1.setViewportView(jTextArea1);
+        jTextArea1.getAccessibleContext().setAccessibleName("weatherToday");
+
+        jTextArea3.setEditable(false);
+        jTextArea3.setColumns(20);
+        jTextArea3.setFont(new java.awt.Font("Monospaced", 0, 16)); // NOI18N
+        jTextArea3.setRows(5);
+        jTextArea3.setText("Nepasirinktas miestas");
+        jScrollPane3.setViewportView(jTextArea3);
+        jTextArea3.getAccessibleContext().setAccessibleName("weatherTomorrow");
+
+        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel13.setText("Pasirinkite artimiausią miestą:");
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 17)); // NOI18N
+        jLabel14.setText("Šiandienos orai:");
+
+        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 17)); // NOI18N
+        jLabel15.setText("Rytojaus orai:");
+
         javax.swing.GroupLayout panelFiveLayout = new javax.swing.GroupLayout(panelFive);
         panelFive.setLayout(panelFiveLayout);
         panelFiveLayout.setHorizontalGroup(
             panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFiveLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel13)
+                .addGap(185, 185, 185)
+                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(184, 184, 184))
             .addGroup(panelFiveLayout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 676, Short.MAX_VALUE)
                     .addGroup(panelFiveLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap()
+                        .addGroup(panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 816, Short.MAX_VALUE)
+                            .addGroup(panelFiveLayout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(panelFiveLayout.createSequentialGroup()
+                        .addGap(46, 46, 46)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(108, 108, 108)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(panelFiveLayout.createSequentialGroup()
+                        .addGap(139, 139, 139)
+                        .addComponent(jLabel14)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel15)
+                        .addGap(161, 161, 161)))
                 .addContainerGap())
         );
         panelFiveLayout.setVerticalGroup(
@@ -764,7 +784,19 @@ public class AutoUkis extends javax.swing.JFrame {
             .addGroup(panelFiveLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 506, Short.MAX_VALUE)
+                .addGap(55, 55, 55)
+                .addGroup(panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel13))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 162, Short.MAX_VALUE)
+                .addGroup(panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14)
+                    .addComponent(jLabel15))
+                .addGap(65, 65, 65)
+                .addGroup(panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(142, 142, 142)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -775,11 +807,11 @@ public class AutoUkis extends javax.swing.JFrame {
         panelSix.setLayout(panelSixLayout);
         panelSixLayout.setHorizontalGroup(
             panelSixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 696, Short.MAX_VALUE)
+            .addGap(0, 840, Short.MAX_VALUE)
         );
         panelSixLayout.setVerticalGroup(
             panelSixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 627, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         mainPanel.add(panelSix, "panelSix");
@@ -788,11 +820,11 @@ public class AutoUkis extends javax.swing.JFrame {
         panelSeven.setLayout(panelSevenLayout);
         panelSevenLayout.setHorizontalGroup(
             panelSevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 696, Short.MAX_VALUE)
+            .addGap(0, 840, Short.MAX_VALUE)
         );
         panelSevenLayout.setVerticalGroup(
             panelSevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 627, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         mainPanel.add(panelSeven, "panelSeven");
@@ -801,11 +833,11 @@ public class AutoUkis extends javax.swing.JFrame {
         panelEight.setLayout(panelEightLayout);
         panelEightLayout.setHorizontalGroup(
             panelEightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 696, Short.MAX_VALUE)
+            .addGap(0, 840, Short.MAX_VALUE)
         );
         panelEightLayout.setVerticalGroup(
             panelEightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 627, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         mainPanel.add(panelEight, "panelEight");
@@ -814,11 +846,11 @@ public class AutoUkis extends javax.swing.JFrame {
         panelNine.setLayout(panelNineLayout);
         panelNineLayout.setHorizontalGroup(
             panelNineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 696, Short.MAX_VALUE)
+            .addGap(0, 840, Short.MAX_VALUE)
         );
         panelNineLayout.setVerticalGroup(
             panelNineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 627, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         mainPanel.add(panelNine, "panelNine");
@@ -827,11 +859,11 @@ public class AutoUkis extends javax.swing.JFrame {
         panelTen.setLayout(panelTenLayout);
         panelTenLayout.setHorizontalGroup(
             panelTenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 696, Short.MAX_VALUE)
+            .addGap(0, 840, Short.MAX_VALUE)
         );
         panelTenLayout.setVerticalGroup(
             panelTenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 627, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         mainPanel.add(panelTen, "panelTen");
@@ -840,11 +872,11 @@ public class AutoUkis extends javax.swing.JFrame {
         panelEleven.setLayout(panelElevenLayout);
         panelElevenLayout.setHorizontalGroup(
             panelElevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 696, Short.MAX_VALUE)
+            .addGap(0, 840, Short.MAX_VALUE)
         );
         panelElevenLayout.setVerticalGroup(
             panelElevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 627, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         mainPanel.add(panelEleven, "panelEleven");
@@ -853,11 +885,11 @@ public class AutoUkis extends javax.swing.JFrame {
         panelTwelve.setLayout(panelTwelveLayout);
         panelTwelveLayout.setHorizontalGroup(
             panelTwelveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 696, Short.MAX_VALUE)
+            .addGap(0, 840, Short.MAX_VALUE)
         );
         panelTwelveLayout.setVerticalGroup(
             panelTwelveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 627, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         mainPanel.add(panelTwelve, "panelTwelve");
@@ -866,11 +898,11 @@ public class AutoUkis extends javax.swing.JFrame {
         panelThirteen.setLayout(panelThirteenLayout);
         panelThirteenLayout.setHorizontalGroup(
             panelThirteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 696, Short.MAX_VALUE)
+            .addGap(0, 840, Short.MAX_VALUE)
         );
         panelThirteenLayout.setVerticalGroup(
             panelThirteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 627, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         mainPanel.add(panelThirteen, "panelThirteen");
@@ -879,11 +911,11 @@ public class AutoUkis extends javax.swing.JFrame {
         panelFourteen.setLayout(panelFourteenLayout);
         panelFourteenLayout.setHorizontalGroup(
             panelFourteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 696, Short.MAX_VALUE)
+            .addGap(0, 840, Short.MAX_VALUE)
         );
         panelFourteenLayout.setVerticalGroup(
             panelFourteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 627, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         mainPanel.add(panelFourteen, "panelFourteen");
@@ -892,11 +924,11 @@ public class AutoUkis extends javax.swing.JFrame {
         panelFifteen.setLayout(panelFifteenLayout);
         panelFifteenLayout.setHorizontalGroup(
             panelFifteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 696, Short.MAX_VALUE)
+            .addGap(0, 840, Short.MAX_VALUE)
         );
         panelFifteenLayout.setVerticalGroup(
             panelFifteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 627, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         mainPanel.add(panelFifteen, "panelFifteen");
@@ -905,11 +937,11 @@ public class AutoUkis extends javax.swing.JFrame {
         panelSixteen.setLayout(panelSixteenLayout);
         panelSixteenLayout.setHorizontalGroup(
             panelSixteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 696, Short.MAX_VALUE)
+            .addGap(0, 840, Short.MAX_VALUE)
         );
         panelSixteenLayout.setVerticalGroup(
             panelSixteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 627, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         mainPanel.add(panelSixteen, "panelSixteen");
@@ -918,11 +950,11 @@ public class AutoUkis extends javax.swing.JFrame {
         panelSeventeen.setLayout(panelSeventeenLayout);
         panelSeventeenLayout.setHorizontalGroup(
             panelSeventeenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 696, Short.MAX_VALUE)
+            .addGap(0, 840, Short.MAX_VALUE)
         );
         panelSeventeenLayout.setVerticalGroup(
             panelSeventeenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 627, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         mainPanel.add(panelSeventeen, "panelSeventeen");
@@ -1276,6 +1308,49 @@ public class AutoUkis extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        String miestas;
+        int city;
+        miestas = (String)jComboBox2.getSelectedItem();
+        switch(miestas)
+        {
+            case "Alytus":
+            {
+                city = 4152;
+                break;
+            }
+            case "Vilnius":
+            {
+                city = 4230;
+                break;
+            }
+            case "Kaunas":
+            {
+                city = 4202;
+                break;
+            }
+            case "Klaipėda":
+            {
+                city = 4157;
+                break;
+            }
+            case "Panevėžys":
+            {
+                city = 4175;
+                break;
+            }
+            default:
+            {
+                city = 0;
+            }
+        }
+        
+        jTextArea1.setText(new Orai().weatherToday(city));
+        jTextArea3.setText(new Orai().weatherTomorrow(city));
+        
+    }//GEN-LAST:event_jComboBox2ActionPerformed
+
+    
     public static void main(String args[]) throws IOException {
 
         try {
@@ -1336,7 +1411,14 @@ public class AutoUkis extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -1346,8 +1428,12 @@ public class AutoUkis extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JPanel mainPanel;
