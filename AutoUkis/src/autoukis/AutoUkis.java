@@ -54,7 +54,6 @@ public class AutoUkis extends javax.swing.JFrame {
         buttonTen = new javax.swing.JButton();
         buttonEleven = new javax.swing.JButton();
         buttonTwelve = new javax.swing.JButton();
-        buttonThirteen = new javax.swing.JButton();
         buttonFourteen = new javax.swing.JButton();
         buttonFifteen = new javax.swing.JButton();
         buttonSixteen = new javax.swing.JButton();
@@ -101,17 +100,41 @@ public class AutoUkis extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         panelSix = new javax.swing.JPanel();
+        jLabel16 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
         panelSeven = new javax.swing.JPanel();
+        jLabel17 = new javax.swing.JLabel();
+        jButton7 = new javax.swing.JButton();
         panelEight = new javax.swing.JPanel();
+        jLabel18 = new javax.swing.JLabel();
+        jButton8 = new javax.swing.JButton();
         panelNine = new javax.swing.JPanel();
+        jLabel19 = new javax.swing.JLabel();
+        jButton9 = new javax.swing.JButton();
         panelTen = new javax.swing.JPanel();
+        jLabel20 = new javax.swing.JLabel();
+        jButton10 = new javax.swing.JButton();
         panelEleven = new javax.swing.JPanel();
+        jLabel21 = new javax.swing.JLabel();
+        jButton11 = new javax.swing.JButton();
         panelTwelve = new javax.swing.JPanel();
+        jLabel22 = new javax.swing.JLabel();
+        jButton12 = new javax.swing.JButton();
         panelThirteen = new javax.swing.JPanel();
+        jLabel23 = new javax.swing.JLabel();
+        jButton13 = new javax.swing.JButton();
         panelFourteen = new javax.swing.JPanel();
+        jLabel24 = new javax.swing.JLabel();
+        jButton14 = new javax.swing.JButton();
         panelFifteen = new javax.swing.JPanel();
+        jLabel25 = new javax.swing.JLabel();
+        jButton15 = new javax.swing.JButton();
         panelSixteen = new javax.swing.JPanel();
+        jLabel26 = new javax.swing.JLabel();
+        jButton16 = new javax.swing.JButton();
         panelSeventeen = new javax.swing.JPanel();
+        jLabel27 = new javax.swing.JLabel();
+        jButton17 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -260,13 +283,6 @@ public class AutoUkis extends javax.swing.JFrame {
             }
         });
 
-        buttonThirteen.setText("Darbuotojų samdymas");
-        buttonThirteen.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonThirteenActionPerformed(evt);
-            }
-        });
-
         buttonFourteen.setText("Pelno skaičiavimas");
         buttonFourteen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -324,7 +340,6 @@ public class AutoUkis extends javax.swing.JFrame {
                     .addComponent(buttonSeven, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonNine, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonEleven, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonThirteen, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonFifteen, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonSeventeen, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(39, 39, 39))
@@ -356,15 +371,13 @@ public class AutoUkis extends javax.swing.JFrame {
                     .addComponent(buttonTwelve, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panelOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(buttonThirteen, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonFourteen, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(buttonFourteen, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonSeventeen, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panelOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(buttonFifteen, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonSixteen, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(buttonSeventeen, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(270, Short.MAX_VALUE))
+                .addContainerGap(317, Short.MAX_VALUE))
         );
 
         mainPanel.add(panelOne, "panelOne");
@@ -686,7 +699,6 @@ public class AutoUkis extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Žemės parametrų sekimas");
-        panelFour.add(jLabel4);
 
         jButton2.setText("Grįžti");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -694,19 +706,59 @@ public class AutoUkis extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        panelFour.add(jButton2);
 
         jLabel10.setText("Ph:");
-        panelFour.add(jLabel10);
 
         jLabel11.setText("Derlingos žemės sluoksnis:");
-        panelFour.add(jLabel11);
 
         jLabel12.setText("Dregmė:");
-        panelFour.add(jLabel12);
 
         jLabel9.setText("Smėlingumas(%):");
-        panelFour.add(jLabel9);
+
+        javax.swing.GroupLayout panelFourLayout = new javax.swing.GroupLayout(panelFour);
+        panelFour.setLayout(panelFourLayout);
+        panelFourLayout.setHorizontalGroup(
+            panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFourLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton2)
+                .addGap(68, 68, 68))
+            .addGroup(panelFourLayout.createSequentialGroup()
+                .addGroup(panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelFourLayout.createSequentialGroup()
+                        .addGap(218, 218, 218)
+                        .addComponent(jLabel11))
+                    .addGroup(panelFourLayout.createSequentialGroup()
+                        .addGap(290, 290, 290)
+                        .addComponent(jLabel10))
+                    .addGroup(panelFourLayout.createSequentialGroup()
+                        .addGap(238, 238, 238)
+                        .addComponent(jLabel9))
+                    .addGroup(panelFourLayout.createSequentialGroup()
+                        .addGap(276, 276, 276)
+                        .addComponent(jLabel12))
+                    .addGroup(panelFourLayout.createSequentialGroup()
+                        .addGap(218, 218, 218)
+                        .addComponent(jLabel4)))
+                .addGap(212, 212, 212))
+        );
+        panelFourLayout.setVerticalGroup(
+            panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelFourLayout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addComponent(jLabel4)
+                .addGap(150, 150, 150)
+                .addComponent(jLabel10)
+                .addGap(40, 40, 40)
+                .addComponent(jLabel11)
+                .addGap(81, 81, 81)
+                .addComponent(jLabel9)
+                .addGap(75, 75, 75)
+                .addComponent(jLabel12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 211, Short.MAX_VALUE)
+                .addComponent(jButton2)
+                .addGap(37, 37, 37))
+        );
 
         mainPanel.add(panelFour, "panelFour");
 
@@ -811,158 +863,410 @@ public class AutoUkis extends javax.swing.JFrame {
 
         mainPanel.add(panelFive, "panelFive");
 
+        jLabel16.setText("6");
+
+        jButton6.setText("jButton6");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout panelSixLayout = new javax.swing.GroupLayout(panelSix);
         panelSix.setLayout(panelSixLayout);
         panelSixLayout.setHorizontalGroup(
             panelSixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 840, Short.MAX_VALUE)
+            .addGroup(panelSixLayout.createSequentialGroup()
+                .addGap(375, 375, 375)
+                .addComponent(jLabel16)
+                .addContainerGap(458, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSixLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton6)
+                .addGap(52, 52, 52))
         );
         panelSixLayout.setVerticalGroup(
             panelSixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 758, Short.MAX_VALUE)
+            .addGroup(panelSixLayout.createSequentialGroup()
+                .addGap(91, 91, 91)
+                .addComponent(jLabel16)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 592, Short.MAX_VALUE)
+                .addComponent(jButton6)
+                .addGap(34, 34, 34))
         );
 
         mainPanel.add(panelSix, "panelSix");
+
+        jLabel17.setText("7");
+
+        jButton7.setText("jButton7");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelSevenLayout = new javax.swing.GroupLayout(panelSeven);
         panelSeven.setLayout(panelSevenLayout);
         panelSevenLayout.setHorizontalGroup(
             panelSevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 840, Short.MAX_VALUE)
+            .addGroup(panelSevenLayout.createSequentialGroup()
+                .addGap(363, 363, 363)
+                .addComponent(jLabel17)
+                .addContainerGap(470, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSevenLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton7)
+                .addGap(68, 68, 68))
         );
         panelSevenLayout.setVerticalGroup(
             panelSevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 758, Short.MAX_VALUE)
+            .addGroup(panelSevenLayout.createSequentialGroup()
+                .addGap(71, 71, 71)
+                .addComponent(jLabel17)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 613, Short.MAX_VALUE)
+                .addComponent(jButton7)
+                .addGap(33, 33, 33))
         );
 
         mainPanel.add(panelSeven, "panelSeven");
+
+        jLabel18.setText("8");
+
+        jButton8.setText("jButton8");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelEightLayout = new javax.swing.GroupLayout(panelEight);
         panelEight.setLayout(panelEightLayout);
         panelEightLayout.setHorizontalGroup(
             panelEightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 840, Short.MAX_VALUE)
+            .addGroup(panelEightLayout.createSequentialGroup()
+                .addGap(394, 394, 394)
+                .addComponent(jLabel18)
+                .addContainerGap(439, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelEightLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton8)
+                .addGap(65, 65, 65))
         );
         panelEightLayout.setVerticalGroup(
             panelEightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 758, Short.MAX_VALUE)
+            .addGroup(panelEightLayout.createSequentialGroup()
+                .addGap(108, 108, 108)
+                .addComponent(jLabel18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 560, Short.MAX_VALUE)
+                .addComponent(jButton8)
+                .addGap(49, 49, 49))
         );
 
         mainPanel.add(panelEight, "panelEight");
+
+        jLabel19.setText("9");
+
+        jButton9.setText("jButton9");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelNineLayout = new javax.swing.GroupLayout(panelNine);
         panelNine.setLayout(panelNineLayout);
         panelNineLayout.setHorizontalGroup(
             panelNineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 840, Short.MAX_VALUE)
+            .addGroup(panelNineLayout.createSequentialGroup()
+                .addGap(380, 380, 380)
+                .addComponent(jLabel19)
+                .addContainerGap(453, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelNineLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton9)
+                .addGap(44, 44, 44))
         );
         panelNineLayout.setVerticalGroup(
             panelNineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 758, Short.MAX_VALUE)
+            .addGroup(panelNineLayout.createSequentialGroup()
+                .addGap(101, 101, 101)
+                .addComponent(jLabel19)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 583, Short.MAX_VALUE)
+                .addComponent(jButton9)
+                .addGap(33, 33, 33))
         );
 
         mainPanel.add(panelNine, "panelNine");
+
+        jLabel20.setText("10");
+
+        jButton10.setText("jButton10");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelTenLayout = new javax.swing.GroupLayout(panelTen);
         panelTen.setLayout(panelTenLayout);
         panelTenLayout.setHorizontalGroup(
             panelTenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 840, Short.MAX_VALUE)
+            .addGroup(panelTenLayout.createSequentialGroup()
+                .addGap(358, 358, 358)
+                .addComponent(jLabel20)
+                .addContainerGap(468, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTenLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton10)
+                .addGap(48, 48, 48))
         );
         panelTenLayout.setVerticalGroup(
             panelTenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 758, Short.MAX_VALUE)
+            .addGroup(panelTenLayout.createSequentialGroup()
+                .addGap(87, 87, 87)
+                .addComponent(jLabel20)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 596, Short.MAX_VALUE)
+                .addComponent(jButton10)
+                .addGap(34, 34, 34))
         );
 
         mainPanel.add(panelTen, "panelTen");
+
+        jLabel21.setText("11");
+
+        jButton11.setText("jButton11");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelElevenLayout = new javax.swing.GroupLayout(panelEleven);
         panelEleven.setLayout(panelElevenLayout);
         panelElevenLayout.setHorizontalGroup(
             panelElevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 840, Short.MAX_VALUE)
+            .addGroup(panelElevenLayout.createSequentialGroup()
+                .addGap(373, 373, 373)
+                .addComponent(jLabel21)
+                .addContainerGap(453, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelElevenLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton11)
+                .addGap(90, 90, 90))
         );
         panelElevenLayout.setVerticalGroup(
             panelElevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 758, Short.MAX_VALUE)
+            .addGroup(panelElevenLayout.createSequentialGroup()
+                .addGap(101, 101, 101)
+                .addComponent(jLabel21)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 578, Short.MAX_VALUE)
+                .addComponent(jButton11)
+                .addGap(38, 38, 38))
         );
 
         mainPanel.add(panelEleven, "panelEleven");
+
+        jLabel22.setText("12");
+
+        jButton12.setText("jButton12");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelTwelveLayout = new javax.swing.GroupLayout(panelTwelve);
         panelTwelve.setLayout(panelTwelveLayout);
         panelTwelveLayout.setHorizontalGroup(
             panelTwelveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 840, Short.MAX_VALUE)
+            .addGroup(panelTwelveLayout.createSequentialGroup()
+                .addGap(367, 367, 367)
+                .addComponent(jLabel22)
+                .addContainerGap(459, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTwelveLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton12)
+                .addGap(64, 64, 64))
         );
         panelTwelveLayout.setVerticalGroup(
             panelTwelveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 758, Short.MAX_VALUE)
+            .addGroup(panelTwelveLayout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addComponent(jLabel22)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 640, Short.MAX_VALUE)
+                .addComponent(jButton12)
+                .addGap(35, 35, 35))
         );
 
         mainPanel.add(panelTwelve, "panelTwelve");
+
+        jLabel23.setText("13");
+
+        jButton13.setText("jButton13");
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelThirteenLayout = new javax.swing.GroupLayout(panelThirteen);
         panelThirteen.setLayout(panelThirteenLayout);
         panelThirteenLayout.setHorizontalGroup(
             panelThirteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 840, Short.MAX_VALUE)
+            .addGroup(panelThirteenLayout.createSequentialGroup()
+                .addGap(352, 352, 352)
+                .addComponent(jLabel23)
+                .addContainerGap(474, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelThirteenLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton13)
+                .addGap(86, 86, 86))
         );
         panelThirteenLayout.setVerticalGroup(
             panelThirteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 758, Short.MAX_VALUE)
+            .addGroup(panelThirteenLayout.createSequentialGroup()
+                .addGap(57, 57, 57)
+                .addComponent(jLabel23)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 613, Short.MAX_VALUE)
+                .addComponent(jButton13)
+                .addGap(47, 47, 47))
         );
 
         mainPanel.add(panelThirteen, "panelThirteen");
+
+        jLabel24.setText("14");
+
+        jButton14.setText("jButton14");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelFourteenLayout = new javax.swing.GroupLayout(panelFourteen);
         panelFourteen.setLayout(panelFourteenLayout);
         panelFourteenLayout.setHorizontalGroup(
             panelFourteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 840, Short.MAX_VALUE)
+            .addGroup(panelFourteenLayout.createSequentialGroup()
+                .addGap(380, 380, 380)
+                .addComponent(jLabel24)
+                .addContainerGap(446, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFourteenLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton14)
+                .addGap(52, 52, 52))
         );
         panelFourteenLayout.setVerticalGroup(
             panelFourteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 758, Short.MAX_VALUE)
+            .addGroup(panelFourteenLayout.createSequentialGroup()
+                .addGap(94, 94, 94)
+                .addComponent(jLabel24)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 574, Short.MAX_VALUE)
+                .addComponent(jButton14)
+                .addGap(49, 49, 49))
         );
 
         mainPanel.add(panelFourteen, "panelFourteen");
+
+        jLabel25.setText("15");
+
+        jButton15.setText("jButton15");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelFifteenLayout = new javax.swing.GroupLayout(panelFifteen);
         panelFifteen.setLayout(panelFifteenLayout);
         panelFifteenLayout.setHorizontalGroup(
             panelFifteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 840, Short.MAX_VALUE)
+            .addGroup(panelFifteenLayout.createSequentialGroup()
+                .addGap(393, 393, 393)
+                .addComponent(jLabel25)
+                .addContainerGap(433, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFifteenLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton15)
+                .addGap(60, 60, 60))
         );
         panelFifteenLayout.setVerticalGroup(
             panelFifteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 758, Short.MAX_VALUE)
+            .addGroup(panelFifteenLayout.createSequentialGroup()
+                .addGap(65, 65, 65)
+                .addComponent(jLabel25)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 622, Short.MAX_VALUE)
+                .addComponent(jButton15)
+                .addGap(30, 30, 30))
         );
 
         mainPanel.add(panelFifteen, "panelFifteen");
+
+        jLabel26.setText("16");
+
+        jButton16.setText("jButton16");
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelSixteenLayout = new javax.swing.GroupLayout(panelSixteen);
         panelSixteen.setLayout(panelSixteenLayout);
         panelSixteenLayout.setHorizontalGroup(
             panelSixteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 840, Short.MAX_VALUE)
+            .addGroup(panelSixteenLayout.createSequentialGroup()
+                .addGap(378, 378, 378)
+                .addComponent(jLabel26)
+                .addContainerGap(448, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSixteenLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton16)
+                .addGap(55, 55, 55))
         );
         panelSixteenLayout.setVerticalGroup(
             panelSixteenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 758, Short.MAX_VALUE)
+            .addGroup(panelSixteenLayout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addComponent(jLabel26)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 613, Short.MAX_VALUE)
+                .addComponent(jButton16)
+                .addGap(42, 42, 42))
         );
 
         mainPanel.add(panelSixteen, "panelSixteen");
+
+        jLabel27.setText("17");
+
+        jButton17.setText("jButton17");
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelSeventeenLayout = new javax.swing.GroupLayout(panelSeventeen);
         panelSeventeen.setLayout(panelSeventeenLayout);
         panelSeventeenLayout.setHorizontalGroup(
             panelSeventeenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 840, Short.MAX_VALUE)
+            .addGroup(panelSeventeenLayout.createSequentialGroup()
+                .addGap(340, 340, 340)
+                .addComponent(jLabel27)
+                .addContainerGap(486, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSeventeenLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton17)
+                .addGap(64, 64, 64))
         );
         panelSeventeenLayout.setVerticalGroup(
             panelSeventeenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 758, Short.MAX_VALUE)
+            .addGroup(panelSeventeenLayout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addComponent(jLabel27)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 607, Short.MAX_VALUE)
+                .addComponent(jButton17)
+                .addGap(48, 48, 48))
         );
 
         mainPanel.add(panelSeventeen, "panelSeventeen");
@@ -1046,11 +1350,6 @@ public class AutoUkis extends javax.swing.JFrame {
         CardLayout card = (CardLayout) mainPanel.getLayout();
         card.show(mainPanel, "panelTwelve");
     }//GEN-LAST:event_buttonTwelveActionPerformed
-
-    private void buttonThirteenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonThirteenActionPerformed
-        CardLayout card = (CardLayout) mainPanel.getLayout();
-        card.show(mainPanel, "Thirteen");
-    }//GEN-LAST:event_buttonThirteenActionPerformed
 
     private void buttonFourteenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonFourteenActionPerformed
         CardLayout card = (CardLayout) mainPanel.getLayout();
@@ -1359,6 +1658,67 @@ public class AutoUkis extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jComboBox2ActionPerformed
 
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        CardLayout card = (CardLayout) mainPanel.getLayout();
+        card.show(mainPanel, "panelOne");
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        CardLayout card = (CardLayout) mainPanel.getLayout();
+        card.show(mainPanel, "panelOne");
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        CardLayout card = (CardLayout) mainPanel.getLayout();
+        card.show(mainPanel, "panelOne");
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        CardLayout card = (CardLayout) mainPanel.getLayout();
+        card.show(mainPanel, "panelOne");
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        CardLayout card = (CardLayout) mainPanel.getLayout();
+        card.show(mainPanel, "panelOne");
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        CardLayout card = (CardLayout) mainPanel.getLayout();
+        card.show(mainPanel, "panelOne");
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        CardLayout card = (CardLayout) mainPanel.getLayout();
+        card.show(mainPanel, "panelOne");
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        CardLayout card = (CardLayout) mainPanel.getLayout();
+        card.show(mainPanel, "panelOne");
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        CardLayout card = (CardLayout) mainPanel.getLayout();
+        card.show(mainPanel, "panelOne");
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        CardLayout card = (CardLayout) mainPanel.getLayout();
+        card.show(mainPanel, "panelOne");
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        CardLayout card = (CardLayout) mainPanel.getLayout();
+        card.show(mainPanel, "panelOne");
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        CardLayout card = (CardLayout) mainPanel.getLayout();
+        card.show(mainPanel, "panelOne");
+    }//GEN-LAST:event_jButton17ActionPerformed
+
     private void jPasswordField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordField1KeyPressed
        if (evt.getKeyCode() == KeyEvent.VK_ENTER)
            jButton5.doClick();
@@ -1414,16 +1774,27 @@ public class AutoUkis extends javax.swing.JFrame {
     private javax.swing.JButton buttonSix;
     private javax.swing.JButton buttonSixteen;
     private javax.swing.JButton buttonTen;
-    private javax.swing.JButton buttonThirteen;
     private javax.swing.JButton buttonTwelve;
     private javax.swing.JButton buttonTwo;
     private javax.swing.JButton done;
     private javax.swing.JRadioButton ganyklos;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
@@ -1433,7 +1804,19 @@ public class AutoUkis extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
