@@ -13,7 +13,7 @@ public class Prisijungimas {
 
     public boolean prisijungti(String hashcode) throws IOException, FileNotFoundException {
 
-      BufferedReader br = new BufferedReader(new FileReader("D:\\PSI\\autoukis\\AutoUkis\\prisijungimai.txt"));  
+      BufferedReader br = new BufferedReader(new FileReader("prisijungimai.txt"));  
         boolean rado = false;
         try {
             
