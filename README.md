@@ -3,7 +3,7 @@ Antro kurso PSI I projekto prototipas
 
 
 To include jSoup library:
-1. right-click libraries
-2. select "Add JAR/Folder"
-3. find jSoup.jar
-4. you're good to go
+* right-click libraries;
+* select "Add JAR/Folder";
+* find jSoup.jar;
+* you're good to go;
