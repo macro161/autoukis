@@ -14,13 +14,14 @@ import java.util.logging.Logger;
 import javax.swing.JLabel;
 import javax.swing.JTextArea;
 import javax.swing.JOptionPane;
+import javax.swing.SwingConstants;
 import javax.swing.Timer;
 
 public class AutoUkis extends javax.swing.JFrame {
 
     private ArrayList<Gyvunas> gyvunai = new ArrayList<>();
-    private List<AriamiLaukai> ariamiLaukai = new ArrayList<>();
-    private ZemesPlotas plotas;
+    private List<AriamasLaukas> ariamiLaukai = new ArrayList<>();
+    private ZemesTeritorija plotas;
     private Map map = new Map();
     private Point p1, p2;
     private Color spalva;
@@ -1565,7 +1566,7 @@ public class AutoUkis extends javax.swing.JFrame {
     private void panelThreeMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelThreeMouseDragged
 
         p2 = panelThree.getMousePosition();
-        plotas = new ZemesPlotas(spalva, p1, p2, "");
+        plotas = new ZemesTeritorija(spalva, p1, p2, "");
         map.setPlotas(plotas);
         panelThree.repaint();
     }//GEN-LAST:event_panelThreeMouseDragged
@@ -1576,19 +1577,19 @@ public class AutoUkis extends javax.swing.JFrame {
         p2 = panelThree.getMousePosition();
         if (spalva == Color.green) {
             msg = "ok";
-            plotas = new Ganyklos(spalva, p1, p2, "Ganyklos");
+            plotas = new Ganykla(spalva, p1, p2, "Ganykla");
 
         }
         if (spalva == Color.blue) {
             msg = "ok";
-            plotas = new UkiniaiPastatai(spalva, p1, p2, "Ukiniai Pastatai");
+            plotas = new UkinisPastatas(spalva, p1, p2, "Ukinis Pastatas");
         }
         if (spalva == Color.magenta) {
             msg = "ok";
-            plotas = new AriamiLaukai(spalva, p1, p2, "Ariami Laukai", new ZemesParametrai("Laukas", 0, 0, 0, 0, 0));
+            plotas = new AriamasLaukas(spalva, p1, p2, "Ariamas Laukas", new ZemesParametrai("Laukas", 0, 0, 0, 0, 0));
             if (map.check(p1) && map.check(p2)) {
                 if ((Math.abs(plotas.getP1().x - plotas.getP2().x) > 5) && (Math.abs(plotas.getP1().y - plotas.getP2().y) > 5)) {
-                    ariamiLaukai.add((AriamiLaukai) plotas);
+                    ariamiLaukai.add((AriamasLaukas) plotas);
                 }
             }
         }
@@ -1622,22 +1623,26 @@ public class AutoUkis extends javax.swing.JFrame {
 
     private void panelThreeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelThreeMouseClicked
 
-        JTextArea label = new JTextArea();
-        label.setEditable(false);
+        JLabel label = new JLabel();
 
-        panelThree.add(label);
+        
         String text;
         Point x = panelThree.getMousePosition();
 
-        label.setBounds(x.x, x.y, 150, 30);
+        label.setBounds(x.x, x.y, 130, 30);
+        label.setAlignmentY(SwingConstants.TOP);
+        label.setAlignmentX(SwingConstants.TOP);
+        panelThree.add(label);
         if (!map.check(x)) {
-            if (map.getPlotas() instanceof AriamiLaukai) {
-                AriamiLaukai laukai = (AriamiLaukai) map.getPlotas();
-                text = String.format(laukai.getMsg()
-                        + "Dregmė: " + (laukai.getParametrai().getDregme())
-                        + "Ph: " + (laukai.getParametrai().getPh())
-                        + "Storis: " + (laukai.getParametrai().getStoris())
-                        + "Smėlingumas: " + (laukai.getParametrai().getSmelisProcentais()) + "%");
+            if (map.getPlotas() instanceof AriamasLaukas) {
+                label.setSize(130, 90);
+                plotas = map.getPlotas();
+                AriamasLaukas laukai = (AriamasLaukas) plotas;
+                label.setText ("<html><b>"+laukai.getMsg() + "</b><br>"
+                        + "Dregmė: " + (laukai.getParametrai().getDregme()) + "<br>"
+                        + "Ph: " + (laukai.getParametrai().getPh()) + "<br>" 
+                        + "Storis: " + (laukai.getParametrai().getStoris()) + "<br>"
+                        + "Smėlingumas: " + (laukai.getParametrai().getSmelisProcentais()) + "%</html>");
             } else {
                 label.setText(map.getPlotas().getMsg());
             }
