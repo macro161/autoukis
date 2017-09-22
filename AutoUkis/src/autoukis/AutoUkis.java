@@ -677,6 +677,7 @@ public class AutoUkis extends javax.swing.JFrame {
 
         panelThree.setMaximumSize(new java.awt.Dimension(840, 650));
         panelThree.setMinimumSize(new java.awt.Dimension(840, 650));
+        panelThree.setName(""); // NOI18N
         panelThree.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 panelThreeMouseDragged(evt);
@@ -1560,33 +1561,52 @@ public class AutoUkis extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void panelThreeMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelThreeMousePressed
+        if (map.getMastelis() == 0) {
+            JOptionPane.showMessageDialog(null, "Prieš piešdami pasirinkite mąstelį!", "Klaida", JOptionPane.INFORMATION_MESSAGE);
+            return;
+
+        }
+         if (map.getSleptiNustatymus() == 1) {
+            return;
+        }
         p1 = panelThree.getMousePosition();
     }//GEN-LAST:event_panelThreeMousePressed
 
     private void panelThreeMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelThreeMouseDragged
-
+        if (map.getMastelis() == 0) {
+            return;
+        }
+        if (map.getSleptiNustatymus() == 1) {
+            return;
+        }
         p2 = panelThree.getMousePosition();
-        plotas = new ZemesTeritorija(spalva, p1, p2, "");
+        plotas = new ZemesTeritorija(spalva, p1, p2, "", 0);
         map.setPlotas(plotas);
         panelThree.repaint();
     }//GEN-LAST:event_panelThreeMouseDragged
 
     private void panelThreeMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelThreeMouseReleased
+        if (map.getMastelis() == 0) {
+            return;
+        }
+        if (map.getSleptiNustatymus() == 1) {
+            return;
+        }
         String msg;
         msg = "";
         p2 = panelThree.getMousePosition();
         if (spalva == Color.green) {
             msg = "ok";
-            plotas = new Ganykla(spalva, p1, p2, "Ganykla");
+            plotas = new Ganykla(spalva, p1, p2, "Ganykla", map.getMastelis());
 
         }
         if (spalva == Color.blue) {
             msg = "ok";
-            plotas = new UkinisPastatas(spalva, p1, p2, "Ukinis Pastatas");
+            plotas = new UkinisPastatas(spalva, p1, p2, "Ukinis Pastatas", map.getMastelis());
         }
         if (spalva == Color.magenta) {
             msg = "ok";
-            plotas = new AriamasLaukas(spalva, p1, p2, "Ariamas Laukas", new ZemesParametrai("Laukas", 0, 0, 0, 0, 0));
+            plotas = new AriamasLaukas(spalva, p1, p2, "Ariamas Laukas", map.getMastelis(), new ZemesParametrai("Laukas", 0, 0, 0, 0, 0));
             if (map.check(p1) && map.check(p2)) {
                 if ((Math.abs(plotas.getP1().x - plotas.getP2().x) > 5) && (Math.abs(plotas.getP1().y - plotas.getP2().y) > 5)) {
                     ariamiLaukai.add((AriamasLaukas) plotas);
@@ -1625,26 +1645,27 @@ public class AutoUkis extends javax.swing.JFrame {
 
         JLabel label = new JLabel();
 
-        
         String text;
         Point x = panelThree.getMousePosition();
 
-        label.setBounds(x.x, x.y, 130, 30);
+        label.setBounds(x.x, x.y, 130, 50);
         label.setAlignmentY(SwingConstants.TOP);
         label.setAlignmentX(SwingConstants.TOP);
         panelThree.add(label);
         if (!map.check(x)) {
             if (map.getPlotas() instanceof AriamasLaukas) {
-                label.setSize(130, 90);
+                label.setSize(130, 110);
                 plotas = map.getPlotas();
                 AriamasLaukas laukai = (AriamasLaukas) plotas;
-                label.setText ("<html><b>"+laukai.getMsg() + "</b><br>"
+                label.setText("<html><b>" + laukai.getMsg() + "</b><br>"
+                        + "Plotas: " + (String.format("%.1f", laukai.getPlotas())) + " m<sup>2</sup><br>"
                         + "Dregmė: " + (laukai.getParametrai().getDregme()) + "<br>"
-                        + "Ph: " + (laukai.getParametrai().getPh()) + "<br>" 
+                        + "Ph: " + (laukai.getParametrai().getPh()) + "<br>"
                         + "Storis: " + (laukai.getParametrai().getStoris()) + "<br>"
                         + "Smėlingumas: " + (laukai.getParametrai().getSmelisProcentais()) + "%</html>");
             } else {
-                label.setText(map.getPlotas().getMsg());
+                label.setText("<html><b>" + map.getPlotas().getMsg() + "</b><br>"
+                        + "Plotas: " + (String.format("%.1f", map.getPlotas().getPlotas())) + " m<sup>2</sup></html>");
             }
         }
         label.setVisible(true);
@@ -1655,7 +1676,7 @@ public class AutoUkis extends javax.swing.JFrame {
                 label.setVisible(false);
             }
         },
-                2000
+                4000
         );
     }//GEN-LAST:event_panelThreeMouseClicked
 
@@ -1665,21 +1686,14 @@ public class AutoUkis extends javax.swing.JFrame {
 
     private void mastelisSliderStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_mastelisSliderStateChanged
         mastelisLabel.setText("Mąstelis: 1:" + mastelisSlider.getValue());
+        map.setMastelis(mastelisSlider.getValue());
     }//GEN-LAST:event_mastelisSliderStateChanged
 
-    Timer timer = new Timer(3000, new ActionListener() {
-        public void actionPerformed(ActionEvent e) {
-            panelThree.repaint();
-            timer.start();
-        }
-
-    });
     private void doneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doneActionPerformed
         map.setSleptiNustatymus(1);
         map.setMastelis(mastelisSlider.getValue());
         tech.judejimoGreitis();
         tech.arimas();
-        timer.start();
         Ukiniai.setVisible(false);
         ariama.setVisible(false);
         ganyklos.setVisible(false);
