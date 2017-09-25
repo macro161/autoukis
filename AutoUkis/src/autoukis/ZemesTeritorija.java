@@ -9,12 +9,14 @@ public class ZemesTeritorija {
     private Point p1;
     private Point p2;
     private String msg;
+    private double plotas;
 
-    public ZemesTeritorija(Color spalva, Point p1, Point p2, String msg) {
+    public ZemesTeritorija(Color spalva, Point p1, Point p2, String msg, int mastelis) {
         this.spalva = spalva;
         this.p1 = p1;
         this.p2 = p2;
         this.msg = msg;
+        this.plotas = apskaiciuotiPlota(mastelis);
     }
 
     public Color getSpalva() {
@@ -47,6 +49,13 @@ public class ZemesTeritorija {
 
     public void setMsg(String msg) {
         this.msg = msg;
+    }
+    public double getPlotas() {
+        return plotas;
+    }
+    public double apskaiciuotiPlota(int mastelis) {
+
+        return (double)(((Math.abs(p1.x - p2.x) * Math.abs(p1.y - p2.y))*(((double)(0.2*0.14*mastelis*mastelis))))/10000);
     }
 
 }
