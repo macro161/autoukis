@@ -13,7 +13,7 @@ import java.util.TimerTask;
 
 public class UkioTechnika {
 
-    private List<ZemesPlotas> plotai;
+    private List<ZemesTeritorija> plotai;
     private Map map;
     private double greitis = 0; // 1 cm apie 40 pixeliu, tarkim kombainas važiuoja 5km/h = 1.38m/s = 138cm/s = (3.45px/s) divided by mastelis
 

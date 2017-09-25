@@ -15,8 +15,8 @@ import javax.swing.JPanel;
 
 public class Map extends JPanel {
 
-    private ZemesPlotas plotas;
-    private List<ZemesPlotas> plotai = new ArrayList<>();
+    private ZemesTeritorija plotas;
+    private List<ZemesTeritorija> plotai = new ArrayList<>();
     private int sleptiNustatymus = 0;
     private int mastelis = 0;
 
@@ -51,15 +51,12 @@ public class Map extends JPanel {
         }
         g.setColor(Color.BLACK);
         if (getPlotai() != null) {
-            for (ZemesPlotas temp : getPlotai()) {
+            for (ZemesTeritorija temp : getPlotai()) {
                 g.setColor(temp.getSpalva());
                 g.drawLine(temp.getP1().x, temp.getP1().y, temp.getP2().x, temp.getP1().y);
                 g.drawLine(temp.getP1().x, temp.getP1().y, temp.getP1().x, temp.getP2().y);
                 g.drawLine(temp.getP2().x, temp.getP2().y, temp.getP1().x, temp.getP2().y);
                 g.drawLine(temp.getP2().x, temp.getP2().y, temp.getP2().x, temp.getP1().y);
-                if (temp instanceof AriamiLaukai) {
-                    System.out.println("Sveiki");
-                }
             }
         }
         if (getPlotas() != null) {
@@ -71,7 +68,7 @@ public class Map extends JPanel {
         }
     }
 
-    public void updateList(ZemesPlotas plotas) {
+    public void updateList(ZemesTeritorija plotas) {
         if (check(plotas.getP1()) && check(plotas.getP2())) {
             if ((Math.abs(plotas.getP1().x - plotas.getP2().x) > 5) && (Math.abs(plotas.getP1().y - plotas.getP2().y) > 5)) {
                 getPlotai().add(plotas);
@@ -82,10 +79,10 @@ public class Map extends JPanel {
 
     public boolean check(Point p) {
         boolean okay = true;
-        for (ZemesPlotas temp : plotai) {
+        for (ZemesTeritorija temp : plotai) {
             if ((((p.x > temp.getP1().x) && (p.x < temp.getP2().x)) || ((p.x < temp.getP1().x) && (p.x > temp.getP2().x))) && (((p.y > temp.getP1().y) && (p.y < temp.getP2().y)) || ((p.y < temp.getP1().y) && (p.y > temp.getP2().y)))) {
                 okay = false;
-                plotas = temp;
+                this.plotas = temp;
             }
         }
         return okay;
@@ -94,21 +91,21 @@ public class Map extends JPanel {
     /**
      * @return the plotas
      */
-    public ZemesPlotas getPlotas() {
+    public ZemesTeritorija getPlotas() {
         return plotas;
     }
 
     /**
      * @param plotas the plotas to set
      */
-    public void setPlotas(ZemesPlotas plotas) {
+    public void setPlotas(ZemesTeritorija plotas) {
         this.plotas = plotas;
     }
 
     /**
      * @return the plotai
      */
-    public List<ZemesPlotas> getPlotai() {
+    public List<ZemesTeritorija> getPlotai() {
         return plotai;
     }
 

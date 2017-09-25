@@ -11,23 +11,25 @@ public class Prisijungimas {
 
     }
 
-    public boolean prisijungti(String hashcode) throws IOException, FileNotFoundException {
+    public boolean prisijungti(String name, String pass) throws IOException, FileNotFoundException {
 
       BufferedReader br = new BufferedReader(new FileReader("prisijungimai.txt"));  
         boolean rado = false;
         try {
             
             StringBuilder sb = new StringBuilder();
-            String hashFromFile = br.readLine();
-
-            int count = 1;
-            while (hashFromFile != null) {
-     
-                if (hashcode.equals(hashFromFile)) {
+            String line = br.readLine();
+            String[] splitLine = line.split(" ");
+            String hash = Integer.toString((name + pass).hashCode());
+            String hashFromFile = splitLine[1];
+            while (line != null) {
+                splitLine = line.split(" ");
+                hashFromFile = splitLine[1];
+                if (hash.equals(hashFromFile)) {
 
                     rado = true;
                 }
-                hashFromFile = br.readLine();
+                line = br.readLine();
             }
 
 
