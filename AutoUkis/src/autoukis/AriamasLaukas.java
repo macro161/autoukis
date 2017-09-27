@@ -2,8 +2,9 @@ package autoukis;
 
 import java.awt.Color;
 import java.awt.Point;
+import java.io.Serializable;
 
-public class AriamasLaukas extends ZemesTeritorija {
+public class AriamasLaukas extends ZemesTeritorija implements Serializable{
     
     private ZemesParametrai parametrai; 
     private int apdirbtasPlotas = 0;

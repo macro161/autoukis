@@ -7,27 +7,27 @@ import java.awt.Point;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.io.Serializable;
 import static java.lang.Math.abs;
 import java.util.ArrayList;
 import java.util.List;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
-public class Map extends JPanel {
+public class Map extends JPanel implements Serializable{
 
     private ZemesTeritorija plotas;
     private List<ZemesTeritorija> plotai = new ArrayList<>();
-    private int sleptiNustatymus = 0;
-    private int mastelis = 0;
-
+    private int sleptiNustatymus;
+    private int mastelis;
+    public Map() {
+        sleptiNustatymus = 0;
+        mastelis = 0;
+    }
     @Override
     public void paintComponent(Graphics g) {
-
-        if (plotas != null) {
-            if (!(check(plotas.getP1()) && check(plotas.getP2()))) {
-                return;
-            }
-        }
+        System.out.println("repaint");
+        System.out.println(getSleptiNustatymus());
         super.paintComponent(g);
         setSize(800, 650);
         BufferedImage img = null;
@@ -40,6 +40,7 @@ public class Map extends JPanel {
         setBackground(Color.WHITE);
         g.setColor(Color.LIGHT_GRAY);
         g.fillRect(0, 0, 800, 70);
+        System.out.println(getSleptiNustatymus());
         if (getSleptiNustatymus() == 0) {
             g.fillRect(0, 500, 550, 150);
             g.setColor(Color.BLUE);
@@ -50,8 +51,14 @@ public class Map extends JPanel {
             g.drawRect(4, 512, 10, 10);
         }
         g.setColor(Color.BLACK);
-        if (getPlotai() != null) {
-            for (ZemesTeritorija temp : getPlotai()) {
+        System.out.println("plotai");
+        if (plotai == null)
+            System.out.println("nuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu");
+        if (plotai != null) {
+            System.out.println(plotai.size() + "  dys");
+            for (ZemesTeritorija temp : plotai) {
+                System.out.println("123");
+                
                 g.setColor(temp.getSpalva());
                 g.drawLine(temp.getP1().x, temp.getP1().y, temp.getP2().x, temp.getP1().y);
                 g.drawLine(temp.getP1().x, temp.getP1().y, temp.getP1().x, temp.getP2().y);
