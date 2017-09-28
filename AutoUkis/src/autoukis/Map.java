@@ -26,7 +26,7 @@ public class Map extends JPanel implements Serializable{
     }
     @Override
     public void paintComponent(Graphics g) {
-        System.out.println("repaint");
+        System.out.println("Is MAP");
         System.out.println(getSleptiNustatymus());
         super.paintComponent(g);
         setSize(800, 650);
@@ -40,7 +40,6 @@ public class Map extends JPanel implements Serializable{
         setBackground(Color.WHITE);
         g.setColor(Color.LIGHT_GRAY);
         g.fillRect(0, 0, 800, 70);
-        System.out.println(getSleptiNustatymus());
         if (getSleptiNustatymus() == 0) {
             g.fillRect(0, 500, 550, 150);
             g.setColor(Color.BLUE);
@@ -51,13 +50,9 @@ public class Map extends JPanel implements Serializable{
             g.drawRect(4, 512, 10, 10);
         }
         g.setColor(Color.BLACK);
-        System.out.println("plotai");
-        if (plotai == null)
-            System.out.println("nuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu");
         if (plotai != null) {
             System.out.println(plotai.size() + "  dys");
             for (ZemesTeritorija temp : plotai) {
-                System.out.println("123");
                 
                 g.setColor(temp.getSpalva());
                 g.drawLine(temp.getP1().x, temp.getP1().y, temp.getP2().x, temp.getP1().y);
@@ -101,6 +96,10 @@ public class Map extends JPanel implements Serializable{
     public ZemesTeritorija getPlotas() {
         return plotas;
     }
+    public void rep() {
+        System.out.println("is rep");
+        this.repaint();
+    }
 
     /**
      * @param plotas the plotas to set
@@ -114,6 +113,9 @@ public class Map extends JPanel implements Serializable{
      */
     public List<ZemesTeritorija> getPlotai() {
         return plotai;
+    }
+    public void setPlotai(List<ZemesTeritorija> plotai) {
+        this.plotai = plotai;
     }
 
     /**

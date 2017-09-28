@@ -1702,12 +1702,15 @@ public class AutoUkis extends javax.swing.JFrame implements Serializable {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         boolean x = false;
+        panelThree.repaint();
+        System.out.println("po repaint");
         try {
             if ((jTextField1.getText().contains(" ")) || (jPasswordField1.getText().contains(" "))) {
                 JOptionPane.showMessageDialog(null, "Vardas ir slaptažodis turi būti be tarpų", "Klaida", JOptionPane.INFORMATION_MESSAGE);
             } else {
                 x = prs.prisijungti(jTextField1.getText(), jPasswordField1.getText());
             }
+            
             if (x == true) {
                 CardLayout card = (CardLayout) mainPanel.getLayout();
                 card.show(mainPanel, "panelOne");
@@ -1727,7 +1730,14 @@ public class AutoUkis extends javax.swing.JFrame implements Serializable {
             }
             System.out.println("po");
             gyvunai = (List<Gyvunas>) in.readObject();
-            map = (Map) in.readObject();
+            Map mapTemp = (Map) in.readObject();
+            map.setMastelis(mapTemp.getMastelis());
+            map.setSleptiNustatymus(mapTemp.getSleptiNustatymus());
+            map.setPlotai(mapTemp.getPlotai());
+            panelThree.repaint();
+            //panelThree = map;
+            //panelThree.repaint();
+            map.rep();
             tech = (UkioTechnika) in.readObject();
             in.close();
             done.doClick();
