@@ -1,0 +1,7 @@
+﻿Sun Oct 01 21:50:51 EEST 2017 : Užregistruotas naujas vartotojas, name: justas
+Sun Oct 01 21:50:55 EEST 2017 : Prisijungė vartotojas: justas
+Sun Oct 01 21:51:01 EEST 2017 : Pridėtas naujas gyvūnas, id: 1
+Sun Oct 01 21:51:05 EEST 2017 : Pridėtas naujas gyvūnas, id: 2
+Sun Oct 01 21:51:07 EEST 2017 : vartotojas justas baigė darbą
+Sun Oct 01 21:51:18 EEST 2017 : Prisijungė vartotojas: 
+Sun Oct 01 21:51:21 EEST 2017 : vartotojas  baigė darbą

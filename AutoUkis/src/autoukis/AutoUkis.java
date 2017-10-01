@@ -25,9 +25,11 @@ public class AutoUkis extends javax.swing.JFrame implements Serializable {
     private Map map = new Map();
     private Point p1, p2;
     private Color spalva;
+    String currentUser = null;
     private UkioTechnika tech = new UkioTechnika(map, 0);
     private Prisijungimas prs = new Prisijungimas();
     private Registracija rgs = new Registracija();
+    private EventReporter reporter = new EventReporter("Reports.txt");
 
     public AutoUkis() {
         initComponents();
@@ -1535,6 +1537,7 @@ public class AutoUkis extends javax.swing.JFrame implements Serializable {
         textFieldFive.setText("Suvartojamas maistas kilogramais");
         textFieldSix.setText("Lokacija");
         jComboBox1.addItem("" + gyv.getId());
+        reporter.reportEvent("Pridėtas naujas gyvūnas, id: " + gyv.getId());
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void panelThreeMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelThreeMousePressed
@@ -1662,11 +1665,9 @@ public class AutoUkis extends javax.swing.JFrame implements Serializable {
     }//GEN-LAST:event_mastelisSliderStateChanged
 
     private void doneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doneActionPerformed
-        System.out.println(map.getSleptiNustatymus());
         if (map.getSleptiNustatymus() == 0) {
             map.setMastelis(mastelisSlider.getValue());
         }
-        System.out.println(map.getMastelis());
         map.setSleptiNustatymus(1);
         tech.judejimoGreitis();
         tech.arimas();
@@ -1703,8 +1704,7 @@ public class AutoUkis extends javax.swing.JFrame implements Serializable {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         boolean x = false;
         panelThree.repaint();
-        System.out.println("po repaint");
-        try {
+         try {
             if ((jTextField1.getText().contains(" ")) || (jPasswordField1.getText().contains(" "))) {
                 JOptionPane.showMessageDialog(null, "Vardas ir slaptažodis turi būti be tarpų", "Klaida", JOptionPane.INFORMATION_MESSAGE);
             } else {
@@ -1712,6 +1712,8 @@ public class AutoUkis extends javax.swing.JFrame implements Serializable {
             }
             
             if (x == true) {
+                reporter.reportEvent("Prisijungė vartotojas: " + jTextField1.getText());
+                currentUser = jTextField1.getText();
                 CardLayout card = (CardLayout) mainPanel.getLayout();
                 card.show(mainPanel, "panelOne");
             } else {
@@ -1724,11 +1726,10 @@ public class AutoUkis extends javax.swing.JFrame implements Serializable {
         try {
             FileInputStream fis = new FileInputStream("Ukis.ser");
             ObjectInputStream in = new ObjectInputStream(fis);
-            System.out.println("pr");
+
             if (fis.available() == 0) {
                 return;
             }
-            System.out.println("po");
             gyvunai = (List<Gyvunas>) in.readObject();
             Map mapTemp = (Map) in.readObject();
             map.setMastelis(mapTemp.getMastelis());
@@ -1740,15 +1741,13 @@ public class AutoUkis extends javax.swing.JFrame implements Serializable {
             map.rep();
             tech = (UkioTechnika) in.readObject();
             in.close();
-            done.doClick();
+            if (map.getSleptiNustatymus() == 1)
+                done.doClick();
             for (Gyvunas gyv : gyvunai) {
                 jComboBox1.addItem("" + gyv.getId());
             }
-            System.out.println("dydis " + map.getPlotai().size());
-            System.out.println("read");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-            System.out.println("nera failo");
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
@@ -1877,6 +1876,7 @@ public class AutoUkis extends javax.swing.JFrame implements Serializable {
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         boolean x = false;
+        
         try {
             if ((jTextField2.getText().contains(" ")) || (jPasswordField2.getText().contains(" "))) {
                 JOptionPane.showMessageDialog(null, "Vardas ir slaptažodis turi būti be tarpų", "Klaida", JOptionPane.INFORMATION_MESSAGE);
@@ -1890,6 +1890,7 @@ public class AutoUkis extends javax.swing.JFrame implements Serializable {
             } else {
                 rgs.registruotis(jTextField2.getText(), jPasswordField2.getText());
                 JOptionPane.showMessageDialog(null, "Registracija sėkminga", "Pranešimas", JOptionPane.INFORMATION_MESSAGE);
+                reporter.reportEvent("Užregistruotas naujas vartotojas, name: " + jTextField2.getText());
                 CardLayout card = (CardLayout) mainPanel.getLayout();
                 card.show(mainPanel, "card18");
             }
@@ -1910,6 +1911,8 @@ public class AutoUkis extends javax.swing.JFrame implements Serializable {
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
         //objektų saugojimas i failą
         try {
+            
+            reporter.reportEvent("vartotojas " + currentUser + " baigė darbą");
             FileOutputStream fos = new FileOutputStream(new File("Ukis.ser"));
             ObjectOutputStream out = new ObjectOutputStream(fos);
             out.writeObject(gyvunai);
@@ -1917,7 +1920,7 @@ public class AutoUkis extends javax.swing.JFrame implements Serializable {
             out.writeObject(map);
             out.writeObject(tech);
             out.close();
-            System.out.println("saved");
+
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();

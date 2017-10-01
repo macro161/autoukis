@@ -26,7 +26,6 @@ public class Map extends JPanel implements Serializable{
     }
     @Override
     public void paintComponent(Graphics g) {
-        System.out.println("Is MAP");
         System.out.println(getSleptiNustatymus());
         super.paintComponent(g);
         setSize(800, 650);
@@ -51,7 +50,6 @@ public class Map extends JPanel implements Serializable{
         }
         g.setColor(Color.BLACK);
         if (plotai != null) {
-            System.out.println(plotai.size() + "  dys");
             for (ZemesTeritorija temp : plotai) {
                 
                 g.setColor(temp.getSpalva());
@@ -97,7 +95,6 @@ public class Map extends JPanel implements Serializable{
         return plotas;
     }
     public void rep() {
-        System.out.println("is rep");
         this.repaint();
     }
 

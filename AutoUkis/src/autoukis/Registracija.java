@@ -46,7 +46,6 @@ public class Registracija implements Serializable{
          String[] splitLine;
             while (null != line) {
                 splitLine = line.split(" ");
-                System.out.println(name + " " +splitLine[0]);
                 if (splitLine[0].equals(name))
                     uzimta = true;
                 line = br.readLine();

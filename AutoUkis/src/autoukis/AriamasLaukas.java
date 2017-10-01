@@ -11,6 +11,7 @@ public class AriamasLaukas extends ZemesTeritorija implements Serializable{
     public AriamasLaukas(Color spalva, Point p1, Point p2, String msg, int mastelis, ZemesParametrai parametrai) {
         super(spalva, p1, p2, msg, mastelis);
         this.parametrai = parametrai;
+        
     }
 
     public void kultivuoti() {
