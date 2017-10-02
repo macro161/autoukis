@@ -1,6 +1,8 @@
 package autoukis;
 
-public class Gyvunas {
+import java.io.Serializable;
+
+public class Gyvunas implements Serializable{
 
     private String veisle;
     private int id;

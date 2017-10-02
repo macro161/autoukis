@@ -5,13 +5,14 @@
  */
 package autoukis;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import static java.util.Collections.list;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class UkioTechnika {
+public class UkioTechnika implements Serializable{
 
     private List<ZemesTeritorija> plotai;
     private Map map;

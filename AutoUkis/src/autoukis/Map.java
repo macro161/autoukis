@@ -7,27 +7,26 @@ import java.awt.Point;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.io.Serializable;
 import static java.lang.Math.abs;
 import java.util.ArrayList;
 import java.util.List;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
-public class Map extends JPanel {
+public class Map extends JPanel implements Serializable{
 
     private ZemesTeritorija plotas;
     private List<ZemesTeritorija> plotai = new ArrayList<>();
-    private int sleptiNustatymus = 0;
-    private int mastelis = 0;
-
+    private int sleptiNustatymus;
+    private int mastelis;
+    public Map() {
+        sleptiNustatymus = 0;
+        mastelis = 0;
+    }
     @Override
     public void paintComponent(Graphics g) {
-
-        if (plotas != null) {
-            if (!(check(plotas.getP1()) && check(plotas.getP2()))) {
-                return;
-            }
-        }
+        System.out.println(getSleptiNustatymus());
         super.paintComponent(g);
         setSize(800, 650);
         BufferedImage img = null;
@@ -50,8 +49,9 @@ public class Map extends JPanel {
             g.drawRect(4, 512, 10, 10);
         }
         g.setColor(Color.BLACK);
-        if (getPlotai() != null) {
-            for (ZemesTeritorija temp : getPlotai()) {
+        if (plotai != null) {
+            for (ZemesTeritorija temp : plotai) {
+                
                 g.setColor(temp.getSpalva());
                 g.drawLine(temp.getP1().x, temp.getP1().y, temp.getP2().x, temp.getP1().y);
                 g.drawLine(temp.getP1().x, temp.getP1().y, temp.getP1().x, temp.getP2().y);
@@ -94,6 +94,9 @@ public class Map extends JPanel {
     public ZemesTeritorija getPlotas() {
         return plotas;
     }
+    public void rep() {
+        this.repaint();
+    }
 
     /**
      * @param plotas the plotas to set
@@ -107,6 +110,9 @@ public class Map extends JPanel {
      */
     public List<ZemesTeritorija> getPlotai() {
         return plotai;
+    }
+    public void setPlotai(List<ZemesTeritorija> plotai) {
+        this.plotai = plotai;
     }
 
     /**

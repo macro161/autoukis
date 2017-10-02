@@ -2,14 +2,15 @@ package autoukis;
 
 import java.awt.Color;
 import java.awt.Point;
+import java.io.Serializable;
 
-public class ZemesTeritorija {
+public class ZemesTeritorija implements Serializable {
 
     private Color spalva;
     private Point p1;
     private Point p2;
     private String msg;
-    private double plotas;
+    private final double plotas;
 
     public ZemesTeritorija(Color spalva, Point p1, Point p2, String msg, int mastelis) {
         this.spalva = spalva;
@@ -53,7 +54,7 @@ public class ZemesTeritorija {
     public double getPlotas() {
         return plotas;
     }
-    public double apskaiciuotiPlota(int mastelis) {
+    private double apskaiciuotiPlota(int mastelis) {
 
         return (double)(((Math.abs(p1.x - p2.x) * Math.abs(p1.y - p2.y))*(((double)(0.2*0.14*mastelis*mastelis))))/10000);
     }

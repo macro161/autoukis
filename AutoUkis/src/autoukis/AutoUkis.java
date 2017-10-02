@@ -4,30 +4,32 @@ import java.awt.CardLayout;
 import java.awt.Color;
 import java.util.List;
 import java.awt.Point;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.*;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JLabel;
-import javax.swing.JTextArea;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
-import javax.swing.Timer;
 
-public class AutoUkis extends javax.swing.JFrame {
+public class AutoUkis extends javax.swing.JFrame implements Serializable {
 
-    private ArrayList<Gyvunas> gyvunai = new ArrayList<>();
+    private List<Gyvunas> gyvunai = new ArrayList<>();
     private List<AriamasLaukas> ariamiLaukai = new ArrayList<>();
     private ZemesTeritorija plotas;
     private Map map = new Map();
     private Point p1, p2;
     private Color spalva;
+    String currentUser = null;
     private UkioTechnika tech = new UkioTechnika(map, 0);
     private Prisijungimas prs = new Prisijungimas();
     private Registracija rgs = new Registracija();
+    private EventReporter reporter = new EventReporter("Reports.txt");
 
     public AutoUkis() {
         initComponents();
@@ -149,6 +151,17 @@ public class AutoUkis extends javax.swing.JFrame {
         jButton17 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowActivated(java.awt.event.WindowEvent evt) {
+                formWindowActivated(evt);
+            }
+            public void windowClosed(java.awt.event.WindowEvent evt) {
+                formWindowClosed(evt);
+            }
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
+            }
+        });
 
         mainPanel.setLayout(new java.awt.CardLayout());
 
@@ -677,7 +690,6 @@ public class AutoUkis extends javax.swing.JFrame {
 
         panelThree.setMaximumSize(new java.awt.Dimension(840, 650));
         panelThree.setMinimumSize(new java.awt.Dimension(840, 650));
-        panelThree.setName(""); // NOI18N
         panelThree.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 panelThreeMouseDragged(evt);
@@ -694,10 +706,13 @@ public class AutoUkis extends javax.swing.JFrame {
                 panelThreeMouseReleased(evt);
             }
         });
+        panelThree.setLayout(null);
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Žemės teritorija, jos žymėjimas");
+        panelThree.add(jLabel3);
+        jLabel3.setBounds(10, 11, 827, 60);
 
         jButton1.setText("Grįžti");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -705,6 +720,8 @@ public class AutoUkis extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        panelThree.add(jButton1);
+        jButton1.setBounds(635, 581, 130, 40);
 
         ganyklos.setText("Ganyklos");
         ganyklos.addActionListener(new java.awt.event.ActionListener() {
@@ -712,6 +729,8 @@ public class AutoUkis extends javax.swing.JFrame {
                 ganyklosActionPerformed(evt);
             }
         });
+        panelThree.add(ganyklos);
+        ganyklos.setBounds(37, 582, 80, 32);
 
         Ukiniai.setText("Ukiniai pastatai");
         Ukiniai.addActionListener(new java.awt.event.ActionListener() {
@@ -719,6 +738,8 @@ public class AutoUkis extends javax.swing.JFrame {
                 UkiniaiActionPerformed(evt);
             }
         });
+        panelThree.add(Ukiniai);
+        Ukiniai.setBounds(37, 545, 113, 34);
 
         ariama.setText("Ariama žemė");
         ariama.addActionListener(new java.awt.event.ActionListener() {
@@ -726,6 +747,8 @@ public class AutoUkis extends javax.swing.JFrame {
                 ariamaActionPerformed(evt);
             }
         });
+        panelThree.add(ariama);
+        ariama.setBounds(37, 504, 113, 38);
 
         mastelisSlider.setMajorTickSpacing(50);
         mastelisSlider.setMinimum(1000);
@@ -745,8 +768,12 @@ public class AutoUkis extends javax.swing.JFrame {
                 mastelisSliderStateChanged(evt);
             }
         });
+        panelThree.add(mastelisSlider);
+        mastelisSlider.setBounds(172, 572, 200, 26);
 
         mastelisLabel.setText("Mąstelis: ");
+        panelThree.add(mastelisLabel);
+        mastelisLabel.setBounds(179, 530, 193, 24);
 
         done.setText("Žymėjimai baigti");
         done.addActionListener(new java.awt.event.ActionListener() {
@@ -754,56 +781,8 @@ public class AutoUkis extends javax.swing.JFrame {
                 doneActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout panelThreeLayout = new javax.swing.GroupLayout(panelThree);
-        panelThree.setLayout(panelThreeLayout);
-        panelThreeLayout.setHorizontalGroup(
-            panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelThreeLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(panelThreeLayout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ariama, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Ukiniai, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ganyklos, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22)
-                .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(mastelisLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(mastelisSlider, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(done, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(34, 34, 34)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(82, 82, 82))
-        );
-        panelThreeLayout.setVerticalGroup(
-            panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelThreeLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 430, Short.MAX_VALUE)
-                .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(panelThreeLayout.createSequentialGroup()
-                        .addComponent(ariama, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Ukiniai, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(ganyklos, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(42, 42, 42))
-                    .addGroup(panelThreeLayout.createSequentialGroup()
-                        .addComponent(mastelisLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(mastelisSlider, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(done, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(43, 43, 43))
-                    .addGroup(panelThreeLayout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(35, 35, 35))))
-        );
+        panelThree.add(done);
+        done.setBounds(390, 572, 211, 41);
 
         mainPanel.add(panelThree, "panelThree");
 
@@ -1558,6 +1537,7 @@ public class AutoUkis extends javax.swing.JFrame {
         textFieldFive.setText("Suvartojamas maistas kilogramais");
         textFieldSix.setText("Lokacija");
         jComboBox1.addItem("" + gyv.getId());
+        reporter.reportEvent("Pridėtas naujas gyvūnas, id: " + gyv.getId());
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void panelThreeMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelThreeMousePressed
@@ -1566,7 +1546,7 @@ public class AutoUkis extends javax.swing.JFrame {
             return;
 
         }
-         if (map.getSleptiNustatymus() == 1) {
+        if (map.getSleptiNustatymus() == 1) {
             return;
         }
         p1 = panelThree.getMousePosition();
@@ -1580,7 +1560,7 @@ public class AutoUkis extends javax.swing.JFrame {
             return;
         }
         p2 = panelThree.getMousePosition();
-        plotas = new ZemesTeritorija(spalva, p1, p2, "", 0);
+        plotas = new ZemesTeritorija(spalva, p1, p2, "", map.getMastelis());
         map.setPlotas(plotas);
         panelThree.repaint();
     }//GEN-LAST:event_panelThreeMouseDragged
@@ -1607,11 +1587,6 @@ public class AutoUkis extends javax.swing.JFrame {
         if (spalva == Color.magenta) {
             msg = "ok";
             plotas = new AriamasLaukas(spalva, p1, p2, "Ariamas Laukas", map.getMastelis(), new ZemesParametrai("Laukas", 0, 0, 0, 0, 0));
-            if (map.check(p1) && map.check(p2)) {
-                if ((Math.abs(plotas.getP1().x - plotas.getP2().x) > 5) && (Math.abs(plotas.getP1().y - plotas.getP2().y) > 5)) {
-                    ariamiLaukai.add((AriamasLaukas) plotas);
-                }
-            }
         }
         if (msg != "") {
             map.setPlotas(plotas);
@@ -1690,8 +1665,10 @@ public class AutoUkis extends javax.swing.JFrame {
     }//GEN-LAST:event_mastelisSliderStateChanged
 
     private void doneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doneActionPerformed
+        if (map.getSleptiNustatymus() == 0) {
+            map.setMastelis(mastelisSlider.getValue());
+        }
         map.setSleptiNustatymus(1);
-        map.setMastelis(mastelisSlider.getValue());
         tech.judejimoGreitis();
         tech.arimas();
         Ukiniai.setVisible(false);
@@ -1726,13 +1703,17 @@ public class AutoUkis extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         boolean x = false;
-        try {
+        panelThree.repaint();
+         try {
             if ((jTextField1.getText().contains(" ")) || (jPasswordField1.getText().contains(" "))) {
                 JOptionPane.showMessageDialog(null, "Vardas ir slaptažodis turi būti be tarpų", "Klaida", JOptionPane.INFORMATION_MESSAGE);
             } else {
                 x = prs.prisijungti(jTextField1.getText(), jPasswordField1.getText());
             }
+            
             if (x == true) {
+                reporter.reportEvent("Prisijungė vartotojas: " + jTextField1.getText());
+                currentUser = jTextField1.getText();
                 CardLayout card = (CardLayout) mainPanel.getLayout();
                 card.show(mainPanel, "panelOne");
             } else {
@@ -1740,6 +1721,37 @@ public class AutoUkis extends javax.swing.JFrame {
             }
         } catch (IOException ex) {
             Logger.getLogger(AutoUkis.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        //Objektu saugojimas
+        try {
+            FileInputStream fis = new FileInputStream("Ukis.ser");
+            ObjectInputStream in = new ObjectInputStream(fis);
+
+            if (fis.available() == 0) {
+                return;
+            }
+            gyvunai = (List<Gyvunas>) in.readObject();
+            Map mapTemp = (Map) in.readObject();
+            map.setMastelis(mapTemp.getMastelis());
+            map.setSleptiNustatymus(mapTemp.getSleptiNustatymus());
+            map.setPlotai(mapTemp.getPlotai());
+            panelThree.repaint();
+            //panelThree = map;
+            //panelThree.repaint();
+            map.rep();
+            tech = (UkioTechnika) in.readObject();
+            in.close();
+            if (map.getSleptiNustatymus() == 1)
+                done.doClick();
+            for (Gyvunas gyv : gyvunai) {
+                jComboBox1.addItem("" + gyv.getId());
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
         }
     }//GEN-LAST:event_jButton5ActionPerformed
 
@@ -1864,6 +1876,7 @@ public class AutoUkis extends javax.swing.JFrame {
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         boolean x = false;
+        
         try {
             if ((jTextField2.getText().contains(" ")) || (jPasswordField2.getText().contains(" "))) {
                 JOptionPane.showMessageDialog(null, "Vardas ir slaptažodis turi būti be tarpų", "Klaida", JOptionPane.INFORMATION_MESSAGE);
@@ -1877,6 +1890,7 @@ public class AutoUkis extends javax.swing.JFrame {
             } else {
                 rgs.registruotis(jTextField2.getText(), jPasswordField2.getText());
                 JOptionPane.showMessageDialog(null, "Registracija sėkminga", "Pranešimas", JOptionPane.INFORMATION_MESSAGE);
+                reporter.reportEvent("Užregistruotas naujas vartotojas, name: " + jTextField2.getText());
                 CardLayout card = (CardLayout) mainPanel.getLayout();
                 card.show(mainPanel, "card18");
             }
@@ -1889,6 +1903,38 @@ public class AutoUkis extends javax.swing.JFrame {
     private void jPasswordField3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordField3KeyPressed
         // TODO add your handling code here:
     }//GEN-LAST:event_jPasswordField3KeyPressed
+
+    private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
+
+    }//GEN-LAST:event_formWindowClosed
+
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        //objektų saugojimas i failą
+        try {
+            
+            reporter.reportEvent("vartotojas " + currentUser + " baigė darbą");
+            FileOutputStream fos = new FileOutputStream(new File("Ukis.ser"));
+            ObjectOutputStream out = new ObjectOutputStream(fos);
+            out.writeObject(gyvunai);
+            //out.writeObject(ariamiLaukai);
+            out.writeObject(map);
+            out.writeObject(tech);
+            out.close();
+
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+    }//GEN-LAST:event_formWindowClosing
+
+    private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
+
+
+    }//GEN-LAST:event_formWindowActivated
 
     public static void main(String args[]) throws IOException {
 

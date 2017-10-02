@@ -1,8 +1,9 @@
 package autoukis;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class ZemesParametrai {
+public class ZemesParametrai implements Serializable{
     private String plotoPavadinimas;
     private int sluoksnis;
     private int storis;
