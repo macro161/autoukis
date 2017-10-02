@@ -1,9 +1,6 @@
-\documentclass{VUMIFPSkursinis}
+\documentclass[oneside]{VUMIFPSkursinis}
 \usepackage{algorithmicx}
 \usepackage{algorithm}
-
-
-
 \usepackage{algpseudocode}
 \usepackage{amsfonts}
 \usepackage{amsmath}
@@ -15,14 +12,6 @@
 \usepackage{listings}
 \usepackage{subfig}
 \usepackage{wrapfig}
-
-
-
-
-
-
-
-
 
 \university{Vilniaus universitetas}
 \faculty{Matematikos ir informatikos fakultetas}
@@ -68,33 +57,82 @@ Pasirinkome programuoti Automatinę ūkio valdymo sistemą(toliau - Auto ūkis) 
 			\item Orai - klasė skirta pasiimti orų prognozes iš www.gismeteo.lt kurių paprašo vartotojas.
 			\item Žemės detektorius - klasė skirta bendrauti su žemės detektoriumi
 
-
 		\end{itemize}
 	\item Bendri terminai:
 		\begin{itemize}
 			\item Žemės plotas - vieta kurią valdo ir gali stebėti vartotojas(ūkininkas) 
-
 		\end{itemize}
-
 \end{itemize}
-
-
-
 
 \section{Sukurtos sistemos aprašymas(v1.0)}
 
 \subsection{Loginis pjūvis}
-	
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{uml.png}	
+	Suprogramavę šabloninį programos programos karkasą nubraižėme UML diagramą pasinaudoja minėta PlantText programą. 
+	\begin{itemize}
+		\item Dizainas: 
+		\begin{itemize}
+			\item Programos pagrindas yra AutoUkis.form klasė kuri pasiima duomenis iš kitų klasių. O duomenis įveda patys vartotojai. Rašant kodą stengėmės prisilaikyti objektinio programavimo principų. GUI piešimas ir pasirinkimas vyko AutoUkis klasėje kurį pasiima duomenis iš kitų klasių. Daugumos objektų kūrimas ir laikymas taip pat yra šioje klasėje. Visos kitos klasės turėjo savo atskiras paskirtis(Gyvūnas - saugojo duomenis, Map - piešė žemėlapį). Kai kurios klasės(pvz. : ZemesDetektorius) buvo sukurtos dėl dizaino tolimesnio jų panaudojimo, bet nebuvo niekur pritaikytos.
+		\end{itemize}
+		\item Funkcionalumas:
+		\begin{itemize}
+		\item Viso užsibrėžto programos funkcionalumo įgyvendinti nepavyko. Kai kurios klasės buvo sukurtos ateityje planuojamoms funkcijoms. Programa kol kas veikia tik ant kompiuterio ir vienintelis jos bendravimas su internetu yra per Orai klasę. Yra funkcija surašyti gyvūnus ir duomenis apie juos ir žymėti bei atlikti primityvią žemės kategorizaciją.
+		\end{itemize}	
+	\end{itemize}
  
-
-	
-	
-
-
-
-
-
 \subsection{Kūrimo pjūvis}
+\includegraphics{l0.png}	
+	\pagebreak
+	\begin{itemize}
+		\item Dizainas: 
+		\begin{itemize}
+			\item Pradėjus rašyti programą nepagalvojome apie kūrimo pjūvį ir kaip teisingiau būtų pradėti viską. Žiūrint dabar visa programa buvo pradėta kurti pagal Bottom -> Up principą. Iš pradžių apsirašėme daugybe mažų klasių ir paskui jas bandėme apjungti į didesnę sistemą. Kai kurios klasės liko nepanaudotos. 
+		\end{itemize}
+		\item L0:
+		\begin{itemize}
+			\item Šioje diagramoje pavaizdavome sistemos bendravimą su išoriniais agentais tokiais kaip Greitoji pagalba, Ūkininkas ir t.t. . Ši diagrama aiškiai ir paprastai parodo kuriamus ir įgyvendinamus interfeisus. Galbūt būtų galima Greitosios Pagalbos interfeisą išskaidyti į kelis detalesnius interfeisus, bet apskritai didelių problemų nepastebime.
+
+		\end{itemize}
+	\end{itemize}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{l1.png}	
+
+\begin{itemize}
+	\item L1: Sudėjus komandos idėjas apie tai, kaip turėtų atrodyti L1 diagrama, supratome, kad mūsų sistema neturi normalios struktūros ir gerai nebuvome pagalvoję kaip visi komponentai siesis vieni su kitais, todėl ir diagrama atrodo chaotiška. Trūksta konkretumo kaip turi Admin sietis su kitas komponentais. Programa atsiranda kaip komponentas  kas greičiausiai yra nekorektiška.
+
+\end{itemize}
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{l2uki.png}
+
+	\begin{itemize}
+		\item L2(Ūkininkas): Šioje diagramoje parodyta, kad programos pagrindas kuria suteikia interface’a grafinei vartotojo sąsajai. Paduoti duomenys yra užregistruojami Event Log’e.
+
+	\end{itemize}
+	
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{l2admin.png}
+	
+	\begin{itemize}
+		\item L2(Admin): Šioje diagramoje parodyta,kad programos pagrindas naudoja duomenų suvedimo interface, kurį suteikia admin grafinė sąsaja, bei naudoja Detektoriaus kodavimo interface. Visus įvykius įrašo į event log
+
+	\end{itemize}
+
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{l2darb.png}
+
+\begin{itemize}
+		\item L2(Darbuotojas):Šioje diagramoje parodyta, kad programos pagrindas  grafinę sąsają ir perduoda duomenis į event log’ą. 
+
+	\end{itemize}
+
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{l2det.png}
+
+\begin{itemize}
+		\item L2(Detektorius): ši diagrama vaizduoja detektoriaus išvedamus duomenis. Įvykiai įrašomi Event Log’e.
+
+
+	\end{itemize}
+\pagebreak
+		
+
+	
+
 \subsection{Proceso pjūvis}
 \subsection{Fizinis pjūvis}
 
