@@ -11,12 +11,13 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Serializable;
 
 /**
  *
  * @author Justas
  */
-public class Registracija {
+public class Registracija implements Serializable{
    public void registruotis(String name, String pass) throws IOException, FileNotFoundException {
 
      BufferedWriter writer = new BufferedWriter(new FileWriter(
@@ -45,7 +46,6 @@ public class Registracija {
          String[] splitLine;
             while (null != line) {
                 splitLine = line.split(" ");
-                System.out.println(name + " " +splitLine[0]);
                 if (splitLine[0].equals(name))
                     uzimta = true;
                 line = br.readLine();

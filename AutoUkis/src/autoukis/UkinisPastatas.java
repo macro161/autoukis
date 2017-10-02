@@ -2,8 +2,9 @@ package autoukis;
 
 import java.awt.Color;
 import java.awt.Point;
+import java.io.Serializable;
 
-public class UkinisPastatas extends ZemesTeritorija {
+public class UkinisPastatas extends ZemesTeritorija implements Serializable{
 
     private Gyvunas gyvunas;
     private UkioTechnika technika;

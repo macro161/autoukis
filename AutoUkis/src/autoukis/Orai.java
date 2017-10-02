@@ -1,12 +1,13 @@
 package autoukis;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
-public class Orai {
+public class Orai implements Serializable {
 
     String weatherToday(int city)
     {

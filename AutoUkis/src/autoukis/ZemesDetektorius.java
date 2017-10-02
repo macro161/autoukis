@@ -1,5 +1,7 @@
 package autoukis;
 
-public class ZemesDetektorius {
+import java.io.Serializable;
+
+public class ZemesDetektorius implements Serializable{
 
 }
