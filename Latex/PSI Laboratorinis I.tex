@@ -1,4 +1,4 @@
-\documentclass[oneside]{VUMIFPSkursinis}
+﻿\documentclass[oneside]{VUMIFPSkursinis}
 \usepackage{algorithmicx}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
@@ -68,15 +68,17 @@ Pasirinkome programuoti Automatinę ūkio valdymo sistemą(toliau - Auto ūkis) 
 
 \subsection{Loginis pjūvis}
 	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{uml.png}	
-	Suprogramavę šabloninį programos programos karkasą nubraižėme UML diagramą pasinaudoja minėta PlantText programą. 
+	Pagal suprogramuotą šabloninį programos karkasą nubraižėme UML diagramą minėta PlnatText programa.
 	\begin{itemize}
 		\item Dizainas: 
 		\begin{itemize}
-			\item Programos pagrindas yra AutoUkis.form klasė kuri pasiima duomenis iš kitų klasių. O duomenis įveda patys vartotojai. Rašant kodą stengėmės prisilaikyti objektinio programavimo principų. GUI piešimas ir pasirinkimas vyko AutoUkis klasėje kurį pasiima duomenis iš kitų klasių. Daugumos objektų kūrimas ir laikymas taip pat yra šioje klasėje. Visos kitos klasės turėjo savo atskiras paskirtis(Gyvūnas - saugojo duomenis, Map - piešė žemėlapį). Kai kurios klasės(pvz. : ZemesDetektorius) buvo sukurtos dėl dizaino tolimesnio jų panaudojimo, bet nebuvo niekur pritaikytos.
+			\item Pagrindinė klasė yra AutoUkis.form. Joje sukurtas ir aprašytas Graphical User Interface (GUI), visas vartotojo bendravimas su programa vyksta per ją, nes per ją pasiekiami visi duomenys iš kitų klasių, pavyzdžiui duomenys, esantys klasėje Gyvūnas, kurioje įrašoma vartotojo įvesta informacija apie gyvūną (veislė, amžius, t.t.). Taip pat AutoUkis klasėje kuriama dauguma objektų ir jie ten laikomi, sudedami į sąrašus. Visos kitos klasės turi savo atskiras paskirtis, tokias kaip žemėlapio braižymas, oro prognozių sekimas ir įvairių parametrų laikymas. Kai kurios klasės (pvz. ZemesDetektorius) buvo sukurtos vėlesniam panaudojimui, bet šiuo metu nėra niekur panaudotos.
+Dėl to, ką būtų buvę galima daryti kitaip, GUI perkėlimas į atskirą klasę padarytų programą skaitomesnę ir tvarkingesnę, būtų lengviau rasti atskirą kodą. Dar viena alternatyva būtų įgyvendinti front-end dalį web aplinkoje, bet šiuo metu nematome tam būtinybės.
 		\end{itemize}
 		\item Funkcionalumas:
 		\begin{itemize}
-		\item Viso užsibrėžto programos funkcionalumo įgyvendinti nepavyko. Kai kurios klasės buvo sukurtos ateityje planuojamoms funkcijoms. Programa kol kas veikia tik ant kompiuterio ir vienintelis jos bendravimas su internetu yra per Orai klasę. Yra funkcija surašyti gyvūnus ir duomenis apie juos ir žymėti bei atlikti primityvią žemės kategorizaciją.
+		\item Viso užsibrėžto programos funkcionalumo įgyvendinti nepavyko. Kai kurios klasės buvo sukurtos ateityje planuojamoms funkcijoms, kurios dar nėra implementuotos. Programa kol kas veikia tik ant kompiuterio ir vienintelis jos bendravimas su internetu yra per Orai klasę, kuri skirta vartotojo pasirinkto miesto orų prognozėms gauti iš gismeteo.lt svetainės. Klasėse Gyvunas, Map, ZemesTeritorija ir iš jos išeinančiose klasėse saugomi atitinkami duomenys apie sukurtus objektus bei aprašyti dar neišplėtoti metodai, tokie kaip žemės teritorijos žymėjimas. Planuojama, kad klasė ZemesDetektorius generuos atsitiktinius parametrus, kurie bus perduoti ZemesParametrai klasei.
+Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogumų aprašant programą, nes sunku braižyti diagramas, suvokti aiškius ryšius tarp komponentų ir vykdomas funkcijas.
 		\end{itemize}	
 	\end{itemize}
  
@@ -86,7 +88,7 @@ Pasirinkome programuoti Automatinę ūkio valdymo sistemą(toliau - Auto ūkis) 
 	\begin{itemize}
 		\item Dizainas: 
 		\begin{itemize}
-			\item Pradėjus rašyti programą nepagalvojome apie kūrimo pjūvį ir kaip teisingiau būtų pradėti viską. Žiūrint dabar visa programa buvo pradėta kurti pagal Bottom -> Up principą. Iš pradžių apsirašėme daugybe mažų klasių ir paskui jas bandėme apjungti į didesnę sistemą. Kai kurios klasės liko nepanaudotos. 
+			\item Pradėjus rašyti programą nepagalvojome apie kūrimo pjūvį ir kaip teisingiau būtų pradėti viską. Žiūrint dabar visa programa buvo pradėta kurti pagal Bottom -> Up principą. Iš pradžių apsirašėme daugybę mažų klasių ir paskui jas bandėme apjungti į didesnę sistemą. Išskyrėme tokius komponentus kaip ūkininkas, programa, orų tarnyba, žemės detektorius ir administratorius. Kiekvienas komponentas turi skirtingas prieigas prie informacijos ir skirtingas funkcijas, reikalingas ūkio visapusiškam funkcionavimui. Kai kurios klasės liko nepanaudotos, nes šiuo metu jos neatrodo pakankamai svarbios pradiniam projekto variantui. Ūkiniko, Admin ir darbuotojo panelės įtrauktos į dokumentaciją norint pavaizduoti skirtingas prieigas prie sistemos.
 		\end{itemize}
 		\item L0:
 		\begin{itemize}
