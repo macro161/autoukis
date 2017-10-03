@@ -1,0 +1,33 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Įvadas}{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Žodynas}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.}Sukurtos sistemos aprašymas(v1.0)}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.}Loginis pjūvis}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.}Kūrimo pjūvis}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.}Use case}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.}Proceso pjūvis}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5.}Fizinis pjūvis}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.}Perprojektuotos sistemos aprašymas(To-Be, v2.0)}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.}Loginis pjūvis}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.}Kūrimo pjūvis}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.}Use case}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.}Proceso pjūvis}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.}Fizinis pjūvis}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Rezultatai ir išvados}{12}
