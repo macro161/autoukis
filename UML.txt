@@ -1,4 +1,4 @@
-﻿@startuml
+﻿﻿@startuml
 
 title Automatinė Ūkio valdymo sistema
 
@@ -67,16 +67,16 @@ class JPanel
 
 
 
-AutoUkis *-up- Gyvunas: Composition 
+AutoUkis --> Gyvunas: Association
 AutoUkis --> ZemesTeritorija: Association
-AutoUkis "1"*-up- Map: Composition
-AutoUkis *-down- UkioTechnika
-ZemesTeritorija <|-down- AriamasLaukas: Inheritance
+AutoUkis o-- Map: Aggregation
+AutoUkis o-- UkioTechnika : Aggregation
+ZemesTeritorija <|-up- AriamasLaukas: Inheritance
 ZemesTeritorija <|-down- Ganykla: Inheritance
 JPanel <|-down- Map: Inheritance
-Map "*"*-up- ZemesTeritorija: Composition
+Map o-- ZemesTeritorija: Aggregation
 ZemesTeritorija <|-down- UkinisPastatas: Inheritance
-UkinisPastatas "*"*-up- Gyvunas: Composition
-UkinisPastatas "1"*-down- UkioTechnika: Composition
-ZemesParametrai "1"*-down- AriamasLaukas: Composition
-Map "1"*-up- Orai: Composition
+UkinisPastatas o-- Gyvunas: Aggregation
+UkinisPastatas o-- UkioTechnika: Aggregation
+AriamasLaukas o--ZemesParametrai : Aggregation
+Map o-- Orai: Aggregation

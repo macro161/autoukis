@@ -21,14 +21,14 @@
 \titleineng{Automatic farm management system}
 \status{2 kurso 3 grupės studentai}
 \author{Matas Savickis}
-\secondauthor{Justas Tvarijonas}   % Pridėti antrą autorių
-\thirdauthor{Greta Pyrantaitė}   % Pridėti trečią autorių
-\fourthauthor{Rytautas Kvasinskas}   % Pridėti ketvirtą autorių
+\secondauthor{Justas Tvarijonas}  
+\thirdauthor{Greta Pyrantaitė}   
+\fourthauthor{Rytautas Kvasinskas}
 \supervisor{Karolis Petrauskas, Doc., Dr.}
 \date{Vilnius – \the\year}
 
 % Nustatymai
-% \setmainfont{Palemonas}   % Pakeisti teksto šriftą į Palemonas (turi būti įdiegtas sistemoje)
+%\setmainfont{Palemonas}   % Pakeisti teksto šriftą į Palemonas (turi būti įdiegtas sistemoje)
 \bibliography{bibliografija}
 
 \begin{document}
@@ -41,21 +41,21 @@
 \sectionnonum{Įvadas}
 Pasirinkome programuoti Automatinę ūkio valdymo sistemą(toliau - Auto ūkis) JAVA programavimo kalba, nes visi komandos nariai turėjo pakankamas žinias programuoti šia kalba ir kalbos funkcionalumas, mūsų manymu, atitiko poreikius. Programuodami pirmą sistemos variantą stengėmės prisilaikyti bendrų objektinio programavimo principų ir JAVA kodo standarto. Apie patį sistemos projektavimą pagalvojome minimaliai dėl tuo metu neturimų žinių. UML diagramų braižymui naudojome www.planttext.com(toliau - PlantText) ir www.draw.io.
 
-\sectionnonum{Žodymas}
+\sectionnonum{Žodynas}
 \begin{itemize}
 	\item Klasės:
 		\begin{itemize}
-			\item AutoŪkis - pagrindinė(main) programos klasė. Ši klasė piešia grafinę vartotojo sąsaja ir laiko savyje kitų klasių objektus kurių informacija reikalinga piešimui
-			\item Map - teritorijos piešimui skirta klasė.
-			\item ŽemėsTeritorija - apskaičiuoja tam tikros teritorijos plotą.
- 			\item Gyvūnas - klasė skirta gyvūno rodmenims ir metodams saugoti
-			\item AriamasLaukas - laiko savyje reikšmes apibūdinančias unikalų lauką ir metodus susijusius su lauko darbu.
-			\item Ganykla - laiko parametrus ir metodus darbui su ganyklomis kurios yra žemės plote.
-			\item ŪkinisPastatas - saugo ūkinius 
-			\item ŪkioTechnika - laiko ūkio technikos charakteristikos reikšmes. Apskaičiuoja technikos judėjimo greitį.
-			\item Žemės parametrai - saugo įvairius žemės parametrus(drėgmė, ph...).
-			\item Orai - klasė skirta pasiimti orų prognozes iš www.gismeteo.lt kurių paprašo vartotojas.
-			\item Žemės detektorius - klasė skirta bendrauti su žemės detektoriumi
+			\item[*] AutoŪkis - pagrindinė(main) programos klasė. Ši klasė piešia grafinę vartotojo sąsaja ir laiko savyje kitų klasių objektus kurių informacija reikalinga piešimui
+			\item[*] Map - teritorijos piešimui skirta klasė.
+			\item[*] ŽemėsTeritorija - apskaičiuoja tam tikros teritorijos plotą.
+ 			\item[*] Gyvūnas - klasė skirta gyvūno rodmenims ir metodams saugoti
+			\item[*] AriamasLaukas - laiko savyje reikšmes apibūdinančias unikalų lauką ir metodus susijusius su lauko darbu.
+			\item[*] Ganykla - laiko parametrus ir metodus darbui su ganyklomis kurios yra žemės plote.
+			\item[*] ŪkinisPastatas - saugo ūkinius 
+			\item[*] ŪkioTechnika - laiko ūkio technikos charakteristikos reikšmes. Apskaičiuoja technikos judėjimo greitį.
+			\item[*]Žemės parametrai - saugo įvairius žemės parametrus(drėgmė, ph...).
+			\item[*] Orai - klasė skirta pasiimti orų prognozes iš www.gismeteo.lt kurių paprašo vartotojas.
+			\item[*] Žemės detektorius - klasė skirta bendrauti su žemės detektoriumi
 
 		\end{itemize}
 	\item Bendri terminai:
@@ -79,7 +79,6 @@ Pasirinkome programuoti Automatinę ūkio valdymo sistemą(toliau - Auto ūkis) 
 		\item Viso užsibrėžto programos funkcionalumo įgyvendinti nepavyko. Kai kurios klasės buvo sukurtos ateityje planuojamoms funkcijoms. Programa kol kas veikia tik ant kompiuterio ir vienintelis jos bendravimas su internetu yra per Orai klasę. Yra funkcija surašyti gyvūnus ir duomenis apie juos ir žymėti bei atlikti primityvią žemės kategorizaciją.
 		\end{itemize}	
 	\end{itemize}
- 
 \subsection{Kūrimo pjūvis}
 \includegraphics{l0.png}	
 	\pagebreak
@@ -125,34 +124,35 @@ Pasirinkome programuoti Automatinę ūkio valdymo sistemą(toliau - Auto ūkis) 
 
 \begin{itemize}
 		\item L2(Detektorius): ši diagrama vaizduoja detektoriaus išvedamus duomenis. Įvykiai įrašomi Event Log’e.
-
-
 	\end{itemize}
 \pagebreak
 		
 
 	
-
+\subsection{Use case}
 \subsection{Proceso pjūvis}
 \subsection{Fizinis pjūvis}
+	\includegraphics[width=15cm,height=10cm]{Deployment.png}
+	\begin{itemize}
+		\item D0: Šioje diagramojo parodyta, kas saugoma device kompiuteris. 
+		Iš diagramos matome, kad šiame įrenginyje saugomi prisijungimo duomenys, Vartotojų grafinės sąsajos, teritorijos žemėlapis bei programojo atliktų veiksmų išrašas. Alternatyva buvo saugoti šiuos duomenis išnuomuotame web service, tačiau daug negalvoję nusprendėme duomenis saugoti kompiuteryje.
+	\end{itemize}
+	\includegraphics[width=15cm,height=10cm]{Deployment0.png}
+	\begin{itemize}
+		\item D1: Tai bendresnė D0 diagrama, joje matome, kad kompiuteris bendrauja su web HTTP ryšiu norėdamas gauti pranešimus apie orus.
+	\end{itemize}
 
 \section{Perprojektuotos sistemos aprašymas(To-Be, v2.0)}
+
 \subsection{Loginis pjūvis}
 \subsection{Kūrimo pjūvis}
+\subsection{Use case}
 \subsection{Proceso pjūvis}
 \subsection{Fizinis pjūvis}
+
 
 
 \sectionnonum{Rezultatai ir išvados}
-
-
-
-
-
-
-
-
-
 
 
 
