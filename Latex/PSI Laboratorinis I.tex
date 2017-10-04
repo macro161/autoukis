@@ -12,7 +12,6 @@
 \usepackage{listings}
 \usepackage{subfig}
 \usepackage{wrapfig}
-
 \university{Vilniaus universitetas}
 \faculty{Matematikos ir informatikos fakultetas}
 \department{Programų sistemų katedra}
@@ -133,13 +132,23 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 	
 \subsection{Use case}
 \subsection{Proceso pjūvis}
+	Šiame skyriuje parodoma programos elgsena jos vykdimo metu.
+\subsubsection{Veiklos diagramos}
+	Vaizduojama žemėlapio žymėjimo veiklos diagrama. Nurodomi pagrindiniai žingsniai braižant žemėlapį.
+	\vskip 0.5cm
+	\includegraphics[width=10cm,height=10cm,keepaspectratio]{ActivityMapŽimėjimas.png}
+	
+\subsubsection{Būsėnų diagrama}
 \subsection{Fizinis pjūvis}
-	\includegraphics[width=15cm,height=10cm]{Deployment.png}
+	Šiame skyriuje parodoma šios sistemos techninė įranga, komunikacija, tačiau kadangi šioje šabloninėje versijoje nenaudojame kitų techninių resursų be kompiuterio, tai fizinis pjūvis parodo tik nedidelį kiekį informacijos.
+	\newline
+	\vskip 0.5cm
+	\includegraphics[width=10cm,height=10cm,keepaspectratio]{Deployment.png}
 	\begin{itemize}
 		\item D0: Šioje diagramojo parodyta, kas saugoma device kompiuteris. 
 		Iš diagramos matome, kad šiame įrenginyje saugomi prisijungimo duomenys, Vartotojų grafinės sąsajos, teritorijos žemėlapis bei programojo atliktų veiksmų išrašas. Alternatyva buvo saugoti šiuos duomenis išnuomuotame web service, tačiau daug negalvoję nusprendėme duomenis saugoti kompiuteryje.
 	\end{itemize}
-	\includegraphics[width=15cm,height=10cm]{Deployment0.png}
+	\includegraphics[width=10cm,height=10cm,keepaspectratio]{Deployment0.png}
 	\begin{itemize}
 		\item D1: Tai bendresnė D0 diagrama, joje matome, kad kompiuteris bendrauja su web HTTP ryšiu norėdamas gauti pranešimus apie orus.
 	\end{itemize}
