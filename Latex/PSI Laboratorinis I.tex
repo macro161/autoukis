@@ -3,6 +3,7 @@
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 \usepackage{amsfonts}
+\usepackage{float}
 \usepackage{amsmath}
 \usepackage{bm}
 \usepackage{caption}
@@ -12,6 +13,10 @@
 \usepackage{listings}
 \usepackage{subfig}
 \usepackage{wrapfig}
+\usepackage[%  
+    colorlinks=true,
+    linkcolor=black
+]{hyperref}
 \university{Vilniaus universitetas}
 \faculty{Matematikos ir informatikos fakultetas}
 \department{Programų sistemų katedra}
@@ -36,7 +41,7 @@
 \tableofcontents
 
 
-
+\centering	
 \sectionnonum{Įvadas}
 Automatinė ūkio valdymo sistema(toliau Auto ūkis) - yra programa leidžianti ūkininkui valdyti jo ūki skaitmeniniu būdu. Auto ūkis  leidžia stebėti kiekvieno individualaus gyvūno bioparametrus(kraujo spaudima, svorį, sveikatą), ūkio technikos judėjimą po žemės plota, gyvūnų registracija. Taip pat sistema vartotojui leidžia sekti dirvos parameturs(drėgmę, pH lygi),  oro prognozes ir aplinkinių teritorijų gyvūnų ligų paplitimą. Auto ūkis padeda ir su verslo valdymu, nesunkiai galima samdyti darbuotojus, atlikti buhalterinę apyskaita, stebėti rinkos kainas ir skaičiuoti bei numatyti galimą pelną. Iškilus nelaimės per Auto ūkio sistemą galima greitai iškviesti greitąją pagalba, policiją, gaisrinę ar saugos tarnybą. Orai prognozės yra paimtos iš www.gismeteo.lt. Pagrindinė sistemos inovacija yra tai, kad kai sistema yra pilnai įdiegta darbuotojų skaičius palaikyti ūki tampa minimalus. Ūkio technika būtų valdoma automatiškai todėl vairuotojų ir derliaus nurikėjų nereiktų. Gyvūnų sekimas yra įgyvendinamas microkontrolerio Arduino pagalba. Kadangi šis kontroleris ledidelis ir lengvai pritaikomas visiokio pobūdžio darbams ji kartu su WiFi moduliu sistema naudoja gauti gyvųno lokacija per Google maps. Taip pasiklydę ar pavogti gyvųnai būtų greitai gražinami surandami ir gražinami. Žemės laistymas, tręšimas taip pat būtų automatizuotas, parametrai gaunami per Arduino detektorius, kurie pagal pasikeitusia dirvos kompozicija nusprendžia ko trūksta žemei ir aktyvuoja laistymo ir tręšimo sistemas. Darbuottojų samdymas yra įgyvendintas per darbo biržos puslapį, kur greitai ir nesunkiai galimą įdėti skelbimą arba surasti darbuotoją. Buhalterija yra tvarkoma nemokamos buhalterijos programos Wave Accounting kuri yra implementuota į Auto ūki.  Auto ūkio sistema yra parašyta JAVA kalba kas leidžia programą paleisti ant betkurios operacinės sistemos. Ateityje numatoma galimybė programą perkelti į išmaniuosius telefonus. Sistema buvo projektuojama pasitelkiant www.planttext.com ir www.draw.io funkcionalumą.
 
@@ -72,8 +77,15 @@ Automatinė ūkio valdymo sistema(toliau Auto ūkis) - yra programa leidžianti 
 \section{Sukurtos sistemos aprašymas(v1.0)}
 
 \subsection{Loginis pjūvis}
-	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{uml.png}	
-	Pagal suprogramuotą šabloninį programos karkasą nubraižėme UML diagramą minėta PlnatText programa.
+	\begin{figure}[H]	
+	\centering	
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{uml.png}	
+		\caption{}
+		\label{fig:uml}
+	\end{figure}
+
+	Pagal suprogramuotą šabloninį programos karkasą nubraižėme  \hyperref[fig:uml]{\textit{ UML diagramą}} minėta PlnatText programa.
+	\pagebreak
 	\begin{itemize}
 		\item Dizainas: 
 		\begin{itemize}
@@ -86,77 +98,126 @@ Dėl to, ką būtų buvę galima daryti kitaip, GUI perkėlimas į atskirą klas
 Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogumų aprašant programą, nes sunku braižyti diagramas, suvokti aiškius ryšius tarp komponentų ir vykdomas funkcijas.
 		\end{itemize}	
 	\end{itemize}
-\subsection{Kūrimo pjūvis}
-\includegraphics{l0.png}	
 	\pagebreak
-	\begin{itemize}
-		\item Dizainas: 
+\subsection{Kūrimo pjūvis}
+\begin{itemize}
+\item Dizainas: 
 		\begin{itemize}
 			\item Pradėjus rašyti programą nepagalvojome apie kūrimo pjūvį ir kaip teisingiau būtų pradėti viską. Žiūrint dabar visa programa buvo pradėta kurti pagal Bottom -> Up principą. Iš pradžių apsirašėme daugybę mažų klasių ir paskui jas bandėme apjungti į didesnę sistemą. Išskyrėme tokius komponentus kaip ūkininkas, programa, orų tarnyba, žemės detektorius ir administratorius. Kiekvienas komponentas turi skirtingas prieigas prie informacijos ir skirtingas funkcijas, reikalingas ūkio visapusiškam funkcionavimui. Kai kurios klasės liko nepanaudotos, nes šiuo metu jos neatrodo pakankamai svarbios pradiniam projekto variantui. Ūkiniko, Admin ir darbuotojo panelės įtrauktos į dokumentaciją norint pavaizduoti skirtingas prieigas prie sistemos.
 		\end{itemize}
-		\item L0:
+		\end{itemize}
+\begin{figure}[H]
+\centering	
+\includegraphics[width=10cm,height=15cm,keepaspectratio]{l0.png}	
+\caption{}
+\label{fig:l0}
+\end{figure}
+	\begin{itemize}
+		
+		\item \hyperref[fig:l0]{\textit{L0}}:
 		\begin{itemize}
-			\item Šioje diagramoje pavaizdavome sistemos bendravimą su išoriniais agentais tokiais kaip Greitoji pagalba, Ūkininkas ir t.t. . Ši diagrama aiškiai ir paprastai parodo kuriamus ir įgyvendinamus interfeisus. Galbūt būtų galima Greitosios Pagalbos interfeisą išskaidyti į kelis detalesnius interfeisus, bet apskritai didelių problemų nepastebime.
+			\item  \hyperref[fig:l0]{\textit{Šioje diagramoje}} pavaizdavome sistemos bendravimą su išoriniais agentais tokiais kaip Greitoji pagalba, Ūkininkas ir t.t. . Ši diagrama aiškiai ir paprastai parodo kuriamus ir įgyvendinamus interfeisus. Galbūt būtų galima Greitosios Pagalbos interfeisą išskaidyti į kelis detalesnius interfeisus, bet apskritai didelių problemų nepastebime.
 
 		\end{itemize}
+
 	\end{itemize}
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{l1.png}	
+\begin{figure}[H]	
+\centering	
+\includegraphics[width=14cm,height=14cm,keepaspectratio]{l1.png}	
+\caption{}
+\label{fig:l1}
+\end{figure}
 
 \begin{itemize}
-	\item L1: Sudėjus komandos idėjas apie tai, kaip turėtų atrodyti L1 diagrama, supratome, kad mūsų sistema neturi normalios struktūros ir gerai nebuvome pagalvoję kaip visi komponentai siesis vieni su kitais, todėl ir diagrama atrodo chaotiška. Trūksta konkretumo kaip turi Admin sietis su kitas komponentais. Programa atsiranda kaip komponentas  kas greičiausiai yra nekorektiška.
+	\item L1: Sudėjus komandos idėjas apie tai, kaip turėtų atrodyti \hyperref[fig:l1]{\textit{ L1 diagrama}}, supratome, kad mūsų sistema neturi normalios struktūros ir gerai nebuvome pagalvoję kaip visi komponentai siesis vieni su kitais, todėl ir diagrama atrodo chaotiška. Trūksta konkretumo kaip turi Admin sietis su kitas komponentais. Programa atsiranda kaip komponentas  kas greičiausiai yra nekorektiška.
 
 \end{itemize}
-	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{l2uki.png}
+\begin{figure}[H]
+\centering	
+\includegraphics[width=10cm,height=10cm,keepaspectratio]{l2uki.png}
+\caption{}
+\label{fig:l2uki}
+\end{figure}
+	
 
 	\begin{itemize}
-		\item L2(Ūkininkas): Šioje diagramoje parodyta, kad programos pagrindas kuria suteikia interface’a grafinei vartotojo sąsajai. Paduoti duomenys yra užregistruojami Event Log’e.
+		\item L2(Ūkininkas):\hyperref[fig:l2uki]{\textit{  Šioje diagramoje}} parodyta, kad programos pagrindas kuria suteikia interface’a grafinei vartotojo sąsajai. Paduoti duomenys yra užregistruojami Event Log’e.
 
 	\end{itemize}
+	\begin{figure}[H]
+	\centering	
+\includegraphics[width=10cm,height=10cm,keepaspectratio]{l2admin.png}
+\caption{}
+\label{fig:l2admin}
+\end{figure}
 	
-	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{l2admin.png}
 	
 	\begin{itemize}
-		\item L2(Admin): Šioje diagramoje parodyta,kad programos pagrindas naudoja duomenų suvedimo interface, kurį suteikia admin grafinė sąsaja, bei naudoja Detektoriaus kodavimo interface. Visus įvykius įrašo į event log
+		\item L2(Admin)\hyperref[fig:l2admin]{\textit{  Šioje diagramoje}}  parodyta,kad programos pagrindas naudoja duomenų suvedimo interface, kurį suteikia admin grafinė sąsaja, bei naudoja Detektoriaus kodavimo interface. Visus įvykius įrašo į event log
 
 	\end{itemize}
-
-		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{l2darb.png}
+	\begin{figure}[H]
+	\centering	
+\includegraphics[width=10cm,height=10cm,keepaspectratio]{l2darb.png}
+\caption{}
+\label{fig:l2darb}
+\end{figure}
+		
 
 \begin{itemize}
-		\item L2(Darbuotojas):Šioje diagramoje parodyta, kad programos pagrindas  grafinę sąsają ir perduoda duomenis į event log’ą. 
-
-	\end{itemize}
-
-		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{l2det.png}
-
+		\item L2(Darbuotojas):\hyperref[fig:l2darb]{\textit{  Šioje diagramoje}}  parodyta, kad programos pagrindas  grafinę sąsają ir perduoda duomenis į event log’ą. 
+\end{itemize}
+\begin{figure}[H]
+\centering	
+	\includegraphics[width=10cm,height=10cm,keepaspectratio]{l2det.png}
+	\caption{}
+	\label{fig:l2det}
+\end{figure}
+		
 \begin{itemize}
-		\item L2(Detektorius): ši diagrama vaizduoja detektoriaus išvedamus duomenis. Įvykiai įrašomi Event Log’e.
-	\end{itemize}
+		\item L2(Detektorius):\hyperref[fig:l2det]{\textit{ Ši diagrama}} vaizduoja detektoriaus išvedamus duomenis. Įvykiai įrašomi Event Log’e.
+\end{itemize}
 \pagebreak
 		
 
-	
+
 \subsection{Use case}
 \subsection{Proceso pjūvis}
 	Šiame skyriuje parodoma programos elgsena jos vykdimo metu.
 \subsubsection{Veiklos diagramos}
-	Vaizduojama žemėlapio žymėjimo veiklos diagrama. Nurodomi pagrindiniai žingsniai braižant žemėlapį.
+	Vaizduojama\hyperref[fig:ActivityMapŽimėjimas]{\textit{ žemėlapio žymėjimo veiklos diagrama}}. Nurodomi pagrindiniai žingsniai braižant žemėlapį.
 	\vskip 0.5cm
+	\begin{figure}[H]
+	\centering	
 	\includegraphics[width=10cm,height=10cm,keepaspectratio]{ActivityMapŽimėjimas.png}
+	\caption{}
+	\label{fig:ActivityMapŽimėjimas}
+\end{figure}
+
 	
 \subsubsection{Būsėnų diagrama}
 \subsection{Fizinis pjūvis}
-	Šiame skyriuje parodoma šios sistemos techninė įranga, komunikacija, tačiau kadangi šioje šabloninėje versijoje nenaudojame kitų techninių resursų be kompiuterio, tai fizinis pjūvis parodo tik nedidelį kiekį informacijos.
+	Šiame skyriuje parodoma šios sistemos techninė įranga, komunikacija, tačiau kadangi šioje šabloninėje versijoje nenaudojame kitų techninių resursų be kompiuterio, taigi fizinis pjūvis parodo tik nedidelį kiekį informacijos.
 	\newline
 	\vskip 0.5cm
+	\begin{figure}[H]
+	\centering	
 	\includegraphics[width=10cm,height=10cm,keepaspectratio]{Deployment.png}
+	\caption{}
+	\label{fig:Deployment}
+\end{figure}
 	\begin{itemize}
-		\item D0: Šioje diagramojo parodyta, kas saugoma device kompiuteris. 
+		\item D0: \hyperref[fig:Deployment]{\textit{Šioje diagramoje}} parodyta, kas saugoma device kompiuteris. 
 		Iš diagramos matome, kad šiame įrenginyje saugomi prisijungimo duomenys, Vartotojų grafinės sąsajos, teritorijos žemėlapis bei programojo atliktų veiksmų išrašas. Alternatyva buvo saugoti šiuos duomenis išnuomuotame web service, tačiau daug negalvoję nusprendėme duomenis saugoti kompiuteryje.
 	\end{itemize}
+		\begin{figure}[H]
+		\centering	
 	\includegraphics[width=10cm,height=10cm,keepaspectratio]{Deployment0.png}
+	\caption{}
+	\label{fig:Deployment0}
+\end{figure}
 	\begin{itemize}
-		\item D1: Tai bendresnė D0 diagrama, joje matome, kad kompiuteris bendrauja su web HTTP ryšiu norėdamas gauti pranešimus apie orus.
+		\item D1: Tai \hyperref[fig:Deployment0]{\textit{bendresnė D0 diagrama}}, joje matome, kad kompiuteris bendrauja su web HTTP ryšiu norėdamas gauti pranešimus apie orus.
 	\end{itemize}
 
 \section{Perprojektuotos sistemos aprašymas(To-Be, v2.0)}
