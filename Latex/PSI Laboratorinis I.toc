@@ -2,36 +2,36 @@
 \defcounter {refsection}{0}\relax 
 \select@language {lithuanian}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Įvadas}{2}
+\contentsline {section}{Įvadas}{2}{section*.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Žodynas}{3}
+\contentsline {section}{Žodynas}{3}{section*.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.}Sukurtos sistemos aprašymas(v1.0)}{4}
+\contentsline {section}{\numberline {1.}Sukurtos sistemos aprašymas(v1.0)}{4}{section.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.}Loginis pjūvis}{4}
+\contentsline {subsection}{\numberline {1.1.}Loginis pjūvis}{4}{subsection.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.}Kūrimo pjūvis}{6}
+\contentsline {subsection}{\numberline {1.2.}Kūrimo pjūvis}{6}{subsection.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.}Use case}{10}
+\contentsline {subsection}{\numberline {1.3.}Use case}{9}{subsection.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.}Proceso pjūvis}{10}
+\contentsline {subsection}{\numberline {1.4.}Proceso pjūvis}{9}{subsection.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.4.1.}Veiklos diagramos}{10}
+\contentsline {subsubsection}{\numberline {1.4.1.}Veiklos diagramos}{9}{subsubsection.1.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.4.2.}Būsėnų diagrama}{10}
+\contentsline {subsubsection}{\numberline {1.4.2.}Būsėnų diagrama}{9}{subsubsection.1.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5.}Fizinis pjūvis}{10}
+\contentsline {subsection}{\numberline {1.5.}Fizinis pjūvis}{10}{subsection.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.}Perprojektuotos sistemos aprašymas(To-Be, v2.0)}{12}
+\contentsline {section}{\numberline {2.}Perprojektuotos sistemos aprašymas(To-Be, v2.0)}{11}{section.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.}Loginis pjūvis}{12}
+\contentsline {subsection}{\numberline {2.1.}Loginis pjūvis}{11}{subsection.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.}Kūrimo pjūvis}{12}
+\contentsline {subsection}{\numberline {2.2.}Kūrimo pjūvis}{11}{subsection.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.}Use case}{12}
+\contentsline {subsection}{\numberline {2.3.}Use case}{11}{subsection.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.}Proceso pjūvis}{12}
+\contentsline {subsection}{\numberline {2.4.}Proceso pjūvis}{11}{subsection.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.}Fizinis pjūvis}{12}
+\contentsline {subsection}{\numberline {2.5.}Fizinis pjūvis}{11}{subsection.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Rezultatai ir išvados}{13}
+\contentsline {section}{Rezultatai ir išvados}{12}{section*.15}
