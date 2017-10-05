@@ -22,16 +22,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.5.}Fizinis pjūvis}{10}{subsection.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.}Perprojektuotos sistemos aprašymas(To-Be, v2.0)}{11}{section.2}
+\contentsline {subsection}{\numberline {1.6.}Pirmos dalies išvada}{11}{subsection.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.}Loginis pjūvis}{11}{subsection.2.1}
+\contentsline {section}{\numberline {2.}Perprojektuotos sistemos aprašymas(To-Be, v2.0)}{12}{section.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.}Kūrimo pjūvis}{11}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.1.}Loginis pjūvis}{12}{subsection.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.}Use case}{11}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.2.}Kūrimo pjūvis}{12}{subsection.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.}Proceso pjūvis}{11}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.3.}Use case}{12}{subsection.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.}Fizinis pjūvis}{11}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.3.1.}Bendra sekų diagrama}{12}{subsubsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Rezultatai ir išvados}{12}{section*.15}
+\contentsline {subsubsection}{\numberline {2.3.2.}Detalesnės sekų diagramos}{12}{subsubsection.2.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.}Proceso pjūvis}{12}{subsection.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.}Fizinis pjūvis}{12}{subsection.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Rezultatai ir išvados}{13}{section*.16}

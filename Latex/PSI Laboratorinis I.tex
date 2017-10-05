@@ -239,6 +239,20 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 \subsection{Loginis pjūvis}
 \subsection{Kūrimo pjūvis}
 \subsection{Use case}
+Šiame skyriuje pavaizduoti galimi vartotojo veiksmai naudojant programa, bei programos objektų užklausos vienas kitam vykdant tas užduotis.
+\subsubsection{Bendra sekų diagrama}
+upcoming;
+\subsubsection{Detalesnės sekų diagramos}
+\begin{itemize}
+\item Planuojamo pelno skaičiavimo veiksmų diagrama.
+		\begin{figure}[H]
+		\centering	
+	\includegraphics[width=18cm,height=23cm,keepaspectratio]{PelnoSkaičiavimas.png}
+	\caption{}
+	\label{fig:PelnoSkaičiavimas}
+\end{figure}
+Diagramoje matant, kad Admin pateikus užklausą planuojamo pelno gavimui, UI kreipiasi į Calculations klasę su prašymų apskaičiuoti šį perlną pasirinktam laikotarpiui. Calculations klasė tuo tarpu kreipiasi dėl skaičiavimams reikalingų duomenų į klases Orai, Map ir UkioTechnika. 
+\end{itemize}
 \subsection{Proceso pjūvis}
 \subsection{Fizinis pjūvis}
 
