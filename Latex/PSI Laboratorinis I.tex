@@ -77,7 +77,7 @@ Automatinė ūkio valdymo sistema(toliau Auto ūkis) - yra programa leidžianti 
 \section{Sukurtos sistemos aprašymas(v1.0)}
 
 \subsection{Loginis pjūvis}
-Pagal suprogramuotą šabloninį programos karkasą nubraižėme  \hyperref[fig:uml]{\textit{ UML diagramą}} minėta PlnatText programa.
+Pagal suprogramuotą šabloninį programos karkasą nubraižėme  \hyperref[fig:uml]{\textit{ UML diagramą(1 pav)}} minėta PlnatText programa.
 	\begin{figure}[H]	
 	\centering	
 		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{uml.png}	
@@ -117,7 +117,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 		
 		\item \hyperref[fig:l0]{\textit{L0}}:
 		\begin{itemize}
-			\item  \hyperref[fig:l0]{\textit{Šioje diagramoje}} pavaizdavome sistemos bendravimą su išoriniais agentais tokiais kaip Greitoji pagalba, Ūkininkas ir t.t. . Ši diagrama aiškiai ir paprastai parodo kuriamus ir įgyvendinamus interfeisus. Galbūt būtų galima Greitosios Pagalbos interfeisą išskaidyti į kelis detalesnius interfeisus, bet apskritai didelių problemų nepastebime.
+			\item  \hyperref[fig:l0]{\textit{Šioje diagramoje (2 pav)}} pavaizdavome sistemos bendravimą su išoriniais agentais tokiais kaip Greitoji pagalba, Ūkininkas ir t.t. . Ši diagrama aiškiai ir paprastai parodo kuriamus ir įgyvendinamus interfeisus. Galbūt būtų galima Greitosios Pagalbos interfeisą išskaidyti į kelis detalesnius interfeisus, bet apskritai didelių problemų nepastebime.
 
 		\end{itemize}
 
@@ -130,7 +130,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 \end{figure}
 
 \begin{itemize}
-	\item L1: Sudėjus komandos idėjas apie tai, kaip turėtų atrodyti \hyperref[fig:l1]{\textit{ L1 diagrama}}, supratome, kad mūsų sistema neturi normalios struktūros ir gerai nebuvome pagalvoję kaip visi komponentai siesis vieni su kitais, todėl ir diagrama atrodo chaotiška. Trūksta konkretumo kaip turi Admin sietis su kitas komponentais. Programa atsiranda kaip komponentas  kas greičiausiai yra nekorektiška.
+	\item L1: Sudėjus komandos idėjas apie tai, kaip turėtų atrodyti \hyperref[fig:l1]{\textit{ L1 diagrama(3 pav)}}, supratome, kad mūsų sistema neturi normalios struktūros ir gerai nebuvome pagalvoję kaip visi komponentai siesis vieni su kitais, todėl ir diagrama atrodo chaotiška. Trūksta konkretumo kaip turi Admin sietis su kitas komponentais. Programa atsiranda kaip komponentas  kas greičiausiai yra nekorektiška.
 
 \end{itemize}
 \begin{figure}[H]
@@ -142,7 +142,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 	
 
 	\begin{itemize}
-		\item L2(Ūkininkas):\hyperref[fig:l2uki]{\textit{  Šioje diagramoje}} parodyta, kad programos pagrindas kuria suteikia interface’a grafinei vartotojo sąsajai. Paduoti duomenys yra užregistruojami Event Log’e.
+		\item L2(Ūkininkas):\hyperref[fig:l2uki]{\textit{  Šioje diagramoje (4 pav)}} parodyta, kad programos pagrindas kuria suteikia interface’a grafinei vartotojo sąsajai. Paduoti duomenys yra užregistruojami Event Log’e.
 
 	\end{itemize}
 	\begin{figure}[H]
@@ -154,7 +154,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 	
 	
 	\begin{itemize}
-		\item L2(Admin)\hyperref[fig:l2admin]{\textit{  Šioje diagramoje}}  parodyta,kad programos pagrindas naudoja duomenų suvedimo interface, kurį suteikia admin grafinė sąsaja, bei naudoja Detektoriaus kodavimo interface. Visus įvykius įrašo į event log
+		\item L2(Admin)\hyperref[fig:l2admin]{\textit{  Šioje diagramoje (pav 5)}}  parodyta,kad programos pagrindas naudoja duomenų suvedimo interface, kurį suteikia admin grafinė sąsaja, bei naudoja Detektoriaus kodavimo interface. Visus įvykius įrašo į event log
 
 	\end{itemize}
 	\begin{figure}[H]
@@ -166,7 +166,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 		
 
 \begin{itemize}
-		\item L2(Darbuotojas):\hyperref[fig:l2darb]{\textit{  Šioje diagramoje}}  parodyta, kad programos pagrindas  grafinę sąsają ir perduoda duomenis į event log’ą. 
+		\item L2(Darbuotojas):\hyperref[fig:l2darb]{\textit{  Šioje diagramoje (pav 6)}}  parodyta, kad programos pagrindas  grafinę sąsają ir perduoda duomenis į event log’ą. 
 \end{itemize}
 \begin{figure}[H]
 \centering	
@@ -176,7 +176,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 \end{figure}
 		
 \begin{itemize}
-		\item L2(Detektorius):\hyperref[fig:l2det]{\textit{ Ši diagrama}} vaizduoja detektoriaus išvedamus duomenis. Įvykiai įrašomi Event Log’e.
+		\item L2(Detektorius):\hyperref[fig:l2det]{\textit{ Ši diagrama (pav 7)}} vaizduoja detektoriaus išvedamus duomenis. Įvykiai įrašomi Event Log’e.
 \end{itemize}
 \pagebreak
 		
@@ -186,7 +186,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 \subsection{Proceso pjūvis}
 	Šiame skyriuje parodoma programos elgsena jos vykdimo metu.
 \subsubsection{Veiklos diagramos}
-	Vaizduojama\hyperref[fig:ActivityMapŽimėjimas]{\textit{ žemėlapio žymėjimo veiklos diagrama}}. Nurodomi pagrindiniai žingsniai braižant žemėlapį.
+	Vaizduojama\hyperref[fig:ActivityMapŽimėjimas]{\textit{ žemėlapio žymėjimo veiklos diagrama (pav 8)}}. Nurodomi pagrindiniai žingsniai braižant žemėlapį.
 	\vskip 0.5cm
 	\begin{figure}[H]
 	\centering	
@@ -197,7 +197,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 
 	
 \subsubsection{Būsėnų diagrama}
- \hyperref[fig:Busenu]{\textit{Šioje diagramoje}} parodomos galimos vartotojo būsenos ir keliai kaip tas būsenas pasiekti. Šiuo metu programoje tėra 2 būsenos, taigi diagrama yra labai paprasta.
+ \hyperref[fig:Busenu]{\textit{Šioje diagramoje (pav 9)}} parodomos galimos vartotojo būsenos ir keliai kaip tas būsenas pasiekti. Šiuo metu programoje tėra 2 būsenos, taigi diagrama yra labai paprasta.
 	\begin{figure}[H]
 	\centering	
 	\includegraphics[width=5cm,height=6cm,keepaspectratio]{Busenu.png}
@@ -206,7 +206,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 \end{figure}
 \pagebreak
 \subsection{Fizinis pjūvis}
-	Šiame skyriuje parodoma šios sistemos techninė įranga, komunikacija, tačiau kadangi šioje šabloninėje versijoje nenaudojame kitų techninių resursų be kompiuterio, taigi fizinis pjūvis parodo tik nedidelį kiekį informacijos.
+	Šiame skyriuje parodoma (10 pav) šios sistemos techninė įranga, komunikacija, tačiau kadangi šioje šabloninėje versijoje nenaudojame kitų techninių resursų be kompiuterio, taigi fizinis pjūvis parodo tik nedidelį kiekį informacijos.
 	\newline
 	\vskip 0.5cm
 	\begin{figure}[H]
@@ -216,7 +216,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 	\label{fig:Deployment}
 \end{figure}
 	\begin{itemize}
-		\item D0: \hyperref[fig:Deployment]{\textit{Šioje diagramoje}} parodyta, kas saugoma device kompiuteris. 
+		\item D0: \hyperref[fig:Deployment]{\textit{Šioje diagramoje(11 pav)}} parodyta, kas saugoma device kompiuteris. 
 		Iš diagramos matome, kad šiame įrenginyje saugomi prisijungimo duomenys, Vartotojų grafinės sąsajos, teritorijos žemėlapis bei programoje atliktų veiksmų išrašas. Alternatyva buvo saugoti šiuos duomenis išnuomuotame web service, tačiau daug negalvoję nusprendėme duomenis saugoti kompiuteryje.
 	\end{itemize}
 		\begin{figure}[H]
@@ -244,7 +244,7 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 Upcoming;
 \subsubsection{Detalesnės sekų diagramos}
 \begin{itemize}
-\item Diagramoje pavaizduotos seka, kurią programa atlieka Admin norint gauti planuojama jo pasirinkto laikotarpio pelną.
+\item Diagramoje (12 pav) pavaizduotos seka, kurią programa atlieka Admin norint gauti planuojama jo pasirinkto laikotarpio pelną.
 		\begin{figure}[H]
 		\centering	
 	\includegraphics[width=17cm,height=20cm,keepaspectratio]{PelnoSkaičiavimas.png}
