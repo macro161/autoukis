@@ -77,6 +77,7 @@ Automatinė ūkio valdymo sistema(toliau Auto ūkis) - yra programa leidžianti 
 \section{Sukurtos sistemos aprašymas(v1.0)}
 
 \subsection{Loginis pjūvis}
+Pagal suprogramuotą šabloninį programos karkasą nubraižėme  \hyperref[fig:uml]{\textit{ UML diagramą}} minėta PlnatText programa.
 	\begin{figure}[H]	
 	\centering	
 		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{uml.png}	
@@ -84,7 +85,7 @@ Automatinė ūkio valdymo sistema(toliau Auto ūkis) - yra programa leidžianti 
 		\label{fig:uml}
 	\end{figure}
 
-	Pagal suprogramuotą šabloninį programos karkasą nubraižėme  \hyperref[fig:uml]{\textit{ UML diagramą}} minėta PlnatText programa.
+	
 	\pagebreak
 	\begin{itemize}
 		\item Dizainas: 
@@ -196,6 +197,14 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 
 	
 \subsubsection{Būsėnų diagrama}
+ \hyperref[fig:Busenu]{\textit{Šioje diagramoje}} parodomos galimos vartotojo būsenos ir keliai kaip tas būsenas pasiekti. Šiuo metu programoje tėra 2 būsenos, taigi diagrama yra labai paprasta.
+	\begin{figure}[H]
+	\centering	
+	\includegraphics[width=5cm,height=6cm,keepaspectratio]{Busenu.png}
+	\caption{}
+	\label{fig:Busenu}
+\end{figure}
+\pagebreak
 \subsection{Fizinis pjūvis}
 	Šiame skyriuje parodoma šios sistemos techninė įranga, komunikacija, tačiau kadangi šioje šabloninėje versijoje nenaudojame kitų techninių resursų be kompiuterio, taigi fizinis pjūvis parodo tik nedidelį kiekį informacijos.
 	\newline
@@ -208,7 +217,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 \end{figure}
 	\begin{itemize}
 		\item D0: \hyperref[fig:Deployment]{\textit{Šioje diagramoje}} parodyta, kas saugoma device kompiuteris. 
-		Iš diagramos matome, kad šiame įrenginyje saugomi prisijungimo duomenys, Vartotojų grafinės sąsajos, teritorijos žemėlapis bei programojo atliktų veiksmų išrašas. Alternatyva buvo saugoti šiuos duomenis išnuomuotame web service, tačiau daug negalvoję nusprendėme duomenis saugoti kompiuteryje.
+		Iš diagramos matome, kad šiame įrenginyje saugomi prisijungimo duomenys, Vartotojų grafinės sąsajos, teritorijos žemėlapis bei programoje atliktų veiksmų išrašas. Alternatyva buvo saugoti šiuos duomenis išnuomuotame web service, tačiau daug negalvoję nusprendėme duomenis saugoti kompiuteryje.
 	\end{itemize}
 		\begin{figure}[H]
 		\centering	
