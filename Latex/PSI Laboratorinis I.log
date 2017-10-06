@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6400 64-bit) (preloaded format=xelatex 2017.10.3)  6 OCT 2017 19:51
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6400 64-bit) (preloaded format=xelatex 2017.10.3)  6 OCT 2017 20:08
 entering extended mode
 **"./PSI Laboratorinis I.tex"
 ("PSI Laboratorinis I.tex"
@@ -1393,49 +1393,49 @@ File: Use_case_prisijungimas_registracija.png Graphic file (type bmp)
 <Use_case_prisijungimas_registracija.png>
 File: Use_case_zemelapio_zymejimas.png Graphic file (type bmp)
 <Use_case_zemelapio_zymejimas.png>
+ [9]
 File: Use_case_gyvunu_suvedimas.png Graphic file (type bmp)
 <Use_case_gyvunu_suvedimas.png>
- [9]
 File: ActivityMapŽimėjimas.png Graphic file (type bmp)
 <ActivityMapŽimėjimas.png>
 File: Busenu.png Graphic file (type bmp)
 <Busenu.png>
  [10]
+[11]
 File: Deployment.png Graphic file (type bmp)
 <Deployment.png>
 File: Deployment0.png Graphic file (type bmp)
 <Deployment0.png>
-
-[11] [12]
+ [12] [13]
 File: PelnoSkaičiavimas.png Graphic file (type bmp)
 <PelnoSkaičiavimas.png>
 
-Overfull \hbox (14.24208pt too wide) in paragraph at lines 263--264
+Overfull \hbox (14.24208pt too wide) in paragraph at lines 275--276
  [][] 
  []
 
-[13
+[14
 
-] [14]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 278.
- [15
+] [15]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 290.
+ [16
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 278.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 290.
  ("PSI Laboratorinis I.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 278.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 278.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 290.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 290.
 Package logreq Info: Writing requests to '"PSI Laboratorinis I".run.xml'.
 \openout1 = `"PSI Laboratorinis I.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29731 strings out of 427827
- 543122 string characters out of 3152365
- 1038987 words of memory out of 3000000
- 33407 multiletter control sequences out of 15000+200000
+ 29734 strings out of 427827
+ 543228 string characters out of 3152365
+ 1039987 words of memory out of 3000000
+ 33410 multiletter control sequences out of 15000+200000
  543566 words of font info for 90 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  67i,11n,96p,10512b,3426s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on PSI Laboratorinis I.pdf (16 pages).
+Output written on PSI Laboratorinis I.pdf (17 pages).
