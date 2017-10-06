@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6400 64-bit) (preloaded format=xelatex 2017.10.2)  5 OCT 2017 13:05
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6400 64-bit) (preloaded format=xelatex 2017.10.3)  6 OCT 2017 20:08
 entering extended mode
 **"./PSI Laboratorinis I.tex"
 ("PSI Laboratorinis I.tex"
@@ -1175,12 +1175,12 @@ Package biblatex Info: ... file 'english.lbx' found.
 File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 )
 Package biblatex Info: Trying to load language 'lithuanian'...
-Package biblatex Info: ... file 'lithuanian.lbx' found.
+Package biblatex Info: ... file 'lithuanian.lbx' not found.
 
-(lithuanian.lbx
-File: lithuanian.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)$Id: lithu
-anian.lbx,v 1.0 2015/02/05 20:21:28 niekas stable $
-)
+
+Package biblatex Warning: Language 'lithuanian' not supported.
+(biblatex)                Using fallback language 'english' on input line 38.
+
 
 Package biblatex Warning: Conflicting options.
 (biblatex)                'date=edtf' requires 'seconds=true'.
@@ -1286,15 +1286,15 @@ Package caption Info: End \AtBeginDocument code.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(42.67912pt, 512.14963pt, 42.67912pt)
-* v-part:(T,H,B)=(42.67912pt, 759.6886pt, 42.67912pt)
+* h-part:(L,W,R)=(85.35826pt, 469.47049pt, 42.67912pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=512.14963pt
-* \textheight=759.6886pt
-* \oddsidemargin=-29.59087pt
-* \evensidemargin=-29.59087pt
-* \topmargin=-66.59087pt
+* \textwidth=469.47049pt
+* \textheight=731.23584pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -1389,38 +1389,53 @@ File: l2darb.png Graphic file (type bmp)
 File: l2det.png Graphic file (type bmp)
 <l2det.png>
  [8]
+File: Use_case_prisijungimas_registracija.png Graphic file (type bmp)
+<Use_case_prisijungimas_registracija.png>
+File: Use_case_zemelapio_zymejimas.png Graphic file (type bmp)
+<Use_case_zemelapio_zymejimas.png>
+ [9]
+File: Use_case_gyvunu_suvedimas.png Graphic file (type bmp)
+<Use_case_gyvunu_suvedimas.png>
 File: ActivityMapŽimėjimas.png Graphic file (type bmp)
 <ActivityMapŽimėjimas.png>
 File: Busenu.png Graphic file (type bmp)
 <Busenu.png>
- [9]
+ [10]
+[11]
 File: Deployment.png Graphic file (type bmp)
 <Deployment.png>
 File: Deployment0.png Graphic file (type bmp)
 <Deployment0.png>
- [10]
-[11
+ [12] [13]
+File: PelnoSkaičiavimas.png Graphic file (type bmp)
+<PelnoSkaičiavimas.png>
+
+Overfull \hbox (14.24208pt too wide) in paragraph at lines 275--276
+ [][] 
+ []
+
+[14
+
+] [15]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 290.
+ [16
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
- [12
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 290.
  ("PSI Laboratorinis I.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 246.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 246.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 290.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 290.
 Package logreq Info: Writing requests to '"PSI Laboratorinis I".run.xml'.
 \openout1 = `"PSI Laboratorinis I.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29719 strings out of 427827
- 542659 string characters out of 3152365
- 1062044 words of memory out of 3000000
- 33397 multiletter control sequences out of 15000+200000
+ 29734 strings out of 427827
+ 543228 string characters out of 3152365
+ 1039987 words of memory out of 3000000
+ 33410 multiletter control sequences out of 15000+200000
  543566 words of font info for 90 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  67i,11n,96p,10512b,3426s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on PSI Laboratorinis I.pdf (13 pages).
+Output written on PSI Laboratorinis I.pdf (17 pages).
