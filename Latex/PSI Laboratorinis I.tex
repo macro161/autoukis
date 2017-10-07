@@ -288,7 +288,21 @@ Upcoming;
 Šioje diagramoje matome, kad Admin pateikus užklausą planuojamui pelnui gauti, Admin UI kreipiasi į Calculations klasę su prašymu jį apskaičiuoti. Ši savo ruožtu norėdama gauti reikiamus duomenis kreipiasi į klases UkioTechnika, Map ir Orai.
 \end{itemize}
 \subsection{Proceso pjūvis}
+
 \subsection{Fizinis pjūvis}
+	Šiame skyriuje parodoma programos naudojama aparatinė įranga, komunikacija tarp tinklo mazgų bei programos komponentų išdėstymas juose.
+	\newline
+	\vskip 0.5cm
+	\begin{figure}[H]
+	\centering	
+	\includegraphics[width=15cm,height=15cm,keepaspectratio]{2D0.png}
+	\caption{}
+	\label{fig:Deployment}
+\end{figure}
+	\begin{itemize}
+		\item D0: \hyperref[fig:Deployment]{\textit{Šioje diagramoje (17 pav.)}} parodyta, kaip išsaugomi programos duomenys. 
+		Pirmoje projekto versijoje visi duomenys buvo saugomi kompiuteryje, vienintelis ryšys su internetu buvo per gismeteo.lt svetainę. Dabartinėje versijoje implementuotas duomenų saugojimas PostgreSQL duombazėje. Šioje diagramoje vaziduojamas kelias nuo naudotojo iki pasirinktos duombazės, naudojami techniniai įrenginiai ir jų sąryšiai su programinė įranga. Taip pat pridėtas žemės detektorius, kuris siunčia programai pasirinkto žemės ploto parametrų duomenis. Informacija, gauta iš žemės detektoriaus, taip pat talpinama PostgreSQL duombazėje.
+	\end{itemize}
 
 
 
