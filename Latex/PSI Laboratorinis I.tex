@@ -49,18 +49,17 @@ Automatinė ūkio valdymo sistema (toliau - Auto ūkis) yra programa, leidžiant
 \begin{itemize}
 	\item Klasės:
 		\begin{itemize}
-			\item[*] AutoUkis - pagrindinė (main) programos klasė. Ši klasė piešia grafinę vartotojo sąsają ir laiko savyje kitų klasių objektus, kurių informacija reikalinga piešimui.
+			\item[*] AutoŪkis - pagrindinė (main) programos klasė. Ši klasė piešia grafinę vartotojo sąsają ir laiko savyje kitų klasių objektus, kurių informacija reikalinga piešimui.
 			\item[*] Map - teritorijos piešimui skirta klasė.
-			\item[*] ZemesTeritorija - apskaičiuoja tam tikros teritorijos plotą.
- 			\item[*] Gyvunas - klasė, skirta gyvūno rodmenims ir metodams saugoti.
+			\item[*] ŽemėsTeritorija - apskaičiuoja tam tikros teritorijos plotą.
+ 			\item[*] Gyvūnas - klasė, skirta gyvūno rodmenims ir metodams saugoti.
 			\item[*] AriamasLaukas - laiko savyje reikšmes, apibūdinančias unikalų lauką, ir metodus, susijusius su lauko darbu.
 			\item[*] Ganykla - laiko parametrus ir metodus darbui su ganyklomis, kurios yra žemės plote.
-			\item[*] UkinisPastatas - saugo ūkinę techniką arba gyvūnus.
-			\item[*] UkioTechnika - laiko ūkio technikos duomenis ir apskaičiuoja technikos judėjimo greitį.
-			\item[*] ZemesParametrai - saugo įvairius žemės parametrus (drėgmė, pH...).
+			\item[*] ŪkinisPastatas - saugo ūkinę techniką arba gyvūnus.
+			\item[*] ŪkioTechnika - laiko ūkio technikos duomenis ir apskaičiuoja technikos judėjimo greitį.
+			\item[*] Žemės parametrai - saugo įvairius žemės parametrus (drėgmė, pH...).
 			\item[*] Orai - klasė, skirta gauti vartotojui reikalingas orų prognozes iš www.gismeteo.lt.
-			\item[*] ZemesDetektorius - klasė, skirta bendrauti su žemės detektoriumi.
-
+			\item[*] Žemės detektorius - klasė, skirta bendrauti su žemės detektoriumi.
 
 		\end{itemize}
 	\item Bendri terminai:
@@ -271,50 +270,6 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 
 \section{Perprojektuotos sistemos aprašymas(To-Be, v2.0)}
 
-\sectionnonum{Žodynas}
-\begin{itemize}
-	\item Klasės:
-		\begin{itemize}
-			\item[*] AutoUkis - pagrindinė (main) programos klasė. Ši klasė piešia grafinę vartotojo sąsają ir laiko savyje kitų klasių objektus, kurių informacija reikalinga piešimui.
-			\item[*] Zemelapis - teritorijos piešimui skirta klasė.
-			\item[*] ZemesTeritorija - apskaičiuoja tam tikros teritorijos plotą.
- 			\item[*] Gyvunas - klasė, skirta gyvūno rodmenims ir metodams saugoti.
-			\item[*] AriamasLaukas - laiko savyje reikšmes, apibūdinančias unikalų lauką, ir metodus, susijusius su lauko darbu.
-			\item[*] Ganykla - laiko parametrus ir metodus darbui su ganyklomis, kurios yra žemės plote.
-			\item[*] UkinisPastatas - saugo ūkinę techniką arba gyvūnus.
-			\item[*] UkioTechnika - laiko ūkio technikos duomenis ir apskaičiuoja technikos judėjimo greitį.
-			\item[*] ZemesParametrai - saugo įvairius žemės parametrus (drėgmė, pH...).
-			\item[*] Orai - klasė, skirta gauti vartotojui reikalingas orų prognozes iš www.gismeteo.lt.
-			\item[*] Detektorius - klasė, skirta bendrauti su žemės detektoriumi.
-			\item[*] VartotojoSasaja - programos grafinė vartotojo sąsaja.
-			\item[*] Tvartas - pastatas, kuriame laikomi ūkio gyvūnai.
-			\item[*] Garazas - pastatas, kuriame laikoma ūkio technika.
-			\item[*] Sandelis - sandėlyje laikomi ūkio ištekliai.
-			\item[*] Naudotojas - žmogus, kuris naudojasi programa.
-			\item[*] SOSPagalba - šioje klasėje iškviečiama pagalba pavojaus atveju.
-			\item[*] Ukininkas - žmogus, kurio valdomoje teritorijoje įdiegtas Auto ūkis.
-			\item[*] Darbuotojas - žmogus, dirbantis ūkininko versle.
-			\item[*] Traktorius - atlieka žemės padargų traukimo funkciją.
-			\item[*] Kombainas - nuima grūdų derlių.
-			\item[*] Adminas - administratorius, atsakingas už tvarkingą programos veiklą.
-			\item[*] SQLUzklausa - uzklausa, gauti duomenis iš duombazės.
-			\item[*] IsoriniaiServisai - kitos paslaugos (pvz., darbo birža).
-			\item[*] RinkosAnalizatorius -  renka duomenis apie rinkos naujienas, aktualias naudotojui.
-			\item[*] Saskaita - laikomi sąskaitos duomenys ir funkcijos veiksmam su ja atlinkti.
-			\item[*] Finansai - laikoma informacija apie ūkio finansus ir aprašytos funkcijos veiksmam su jais.
-			\item[*] Skaiciavimas - atlieka kompleksinius skaičiavimus.
-
-		\end{itemize}
-	\item Bendri terminai:
-		\begin{itemize}
-			\item[*] Žemės plotas - vieta, kurią valdo ir gali stebėti vartotojas (ūkininkas). 
-			\item[*] Detektorius - Arduino mikro kontroleris.
-			\item[*] Arduino - mikro kontroleris, skirtas ūkio sekimui.
-			\item[*] Automatiškai valdoma - valdymui nereikalinga žmogaus pagalba.
-			\item[*] Gyvūnas - visi gyvūnai, kurie priklauso ūkininkui, ir yra registruoti Auto ūkis sistemoje.
-		\end{itemize}
-\end{itemize}
-
 \subsection{Loginis pjūvis}
 			\begin{figure}[H]
 		\centering	
@@ -326,24 +281,14 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\begin{itemize}
 		\item Dizainas:
 			\begin{itemize}
-				\item Visas programos dizainas paremtas Top to Bottom principu. Pradėjome galvoti dideliais objektais ir juos išskirstėm į mažesnius. Pagrindinė klasė yra AutoUkis, kuris iškviečia VartotojoSasaja klasę, kuri ir piešia visą prieinamumą vartotojams. Galima nesunkiai pridėti kitokią vartotojo sąsają ar bet kokią kitą UI piešimo galimybę, kaip ,pavyzdžiui, piešti UI išmaniąjame telefone. Programos modalumas leidžia nesunkiai pridėti funkionalumo, nes programos dalys yra atskiros viena nuo kitos. Pavyzdžiui, ištrynus klasę ŪkinisPastatas visos programos veikimas nesutiriktų. Tuo pačiu metu norint pridėti naują ūkinį pastatą galima nesunkiai tai padaryti įvykdžius paveldėjimą iš tėvinės UkinisPastatas klasės taip, kaip tai daro klasės Garažas, Tvartas ir Sandelis.  
+				\item Visas programos dizainas paremtas Top to bottom principu. Pradėjome galvoti dideliais obijektais ir juos išskirstėm į mažesnius. Pagrindinė klasė yra AutoUkis kuris iškviečia VartotojoSasaja klasė kuri ir piešia visa prieinamuma vartotojams. Galima nesunkiai pridėti kitokią vartotojo sąsają ar betkokią kita UI piešimo galimybę kaip pavyzdžiui piešti UI išnamiąjame telefone. Programos modalumas leidžia nesunkiai pridėti pridėti funkionalumo, nes programos dalys yra atskiros viena nuo kitos. Pavyzdžiui ištrynus klasę ŪkinisPastatas visos programos veikimas nesutiriktų. Tuo pačiu metu norint pridėti naują naują ūkini pastatą galimą nesunkiai tai padaryti įvykdžius paveldėjimą iš tėvinės UkinisPastatas klasės taip, kaip tai daro klasės Garažas, Tvartas ir Sandelis.  
 			\end{itemize}
 		\item Funkionalumas: 
 			\begin{itemize}
-				\item Programos funkcionalumas susideda iš trijų pagrindinių dalių, vartotojų prieiga prie sistemos, finansų bei išteklių(žmogiškųjų ir natūraliųjų) valdymas, išteklių sekimas. Prieigos dalyje funkcionalumas pasižymi prieigos išskaidymą. Skirtingi sistemos vartotojai gauna skirtingą prieigą ir galimybes naudotis sistema. Pavyzdžiui, darbuotojas negali tvarkyti įmonės finansų, tačiau visi sistemos vartotojai gali kviesti greitąją pagalbą. Nesunku implementuoti naują vartotojų klasę (pvz. Svečias). Finansų bei išteklių dalyje ūkininkas gali tvarkyti savo išteklius, pavyzdžiui, samdyti arba atleisiti darbuotojus, stebėti rinkos kainą ir nuspręsti, kada jam palankiausia parduoti, sudarinėti sąskaitas ir tvarkyti kitą buhalteriją. Trečiojoje sistemos dalyje yra įgyvendinamas išteklių sekimas. Vartotojai, turintys prieigą gali stebėti žemės parametrus, ūkio technikos sąrašą, ūkinių pastatų sąrašą bei gyvūnų, priklausančių sistemai, sąrašą.
+				\item Programos funkcionalumas susideda iš trijų pagrindinių dalių, vartotojų prieeiga prie sistemos, finansų bei išteklių(žmogiškųjų ir natūrliųjų) valdymas bei išteklių sekimas. Prieeigos dalyje funkcionalumas pasižymi prieeigos iššskaidymą. Skirtindi sistemos vartotojai gauna skirtingą prieeiga ir galimybes naudotis sistema. Pavyzdžiui darbuotojas negali tvarkyti įmonės finansų, tačiau visi sistemos vartotojai gali kviesti greitąją pagalbą. Nesunku implementuoti naują vartotojų klasę(pvz. Svečias). Finansų bei išteklių dalyje ūkininkas gali tvarkyti tvarkyti savo ištelius. Pavyzdžiui samdyti arba atleisiti darbuotojus, stebėti rinkos kainą ir nuspresti kada jam palankiausia parduoti, sudarinėti sąskaitas ir tvarkyti kitą buhalteriją. Trečiojoje sistemos dalyje yra įgyvendinamas išteklių sekimas. Vartotojai turintys prieeigą gali stebėti žemės parametrus, ūkio technikos sąrašą, ūkinių pastatų sąraša bei gyvūnų priklausančių sistemai sąraša.
 			\end{itemize}
 
 	\end{itemize}
-
-\begin{itemize}
-		\item Elementų ir užduočių ryšių matrica:
-\end{itemize}
-	\begin{figure}[H]
-	\centering	
-\includegraphics[width=15cm,height=15cm,keepaspectratio]{KomUzd2.png}
-\caption{}
-\label{fig:elementu_ir_uzd_matrica}
-\end{figure}
 
 
 \subsection{Kūrimo pjūvis}
@@ -398,7 +343,7 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\caption{}
 	\label{fig:PelnoSkaičiavimas}
 \end{figure}
-Šioje diagramoje matome, kad ūkininkui pateikus užklausą planuojamui pelnui gauti, Ūkininkas UI kreipiasi į Calculations klasę su prašymu jį apskaičiuoti. Ši savo ruožtu norėdama gauti reikiamus duomenis kreipiasi į klases UkioTechnika, Map ir Orai.
+Šioje diagramoje matome, kad ūkininkui pateikus užklausą planuojamui pelnui gauti, Ūkininkas UI kreipiasi į Calculations su prašymu jį apskaičiuoti. Šis savo ruožtu norėdama gauti reikiamus duomenis kreipiasi į klases UkioTechnika, Map ir Orai.
 \item Teritorijos žimėjimo seka:
 	\begin{figure}[H]
 		\centering	
@@ -452,6 +397,8 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\end{figure}
 \item Šiose diagramose matoma kaip įgyvendinamas atitinkamas scenarijus programos vykdymo metu.
 \end{itemize}
+
+
 \subsection{Fizinis pjūvis}
 	Šiame skyriuje parodoma programos naudojama aparatinė įranga, komunikacija tarp tinklo mazgų bei programos komponentų išdėstymas juose.
 	\newline
