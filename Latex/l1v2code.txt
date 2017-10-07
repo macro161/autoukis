@@ -1,0 +1,26 @@
+@startuml
+skinparam componentStyle uml2
+
+[Sistema]--()DuomenysUkininkui
+[Ukininko panele]--(DuomenysUkininkui
+[Sistema]-up-()DarbuotojoDuomenys
+[Darbuotojo panele]--(DarbuotojoDuomenys
+[Sistema]--()PrieeigaAdminui
+[Admino panele]--(PrieeigaAdminui
+[Mikrokontroleris]-up-()Duomenys
+[Sistema]-down-(Duomenys
+[Mikrokontroleris]--(AC
+[Oru tarnyba]--()OruPrognoze
+[SOS pagalba]--()TarnybosIskvietimas
+[Sistema]--(OruPrognoze
+[Sistema]--(TarnybosIskvietimas
+
+
+
+
+
+
+
+
+
+@enduml
