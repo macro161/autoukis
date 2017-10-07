@@ -45,7 +45,10 @@
 \sectionnonum{Įvadas}
 Automatinė ūkio valdymo sistema (toliau - Auto ūkis) yra programa, leidžianti ūkininkui valdyti jo ūkį skaitmeniniu būdu. Auto ūkis leidžia registruoti gyvūnus ir stebėti kiekvieno jų bioparametrus (kraujo spaudimą, svorį, sveikatą) bei matyti ūkio technikos judėjimą po žemės plotą. Taip pat sistema vartotojui leidžia sekti dirvos parametrus (drėgmę, pH lygį), oro prognozes ir gyvūnų ligų paplitimą aplinkinėse teritorijose. Auto ūkis padeda ir su verslo valdymu: nesunkiai galima samdyti darbuotojus, atlikti buhalterinę apyskaitą, stebėti rinkos kainas ir apskaičiuoti bei numatyti galimą pelną. Iškilus nelaimei per Auto ūkio sistemą galima greitai iškviesti greitąją pagalbą, policiją, gaisrinę ar saugos tarnybą. Orų prognozės yra paimtos iš www.gismeteo.lt. Pagrindinė sistemos inovacija yra tai, kad, kai sistema yra pilnai įdiegta, darbuotojų skaičius, reikalingas palaikyti ūkį, tampa minimalus. Kadangi ūkio technika būtų valdoma automatiškai, vairuotojų ir derliaus nurinkėjų nereiktų. Gyvūnų sekimas yra įgyvendinamas mikro kontrolerio su Arduino pagalba. Šis kontroleris nedidelis ir lengvai pritaikomas visokio pobūdžio darbams. Jį, kartu su WiFi moduliu, sistema naudoja gauti gyvūno lokaciją per Google Maps,- taip pasiklydę ar pavogti gyvūnai būtų greitai surandami ir grąžinami. Žemės laistymas ir tręšimas taip pat būtų automatizuotas: parametrai gaunami per Arduino detektorius, kurie pagal pasikeitusią dirvos kompoziciją nusprendžia, ko trūksta žemei, ir aktyvuoja laistymo ir tręšimo sistemas. Darbuotojų samdymas yra įgyvendintas per darbo biržos puslapį, kur greitai ir nesunkiai galimą įdėti skelbimą arba surasti darbuotoją. Buhalterija yra tvarkoma naudojantis nemokama buhalterijos programa Wave Accounting, kuri yra implementuota į Auto ūkį.  Auto ūkio sistema yra parašyta JAVA kalba - tai leidžia programą paleisti ant bet kurios operacinės sistemos. Ateityje numatoma galimybė programą perkelti į išmaniuosius telefonus. Sistema buvo projektuojama pasitelkiant www.planttext.com ir www.draw.io funkcionalumą.
 
-\sectionnonum{Žodynas}
+\section{Sukurtos sistemos aprašymas(v1.0)}
+
+\subsection{Loginis pjūvis}
+\subsubsection{Žodynas}
 \begin{itemize}
 	\item Klasės:
 		\begin{itemize}
@@ -74,10 +77,7 @@ Automatinė ūkio valdymo sistema (toliau - Auto ūkis) yra programa, leidžiant
 			\item[*] Gyvūnas - visi gyvūnai, kurie priklauso ūkininkui, ir yra registruoti Auto ūkis sistemoje.
 		\end{itemize}
 \end{itemize}
-
-\section{Sukurtos sistemos aprašymas(v1.0)}
-
-\subsection{Loginis pjūvis}
+\subsubsection{Klasių diagrama}
 Pagal suprogramuotą šabloninį programos karkasą nubraižėme  \hyperref[fig:uml]{\textit{ UML diagramą(1 pav)}} minėta PlnatText programa.
 	\begin{figure}[H]	
 	\centering	
@@ -271,7 +271,8 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 
 \section{Perprojektuotos sistemos aprašymas(To-Be, v2.0)}
 
-\sectionnonum{Žodynas}
+\subsection{Loginis pjūvis}
+\subsubsection{Žodynas}
 \begin{itemize}
 	\item Klasės:
 		\begin{itemize}
@@ -314,8 +315,7 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 			\item[*] Gyvūnas - visi gyvūnai, kurie priklauso ūkininkui, ir yra registruoti Auto ūkis sistemoje.
 		\end{itemize}
 \end{itemize}
-
-\subsection{Loginis pjūvis}
+\subsubsection{Klasių diagrama}
 			\begin{figure}[H]
 		\centering	
 \includegraphics[width=18cm,height=17cm,keepaspectratio]{Klasesv2.png}
@@ -382,7 +382,7 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 \item L2(SOS pagalba):
 	\begin{figure}[H]
 		\centering	
-	\includegraphics[width=17cm,height=20cm,keepaspectratio]{L2SOS.png}
+	\includegraphics[width=10cm,height=10cm,keepaspectratio]{L2SOS.png}
 	\caption{}
 	\label{fig:L2SOS}
 \end{figure}
