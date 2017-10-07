@@ -26,20 +26,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.}Perprojektuotos sistemos aprašymas(To-Be, v2.0)}{15}{section.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.}Loginis pjūvis}{15}{subsection.2.1}
+\contentsline {section}{Žodynas}{16}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.}Kūrimo pjūvis}{16}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.1.}Loginis pjūvis}{17}{subsection.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.}Use case}{16}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.2.}Kūrimo pjūvis}{18}{subsection.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.}Proceso pjūvis}{16}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.3.}Use case}{21}{subsection.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.1.}Sekų diagramos}{17}{subsubsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.}Proceso pjūvis}{21}{subsection.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.2.}Būsenų diagramos}{18}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.1.}Sekų diagramos}{21}{subsubsection.2.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.3.}Veiklos diagramos}{18}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.2.}Būsenų diagramos}{23}{subsubsection.2.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.}Fizinis pjūvis}{21}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.4.3.}Veiklos diagramos}{23}{subsubsection.2.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Rezultatai ir išvados}{22}{section*.29}
+\contentsline {subsection}{\numberline {2.5.}Fizinis pjūvis}{25}{subsection.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Rezultatai ir išvados}{27}{section*.35}
