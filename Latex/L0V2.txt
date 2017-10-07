@@ -1,0 +1,19 @@
+@startuml
+
+skinparam componentStyle uml2
+
+
+[Auto Ukis] -left--() UkininkasUI 
+[Auto Ukis] -right-() AdminasUI
+[Auto Ukis] -left--() DarbuotojasUI
+[Auto Ukis] -() ArduinasAPI
+:Darbuotojas: -down--(DarbuotojasUI
+:Ukininkas: -down--( UkininkasUI
+:Adminas: -down-( AdminasUI
+:MikroKontroleris: -down-( ArduinasAPI
+:SOS pagalba: -right-() SOSPagalbaAPI
+:OruTarnyba:-down-() OraiAPI
+[Auto Ukis] -down-( SOSPagalbaAPI
+[Auto Ukis] -up-( OraiAPI
+
+@enduml
