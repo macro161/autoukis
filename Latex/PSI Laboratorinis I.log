@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6400 64-bit) (preloaded format=xelatex 2017.10.3)  8 OCT 2017 01:20
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6400 64-bit) (preloaded format=xelatex 2017.10.4)  8 OCT 2017 02:08
 entering extended mode
 **"./PSI Laboratorinis I.tex"
 ("PSI Laboratorinis I.tex"
@@ -6,9 +6,9 @@ LaTeX2e <2017-04-15>
 Babel <3.13> and hyphenation patterns for 75 language(s) loaded.
 (VUMIFPSkursinis.cls
 Document Class: VUMIFPSkursinis 2015/02/03 1.0 VU MIF SE course work class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo"
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -25,34 +25,44 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 ) (LTPlius.sty
 Package: LTPlius 2014/12/24 1.4.0 Lithuanian language additions
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\polyglossia\polyglossia.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polyglossia\polyg
+lossia.sty"
 Package: polyglossia 2015/03/25 v1.42.4 Alternative to Babel for XeLaTeX and Lu
 aLaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox
+.sty"
 Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count87
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\makecmds\makecmds.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\makecmds\makecmds
+.sty"
 Package: makecmds 2009/09/03 v1.0a extra command making commands
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.s
+ty"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval
+.tex"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutil
+s.tex"
 \XKV@toks=\toks14
 \XKV@tempa@toks=\toks15
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\keyval.tex"))
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\keyval.
+tex"))
 \XKV@depth=\count88
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec.sty"
-("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fontspec\fontspec
+.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3.st
+y"
 Package: expl3 2017/09/18 L3 programming layer (loader) 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3-code.tex"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3-co
+de.tex"
 Package: expl3 2017/09/18 L3 programming layer (code)
 \c_max_int=\count89
 \l_tmpa_int=\count90
@@ -191,12 +201,14 @@ Package: expl3 2017/09/18 L3 programming layer (code)
 \l__coffin_scaled_total_height_dim=\dimen132
 \l__coffin_scaled_width_dim=\dimen133
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3xdvipdfmx.def"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\l3xdvipd
+fmx.def"
 File: l3xdvidpfmx.def 2017/03/18 v L3 Experimental driver: xdvipdfmx
 \g__driver_image_int=\count167
 \l__driver_tmp_box=\box41
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\l3packages\xparse\xparse.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages\xparse
+\xparse.sty"
 Package: xparse 2017/09/18 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count168
 \g__xparse_grabber_int=\count169
@@ -206,7 +218,8 @@ Package: xparse 2017/09/18 L3 Experimental document command parser
 )
 Package: fontspec 2017/09/22 v2.6e Font selection for XeLaTeX and LuaLaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec-xetex.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fontspec\fontspec
+-xetex.sty"
 Package: fontspec-xetex 2017/09/22 v2.6e Font selection for XeLaTeX and LuaLaTe
 X
 \l__fontspec_script_int=\count173
@@ -222,10 +235,9 @@ X
 \l__fontspec_tmpc_dim=\dimen136
 \g__file_internal_ior=\read1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\tuenc.def"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\tuenc.def"
 File: tuenc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
 ))
@@ -390,7 +402,8 @@ LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
 . Defining command \UndeclareComposite with sig. 'mm' on line 3626.
 .................................................
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec.cfg")
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fontspec\fontspec
+.cfg")
 LaTeX Info: Redefining \itshape on input line 3804.
 LaTeX Info: Redefining \slshape on input line 3809.
 LaTeX Info: Redefining \scshape on input line 3814.
@@ -409,33 +422,40 @@ LaTeX Info: Redefining \- on input line 3925.
 . Defining command \liningnums with sig. 'm' on line 4024.
 .................................................
 ))
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluat
+ex.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex
+.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \xpg@normalclass=\XeTeXcharclass1
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\polyglossia\gloss-lithuanian.ldf"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polyglossia\gloss
+-lithuanian.ldf"
 File: gloss-lithuanian.ldf polyglossia: module for lithuanian
 )
 Package polyglossia Info: Default language is lithuanian.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\polyglossia\gloss-english.ldf"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polyglossia\gloss
+-english.ldf"
 File: gloss-english.ldf polyglossia: module for english
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\indentfirst.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\indentfirst
+.sty"
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\was\icomma.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\was\icomma.sty"
 Package: icomma 2002/03/10 v2.0 (WaS)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.s
+ty"
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.
+sty"
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen137
@@ -484,16 +504,20 @@ ext;"
 .................................................
 LaTeX Info: Redefining \rmfamily on input line 28.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\setspace
+.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry
+.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.
+sty"
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex
+.sty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
@@ -510,8 +534,10 @@ Package ifvtex Info: VTeX not detected.
 \Gm@layoutvoffset=\dimen151
 \Gm@dimlist=\toks16
 
-("C:\Program Files\MiKTeX 2.9\tex\xelatex\xetexconfig\geometry.cfg"))
-("C:\Program Files\MiKTeX 2.9\tex\latex\tocloft\tocloft.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\xetexconfig\geo
+metry.cfg"))
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tocloft\tocloft.s
+ty"
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 51.
 \cftparskip=\skip49
@@ -548,7 +574,8 @@ Package tocloft Info: The document has section divisions on input line 51.
 \cfttabindent=\skip78
 \cfttabnumwidth=\skip79
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr
+.sty"
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip80
@@ -561,7 +588,8 @@ s
 \f@nch@O@olf=\skip87
 \f@nch@O@orf=\skip88
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\silence\silence.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\silence\silence.s
+ty"
 Package: silence 2012/07/02 v1.5b Selective filtering of warnings and error mes
 sages
 \sl@Save=\count188
@@ -585,17 +613,21 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 \sl@BankOfErrors=\toks24
 LaTeX Info: Redefining \GenericError on input line 601.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex
+.sty"
 Package: biblatex 2016/12/05 v3.7 programmable bibliographies (PK/JW/AB)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftex
+cmds.sty"
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwar
+err.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmd
+s.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -604,35 +636,41 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoption
+s.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetk
+eys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcm
+ds.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-("C:\Program Files\MiKTeX 2.9\tex\latex\logreq\logreq.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.sty
+"
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count198
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\logreq\logreq.def"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.def
+"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+) ("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\xstring\xstring.sty"
-("C:\Program Files\MiKTeX 2.9\tex\generic\xstring\xstring.tex"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xstring\xstring.s
+ty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xstring\xstring
+.tex"
 \@xs@message=\write3
 \integerpart=\count199
 \decimalpart=\count266
@@ -693,7 +731,8 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def")
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-dm.d
+ef")
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'trad-alpha.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
@@ -773,13 +812,15 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-comp
+at.def"
 File: blx-compat.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.def"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex
+.def"
 File: biblatex.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
 \c@textcitecount=\count374
 \c@textcitetotal=\count375
@@ -792,17 +833,20 @@ File: biblatex.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'trad-alpha'...
 Package biblatex Info: ... file 'trad-alpha.bbx' found.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex-trad\trad-alpha.bbx"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex-trad\tra
+d-alpha.bbx"
 File: trad-alpha.bbx 2016/06/26 v0.3 biblatex-trad
 Package biblatex Info: Trying to load bibliography style 'trad-standard'...
 Package biblatex Info: ... file 'trad-standard.bbx' found.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex-trad\trad-standard.bbx"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex-trad\tra
+d-standard.bbx"
 File: trad-standard.bbx 2016/06/26 v0.3 biblatex-trad
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\stan
+dard.bbx"
 File: standard.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
 \c@bbx:relatedcount=\count381
 \c@bbx:relatedtotal=\count382
@@ -814,12 +858,15 @@ Package biblatex Warning: Macro 'in:' already defined.
 ))
 Package biblatex Info: Trying to load citation style 'trad-alpha'...
 Package biblatex Info: ... file 'trad-alpha.cbx' found.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex-trad\trad-alpha.cbx"
+
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex-trad\tra
+d-alpha.cbx"
 File: trad-alpha.cbx 2016/06/26 v0.3 biblatex-trad
 Package biblatex Info: Trying to load citation style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.cbx' found.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\cbx\alphabetic.cbx"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\alph
+abetic.cbx"
 File: alphabetic.cbx 2016/12/05 v3.7 biblatex citation style (PK/JW/AB)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -835,7 +882,8 @@ Package biblatex Info: Redefining '\smartcites'.
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex
+.cfg"
 File: biblatex.cfg 
 )
 
@@ -858,7 +906,9 @@ dtf' instead.
 Package biblatex Warning: 'iso8601' date format specifier is deprecated, use 'e
 dtf' instead.
 
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\csquotes\csquotes.sty"
+)
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes
+.sty"
 Package: csquotes 2017/03/11 v5.2b context-sensitive quotations (JAW)
 \csq@reset=\count383
 \csq@gtype=\count384
@@ -868,7 +918,8 @@ Package: csquotes 2017/03/11 v5.2b context-sensitive quotations (JAW)
 \csq@tshold=\count388
 \csq@ltx@everypar=\toks25
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\csquotes\csquotes.def"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes
+.def"
 File: csquotes.def 2017/03/11 v5.2b csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
@@ -878,7 +929,9 @@ File: csquotes.cfg
 )
 Package csquotes Info: Disabling multilingual quotes.
 Package csquotes Info: Redefining alias 'default' -> 'lithuanian'.
-)) ("C:\Program Files\MiKTeX 2.9\tex\latex\algorithmicx\algorithmicx.sty"
+))
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algo
+rithmicx.sty"
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
@@ -892,12 +945,14 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \c@ALG@storecount=\count394
 \c@ALG@tmpcounter=\count395
 \ALG@tmplength=\skip105
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
+)
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algori
+thm.sty"
 Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count396
 \float@exts=\toks26
@@ -908,11 +963,14 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@every@algorithm=\toks28
 \c@algorithm=\count397
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\algorithmicx\algpseudocode.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algp
+seudocode.sty"
 Package: algpseudocode 
 
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+)
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts
+.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks29
 \symAMSa=\mathgroup4
@@ -920,24 +978,30 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.s
+ty"
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip106
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.s
+ty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.st
+y"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks30
 \ex@=\dimen152
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.st
+y"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen153
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.st
+y"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count398
@@ -977,8 +1041,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \mathdisplay@stack=\toks34
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\bm.sty"
+) ("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\bm.sty"
 Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
@@ -986,27 +1049,34 @@ Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.st
+y"
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\colo
+r.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: xetex.def on input line 147.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\xetex.def"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\xete
+x.def"
 File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx
+.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics
+.sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\grap
+hics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 99.
@@ -1014,7 +1084,8 @@ Package graphics Info: Driver file: xetex.def on input line 99.
 \Gin@req@height=\dimen161
 \Gin@req@width=\dimen162
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings
+.sty"
 \lst@mode=\count410
 \lst@gtempboxa=\box46
 \lst@token=\toks35
@@ -1028,18 +1099,21 @@ Package graphics Info: Driver file: xetex.def on input line 99.
 \lst@lineno=\count415
 \lst@maxwidth=\dimen166
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.
+sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count416
 \lst@skipnumbers=\count417
 \lst@framebox=\box47
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings
+.cfg"
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfig\subfig.sty
+"
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 \c@KVtest=\count418
 \sf@farskip=\skip109
@@ -1053,7 +1127,8 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 \sf@top=\skip112
 \sf@bottom=\skip113
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.s
+ty"
 \wrapoverhang=\dimen168
 \WF@size=\dimen169
 \c@WF@wrappedlines=\count423
@@ -1061,14 +1136,17 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 \WF@everypar=\toks36
 Package: wrapfig 2003/01/31  v 3.6
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref
+.sty"
 Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub
+-hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub
+-generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -1096,19 +1174,22 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.
+sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen170
 \Hy@linkcounter=\count424
 \Hy@pagecounter=\count425
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.d
+ef"
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count426
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref
+.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 4374.
@@ -1141,13 +1222,17 @@ LaTeX Info: Redefining \pageref on input line 6432.
 
 Package hyperref Message: Driver (autodetected): hxetex.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hxetex.def"
+
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hxetex.d
+ef"
 File: hxetex.def 2017/03/14 v6.85a Hyperref driver for XeTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\puenc.def"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\puenc.de
+f"
 File: puenc.def 2017/03/14 v6.85a Hyperref: PDF Unicode definition (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\stringenc.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\string
+enc.sty"
 Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
 )
 )
@@ -1157,7 +1242,8 @@ Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
 \Fld@listcount=\count434
 \c@bookmark@seq@number=\count435
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfil
+echeck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
 (rerunfilecheck)             (e.g. pdfTeX or LuaTeX with package `pdftexcmds').
@@ -1171,7 +1257,8 @@ tly
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\engl
+ish.lbx"
 File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 )
 Package biblatex Info: Trying to load language 'lithuanian'...
@@ -1189,6 +1276,12 @@ Package biblatex Warning: Conflicting options.
 ("PSI Laboratorinis I.aux"
 
 LaTeX Warning: Label `fig:elementu_ir_uzd_matrica' multiply defined.
+
+
+LaTeX Warning: Label `fig:' multiply defined.
+
+
+LaTeX Warning: Label `fig:' multiply defined.
 
 
 LaTeX Warning: Label `' multiply defined.
@@ -1348,10 +1441,13 @@ Package biblatex Info: Reference segment=0 on input line 38.
 \c@lstlisting=\count436
 \AtBeginShipoutBox=\box50
 Package hyperref Info: Link coloring ON on input line 38.
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.
+sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettit
+lestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count437
@@ -1359,26 +1455,25 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 38.
 LaTeX Info: Redefining \pageref on input line 38.
 LaTeX Info: Redefining \nameref on input line 38.
-
-("PSI Laboratorinis I.out") ("PSI Laboratorinis I.out")
+ ("PSI Laboratorinis I.out") ("PSI Laboratorinis I.out")
 \@outlinefile=\write5
 \openout5 = `"PSI Laboratorinis I.out"'.
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 40.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 40.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+ ("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
+"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\se-ascii-print.def"
+("C:\Users\normie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\se-asc
+ii-print.def"
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
-)
-[1
+) [1
 
 ] ("PSI Laboratorinis I.toc")
 \tf@toc=\write6
@@ -1388,14 +1483,12 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 ] [2
 
-] [3
-
 ]
 File: uml.png Graphic file (type bmp)
 <uml.png>
- [4
+ [3
 
-] [5]
+] [4] [5]
 File: l0.png Graphic file (type bmp)
 <l0.png>
 File: l1.png Graphic file (type bmp)
@@ -1410,10 +1503,10 @@ File: l2darb.png Graphic file (type bmp)
 <l2darb.png>
 File: l2det.png Graphic file (type bmp)
 <l2det.png>
- [8]
 File: elementu_ir_uzd_matrica.png Graphic file (type bmp)
 <elementu_ir_uzd_matrica.png>
- [9]
+
+[8] [9]
 File: Use_case_prisijungimas_registracija.png Graphic file (type bmp)
 <Use_case_prisijungimas_registracija.png>
 File: Use_case_zemelapio_zymejimas.png Graphic file (type bmp)
@@ -1425,87 +1518,91 @@ File: ActivityMapŽimėjimas.png Graphic file (type bmp)
 <ActivityMapŽimėjimas.png>
 File: Busenu.png Graphic file (type bmp)
 <Busenu.png>
-
-[11] [12]
+ [11] [12]
 File: Deployment.png Graphic file (type bmp)
 <Deployment.png>
 File: Deployment0.png Graphic file (type bmp)
 <Deployment0.png>
  [13] [14] [15
 
-] [16
-
 ]
 File: Klasesv2.png Graphic file (type bmp)
 <Klasesv2.png>
 
-Overfull \hbox (42.69656pt too wide) in paragraph at lines 321--322
+Overfull \hbox (42.69656pt too wide) in paragraph at lines 324--325
  [][] 
  []
 
-[17]
+[16]
 File: KomUzd2.png Graphic file (type bmp)
 <KomUzd2.png>
- [18]
+ [17]
 File: L0V2.png Graphic file (type bmp)
 <L0V2.png>
 
-Overfull \hbox (14.24005pt too wide) in paragraph at lines 361--362
+Overfull \hbox (14.24005pt too wide) in paragraph at lines 364--365
  [][] 
  []
 
 File: L1V2.png Graphic file (type bmp)
 <L1V2.png>
 
-Overfull \hbox (14.23195pt too wide) in paragraph at lines 372--373
+Overfull \hbox (14.23195pt too wide) in paragraph at lines 375--376
  [][] 
  []
 
+[18]
 File: L2(oruprognoze).png Graphic file (type bmp)
 <L2(oruprognoze).png>
+File: 2L2Uk.png Graphic file (type bmp)
+<2L2Uk.png>
+ [19]
+File: 2L2Admin.png Graphic file (type bmp)
+<2L2Admin.png>
+File: 2L2Darb.png Graphic file (type bmp)
+<2L2Darb.png>
+File: L2SOS.png Graphic file (type bmp)
+<L2SOS.png>
+ [20]
 File: L2(mikrokontroleris).png Graphic file (type bmp)
 <L2(mikrokontroleris).png>
-[19]
-Overfull \vbox (342.68248pt too high) has occurred while \output is active []
-
-
-[20]
 File: UseCaseFull.png Graphic file (type bmp)
 <UseCaseFull.png>
+ [21]
 File: PelnoSkaičiavimas.png Graphic file (type bmp)
 <PelnoSkaičiavimas.png>
 
-Overfull \hbox (14.24208pt too wide) in paragraph at lines 416--417
+Overfull \hbox (14.24208pt too wide) in paragraph at lines 444--445
  [][] 
  []
 
-[21]
+[22]
 File: ŽymėtiTeritorijas.png Graphic file (type bmp)
 <ŽymėtiTeritorijas.png>
 File: BusenuDetektorius.png Graphic file (type bmp)
 <BusenuDetektorius.png>
- [22]
+ [23]
 File: veiklos_diagrama_orai.png Graphic file (type bmp)
 <veiklos_diagrama_orai.png>
 File: veiklos_diagrama_technikos_sekimas.png Graphic file (type bmp)
 <veiklos_diagrama_technikos_sekimas.png>
- [23]
+ [24]
 File: veiklos_diagrama_zymeti_teritorijas.png Graphic file (type bmp)
 <veiklos_diagrama_zymeti_teritorijas.png>
 File: VeiklosGyvunuSuvedimas.png Graphic file (type bmp)
 <VeiklosGyvunuSuvedimas.png>
- [24]
+ [25]
 File: 2D0.png Graphic file (type bmp)
 <2D0.png>
- [25] [26]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 496.
- [27
+ [26] [27] [28]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 530.
+ [29
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 496.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 530.
  ("PSI Laboratorinis I.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 496.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 496.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 530.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 530.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1515,12 +1612,12 @@ Package logreq Info: Writing requests to '"PSI Laboratorinis I".run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29803 strings out of 427827
- 544776 string characters out of 3152365
- 1038987 words of memory out of 3000000
- 33464 multiletter control sequences out of 15000+200000
+ 29823 strings out of 427827
+ 547173 string characters out of 3148207
+ 1040042 words of memory out of 3000000
+ 33480 multiletter control sequences out of 15000+200000
  543566 words of font info for 90 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  67i,12n,96p,10512b,3426s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on PSI Laboratorinis I.pdf (28 pages).
+Output written on PSI Laboratorinis I.pdf (30 pages).
