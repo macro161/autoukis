@@ -29,6 +29,7 @@ class UkinisPastatas
 class Tvartas
 class Garazas
 class Sandelis
+class EventReporter
 
 
 AutoUkis o-left- VartotojoSasaja
@@ -63,6 +64,6 @@ RinkosAnalizatorius -down-> Skaiciavimas
 VartotojoSasaja o-up- ZemesTeritorija
 VartotojoSasaja o-- UkioTechnika
 Ukininkas -down-> RinkosAnalizatorius
- 
+VartotojoSasaja o-- EventReporter
 
 @enduml
