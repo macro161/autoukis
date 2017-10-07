@@ -43,34 +43,34 @@
 
 \centering	
 \sectionnonum{Įvadas}
-Automatinė ūkio valdymo sistema(toliau Auto ūkis) - yra programa leidžianti ūkininkui valdyti jo ūki skaitmeniniu būdu. Auto ūkis  leidžia stebėti kiekvieno individualaus gyvūno bioparametrus(kraujo spaudima, svorį, sveikatą), ūkio technikos judėjimą po žemės plota, gyvūnų registracija. Taip pat sistema vartotojui leidžia sekti dirvos parameturs(drėgmę, pH lygi),  oro prognozes ir aplinkinių teritorijų gyvūnų ligų paplitimą. Auto ūkis padeda ir su verslo valdymu, nesunkiai galima samdyti darbuotojus, atlikti buhalterinę apyskaita, stebėti rinkos kainas ir skaičiuoti bei numatyti galimą pelną. Iškilus nelaimės per Auto ūkio sistemą galima greitai iškviesti greitąją pagalba, policiją, gaisrinę ar saugos tarnybą. Orai prognozės yra paimtos iš www.gismeteo.lt. Pagrindinė sistemos inovacija yra tai, kad kai sistema yra pilnai įdiegta darbuotojų skaičius palaikyti ūki tampa minimalus. Ūkio technika būtų valdoma automatiškai todėl vairuotojų ir derliaus nurikėjų nereiktų. Gyvūnų sekimas yra įgyvendinamas microkontrolerio Arduino pagalba. Kadangi šis kontroleris ledidelis ir lengvai pritaikomas visiokio pobūdžio darbams ji kartu su WiFi moduliu sistema naudoja gauti gyvųno lokacija per Google maps. Taip pasiklydę ar pavogti gyvųnai būtų greitai gražinami surandami ir gražinami. Žemės laistymas, tręšimas taip pat būtų automatizuotas, parametrai gaunami per Arduino detektorius, kurie pagal pasikeitusia dirvos kompozicija nusprendžia ko trūksta žemei ir aktyvuoja laistymo ir tręšimo sistemas. Darbuottojų samdymas yra įgyvendintas per darbo biržos puslapį, kur greitai ir nesunkiai galimą įdėti skelbimą arba surasti darbuotoją. Buhalterija yra tvarkoma nemokamos buhalterijos programos Wave Accounting kuri yra implementuota į Auto ūki.  Auto ūkio sistema yra parašyta JAVA kalba kas leidžia programą paleisti ant betkurios operacinės sistemos. Ateityje numatoma galimybė programą perkelti į išmaniuosius telefonus. Sistema buvo projektuojama pasitelkiant www.planttext.com ir www.draw.io funkcionalumą.
+Automatinė ūkio valdymo sistema (toliau - Auto ūkis) yra programa, leidžianti ūkininkui valdyti jo ūkį skaitmeniniu būdu. Auto ūkis leidžia registruoti gyvūnus ir stebėti kiekvieno jų bioparametrus (kraujo spaudimą, svorį, sveikatą) bei matyti ūkio technikos judėjimą po žemės plotą. Taip pat sistema vartotojui leidžia sekti dirvos parametrus (drėgmę, pH lygį), oro prognozes ir gyvūnų ligų paplitimą aplinkinėse teritorijose. Auto ūkis padeda ir su verslo valdymu: nesunkiai galima samdyti darbuotojus, atlikti buhalterinę apyskaitą, stebėti rinkos kainas ir apskaičiuoti bei numatyti galimą pelną. Iškilus nelaimei per Auto ūkio sistemą galima greitai iškviesti greitąją pagalbą, policiją, gaisrinę ar saugos tarnybą. Orų prognozės yra paimtos iš www.gismeteo.lt. Pagrindinė sistemos inovacija yra tai, kad, kai sistema yra pilnai įdiegta, darbuotojų skaičius, reikalingas palaikyti ūkį, tampa minimalus. Kadangi ūkio technika būtų valdoma automatiškai, vairuotojų ir derliaus nurinkėjų nereiktų. Gyvūnų sekimas yra įgyvendinamas mikro kontrolerio su Arduino pagalba. Šis kontroleris nedidelis ir lengvai pritaikomas visokio pobūdžio darbams. Jį, kartu su WiFi moduliu, sistema naudoja gauti gyvūno lokaciją per Google Maps,- taip pasiklydę ar pavogti gyvūnai būtų greitai surandami ir grąžinami. Žemės laistymas ir tręšimas taip pat būtų automatizuotas: parametrai gaunami per Arduino detektorius, kurie pagal pasikeitusią dirvos kompoziciją nusprendžia, ko trūksta žemei, ir aktyvuoja laistymo ir tręšimo sistemas. Darbuotojų samdymas yra įgyvendintas per darbo biržos puslapį, kur greitai ir nesunkiai galimą įdėti skelbimą arba surasti darbuotoją. Buhalterija yra tvarkoma naudojantis nemokama buhalterijos programa Wave Accounting, kuri yra implementuota į Auto ūkį.  Auto ūkio sistema yra parašyta JAVA kalba - tai leidžia programą paleisti ant bet kurios operacinės sistemos. Ateityje numatoma galimybė programą perkelti į išmaniuosius telefonus. Sistema buvo projektuojama pasitelkiant www.planttext.com ir www.draw.io funkcionalumą.
 
 \sectionnonum{Žodynas}
 \begin{itemize}
 	\item Klasės:
 		\begin{itemize}
-			\item[*] AutoŪkis - pagrindinė(main) programos klasė. Ši klasė piešia grafinę vartotojo sąsaja ir laiko savyje kitų klasių objektus kurių informacija reikalinga piešimui
+			\item[*] AutoŪkis - pagrindinė (main) programos klasė. Ši klasė piešia grafinę vartotojo sąsają ir laiko savyje kitų klasių objektus, kurių informacija reikalinga piešimui.
 			\item[*] Map - teritorijos piešimui skirta klasė.
 			\item[*] ŽemėsTeritorija - apskaičiuoja tam tikros teritorijos plotą.
- 			\item[*] Gyvūnas - klasė skirta gyvūno rodmenims ir metodams saugoti
-			\item[*] AriamasLaukas - laiko savyje reikšmes apibūdinančias unikalų lauką ir metodus susijusius su lauko darbu.
-			\item[*] Ganykla - laiko parametrus ir metodus darbui su ganyklomis kurios yra žemės plote.
-			\item[*] ŪkinisPastatas - saugo ūkinius 
-			\item[*] ŪkioTechnika - laiko ūkio technikos charakteristikos reikšmes. Apskaičiuoja technikos judėjimo greitį.
-			\item[*]Žemės parametrai - saugo įvairius žemės parametrus(drėgmė, ph...).
-			\item[*] Orai - klasė skirta pasiimti orų prognozes iš www.gismeteo.lt kurių paprašo vartotojas.
-			\item[*] Žemės detektorius - klasė skirta bendrauti su žemės detektoriumi
+ 			\item[*] Gyvūnas - klasė, skirta gyvūno rodmenims ir metodams saugoti.
+			\item[*] AriamasLaukas - laiko savyje reikšmes, apibūdinančias unikalų lauką, ir metodus, susijusius su lauko darbu.
+			\item[*] Ganykla - laiko parametrus ir metodus darbui su ganyklomis, kurios yra žemės plote.
+			\item[*] ŪkinisPastatas - saugo ūkinę techniką arba gyvūnus.
+			\item[*] ŪkioTechnika - laiko ūkio technikos duomenis ir apskaičiuoja technikos judėjimo greitį.
+			\item[*] Žemės parametrai - saugo įvairius žemės parametrus (drėgmė, pH...).
+			\item[*] Orai - klasė, skirta gauti vartotojui reikalingas orų prognozes iš www.gismeteo.lt.
+			\item[*] Žemės detektorius - klasė, skirta bendrauti su žemės detektoriumi.
 
 		\end{itemize}
 	\item Bendri terminai:
 		\begin{itemize}
-			\item[*] Žemės plotas - vieta kurią valdo ir gali stebėti vartotojas(ūkininkas) 
-			\item[*] Detektorius - Arduino mikro kontroleris
-			\item[*] Ūkininkas - žmogus kurio valdomoje teritorijoje įdiegtas Auto ūkis
-			\item[*] Arduino - mikrokontroleris skirtas ūkio sekimui
-			\item[*] Automašiskai valdoma - nereikalinga žmogaus pagalba
-			\item[*] Darbuotojas - žmogus dirbantis ūkininko versle
-			\item[*] Gyvūnas - visi gyvūnai kurie priklauso ūkininkui ir yra registruoti Auto ūkis sistemoje 
+			\item[*] Žemės plotas - vieta, kurią valdo ir gali stebėti vartotojas(ūkininkas). 
+			\item[*] Detektorius - Arduino mikro kontroleris.
+			\item[*] Ūkininkas - žmogus, kurio valdomoje teritorijoje įdiegtas Auto ūkis.
+			\item[*] Arduino - mikro kontroleris, skirtas ūkio sekimui.
+			\item[*] Automatiškai valdoma - valdymui nereikalinga žmogaus pagalba.
+			\item[*] Darbuotojas - žmogus, dirbantis ūkininko versle.
+			\item[*] Gyvūnas - visi gyvūnai, kurie priklauso ūkininkui, ir yra registruoti Auto ūkis sistemoje.
 		\end{itemize}
 \end{itemize}
 
@@ -90,8 +90,8 @@ Pagal suprogramuotą šabloninį programos karkasą nubraižėme  \hyperref[fig:
 	\begin{itemize}
 		\item Dizainas: 
 		\begin{itemize}
-			\item Pagrindinė klasė yra AutoUkis.form. Joje sukurtas ir aprašytas Graphical User Interface (GUI), visas vartotojo bendravimas su programa vyksta per ją, nes per ją pasiekiami visi duomenys iš kitų klasių, pavyzdžiui duomenys, esantys klasėje Gyvūnas, kurioje įrašoma vartotojo įvesta informacija apie gyvūną (veislė, amžius, t.t.). Taip pat AutoUkis klasėje kuriama dauguma objektų ir jie ten laikomi, sudedami į sąrašus. Visos kitos klasės turi savo atskiras paskirtis, tokias kaip žemėlapio braižymas, oro prognozių sekimas ir įvairių parametrų laikymas. Kai kurios klasės (pvz. ZemesDetektorius) buvo sukurtos vėlesniam panaudojimui, bet šiuo metu nėra niekur panaudotos.
-Dėl to, ką būtų buvę galima daryti kitaip, GUI perkėlimas į atskirą klasę padarytų programą skaitomesnę ir tvarkingesnę, būtų lengviau rasti atskirą kodą. Dar viena alternatyva būtų įgyvendinti front-end dalį web aplinkoje, bet šiuo metu nematome tam būtinybės.
+			\item Pagrindinė klasė yra AutoUkis.form. Joje sukurtas ir aprašytas Graphical User Interface (GUI) ir visas vartotojo bendravimas su programa vyksta per ją, nes per ją pasiekiami visi duomenys iš kitų klasių, pavyzdžiui, duomenys, esantys klasėje Gyvūnas, kurioje įrašoma vartotojo įvesta informacija apie gyvūną (veislė, amžius, t.t.). Taip pat AutoUkis klasėje kuriama dauguma objektų ir jie ten laikomi, sudedami į sąrašus. Visos kitos klasės turi savo atskiras paskirtis, tokias kaip žemėlapio braižymas, oro prognozių sekimas ir įvairių parametrų laikymas. Kai kurios klasės (pvz., ZemesDetektorius) buvo sukurtos vėlesniam panaudojimui, bet šiuo metu nėra niekur panaudotos.
+Dėl to, ką būtų buvę galima daryti kitaip,- GUI perkėlimas į atskirą klasę padarytų programą skaitomesnę ir tvarkingesnę, būtų lengviau rasti atskirą kodą. Dar viena alternatyva būtų įgyvendinti front-end dalį web aplinkoje, bet šiuo metu nematome tam būtinybės.
 		\end{itemize}
 		\item Funkcionalumas:
 		\begin{itemize}
@@ -104,7 +104,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 \begin{itemize}
 \item Dizainas: 
 		\begin{itemize}
-			\item Pradėjus rašyti programą nepagalvojome apie kūrimo pjūvį ir kaip teisingiau būtų pradėti viską. Žiūrint dabar visa programa buvo pradėta kurti pagal Bottom -> Up principą. Iš pradžių apsirašėme daugybę mažų klasių ir paskui jas bandėme apjungti į didesnę sistemą. Išskyrėme tokius komponentus kaip ūkininkas, programa, orų tarnyba, žemės detektorius ir administratorius. Kiekvienas komponentas turi skirtingas prieigas prie informacijos ir skirtingas funkcijas, reikalingas ūkio visapusiškam funkcionavimui. Kai kurios klasės liko nepanaudotos, nes šiuo metu jos neatrodo pakankamai svarbios pradiniam projekto variantui. Ūkiniko, Admin ir darbuotojo panelės įtrauktos į dokumentaciją norint pavaizduoti skirtingas prieigas prie sistemos.
+			\item Pradėjus rašyti programą nepagalvojome apie kūrimo pjūvį ir kaip teisingiau būtų galima pradėti viską. Žiūrint dabar, visa programa buvo pradėta kurti pagal Bottom -> Up principą. Iš pradžių apsirašėme daugybę mažų klasių ir paskui jas bandėme apjungti į didesnę sistemą. Išskyrėme tokius komponentus kaip ūkininkas, programa, orų tarnyba, žemės detektorius ir administratorius. Kiekvienas komponentas turi skirtingas prieigas prie informacijos ir skirtingas funkcijas, reikalingas ūkio visapusiškam funkcionavimui. Kai kurios klasės liko nepanaudotos, nes šiuo metu jos neatrodo pakankamai svarbios pradiniam projekto variantui. Ūkiniko, Admin ir darbuotojo panelės įtrauktos į dokumentaciją norint pavaizduoti skirtingas prieigas prie sistemos.
 		\end{itemize}
 		\end{itemize}
 \begin{figure}[H]
@@ -117,7 +117,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 		
 		\item \hyperref[fig:l0]{\textit{L0}}:
 		\begin{itemize}
-			\item  \hyperref[fig:l0]{\textit{Šioje diagramoje (2 pav)}} pavaizdavome sistemos bendravimą su išoriniais agentais tokiais kaip Greitoji pagalba, Ūkininkas ir t.t. . Ši diagrama aiškiai ir paprastai parodo kuriamus ir įgyvendinamus interfeisus. Galbūt būtų galima Greitosios Pagalbos interfeisą išskaidyti į kelis detalesnius interfeisus, bet apskritai didelių problemų nepastebime.
+			\item  \hyperref[fig:l0]{\textit{Šioje diagramoje (2 pav)}} pavaizdavome sistemos bendravimą su išoriniais agentais, tokiais kaip Greitoji pagalba, Ūkininkas ir t.t. . Ši diagrama aiškiai ir paprastai parodo kuriamus ir įgyvendinamus interfeisus. Galbūt būtų galima Greitosios Pagalbos interfeisą išskaidyti į kelis detalesnius interfeisus, bet apskritai didelių problemų nepastebime.
 
 		\end{itemize}
 
@@ -130,7 +130,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 \end{figure}
 
 \begin{itemize}
-	\item L1: Sudėjus komandos idėjas apie tai, kaip turėtų atrodyti \hyperref[fig:l1]{\textit{ L1 diagrama(3 pav)}}, supratome, kad mūsų sistema neturi normalios struktūros ir gerai nebuvome pagalvoję kaip visi komponentai siesis vieni su kitais, todėl ir diagrama atrodo chaotiška. Trūksta konkretumo kaip turi Admin sietis su kitas komponentais. Programa atsiranda kaip komponentas  kas greičiausiai yra nekorektiška.
+	\item L1: Sudėjus komandos idėjas apie tai, kaip turėtų atrodyti \hyperref[fig:l1]{\textit{ L1 diagrama(3 pav)}}, supratome, kad mūsų sistema neturi normalios struktūros ir gerai nebuvome pagalvoję kaip visi komponentai siesis vieni su kitais, todėl ir diagrama atrodo chaotiška. Trūksta konkretumo, kaip turi Admin sietis su kitas komponentais. Programa atsiranda kaip komponentas, o tai greičiausiai yra nekorektiška.
 
 \end{itemize}
 \begin{figure}[H]
@@ -142,7 +142,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 	
 
 	\begin{itemize}
-		\item L2(Ūkininkas):\hyperref[fig:l2uki]{\textit{  Šioje diagramoje (4 pav)}} parodyta, kad programos pagrindas kuria suteikia interface’a grafinei vartotojo sąsajai. Paduoti duomenys yra užregistruojami Event Log’e.
+		\item L2(Ūkininkas):\hyperref[fig:l2uki]{\textit{  Šioje diagramoje (4 pav)}} parodyta, kad programos pagrindas (Core) kuria interface'ą, kuriuo perduoda duomenis grafinei vartotojo sąsajai. Duomenys yra perduodami Event Log komponentui. 
 
 	\end{itemize}
 	\begin{figure}[H]
@@ -154,7 +154,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 	
 	
 	\begin{itemize}
-		\item L2(Admin)\hyperref[fig:l2admin]{\textit{  Šioje diagramoje (pav 5)}}  parodyta,kad programos pagrindas naudoja duomenų suvedimo interface, kurį suteikia admin grafinė sąsaja, bei naudoja Detektoriaus kodavimo interface. Visus įvykius įrašo į event log
+		\item L2(Admin)\hyperref[fig:l2admin]{\textit{  Šioje diagramoje (pav 5)}}  parodyta, kad programos pagrindas naudoja duomenų suvedimo interface, kurį suteikia admin grafinė sąsaja, bei naudoja Detektoriaus kodavimo interface. Visus įvykius įrašo į Event Log.
 
 	\end{itemize}
 	\begin{figure}[H]
@@ -166,7 +166,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 		
 
 \begin{itemize}
-		\item L2(Darbuotojas):\hyperref[fig:l2darb]{\textit{  Šioje diagramoje (pav 6)}}  parodyta, kad programos pagrindas  grafinę sąsają ir perduoda duomenis į event log’ą. 
+		\item L2(Darbuotojas):\hyperref[fig:l2darb]{\textit{  Šioje diagramoje (pav 6)}}  parodyta, kad programos pagrindas naudoja grafinę sąsają ir perduoda duomenis į Event Log’ą. 
 \end{itemize}
 \begin{figure}[H]
 \centering	
@@ -178,6 +178,16 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 \begin{itemize}
 		\item L2(Detektorius):\hyperref[fig:l2det]{\textit{ Ši diagrama (pav 7)}} vaizduoja detektoriaus išvedamus duomenis. Įvykiai įrašomi Event Log’e.
 \end{itemize}
+\begin{itemize}
+		\item Elementų ir užduočių ryšių matrica:
+\end{itemize}
+	\begin{figure}[H]
+	\centering	
+\includegraphics[width=15cm,height=15cm,keepaspectratio]{elementu_ir_uzd_matrica.png}
+\caption{}
+\label{fig:elementu_ir_uzd_matrica}
+\end{figure}
+
 \pagebreak
 		
 
@@ -221,7 +231,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 
 	
 \subsubsection{Būsėnų diagrama}
- \hyperref[fig:Busenu]{\textit{Šioje diagramoje (pav 9)}} parodomos galimos vartotojo būsenos ir keliai kaip tas būsenas pasiekti. Šiuo metu programoje tėra 2 būsenos, taigi diagrama yra labai paprasta.
+ \hyperref[fig:Busenu]{\textit{Šioje diagramoje (pav 9)}} parodomos galimos vartotojo būsenos ir keliai jom pasiekti. Šiuo metu programoje tėra dvi būsenos, taigi diagrama yra labai paprasta.
 	\begin{figure}[H]
 	\centering	
 	\includegraphics[width=5cm,height=6cm,keepaspectratio]{Busenu.png}
@@ -230,7 +240,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 \end{figure}
 \pagebreak
 \subsection{Fizinis pjūvis}
-	Šiame skyriuje parodoma (10 pav) šios sistemos techninė įranga, komunikacija, tačiau kadangi šioje šabloninėje versijoje nenaudojame kitų techninių resursų be kompiuterio, taigi fizinis pjūvis parodo tik nedidelį kiekį informacijos.
+	Šiame skyriuje parodoma (10 pav.) šios sistemos techninė įranga, komunikacija, tačiau kadangi šioje šabloninėje versijoje nenaudojame kitų techninių resursų be kompiuterio, fizinis pjūvis parodo tik nedidelį kiekį informacijos.
 	\newline
 	\vskip 0.5cm
 	\begin{figure}[H]
@@ -241,7 +251,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 \end{figure}
 	\begin{itemize}
 		\item D0: \hyperref[fig:Deployment]{\textit{Šioje diagramoje(11 pav)}} parodyta, kas saugoma device kompiuteris. 
-		Iš diagramos matome, kad šiame įrenginyje saugomi prisijungimo duomenys, Vartotojų grafinės sąsajos, teritorijos žemėlapis bei programoje atliktų veiksmų išrašas. Alternatyva buvo saugoti šiuos duomenis išnuomuotame web service, tačiau daug negalvoję nusprendėme duomenis saugoti kompiuteryje.
+		Iš diagramos matome, kad šiame įrenginyje saugomi prisijungimo duomenys, vartotojų grafinės sąsajos, teritorijos žemėlapis bei programoje atliktų veiksmų išrašas. Alternatyva buvo saugoti šiuos duomenis išnuomuotame web service, tačiau daug negalvoję nusprendėme duomenis saugoti kompiuteryje.
 	\end{itemize}
 		\begin{figure}[H]
 		\centering	
@@ -250,11 +260,11 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 	\label{fig:Deployment0}
 \end{figure}
 	\begin{itemize}
-		\item D1: Tai \hyperref[fig:Deployment0]{\textit{bendresnė D0 diagrama}}, joje matome, kad kompiuteris bendrauja su web HTTP ryšiu norėdamas gauti pranešimus apie orus.
+		\item D1: Tai \hyperref[fig:Deployment0]{\textit{bendresnė D0 diagrama}}, joje matome, kad kompiuteris, norėdamas gauti pranešimus apie orus,  bendrauja su web HTTP ryšiu.
 	\end{itemize}
 
 \subsection{Pirmos dalies išvada}
-Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojant apie sistemos plėtimą ateityje. Nors klasėse ir islaikyme enkapsuliavimo principą bendras objektinio programavimo principas nebuvo išlaikytas, yra nemažai priklausomybių vienos klasės nuo kitos. Rimtesniai sistemai kurti reiktu naudotis Top to bottom principu lengvesniam naujų funkcionalumų pridėjimui. Stipri ir paprasta sistemos dalis pasimato kūrimo pjūvyje kur aiškiai kuriami ir įgyvendinami, lengva kurti ar įgyvendinti naujus interfeisus. Aprašinėdami L1 ir L2 supratome, kad nepagalvojome apie tai kaip sistemos vartotojai bendrauja su sistema. Šią dalį reiks pergalvoti antroje programos versijoje kad viskastaptu aiškiau ir paprasčiau, labiau pasidomėti, kaip tokios sistemos veikia realiame pasaulyje. Proceso pjūvį pavyko aprašyti pakankamai paprastai ir aiškiai, tačiau jam dar trūksta detalumo ir kitų scenarijų apmatymo, pavyzdžiui prisijungti prie sistemos. Fiziniame pjūvyje aprašyta techninė sistema yra ganėtinai paprasta ir primityvi. Pagrindinis trūkumas, nepagalvota kas nutiktu kompiuterio išsijungimo atveju ar kas nutiktu atsiradus poreikiui plėsti sistemą. Žiūrint bendrais idėjos bruožais brangiausia sistemos dalis yra automatinės mašinos, kurios dar yra salyginaiu nauja technologija ir mikro kontroleriai kiekvienam gyvūnui. Jeigu ferma turi jų daug visas instaliavimas kainuotų salyginai brangiai ir turbūt neatneštų didelės naudos. Tai labiau inovacija dėl inovacijos, ne dėl funkcionalumo. Tačiau kitos dalys visai sekmingai pritaikomos. Tokią sistemą kaip padarėme dabar įgyvendinti būtų įmanomą, tačiau praplėti ir palaikyti ja būtų nepatogu ir turbūt sistema nedirbtų taip greitai kaip norėtūsi. Trūksta funkcionalumo su išnamiuoju telefonu, darbo birža, rinkos tendencijos ir kitą. 
+Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojant apie sistemos plėtimą ateityje. Nors klasėse ir išlaikėme enkapsuliavimo principą, bendras objektinio programavimo principas nebuvo išlaikytas, klasės yra per daug viena nuo kitos priklausomos. Rimtesniai sistemai kurti reiktų naudotis Top to Bottom principu lengvesniam naujų funkcionalumų pridėjimui. Stipri ir paprasta sistemos dalis pasimato kūrimo pjūvyje, kuriame yra aiškūs ryšiai tarp kuriamų ir įgyvendinamų interface'ų. Aprašinėdami L1 ir L2 supratome, kad nepagalvojome apie tai, kaip sistemos vartotojai bendrauja su sistema. Šią dalį reiks pergalvoti antroje programos versijoje, kad viskas taptų aiškiau ir paprasčiau, reikia labiau pasidomėti, kaip tokios sistemos veikia realiame pasaulyje. Proceso pjūvį pavyko aprašyti pakankamai paprastai ir aiškiai, tačiau jam dar trūksta detalumo ir kitų scenarijų numatymo, pavyzdžiui, prisijungti prie sistemos. Fiziniame pjūvyje aprašyta techninė sistema yra ganėtinai paprasta ir primityvi. Pagrindinis trūkumas - nepagalvota, kas nutiktų kompiuterio išsijungimo atveju, ar kas nutiktų atsiradus poreikiui plėsti sistemą. Žiūrint bendrais idėjos bruožais, brangiausia sistemos dalis yra automatinės mašinos, kurios dar yra sąlyginai nauja technologija, ir mikro kontroleriai kiekvienam gyvūnui. Jeigu ferma turi jų daug, visas instaliavimas kainuotų gana brangiai ir turbūt neatneštų didelės naudos. Tai labiau inovacija dėl inovacijos, ne dėl funkcionalumo. Tačiau kitos dalys visai sekmingai pritaikomos. Tokią sistemą,kokią padarėme dabar, įgyvendinti būtų įmanoma, tačiau praplėsti ir palaikyti ją būtų nepatogu, ir sistema turbūt nedirbtų taip greitai, kaip norėtūsi. Trūksta funkcionalumo su išmaniuoju telefonu, darbo birža, rinkos tendencijomis ir kita. 
 
 \pagebreak
 
@@ -268,14 +278,14 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 Upcoming;
 \subsubsection{Detalesnės sekų diagramos}
 \begin{itemize}
-\item Diagramoje (12 pav) pavaizduotos seka, kurią programa atlieka Admin norint gauti planuojama jo pasirinkto laikotarpio pelną.
+\item Diagramoje (12 pav) pavaizduotos seka, kurią programa atlieka Admin norint gauti planuojamą jo pasirinkto laikotarpio pelną.
 		\begin{figure}[H]
 		\centering	
 	\includegraphics[width=17cm,height=20cm,keepaspectratio]{PelnoSkaičiavimas.png}
 	\caption{}
 	\label{fig:PelnoSkaičiavimas}
 \end{figure}
-Šioje diagramoje matome, kad Admin pateikus užklausą planuojamui pelnui gauti, Admin UI kreipiasi į Calculations klasę su prašymu jį apskaičiuoti. Ši savo ruoštu norėdama gauti reikiamus duomenis kreipiasi į klases UkioTechnika, Map ir Orai.
+Šioje diagramoje matome, kad Admin pateikus užklausą planuojamui pelnui gauti, Admin UI kreipiasi į Calculations klasę su prašymu jį apskaičiuoti. Ši savo ruožtu norėdama gauti reikiamus duomenis kreipiasi į klases UkioTechnika, Map ir Orai.
 \end{itemize}
 \subsection{Proceso pjūvis}
 \subsection{Fizinis pjūvis}
