@@ -271,6 +271,25 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 \section{Perprojektuotos sistemos aprašymas(To-Be, v2.0)}
 
 \subsection{Loginis pjūvis}
+			\begin{figure}[H]
+		\centering	
+\includegraphics[width=15cm,height=17cm,keepaspectratio]{Klasesv2.png}
+	\caption{}
+	\label{fig:Klasesv2}
+\end{figure}
+	
+	\begin{itemize}
+		\item Dizainas:
+			\begin{itemize}
+				\item Visas programos dizainas paremtas Top to bottom principu. Pradėjome galvoti dideliais obijektais ir juos išskirstėm į mažesnius. Pagrindinė klasė yra AutoUkis kuris iškviečia VartotojoSasaja klasė kuri ir piešia visa prieinamuma vartotojams. Galima nesunkiai pridėti kitokią vartotojo sąsają ar betkokią kita UI piešimo galimybę kaip pavyzdžiui piešti UI išnamiąjame telefone. Programos modalumas leidžia nesunkiai pridėti pridėti funkionalumo, nes programos dalys yra atskiros viena nuo kitos. Pavyzdžiui ištrynus klasę ŪkinisPastatas visos programos veikimas nesutiriktų. Tuo pačiu metu norint pridėti naują naują ūkini pastatą galimą nesunkiai tai padaryti įvykdžius paveldėjimą iš tėvinės UkinisPastatas klasės taip, kaip tai daro klasės Garažas, Tvartas ir Sandelis.  
+			\end{itemize}
+		\item Funkionalumas: 
+			\begin{itemize}
+				\item Programos funkcionalumas susideda iš trijų pagrindinių dalių, vartotojų prieeiga prie sistemos, finansų bei išteklių(žmogiškųjų ir natūrliųjų) valdymas bei išteklių sekimas. Prieeigos dalyje funkcionalumas pasižymi prieeigos iššskaidymą. Skirtindi sistemos vartotojai gauna skirtingą prieeiga ir galimybes naudotis sistema. Pavyzdžiui darbuotojas negali tvarkyti įmonės finansų, tačiau visi sistemos vartotojai gali kviesti greitąją pagalbą. Nesunku implementuoti naują vartotojų klasę(pvz. Svečias). Finansų bei išteklių dalyje ūkininkas gali tvarkyti tvarkyti savo ištelius. Pavyzdžiui samdyti arba atleisiti darbuotojus, stebėti rinkos kainą ir nuspresti kada jam palankiausia parduoti, sudarinėti sąskaitas ir tvarkyti kitą buhalteriją. Trečiojoje sistemos dalyje yra įgyvendinamas išteklių sekimas. Vartotojai turintys prieeigą gali stebėti žemės parametrus, ūkio technikos sąrašą, ūkinių pastatų sąraša bei gyvūnų priklausančių sistemai sąraša.
+			\end{itemize}
+
+	\end{itemize}
+
 \subsection{Kūrimo pjūvis}
 \subsection{Use case}
 \begin{itemize}
