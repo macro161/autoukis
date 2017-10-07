@@ -1,0 +1,59 @@
+@startuml
+
+title Paketu diagrama
+
+package "Interneto servisas" {
+   class "SQLUzklausa"
+   class "IsoriniaiServisai"
+   class "Orai"
+   class "RinkosAnalizatorius"
+   class "SOSPagalba"
+   
+}
+
+package "Naudotojai"{
+    class "Naudotojai"
+    class "Adminas"
+    class "Ukininkas"
+    class "Darbuotojas"
+
+}
+
+package "Irankiai"{
+    class "Detektorius"
+    class "Saskaita"
+    class "Finansai"
+    class "ZemesParametrai"
+    class "Skaiciavimai"
+    
+}
+
+package "VartotojoSasaja"{
+    class "VartotojoSasaja"
+    class "Zemelapis"
+
+}
+
+package "Resursai"{
+    class "UkioTechnika"
+    class "Traktorius"
+    class "Kombainas"
+    class "Ganykla"
+    class "Gyvunas"
+    class "AriamasLaukas"
+    class "ZemesTeritorija"
+    class "UkinisPastatas"
+    class "Tvartas"
+    class "Garazas"
+    class "Sandelis"
+    
+
+}
+
+package "Main"{
+    class AutoUkis
+
+}
+
+
+@enduml
