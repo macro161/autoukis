@@ -179,15 +179,16 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 \begin{itemize}
 		\item L2(Detektorius):\hyperref[fig:l2det]{\textit{ Ši diagrama (pav 7)}} vaizduoja detektoriaus išvedamus duomenis. Įvykiai įrašomi Event Log’e.
 \end{itemize}
-\begin{itemize}
-		\item Elementų ir užduočių ryšių matrica:
-\end{itemize}
+
 	\begin{figure}[H]
 	\centering	
 \includegraphics[width=15cm,height=15cm,keepaspectratio]{elementu_ir_uzd_matrica.png}
 \caption{}
 \label{fig:elementu_ir_uzd_matrica}
 \end{figure}
+\begin{itemize}
+		\item Elementų ir užduočių ryšių matrica.
+\end{itemize}
 
 \pagebreak
 		
@@ -303,6 +304,8 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 			\item[*] Saskaita - laikomi sąskaitos duomenys ir funkcijos veiksmam su ja atlinkti.
 			\item[*] Finansai - laikoma informacija apie ūkio finansus ir aprašytos funkcijos veiksmam su jais.
 			\item[*] Skaiciavimas - atlieka kompleksinius skaičiavimus.
+			\item[*] EventReporter - kalsė, kuri rašo įvykius į Event Log.
+			\item[*] EventLog - įvykių programoje įrašai.
 
 		\end{itemize}
 	\item Bendri terminai:
@@ -373,17 +376,34 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\caption{}
 	\label{fig:L1V2}
 
-\item L1: Sistemos struktūra ganėtinai aiški. Yra trys panelės kurios pasiima sisteminius duomeris ir trys panelės kurios suteikia duomenis sistemai. Kadangi struktūra paprasta nesunku prie jos pridėti naujų komponentų ar gauti duomenis iš naujų komponentų.
-
-\item L2(Ūkininko panelė):
-\item L2(Admino panelė):
-\item L2(Darbuotojo panelė)
-\item L2(Orū tarnyba):
-\item L2(SOS pagalba):
-\item L2(Mikrokontroleris):
-
-
 \end{figure}
+\item L1: Sistemos struktūra ganėtinai aiški. Yra trys panelės kurios pasiima sisteminius duomeris ir trys panelės kurios suteikia duomenis sistemai. Kadangi struktūra paprasta nesunku prie jos pridėti naujų komponentų ar gauti duomenis iš naujų komponentų.
+\begin{figure}[H]
+		\centering	
+	\includegraphics[width=15cm,height=15cm,keepaspectratio]{2L2Uk.png}
+	\caption{}
+	\label{fig:}
+\end{figure}
+\item L2(Ūkininkas): Ūkininkas turi prieigą prie sistemos, GUI, Event Reporter ir Event Log.
+\begin{figure}[H]
+		\centering	
+	\includegraphics[width=15cm,height=15cm,keepaspectratio]{2L2Admin.png}
+	\caption{}
+	\label{fig:}
+\end{figure}
+\item L2(Admin): Diagramoje pavaizduota Admin sąsaja su sistema, GUI ir Event Log. Admin taip pat turi žemės detektoriaus prieigą.
+\begin{figure}[H]
+		\centering	
+	\includegraphics[width=15cm,height=15cm,keepaspectratio]{2L2Darb.png}
+	\caption{}
+	\label{fig:}
+\end{figure}
+\item L2(Darbuotojas): Diagramoje pavaizduota darbuotojo prieiga prie sistemos, GUI ir Event Log. 
+\item L2(Orų tarnyba):
+\item L2(SOS pagalba):
+\item L2(Mikro kontroleris):
+
+
 \end{itemize}
 \subsection{Use case}
 \begin{itemize}
