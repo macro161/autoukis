@@ -1,0 +1,68 @@
+@startuml
+
+title Klasiu diagrama
+
+class SQLUzklausa
+class IsoriniaiServisai
+class Orai
+class RinkosAnalizatorius
+class SOSPagalba
+class Naudotojas
+class Adminas
+class Ukininkas
+class Darbuotojas
+class Detektorius
+class Saskaita
+class Finansai
+class ZemesParametrai
+class Skaiciavimas
+class VartotojoSasaja
+class Zemelapis
+class UkioTechnika
+class Traktorius
+class Kombainas
+class Ganykla
+class Gyvunas
+class AriamasLaukas
+class ZemesTeritorija
+class UkinisPastatas
+class Tvartas
+class Garazas
+class Sandelis
+
+
+AutoUkis o-left- VartotojoSasaja
+
+VartotojoSasaja o-- Zemelapis 
+Naudotojas <|-down- Darbuotojas
+Naudotojas <|-down- Ukininkas
+Naudotojas <|-down- Adminas
+
+UkinisPastatas <|-down- Tvartas
+UkinisPastatas <|-down- Garazas
+UkinisPastatas <|-down- Sandelis
+
+ZemesTeritorija <|- UkinisPastatas
+ZemesTeritorija <|-up- AriamasLaukas
+ZemesTeritorija <|-left- Ganykla
+UkioTechnika <|-down- Traktorius
+UkioTechnika <|-down- Kombainas
+Tvartas o--Gyvunas
+AriamasLaukas <- Detektorius
+Ukininkas -down-> SQLUzklausa
+Naudotojas -down-> SOSPagalba
+Ukininkas -down-> IsoriniaiServisai
+RinkosAnalizatorius -down-> Finansai
+VartotojoSasaja <-- Naudotojas
+VartotojoSasaja o-- Orai
+Adminas -> SQLUzklausa
+Ukininkas -down-> Saskaita
+AriamasLaukas -> ZemesParametrai
+Detektorius <- ZemesParametrai
+RinkosAnalizatorius -down-> Skaiciavimas
+VartotojoSasaja o-up- ZemesTeritorija
+VartotojoSasaja o-- UkioTechnika
+Ukininkas -down-> RinkosAnalizatorius
+ 
+
+@enduml
