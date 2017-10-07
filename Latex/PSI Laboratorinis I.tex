@@ -61,6 +61,7 @@ Automatinė ūkio valdymo sistema (toliau - Auto ūkis) yra programa, leidžiant
 			\item[*] Orai - klasė, skirta gauti vartotojui reikalingas orų prognozes iš www.gismeteo.lt.
 			\item[*] ZemesDetektorius - klasė, skirta bendrauti su žemės detektoriumi.
 
+
 		\end{itemize}
 	\item Bendri terminai:
 		\begin{itemize}
@@ -178,7 +179,6 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 \begin{itemize}
 		\item L2(Detektorius):\hyperref[fig:l2det]{\textit{ Ši diagrama (pav 7)}} vaizduoja detektoriaus išvedamus duomenis. Įvykiai įrašomi Event Log’e.
 \end{itemize}
-
 \begin{itemize}
 		\item Elementų ir užduočių ryšių matrica:
 \end{itemize}
@@ -347,6 +347,36 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 
 
 \subsection{Kūrimo pjūvis}
+	
+
+	\begin{itemize}
+		\item Dizainas:
+		\begin{itemize}
+			\item Programos dizainas stipriai paremtas Top to bottom projektavimo principu ir objektinio programavimo enkapsuliacijos paradigma. Sistema sukuria ir įgyvendina kitų sistemų intefeisus. Pagrindiniai trys interfeisai sukuriami programos yra UkininkasUI, AdminasUI. Šie interfeisai suteikia prieeiga prie sistemos skirtingas privilegijas turintiems vartojams. Auto Ukis taip pat įgyvendina kitų sistemų suteikiamus interfeisus kuriuos naudoja progamos logikoje duomenis gauti. Įgyvendinami interfeisai yra OruTarnybaAPI, SOSPagalbaAPI ir MikrokontrolerisAPI.
+		\end{itemize}
+	\end{itemize}
+
+\begin{figure}[H]
+		\centering	
+	\includegraphics[width=17cm,height=20cm,keepaspectratio]{L0V2.png}
+	\caption{}
+	\label{fig:L0V2}
+\end{figure}
+	\begin{itemize}
+	\item L0:
+	\begin{itemize}
+	\item Šioje diagramoje pavaizdavome sistemos bendradarbiavimą su išoriniais agentais, tokiais kaip Mikrokontroleris, Ūkininkas ir t.t. . Ši diagrama parodo sistemos įgyvendinamus ir kuriamus interfeisus. Iš diagramos matome, kad programos pagrindas kuria interface ne tik vartotojams, bet ir tokiems išoriniams agentams, kaip SOS pagalba, bei Orų tarnyba.
+\end{itemize}
+	\begin{figure}[H]
+		\centering	
+	\includegraphics[width=17cm,height=20cm,keepaspectratio]{L1V2.png}
+	\caption{}
+	\label{fig:L1V2}
+
+\item L1: cia bus tekstas apie l1
+
+\end{figure}
+\end{itemize}
 \subsection{Use case}
 \begin{itemize}
 \item Diagramoje (12 pav) pavaizduoti visi galimi veiksmai, kuriuos gali atlikti kiekvienas programos vartotojas.
@@ -358,7 +388,7 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 \end{figure}
 \end{itemize}
 \subsection{Proceso pjūvis}
-Šiame 
+Šiame skyriuje pagrinde koncentruojamasi į programos elgseną jos vykdymo metu.
 \subsubsection{Sekų diagramos}
 \begin{itemize}
 \item Diagramoje (12 pav) pavaizduotos seka, kurią programa atlieka Admin norint gauti planuojamą jo pasirinkto laikotarpio pelną.
@@ -391,6 +421,37 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 
 \end{itemize}
 \subsubsection{Veiklos diagramos}
+\begin{itemize}
+\item Orų sekimo veiklos diagrama:
+	\begin{figure}[H]
+	\centering	
+	\includegraphics[width=10cm,height=10cm,keepaspectratio]{veiklos_diagrama_orai.png}
+	\caption{}
+	\label{}
+	\end{figure}
+\item Ūkio technikos sekimo veiklos diagrama:
+	\begin{figure}[H]
+	\centering	
+	\includegraphics[width=10cm,height=10cm,keepaspectratio]{veiklos_diagrama_technikos_sekimas.png}
+	\caption{}
+	\label{}
+	\end{figure}
+\item Teritorijos žymėjimo veiklos diagrama:
+	\begin{figure}[H]
+	\centering	
+	\includegraphics[width=10cm,height=10cm,keepaspectratio]{veiklos_diagrama_zymeti_teritorijas.png}
+	\caption{}
+	\label{}
+	\end{figure}
+\item Gyvūnų suvedimo veiklos diagrama:
+	\begin{figure}[H]
+	\centering	
+	\includegraphics[width=10cm,height=10cm,keepaspectratio]{VeiklosGyvunuSuvedimas.png}
+	\caption{}
+	\label{}
+	\end{figure}
+\item Šiose diagramose matoma kaip įgyvendinamas atitinkamas scenarijus programos vykdymo metu.
+\end{itemize}
 \subsection{Fizinis pjūvis}
 	Šiame skyriuje parodoma programos naudojama aparatinė įranga, komunikacija tarp tinklo mazgų bei programos komponentų išdėstymas juose.
 	\newline
