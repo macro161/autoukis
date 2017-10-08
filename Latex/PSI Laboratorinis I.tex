@@ -91,13 +91,13 @@ Pagal suprogramuotą šabloninį programos karkasą nubraižėme  \hyperref[fig:
 	\begin{itemize}
 		\item Dizainas: 
 		\begin{itemize}
-			\item Pagrindinė klasė yra AutoUkis.form. Joje sukurtas ir aprašytas Graphical User Interface (GUI) ir visas vartotojo bendravimas su programa vyksta per ją, nes per ją pasiekiami visi duomenys iš kitų klasių, pavyzdžiui, duomenys, esantys klasėje Gyvūnas, kurioje įrašoma vartotojo įvesta informacija apie gyvūną (veislė, amžius, t.t.). Taip pat AutoUkis klasėje kuriama dauguma objektų ir jie ten laikomi, sudedami į sąrašus. Visos kitos klasės turi savo atskiras paskirtis, tokias kaip žemėlapio braižymas, oro prognozių sekimas ir įvairių parametrų laikymas. Kai kurios klasės (pvz., ZemesDetektorius) buvo sukurtos vėlesniam panaudojimui, bet šiuo metu nėra niekur panaudotos.
+			\item Pagrindinė klasė yra AutoUkis.form. Joje sukurtas ir aprašytas Graphical User Interface (GUI) ir visas vartotojo bendravimas su programa vyksta per ją, nes per ją pasiekiami visi duomenys iš kitų klasių, pavyzdžiui, duomenys, esantys klasėje Gyvūnas, kurioje įrašoma vartotojo įvesta informacija apie gyvūną (veislė, amžius, t.t.). Taip pat AutoUkis klasėje kuriama dauguma objektų ir jie ten laikomi, sudedami į sąrašus. Visos kitos klasės turi savo atskiras paskirtis, tokias kaip žemėlapio braižymas, oro prognozių sekimas ir įvairių parametrų laikymas. Kai kurios klasės (pvz., ZemesDetektorius) buvo sukurtos vėlesniam panaudojimui, bet šiuo metu nėra įgyvendintos.
 Dėl to, ką būtų buvę galima daryti kitaip,- GUI perkėlimas į atskirą klasę padarytų programą skaitomesnę ir tvarkingesnę, būtų lengviau rasti atskirą kodą. Dar viena alternatyva būtų įgyvendinti front-end dalį web aplinkoje, bet šiuo metu nematome tam būtinybės.
 		\end{itemize}
 		\item Funkcionalumas:
 		\begin{itemize}
 		\item Viso užsibrėžto programos funkcionalumo įgyvendinti nepavyko. Kai kurios klasės buvo sukurtos ateityje planuojamoms funkcijoms, kurios dar nėra implementuotos. Programa kol kas veikia tik ant kompiuterio ir vienintelis jos bendravimas su internetu yra per Orai klasę, kuri skirta vartotojo pasirinkto miesto orų prognozėms gauti iš gismeteo.lt svetainės. Klasėse Gyvunas, Map, ZemesTeritorija ir iš jos išeinančiose klasėse saugomi atitinkami duomenys apie sukurtus objektus bei aprašyti dar neišplėtoti metodai, tokie kaip žemės teritorijos žymėjimas. Planuojama, kad klasė ZemesDetektorius generuos atsitiktinius parametrus, kurie bus perduoti ZemesParametrai klasei.
-Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogumų aprašant programą, nes sunku braižyti diagramas, suvokti aiškius ryšius tarp komponentų ir vykdomas funkcijas.
+Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogumų aprašant programą, nes sunku braižyti diagramas, suvokti aiškius ryšius tarp komponentų ir vykdomų funkcijų.
 		\end{itemize}	
 	\end{itemize}
 	\pagebreak
@@ -131,7 +131,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 \end{figure}
 
 \begin{itemize}
-	\item L1: Sudėjus komandos idėjas apie tai, kaip turėtų atrodyti \hyperref[fig:l1]{\textit{ L1 diagrama(3 pav)}}, supratome, kad mūsų sistema neturi normalios struktūros ir gerai nebuvome pagalvoję kaip visi komponentai siesis vieni su kitais, todėl ir diagrama atrodo chaotiška. Trūksta konkretumo, kaip turi Admin sietis su kitas komponentais. Programa atsiranda kaip komponentas, o tai greičiausiai yra nekorektiška.
+	\item L1: Sudėjus komandos idėjas apie tai, kaip turėtų atrodyti \hyperref[fig:l1]{\textit{ L1 diagrama(3 pav)}}, supratome, kad mūsų sistema neturi normalios struktūros ir gerai nebuvome pagalvoję kaip visi komponentai siesis vieni su kitais, todėl ir diagrama atrodo chaotiška. Trūksta konkretumo, kaip Admin turi sietis su kitas komponentais. Programa atsiranda kaip komponentas, o tai greičiausiai yra nekorektiška.
 
 \end{itemize}
 \begin{figure}[H]
@@ -143,7 +143,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 	
 
 	\begin{itemize}
-		\item L2(Ūkininkas):\hyperref[fig:l2uki]{\textit{  Šioje diagramoje (4 pav)}} parodyta, kad programos pagrindas (Core) kuria interface'ą, kuriuo perduoda duomenis grafinei vartotojo sąsajai. Duomenys yra perduodami Event Log komponentui. 
+		\item L2(Ūkininkas):\hyperref[fig:l2uki]{\textit{  Šioje diagramoje (4 pav)}} parodyta, kad programos pagrindas (Core) kuria interfeisą, kuriuo perduoda duomenis grafinei vartotojo sąsajai. Duomenys yra perduodami Event Log komponentui. 
 
 	\end{itemize}
 	\begin{figure}[H]
@@ -155,7 +155,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 	
 	
 	\begin{itemize}
-		\item L2(Admin)\hyperref[fig:l2admin]{\textit{  Šioje diagramoje (pav 5)}}  parodyta, kad programos pagrindas naudoja duomenų suvedimo interface, kurį suteikia admin grafinė sąsaja, bei naudoja Detektoriaus kodavimo interface. Visus įvykius įrašo į Event Log.
+		\item L2(Admin)\hyperref[fig:l2admin]{\textit{  Šioje diagramoje (pav 5)}}  parodyta, kad programos pagrindas naudoja duomenų suvedimo interfeisą, kurį suteikia Admin grafinė sąsaja, bei naudoja Detektoriaus kodavimo interfeisą. Visus įvykius įrašo į Event Log.
 
 	\end{itemize}
 	\begin{figure}[H]
@@ -220,9 +220,9 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 \end{itemize}
 
 \subsection{Proceso pjūvis}
-	Šiame skyriuje parodoma programos elgsena jos vykdimo metu.
+	Šiame skyriuje parodoma programos elgsena jos vykdymo metu.
 \subsubsection{Veiklos diagramos}
-	Vaizduojama\hyperref[fig:ActivityMapŽimėjimas]{\textit{ žemėlapio žymėjimo veiklos diagrama (pav 8)}}. Nurodomi pagrindiniai žingsniai braižant žemėlapį.
+	Vaizduojama\hyperref[fig:ActivityMapŽimėjimas]{\textit{ Žemėlapio žymėjimo veiklos diagrama (pav 8)}}. Nurodomi pagrindiniai žingsniai braižant žemėlapį.
 	\vskip 0.5cm
 	\begin{figure}[H]
 	\centering	
@@ -242,7 +242,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 \end{figure}
 \pagebreak
 \subsection{Fizinis pjūvis}
-	Šiame skyriuje parodoma (10 pav.) šios sistemos techninė įranga, komunikacija, tačiau kadangi šioje šabloninėje versijoje nenaudojame kitų techninių resursų be kompiuterio, fizinis pjūvis parodo tik nedidelį kiekį informacijos.
+	Šiame skyriuje parodoma (10 pav.) šios sistemos techninė įranga, komunikacija, tačiau, kadangi šioje šabloninėje versijoje nenaudojame kitų techninių resursų be kompiuterio, fizinis pjūvis parodo tik nedidelį kiekį informacijos.
 	\newline
 	\vskip 0.5cm
 	\begin{figure}[H]
@@ -252,7 +252,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 	\label{fig:Deployment}
 \end{figure}
 	\begin{itemize}
-		\item D0: \hyperref[fig:Deployment]{\textit{Šioje diagramoje(11 pav)}} parodyta, kas saugoma device kompiuteris. 
+		\item D0: \hyperref[fig:Deployment]{\textit{Šioje diagramoje(11 pav)}} parodyta, kas saugoma kompiuteryje. 
 		Iš diagramos matome, kad šiame įrenginyje saugomi prisijungimo duomenys, vartotojų grafinės sąsajos, teritorijos žemėlapis bei programoje atliktų veiksmų išrašas. Alternatyva buvo saugoti šiuos duomenis išnuomuotame web service, tačiau daug negalvoję nusprendėme duomenis saugoti kompiuteryje.
 	\end{itemize}
 		\begin{figure}[H]
@@ -266,7 +266,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 	\end{itemize}
 
 \subsection{Pirmos dalies išvada}
-Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojant apie sistemos plėtimą ateityje. Nors klasėse ir išlaikėme enkapsuliavimo principą, bendras objektinio programavimo principas nebuvo išlaikytas, klasės yra per daug viena nuo kitos priklausomos. Rimtesniai sistemai kurti reiktų naudotis Top to Bottom principu lengvesniam naujų funkcionalumų pridėjimui. Stipri ir paprasta sistemos dalis pasimato kūrimo pjūvyje, kuriame yra aiškūs ryšiai tarp kuriamų ir įgyvendinamų interface'ų. Aprašinėdami L1 ir L2 supratome, kad nepagalvojome apie tai, kaip sistemos vartotojai bendrauja su sistema. Šią dalį reiks pergalvoti antroje programos versijoje, kad viskas taptų aiškiau ir paprasčiau, reikia labiau pasidomėti, kaip tokios sistemos veikia realiame pasaulyje. Proceso pjūvį pavyko aprašyti pakankamai paprastai ir aiškiai, tačiau jam dar trūksta detalumo ir kitų scenarijų numatymo, pavyzdžiui, prisijungti prie sistemos. Fiziniame pjūvyje aprašyta techninė sistema yra ganėtinai paprasta ir primityvi. Pagrindinis trūkumas - nepagalvota, kas nutiktų kompiuterio išsijungimo atveju, ar kas nutiktų atsiradus poreikiui plėsti sistemą. Žiūrint bendrais idėjos bruožais, brangiausia sistemos dalis yra automatinės mašinos, kurios dar yra sąlyginai nauja technologija, ir mikro kontroleriai kiekvienam gyvūnui. Jeigu ferma turi jų daug, visas instaliavimas kainuotų gana brangiai ir turbūt neatneštų didelės naudos. Tai labiau inovacija dėl inovacijos, ne dėl funkcionalumo. Tačiau kitos dalys visai sekmingai pritaikomos. Tokią sistemą,kokią padarėme dabar, įgyvendinti būtų įmanoma, tačiau praplėsti ir palaikyti ją būtų nepatogu, ir sistema turbūt nedirbtų taip greitai, kaip norėtūsi. Trūksta funkcionalumo su išmaniuoju telefonu, darbo birža, rinkos tendencijomis ir kita. 
+Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojant apie sistemos plėtimą ateityje. Nors klasėse ir išlaikėme enkapsuliavimo principą, bendras objektinio programavimo principas nebuvo išlaikytas, klasės yra per daug viena nuo kitos priklausomos. Rimtesniai sistemai kurti reiktų naudotis Top to Bottom principu lengvesniam naujų funkcionalumų pridėjimui. Stipri ir paprasta sistemos dalis pasimato kūrimo pjūvyje, kuriame yra aiškūs ryšiai tarp kuriamų ir įgyvendinamų interfeisų. Aprašinėdami L1 ir L2 supratome, kad nepagalvojome apie tai, kaip sistemos vartotojai bendrauja su sistema. Šią dalį reiks pergalvoti antroje programos versijoje, kad viskas taptų aiškiau ir paprasčiau, reikia labiau pasidomėti, kaip tokios sistemos veikia realiame pasaulyje. Proceso pjūvį pavyko aprašyti pakankamai paprastai ir aiškiai, tačiau jam dar trūksta detalumo ir kitų scenarijų numatymo, pavyzdžiui, kaip prisijungti prie sistemos. Fiziniame pjūvyje aprašyta techninė sistema yra ganėtinai paprasta ir primityvi. Pagrindinis trūkumas - nepagalvota, kas nutiktų kompiuterio išsijungimo atveju, ar kas nutiktų atsiradus poreikiui plėsti sistemą. Žiūrint bendrais idėjos bruožais, brangiausia sistemos dalis yra automatinės mašinos, kurios dar yra sąlyginai nauja technologija, ir mikro kontroleriai kiekvienam gyvūnui. Jeigu ferma turi jų daug, visas instaliavimas kainuotų gana brangiai ir turbūt neatneštų didelės naudos. Tai labiau inovacija dėl inovacijos, ne dėl funkcionalumo. Tačiau kitos dalys visai sėkmingai pritaikomos. Tokią sistemą, kokią padarėme dabar, įgyvendinti būtų įmanoma, tačiau praplėsti ir palaikyti ją būtų nepatogu, ir sistema turbūt nedirbtų taip greitai, kaip norėtųsi. Trūksta funkcionalumo su išmaniuoju telefonu, darbo birža, rinkos tendencijomis ir kita. 
 
 \pagebreak
 
@@ -299,13 +299,13 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 			\item[*] Traktorius - atlieka žemės padargų traukimo funkciją.
 			\item[*] Kombainas - nuima grūdų derlių.
 			\item[*] Adminas - administratorius, atsakingas už tvarkingą programos veiklą.
-			\item[*] SQLUzklausa - uzklausa, gauti duomenis iš duombazės.
+			\item[*] SQLUzklausa - uzklausa gauti duomenims iš duombazės.
 			\item[*] IsoriniaiServisai - kitos paslaugos (pvz., darbo birža).
 			\item[*] RinkosAnalizatorius -  renka duomenis apie rinkos naujienas, aktualias naudotojui.
 			\item[*] Saskaita - laikomi sąskaitos duomenys ir funkcijos veiksmam su ja atlinkti.
 			\item[*] Finansai - laikoma informacija apie ūkio finansus ir aprašytos funkcijos veiksmam su jais.
 			\item[*] Skaiciavimas - atlieka kompleksinius skaičiavimus.
-			\item[*] EventReporter - kalsė, kuri rašo įvykius į Event Log.
+			\item[*] EventReporter - klasė, kuri rašo įvykius į Event Log.
 			\item[*] EventLog - įvykių programoje įrašai.
 
 		\end{itemize}
@@ -329,11 +329,11 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\begin{itemize}
 		\item Dizainas:
 			\begin{itemize}
-				\item Visas programos dizainas paremtas Top to Bottom principu. Pradėjome galvoti dideliais objektais ir juos išskirstėm į mažesnius. Pagrindinė klasė yra AutoUkis, kuris iškviečia VartotojoSasaja klasę, kuri ir piešia visą prieinamumą vartotojams. Galima nesunkiai pridėti kitokią vartotojo sąsają ar bet kokią kitą UI piešimo galimybę, kaip ,pavyzdžiui, piešti UI išmaniąjame telefone. Programos modalumas leidžia nesunkiai pridėti funkionalumo, nes programos dalys yra atskiros viena nuo kitos. Pavyzdžiui, ištrynus klasę ŪkinisPastatas visos programos veikimas nesutiriktų. Tuo pačiu metu norint pridėti naują ūkinį pastatą galima nesunkiai tai padaryti įvykdžius paveldėjimą iš tėvinės UkinisPastatas klasės taip, kaip tai daro klasės Garažas, Tvartas ir Sandelis.  
+				\item Visas programos dizainas paremtas Top to Bottom principu. Pradėjome galvoti dideliais objektais ir juos išskirstėm į mažesnius. Pagrindinė klasė yra AutoUkis, kuris iškviečia VartotojoSasaja klasę, kuri ir piešia visą prieinamumą vartotojams. Galima nesunkiai pridėti kitokią vartotojo sąsają ar bet kokią kitą UI piešimo galimybę, kaip, pavyzdžiui, piešti UI išmaniajame telefone. Programos modalumas leidžia nesunkiai pridėti funkionalumo, nes programos dalys yra atskiros viena nuo kitos. Pavyzdžiui, ištrynus klasę ŪkinisPastatas visos programos veikimas nesutiriktų. Tuo pačiu metu norint pridėti naują ūkinį pastatą galima nesunkiai tai padaryti įvykdžius paveldėjimą iš tėvinės UkinisPastatas klasės taip, kaip tai daro klasės Garažas, Tvartas ir Sandelis.  
 			\end{itemize}
 		\item Funkionalumas: 
 			\begin{itemize}
-				\item Programos funkcionalumas susideda iš trijų pagrindinių dalių, vartotojų prieiga prie sistemos, finansų bei išteklių(žmogiškųjų ir natūraliųjų) valdymas, išteklių sekimas. Prieigos dalyje funkcionalumas pasižymi prieigos išskaidymą. Skirtingi sistemos vartotojai gauna skirtingą prieigą ir galimybes naudotis sistema. Pavyzdžiui, darbuotojas negali tvarkyti įmonės finansų, tačiau visi sistemos vartotojai gali kviesti greitąją pagalbą. Nesunku implementuoti naują vartotojų klasę (pvz. Svečias). Finansų bei išteklių dalyje ūkininkas gali tvarkyti savo išteklius, pavyzdžiui, samdyti arba atleisiti darbuotojus, stebėti rinkos kainą ir nuspręsti, kada jam palankiausia parduoti, sudarinėti sąskaitas ir tvarkyti kitą buhalteriją. Trečiojoje sistemos dalyje yra įgyvendinamas išteklių sekimas. Vartotojai, turintys prieigą gali stebėti žemės parametrus, ūkio technikos sąrašą, ūkinių pastatų sąrašą bei gyvūnų, priklausančių sistemai, sąrašą.
+				\item Programos funkcionalumas susideda iš trijų pagrindinių dalių, vartotojų prieiga prie sistemos, finansų bei išteklių (žmogiškųjų ir natūraliųjų) valdymas, išteklių sekimas. Prieigos dalyje funkcionalumas pasižymi prieigos išskaidymu - skirtingi sistemos vartotojai gauna skirtingą prieigą ir galimybes naudotis sistema. Pavyzdžiui, darbuotojas negali tvarkyti įmonės finansų, tačiau visi sistemos vartotojai gali kviesti greitąją pagalbą. Nesunku implementuoti naują vartotojų klasę (pvz. Svečias). Finansų bei išteklių dalyje ūkininkas gali tvarkyti savo išteklius, pavyzdžiui, samdyti arba atleisiti darbuotojus, stebėti rinkos kainą ir nuspręsti, kada jam palankiausia parduoti, sudarinėti sąskaitas ir tvarkyti kitą buhalteriją. Trečiojoje sistemos dalyje yra įgyvendinamas išteklių sekimas. Vartotojai, turintys prieigą gali stebėti žemės parametrus, ūkio technikos sąrašą, ūkinių pastatų sąrašą bei gyvūnų, priklausančių sistemai, sąrašą.
 			\end{itemize}
 
 	\end{itemize}
@@ -353,7 +353,7 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\begin{itemize}
 		\item Dizainas:
 		\begin{itemize}
-			\item Programos dizainas stipriai paremtas Top to bottom projektavimo principu ir objektinio programavimo enkapsuliacijos paradigma. Sistema sukuria ir įgyvendina kitų sistemų intefeisus. Pagrindiniai trys interfeisai sukuriami programos yra UkininkasUI, AdminasUI. Šie interfeisai suteikia prieeiga prie sistemos skirtingas privilegijas turintiems vartojams. Auto Ukis taip pat įgyvendina kitų sistemų suteikiamus interfeisus kuriuos naudoja progamos logikoje duomenis gauti. Įgyvendinami interfeisai yra OruTarnybaAPI, SOSPagalbaAPI ir MikrokontrolerisAPI.
+			\item Programos dizainas stipriai paremtas Top to bottom projektavimo principu ir objektinio programavimo enkapsuliacijos paradigma. Sistema sukuria ir įgyvendina kitų sistemų intefeisus. Pagrindiniai trys interfeisai, sukuriami programos, yra UkininkasUI, DarbuotojasUI ir AdminasUI. Šie interfeisai suteikia prieigą prie sistemos skirtingas privilegijas turintiems vartojams. Auto ūkis taip pat įgyvendina kitų sistemų suteikiamus interfeisus, kuriuos naudoja progamos logikoje duomenis gauti. Įgyvendinami interfeisai yra OruTarnybaAPI, SOSPagalbaAPI ir MikrokontrolerisAPI.
 		\end{itemize}
 	\end{itemize}
 
@@ -366,7 +366,7 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\begin{itemize}
 	\item L0:
 	\begin{itemize}
-	\item Šioje diagramoje pavaizdavome sistemos bendradarbiavimą su išoriniais agentais, tokiais kaip Mikrokontroleris, Ūkininkas ir t.t. . Ši diagrama parodo sistemos įgyvendinamus ir kuriamus interfeisus. Iš diagramos matome, kad programos pagrindas kuria interface ne tik vartotojams, bet ir tokiems išoriniams agentams, kaip SOS pagalba, bei Orų tarnyba.
+	\item Šioje diagramoje pavaizdavome sistemos bendradarbiavimą su išoriniais agentais, tokiais kaip MikroKontroleris, Ukininkas ir t.t. . Ši diagrama parodo sistemos įgyvendinamus ir kuriamus interfeisus. Iš diagramos matome, kad programos pagrindas kuria interfeisą ne tik vartotojams, bet ir tokiems išoriniams agentams, kaip SOS pagalba ir orų tarnyba.
 \end{itemize}
 	\begin{figure}[H]
 		\centering	
@@ -374,8 +374,7 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\caption{}
 	\label{fig:L1V2}
 \end{figure}
-\item L1: Sistemos struktūra ganėtinai aiški. Yra trys panelės kurios pasiima sisteminius duomeris ir trys panelės kurios suteikia duomenis sistemai. Kadangi struktūra paprasta nesunku prie jos pridėti naujų komponentų ar gauti duomenis iš naujų komponentų.
-
+\item L1: Sistemos struktūra ganėtinai aiški. Yra trys panelės, kurios pasiima sisteminius duomenis, ir trys panelės, kurios suteikia duomenis sistemai. Kadangi struktūra paprasta, nesunku prie jos pridėti ar gauti duomenis iš naujų komponentų.
 
 	\begin{figure}[H]
 	\centering	
@@ -383,28 +382,28 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\caption{}
 	\label{}
 	\end{figure}
-	\item L2(Oru prognozė): Šioje diagramoje pavaizduotas Orų prognozės komponento veikimas. Sistema įgyvendina Orų prognozės interfeisa ir perduoda ir formacija Event log'ui. Jame laikoma informacija apie orus iš kurio reikiama info gali pasiimti Event reporteris įgyvendindamas Event log interfeisą.
+	\item L2(Oru prognozė): Šioje diagramoje pavaizduotas Orų prognozės komponento veikimas. Sistema įgyvendina Orų prognozės interfeisą ir perduoda informaciją Event Log'ui. Jame laikoma informacija apie orus, iš kurio reikiamą info gali pasiimti Event reporteris įgyvendindamas Event Log interfeisą.
 \begin{figure}[H]
 		\centering	
 	\includegraphics[width=15cm,height=15cm,keepaspectratio]{l2v2uki.png}
 	\caption{}
 	\label{fig:}
 \end{figure}
-\item L2(Ūkininkas): Ūkininko panelė gauna informaciją įgyvendindama Sistemos suskurta interfeisą. Sistema tuo tarpu įgyvendina Event log kuriamą interfeisą ir paduoda reikiamus duomenis ūkininko UI.
+\item L2(Ūkininkas): Ūkininko panelė gauna informaciją įgyvendindama Sistemos suskurtą interfeisą. Sistema tuo tarpu įgyvendina Event Log kuriamą interfeisą ir paduoda reikiamus duomenis ūkininko UI.
 \begin{figure}[H]
 		\centering	
 	\includegraphics[width=15cm,height=15cm,keepaspectratio]{2L2Admin.png}
 	\caption{}
 	\label{fig:}
 \end{figure}
-\item L2(Admin): Diagramoje pavaizduotas Admin panelės bendravimas su sistema. Norėdamas gauti prieeiga prieš duomenų jis įgyvendina tik vieną Sistemos kuriamą interfeisą. Pati sistema visus duomenis gauna įgyvendindama kitų komponentų kuriamus interfeisus. Sistema įgyvendina Žemės deterktoriaus interfeis ir Event Log interfeisą per kuriuos sistema gauna ir vėliau perduoda duomenis Admin GUI.
+\item L2(Admin): Diagramoje pavaizduotas Admin panelės bendravimas su sistema. Norėdamas gauti prieigą prie duomenų jis įgyvendina tik vieną Sistemos kuriamą interfeisą. Pati sistema visus duomenis gauna įgyvendindama kitų komponentų kuriamus interfeisus. Sistema įgyvendina Žemės detektoriaus ir Event Log interfeisus, per kuriuos sistema gauna ir vėliau perduoda duomenis Admin GUI.
 \begin{figure}[H]
 		\centering	
 	\includegraphics[width=15cm,height=15cm,keepaspectratio]{2L2Darb.png}
 	\caption{}
 	\label{fig:}
 \end{figure}
-\item L2(Darbuotojas): Šioje diagramoje pademonstruojamas Darbuotojo GUI bendravimas su sistema. Sistema sukuria interfeisą kurį įgyvendina Darbuotojas GUI. Jeigu darbuotojui reikia kažkokių duomenų iš Event log ar bendrai iš sistemos Sistema įgyvendina Event Log interfeisą ir taip paduoda duomenis Darbuotojo GUI. 
+\item L2(Darbuotojas): Šioje diagramoje pademonstruojamas Darbuotojo GUI bendravimas su sistema. Sistema sukuria interfeisą, kurį įgyvendina Darbuotojas GUI. Jeigu darbuotojui reikia kažkokių duomenų iš Event log ar bendrai iš sistemos, Sistema įgyvendina Event Log interfeisą ir taip paduoda duomenis Darbuotojo GUI. 
 
 	\begin{figure}[H]
 		\centering	
@@ -413,7 +412,7 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\label{fig:L2SOS}
 \end{figure}
 \item L2(SOS pagalba):
-Šioje diagramoje matome, kad core kuria interface reikiamos pagalbos pasirinkimui, kurį įgyvendins vartotojas iškvietęs SOS pagalbą. Pagalba turi galimybe gauti kažkokius įrašus iš Event Log susijusius tu kritine situacija. Perdavimas vyksta per Sistema.
+Šioje diagramoje matome, kad Core kuria interfeisą reikiamos pagalbos pasirinkimui, kurį įgyvendins vartotojas iškvietęs SOS pagalbą. Pagalba turi galimybę gauti kažkokius įrašus iš Event Log, susijusius tu kritine situacija. Perdavimas vyksta per Sistema.
 
 	\begin{figure}[H]
 	\centering	
@@ -422,7 +421,7 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\label{}
 	\end{figure}
 
-\item L2(Mikrokontroleris): Core įgyvendina Mikrokontrolerio kuriamą interfeisą per kurį sistema ir turi galimybe koduoti patį mikrokontrolerį. Sistema gautus duomenis iš kontrolerio įrašo į Event log'a.
+\item L2(Mikrokontroleris): Core įgyvendina Mikro kontrolerio kuriamą interfeisą, per kurį sistema ir turi galimybę koduoti patį mikro kontrolerį. Sistema gautus duomenis iš kontrolerio įrašo į Event log'ą.
 \end{itemize}
 \subsection{Use case}
 \begin{itemize}
@@ -438,7 +437,7 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 Šiame skyriuje pagrinde koncentruojamasi į programos elgseną jos vykdymo metu.
 \subsubsection{Sekų diagramos}
 \begin{itemize}
-\item Diagramoje (12 pav) pavaizduotos seka, kurią programa atlieka Admin norint gauti planuojamą jo pasirinkto laikotarpio pelną.
+\item Diagramoje (12 pav) pavaizduota seka, kurią programa atlieka Admin norint gauti planuojamą jo pasirinkto laikotarpio pelną.
 		\begin{figure}[H]
 		\centering	
 	\includegraphics[width=17cm,height=20cm,keepaspectratio]{PelnoSkaičiavimas.png}
@@ -467,7 +466,7 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 \end{figure}
 
 \end{itemize}
-Iš šios diagramos  matome, kad detektorius negali būt išjungtas programavimo metu, kad nekiltu klaidos vėlesnių paleidimų metu.
+Iš šios diagramos  matome, kad detektorius negali būt išjungtas programavimo metu, kad nekiltų klaidos vėlesnių paleidimų metu.
 \subsubsection{Veiklos diagramos}
 \begin{itemize}
 \item Orų sekimo veiklos diagrama:
@@ -498,7 +497,7 @@ Iš šios diagramos  matome, kad detektorius negali būt išjungtas programavimo
 	\caption{}
 	\label{}
 	\end{figure}
-\item Šiose diagramose matoma kaip įgyvendinamas atitinkamas scenarijus programos vykdymo metu.
+\item Šiose diagramose matoma, kaip įgyvendinamas atitinkamas scenarijus programos vykdymo metu.
 \end{itemize}
 \subsection{Fizinis pjūvis}
 	Šiame skyriuje parodoma programos naudojama aparatinė įranga, komunikacija tarp tinklo mazgų bei programos komponentų išdėstymas juose.
@@ -512,17 +511,17 @@ Iš šios diagramos  matome, kad detektorius negali būt išjungtas programavimo
 \end{figure}
 	\begin{itemize}
 		\item D0: \hyperref[fig:Deployment]{\textit{Šioje diagramoje (17 pav.)}} parodyta, kaip išsaugomi programos duomenys. 
-		Pirmoje projekto versijoje visi duomenys buvo saugomi kompiuteryje, vienintelis ryšys su internetu buvo per gismeteo.lt svetainę. Dabartinėje versijoje implementuotas duomenų saugojimas PostgreSQL duombazėje. Šioje diagramoje vaziduojamas kelias nuo naudotojo iki pasirinktos duombazės, naudojami techniniai įrenginiai ir jų sąryšiai su programinė įranga. Taip pat pridėtas žemės detektorius, kuris siunčia programai pasirinkto žemės ploto parametrų duomenis. Informacija, gauta iš žemės detektoriaus, taip pat talpinama PostgreSQL duombazėje.
+		Pirmoje projekto versijoje visi duomenys buvo saugomi kompiuteryje, vienintelis ryšys su internetu buvo per gismeteo.lt svetainę. Dabartinėje versijoje implementuotas duomenų saugojimas PostgreSQL duombazėje. Šioje diagramoje vaizduojamas kelias nuo naudotojo iki pasirinktos duombazės, naudojami techniniai įrenginiai ir jų sąryšiai su programinė įranga. Taip pat pridėtas žemės detektorius, kuris siunčia programai pasirinkto žemės ploto parametrų duomenis. Informacija, gauta iš žemės detektoriaus, taip pat talpinama PostgreSQL duombazėje.
 	\end{itemize}
 
 \pagebreak
 \subsection{Antros dalies išvada}
-Sistema suprojektuota tokiais principais, kad ją būtų lengva papildyti. Klasių dizainas atitinka Top->Bottom principą, kuris leidžia nesunkiai leidžia pridėti naujo funkcionalumo visai sistemai. Šis principas persikelia ir į kūrimo pjūvi. Sistemos įgyvendinami ir kūremi interfeisai yra labai modularūs ir nesunku pridėti ar išimti interfeisus iš sistermos. Vidinė programos struktūra sekų diagramoje aiškiai apibrėžia vartotojų sąveika su sistema. Sekos išskirstytos diskrečiais ir aiškiais veiksmais kas sumažina klaidų skaičių rašant kodą ir padeda suprasti kaip viskas veikia. Iš fizinės pusės sistema yra serveryje ir dėl pasirinktos JAVA programavimo kalbos sistemą galimą pasileisti iš visų operacinių sistemų. Visa sistema yra serveryje. Duomenims saugoti psirinkome PostgreSQL nes tai populiariausia nemokama duomenų bazių valdymo sistema. Sistemai yra vietos tobulėti. Ateityje egzistuoja galimybe ją pritaikyti išmaniesiams telefonams bei kitiems nešiojamiems įrenginiams.
+Sistema suprojektuota tokiais principais, kad ją būtų lengva papildyti. Klasių dizainas atitinka Top->Bottom principą, kuris leidžia nesunkiai pridėti naujo funkcionalumo visai sistemai. Šis principas persikelia ir į kūrimo pjūvį. Sistemos įgyvendinami ir kuriami interfeisai yra labai moduliarūs ir nesunku pridėti ar išimti interfeisus iš sistemos. Vidinė programos struktūra sekų diagramoje aiškiai apibrėžia vartotojų sąveiką su sistema. Sekos išskirstytos diskrečiais ir aiškiais veiksmais, kas sumažina klaidų skaičių rašant kodą ir padeda suprasti, kaip viskas veikia. Iš fizinės pusės sistema yra serveryje ir dėl pasirinktos JAVA programavimo kalbos sistemą galimą pasileisti iš visų operacinių sistemų. Visa sistema yra serveryje. Duomenims saugoti psirinkome PostgreSQL, nes tai populiariausia nemokama duomenų bazių valdymo sistema. Sistemai yra vietos tobulėti. Ateityje egzistuoja galimybė ją pritaikyti išmaniesiams telefonams bei kitiems nešiojamiems įrenginiams.
 
 
 
 \sectionnonum{Rezultatai ir išvados}
-Projektuodami tą pačią sistemą du kartus skirtingais būdais pamatėme aiškius stilių skirumus. Kuriant sistemą nesilaikant jokių aiškių principų kodas ir pati sistemos struktūra tampa neaiški, po kiek laiko prisimeni apie neįgyvendintus funkcionalumus arba idėjas kurias įdėti į sistemą būtų labai sunku. Projektuojant sistemą antrą kartą buvo prisilaikyta Top->Bottom ir OOP principų kurie leido lengviau struktūrizuoti visą darba. Klasių ir komponentų diagramos pasidarė aiškiai suprantamos ir nauji funkcionalumai būtų nesunkiai įgyvendinami ateityje. Buvo aiškiau apibrėžtas fizinis sistemos principas leidžiantis lanksciau naudotis sistema. Deja ne viską pavyko pridėti. Norėtūsi įdėti išmaniojo telefono palaikymą mūsų sistemoje, bet dėl laiko stokos to nebepadarėme. Tačiau tikime, kad dėl struktūros pranašumų tai padaryti nebūtų sunku. Išmokome fundamentalius PSI aspektus, UML diagramų braižymą, išmokome naudotis keletu UML braižymo programų ir .pdf failų kurimo programa Latex, kuris palengvino darbą komndoje. Dėl gero darbų pasidalijimo projekto kūrimas vyko sklandžiai. 
+Projektuodami tą pačią sistemą du kartus skirtingais būdais pamatėme aiškius stilių skirumus. Kuriant sistemą nesilaikant jokių aiškių principų, kodas ir pati sistemos struktūra tampa neaiški, po kiek laiko prisimeni apie neįgyvendintus funkcionalumus arba idėjas, kurias įdėti į sistemą būtų labai sunku. Projektuojant sistemą antrą kartą buvo prisilaikyta Top->Bottom ir OOP principų, kurie leido lengviau struktūrizuoti visą darbą. Klasių ir komponentų diagramos pasidarė aiškiai suprantamos ir nauji funkcionalumai būtų nesunkiai įgyvendinami ateityje. Buvo aiškiau apibrėžtas fizinis sistemos principas, leidžiantis lanksciau naudotis sistema. Deja, ne viską pavyko pridėti. Norėtųsi įdėti išmaniojo telefono palaikymą mūsų sistemoje, bet dėl laiko stokos to nebepadarėme. Tačiau tikime, kad dėl struktūros pranašumų tai padaryti nebūtų sunku. Išmokome fundamentalius PSI aspektus, UML diagramų braižymą, išmokome naudotis keletu UML braižymo programų ir .pdf failų kurimo programa Latex, kuri palengvino darbą komandoje. Dėl gero darbų pasidalijimo projekto kūrimas vyko sklandžiai. 
 
 
 
