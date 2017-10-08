@@ -29,10 +29,10 @@
                   % atviras Times New Roman šrifto atitikmuo
 \RequirePackage{setspace} % Intervalas tarp eilučių
 \RequirePackage[
-    left=3cm,
-    top=2cm,
+    left=1.5cm,
+    top=1.5cm,
     right=1.5cm,
-    bottom=2cm,
+    bottom=1.5cm,
     footskip=0.6cm,
 ]{geometry}  % Lapo paraštės
 \sloppy  % Tolygiai paskirsto tekstą nuo kairės iki dešinės paraštės
