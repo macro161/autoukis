@@ -77,6 +77,9 @@ Automatinė ūkio valdymo sistema (toliau - Auto ūkis) yra programa, leidžiant
 			\item[*] Gyvūnas - visi gyvūnai, kurie priklauso ūkininkui, ir yra registruoti Auto ūkis sistemoje.
 		\end{itemize}
 \end{itemize}
+
+\pagebreak
+
 \subsubsection{Klasių diagrama}
 Pagal suprogramuotą šabloninį programos karkasą nubraižėme  \hyperref[fig:uml]{\textit{ UML diagramą(1 pav)}} minėta PlnatText programa.
 	\begin{figure}[H]	
@@ -187,7 +190,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 \label{fig:elementu_ir_uzd_matrica}
 \end{figure}
 \begin{itemize}
-		\item Elementų ir užduočių ryšių matrica.
+		\item Elementų ir užduočių ryšių matrica(8 pav).
 \end{itemize}
 
 \pagebreak
@@ -196,21 +199,24 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 
 \subsection{Use cases}
 \begin{itemize}
-\item Prisijungimo ir registracijos Use Case:
+\item Prisijungimo ir registracijos Use Case(9 pav):
 \begin {figure}[H]
 	\centering
 		\includegraphics[width=10cm,height=11cm,keepaspectratio]{Use_case_prisijungimas_registracija.png}
 	\caption{}
 	\label{fig:Use_case_prisijungimas_registracija}
 \end{figure}
-\item Žemėlapio žymėjimo ir peržiūros Use Case:
+\item Žemėlapio žymėjimo ir peržiūros Use Case(10 pav):
 \begin {figure}[H]
 	\centering
 		\includegraphics[width=10cm,height=11cm,keepaspectratio]{Use_case_zemelapio_zymejimas.png}
 	\caption{}
 	\label{fig:Use_case_zemelapio_zymejimas}
 \end{figure}
-\item Gyvūnų suvedimo ir peržiūros Use Case:
+
+\pagebreak
+
+\item Gyvūnų suvedimo ir peržiūros Use Case(11 pav):
 \begin {figure}[H]
 	\centering
 		\includegraphics[width=10cm,height=11cm,keepaspectratio]{Use_case_gyvunu_suvedimas.png}
@@ -222,7 +228,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 \subsection{Proceso pjūvis}
 	Šiame skyriuje parodoma programos elgsena jos vykdimo metu.
 \subsubsection{Veiklos diagramos}
-	Vaizduojama\hyperref[fig:ActivityMapŽimėjimas]{\textit{ žemėlapio žymėjimo veiklos diagrama (pav 8)}}. Nurodomi pagrindiniai žingsniai braižant žemėlapį.
+	Vaizduojama\hyperref[fig:ActivityMapŽimėjimas]{\textit{ žemėlapio žymėjimo veiklos diagrama (pav 12)}}. Nurodomi pagrindiniai žingsniai braižant žemėlapį.
 	\vskip 0.5cm
 	\begin{figure}[H]
 	\centering	
@@ -231,9 +237,10 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 	\label{fig:ActivityMapŽimėjimas}
 \end{figure}
 
-	
+\pagebreak	
+
 \subsubsection{Būsėnų diagrama}
- \hyperref[fig:Busenu]{\textit{Šioje diagramoje (pav 9)}} parodomos galimos vartotojo būsenos ir keliai jom pasiekti. Šiuo metu programoje tėra dvi būsenos, taigi diagrama yra labai paprasta.
+ \hyperref[fig:Busenu]{\textit{Šioje diagramoje (pav 13)}} parodomos galimos vartotojo būsenos ir keliai jom pasiekti. Šiuo metu programoje tėra dvi būsenos, taigi diagrama yra labai paprasta.
 	\begin{figure}[H]
 	\centering	
 	\includegraphics[width=5cm,height=6cm,keepaspectratio]{Busenu.png}
@@ -242,7 +249,7 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 \end{figure}
 \pagebreak
 \subsection{Fizinis pjūvis}
-	Šiame skyriuje parodoma (10 pav.) šios sistemos techninė įranga, komunikacija, tačiau kadangi šioje šabloninėje versijoje nenaudojame kitų techninių resursų be kompiuterio, fizinis pjūvis parodo tik nedidelį kiekį informacijos.
+	Šiame skyriuje parodoma (14 pav.) šios sistemos techninė įranga, komunikacija, tačiau kadangi šioje šabloninėje versijoje nenaudojame kitų techninių resursų be kompiuterio, fizinis pjūvis parodo tik nedidelį kiekį informacijos.
 	\newline
 	\vskip 0.5cm
 	\begin{figure}[H]
@@ -252,10 +259,13 @@ Nepilnai įgyvendintas finkcionalumas ir neišbaigtos klasės sukelia nepatogum�
 	\label{fig:Deployment}
 \end{figure}
 	\begin{itemize}
-		\item D0: \hyperref[fig:Deployment]{\textit{Šioje diagramoje(11 pav)}} parodyta, kas saugoma device kompiuteris. 
+		\item D0: \hyperref[fig:Deployment]{\textit{Šioje diagramoje(15 pav)}} parodyta, kas saugoma device kompiuteris. 
 		Iš diagramos matome, kad šiame įrenginyje saugomi prisijungimo duomenys, vartotojų grafinės sąsajos, teritorijos žemėlapis bei programoje atliktų veiksmų išrašas. Alternatyva buvo saugoti šiuos duomenis išnuomuotame web service, tačiau daug negalvoję nusprendėme duomenis saugoti kompiuteryje.
 	\end{itemize}
-		\begin{figure}[H]
+
+\pagebreak		
+
+\begin{figure}[H]
 		\centering	
 	\includegraphics[width=10cm,height=10cm,keepaspectratio]{Deployment0.png}
 	\caption{                                                            }
@@ -318,6 +328,9 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 			\item[*] Gyvūnas - visi gyvūnai, kurie priklauso ūkininkui, ir yra registruoti Auto ūkis sistemoje.
 		\end{itemize}
 \end{itemize}
+
+\pagebreak
+
 \subsubsection{Klasių diagrama}
 			\begin{figure}[H]
 		\centering	
@@ -329,7 +342,7 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\begin{itemize}
 		\item Dizainas:
 			\begin{itemize}
-				\item Visas programos dizainas paremtas Top to Bottom principu. Pradėjome galvoti dideliais objektais ir juos išskirstėm į mažesnius. Pagrindinė klasė yra AutoUkis, kuris iškviečia VartotojoSasaja klasę, kuri ir piešia visą prieinamumą vartotojams. Galima nesunkiai pridėti kitokią vartotojo sąsają ar bet kokią kitą UI piešimo galimybę, kaip ,pavyzdžiui, piešti UI išmaniąjame telefone. Programos modalumas leidžia nesunkiai pridėti funkionalumo, nes programos dalys yra atskiros viena nuo kitos. Pavyzdžiui, ištrynus klasę ŪkinisPastatas visos programos veikimas nesutiriktų. Tuo pačiu metu norint pridėti naują ūkinį pastatą galima nesunkiai tai padaryti įvykdžius paveldėjimą iš tėvinės UkinisPastatas klasės taip, kaip tai daro klasės Garažas, Tvartas ir Sandelis.  
+				\item Visas programos dizainas(16 pav) paremtas Top to Bottom principu. Pradėjome galvoti dideliais objektais ir juos išskirstėm į mažesnius. Pagrindinė klasė yra AutoUkis, kuris iškviečia VartotojoSasaja klasę, kuri ir piešia visą prieinamumą vartotojams. Galima nesunkiai pridėti kitokią vartotojo sąsają ar bet kokią kitą UI piešimo galimybę, kaip ,pavyzdžiui, piešti UI išmaniąjame telefone. Programos modalumas leidžia nesunkiai pridėti funkionalumo, nes programos dalys yra atskiros viena nuo kitos. Pavyzdžiui, ištrynus klasę ŪkinisPastatas visos programos veikimas nesutiriktų. Tuo pačiu metu norint pridėti naują ūkinį pastatą galima nesunkiai tai padaryti įvykdžius paveldėjimą iš tėvinės UkinisPastatas klasės taip, kaip tai daro klasės Garažas, Tvartas ir Sandelis.  
 			\end{itemize}
 		\item Funkionalumas: 
 			\begin{itemize}
@@ -348,12 +361,13 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 \label{fig:elementu_ir_uzd_matrica}
 \end{figure}
 
+\pagebreak
 
 \subsection{Kūrimo pjūvis}
 	\begin{itemize}
 		\item Dizainas:
 		\begin{itemize}
-			\item Programos dizainas stipriai paremtas Top to bottom projektavimo principu ir objektinio programavimo enkapsuliacijos paradigma. Sistema sukuria ir įgyvendina kitų sistemų intefeisus. Pagrindiniai trys interfeisai sukuriami programos yra UkininkasUI, AdminasUI. Šie interfeisai suteikia prieeiga prie sistemos skirtingas privilegijas turintiems vartojams. Auto Ukis taip pat įgyvendina kitų sistemų suteikiamus interfeisus kuriuos naudoja progamos logikoje duomenis gauti. Įgyvendinami interfeisai yra OruTarnybaAPI, SOSPagalbaAPI ir MikrokontrolerisAPI.
+			\item Programos dizainas stipriai paremtas Top to bottom projektavimo principu ir objektinio programavimo enkapsuliacijos paradigma. Sistema(18 pav) sukuria ir įgyvendina kitų sistemų intefeisus. Pagrindiniai trys interfeisai sukuriami programos yra UkininkasUI, AdminasUI. Šie interfeisai suteikia prieeiga prie sistemos skirtingas privilegijas turintiems vartojams. Auto Ukis taip pat įgyvendina kitų sistemų suteikiamus interfeisus kuriuos naudoja progamos logikoje duomenis gauti. Įgyvendinami interfeisai yra OruTarnybaAPI, SOSPagalbaAPI ir MikrokontrolerisAPI.
 		\end{itemize}
 	\end{itemize}
 
@@ -366,7 +380,7 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\begin{itemize}
 	\item L0:
 	\begin{itemize}
-	\item Šioje diagramoje pavaizdavome sistemos bendradarbiavimą su išoriniais agentais, tokiais kaip Mikrokontroleris, Ūkininkas ir t.t. . Ši diagrama parodo sistemos įgyvendinamus ir kuriamus interfeisus. Iš diagramos matome, kad programos pagrindas kuria interface ne tik vartotojams, bet ir tokiems išoriniams agentams, kaip SOS pagalba, bei Orų tarnyba.
+	\item Šioje diagramoje (18 pav) pavaizdavome sistemos bendradarbiavimą su išoriniais agentais, tokiais kaip Mikrokontroleris, Ūkininkas ir t.t. . Ši diagrama parodo sistemos įgyvendinamus ir kuriamus interfeisus. Iš diagramos matome, kad programos pagrindas kuria interface ne tik vartotojams, bet ir tokiems išoriniams agentams, kaip SOS pagalba, bei Orų tarnyba.
 \end{itemize}
 	\begin{figure}[H]
 		\centering	
@@ -374,8 +388,9 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\caption{}
 	\label{fig:L1V2}
 \end{figure}
-\item L1: Sistemos struktūra ganėtinai aiški. Yra trys panelės kurios pasiima sisteminius duomeris ir trys panelės kurios suteikia duomenis sistemai. Kadangi struktūra paprasta nesunku prie jos pridėti naujų komponentų ar gauti duomenis iš naujų komponentų.
+\item L1: Sistemos (19 pav) struktūra ganėtinai aiški. Yra trys panelės kurios pasiima sisteminius duomeris ir trys panelės kurios suteikia duomenis sistemai. Kadangi struktūra paprasta nesunku prie jos pridėti naujų komponentų ar gauti duomenis iš naujų komponentų.
 
+\pagebreak
 
 	\begin{figure}[H]
 	\centering	
@@ -383,28 +398,28 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\caption{}
 	\label{}
 	\end{figure}
-	\item L2(Oru prognozė): Šioje diagramoje pavaizduotas Orų prognozės komponento veikimas. Sistema įgyvendina Orų prognozės interfeisa ir perduoda ir formacija Event log'ui. Jame laikoma informacija apie orus iš kurio reikiama info gali pasiimti Event reporteris įgyvendindamas Event log interfeisą.
+	\item L2(Oru prognozė): Šioje diagramoje(20 pav) pavaizduotas Orų prognozės komponento veikimas. Sistema įgyvendina Orų prognozės interfeisa ir perduoda ir formacija Event log'ui. Jame laikoma informacija apie orus iš kurio reikiama info gali pasiimti Event reporteris įgyvendindamas Event log interfeisą.
 \begin{figure}[H]
 		\centering	
 	\includegraphics[width=15cm,height=15cm,keepaspectratio]{l2v2uki.png}
 	\caption{}
 	\label{fig:}
 \end{figure}
-\item L2(Ūkininkas): Ūkininko panelė gauna informaciją įgyvendindama Sistemos suskurta interfeisą. Sistema tuo tarpu įgyvendina Event log kuriamą interfeisą ir paduoda reikiamus duomenis ūkininko UI.
+\item L2(Ūkininkas): Ūkininko panelė(21 pav) gauna informaciją įgyvendindama Sistemos suskurta interfeisą. Sistema tuo tarpu įgyvendina Event log kuriamą interfeisą ir paduoda reikiamus duomenis ūkininko UI.
 \begin{figure}[H]
 		\centering	
 	\includegraphics[width=15cm,height=15cm,keepaspectratio]{2L2Admin.png}
 	\caption{}
 	\label{fig:}
 \end{figure}
-\item L2(Admin): Diagramoje pavaizduotas Admin panelės bendravimas su sistema. Norėdamas gauti prieeiga prieš duomenų jis įgyvendina tik vieną Sistemos kuriamą interfeisą. Pati sistema visus duomenis gauna įgyvendindama kitų komponentų kuriamus interfeisus. Sistema įgyvendina Žemės deterktoriaus interfeis ir Event Log interfeisą per kuriuos sistema gauna ir vėliau perduoda duomenis Admin GUI.
+\item L2(Admin): Diagramoje(22 pav) pavaizduotas Admin panelės bendravimas su sistema. Norėdamas gauti prieeiga prieš duomenų jis įgyvendina tik vieną Sistemos kuriamą interfeisą. Pati sistema visus duomenis gauna įgyvendindama kitų komponentų kuriamus interfeisus. Sistema įgyvendina Žemės deterktoriaus interfeis ir Event Log interfeisą per kuriuos sistema gauna ir vėliau perduoda duomenis Admin GUI.
 \begin{figure}[H]
 		\centering	
 	\includegraphics[width=15cm,height=15cm,keepaspectratio]{2L2Darb.png}
 	\caption{}
 	\label{fig:}
 \end{figure}
-\item L2(Darbuotojas): Šioje diagramoje pademonstruojamas Darbuotojo GUI bendravimas su sistema. Sistema sukuria interfeisą kurį įgyvendina Darbuotojas GUI. Jeigu darbuotojui reikia kažkokių duomenų iš Event log ar bendrai iš sistemos Sistema įgyvendina Event Log interfeisą ir taip paduoda duomenis Darbuotojo GUI. 
+\item L2(Darbuotojas): Šioje diagramoje(23 pav) pademonstruojamas Darbuotojo GUI bendravimas su sistema. Sistema sukuria interfeisą kurį įgyvendina Darbuotojas GUI. Jeigu darbuotojui reikia kažkokių duomenų iš Event log ar bendrai iš sistemos Sistema įgyvendina Event Log interfeisą ir taip paduoda duomenis Darbuotojo GUI. 
 
 	\begin{figure}[H]
 		\centering	
@@ -413,7 +428,7 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\label{fig:L2SOS}
 \end{figure}
 \item L2(SOS pagalba):
-Šioje diagramoje matome, kad core kuria interface reikiamos pagalbos pasirinkimui, kurį įgyvendins vartotojas iškvietęs SOS pagalbą. Pagalba turi galimybe gauti kažkokius įrašus iš Event Log susijusius tu kritine situacija. Perdavimas vyksta per Sistema.
+Šioje diagramoje(24 pav) matome, kad core kuria interface reikiamos pagalbos pasirinkimui, kurį įgyvendins vartotojas iškvietęs SOS pagalbą. Pagalba turi galimybe gauti kažkokius įrašus iš Event Log susijusius tu kritine situacija. Perdavimas vyksta per Sistema.
 
 	\begin{figure}[H]
 	\centering	
@@ -422,11 +437,14 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\label{}
 	\end{figure}
 
-\item L2(Mikrokontroleris): Core įgyvendina Mikrokontrolerio kuriamą interfeisą per kurį sistema ir turi galimybe koduoti patį mikrokontrolerį. Sistema gautus duomenis iš kontrolerio įrašo į Event log'a.
+\item L2(Mikrokontroleris): Core(25 pav) įgyvendina Mikrokontrolerio kuriamą interfeisą per kurį sistema ir turi galimybe koduoti patį mikrokontrolerį. Sistema gautus duomenis iš kontrolerio įrašo į Event log'a.
 \end{itemize}
+
+\pagebreak
+
 \subsection{Use case}
 \begin{itemize}
-\item Diagramoje (22 pav) pavaizduoti visi galimi veiksmai, kuriuos gali atlikti kiekvienas programos vartotojas.
+\item Diagramoje (26 pav) pavaizduoti visi galimi veiksmai, kuriuos gali atlikti kiekvienas programos vartotojas.
 		\begin{figure}[H]
 		\centering	
 	\includegraphics[width=15cm,height=17cm,keepaspectratio]{UseCaseFull.png}
@@ -434,18 +452,24 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\label{fig:UseCaseFull}
 \end{figure}
 \end{itemize}
+
+\pagebreak
+
 \subsection{Proceso pjūvis}
 Šiame skyriuje pagrinde koncentruojamasi į programos elgseną jos vykdymo metu.
 \subsubsection{Sekų diagramos}
 \begin{itemize}
-\item Diagramoje (12 pav) pavaizduotos seka, kurią programa atlieka Admin norint gauti planuojamą jo pasirinkto laikotarpio pelną.
+\item Diagramoje (27 pav) pavaizduotos seka, kurią programa atlieka Admin norint gauti planuojamą jo pasirinkto laikotarpio pelną.
 		\begin{figure}[H]
 		\centering	
 	\includegraphics[width=17cm,height=20cm,keepaspectratio]{PelnoSkaičiavimas.png}
 	\caption{}
 	\label{fig:PelnoSkaičiavimas}
 \end{figure}
-Šioje diagramoje matome, kad ūkininkui pateikus užklausą planuojamui pelnui gauti, Ūkininkas UI kreipiasi į Calculations klasę su prašymu jį apskaičiuoti. Ši savo ruožtu norėdama gauti reikiamus duomenis kreipiasi į klases UkioTechnika, Map ir Orai.
+Šioje diagramoje(28 pav) matome, kad ūkininkui pateikus užklausą planuojamui pelnui gauti, Ūkininkas UI kreipiasi į Calculations klasę su prašymu jį apskaičiuoti. Ši savo ruožtu norėdama gauti reikiamus duomenis kreipiasi į klases UkioTechnika, Map ir Orai.
+
+\pagebreak
+
 \item Teritorijos žimėjimo seka:
 	\begin{figure}[H]
 		\centering	
@@ -457,7 +481,7 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 \end{itemize}
 \subsubsection{Būsenų diagramos}
 \begin{itemize}
-\item Detektoriaus būsenų diagrama:
+\item Detektoriaus būsenų diagrama(29 pav):
 
 		\begin{figure}[H]
 		\centering	
@@ -467,31 +491,31 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 \end{figure}
 
 \end{itemize}
-Iš šios diagramos  matome, kad detektorius negali būt išjungtas programavimo metu, kad nekiltu klaidos vėlesnių paleidimų metu.
+Iš šios(29 pav) diagramos  matome, kad detektorius negali būt išjungtas programavimo metu, kad nekiltu klaidos vėlesnių paleidimų metu.
 \subsubsection{Veiklos diagramos}
 \begin{itemize}
-\item Orų sekimo veiklos diagrama:
+\item Orų sekimo veiklos diagrama(30 pav):
 	\begin{figure}[H]
 	\centering	
 	\includegraphics[width=10cm,height=10cm,keepaspectratio]{veiklos_diagrama_orai.png}
 	\caption{}
 	\label{}
 	\end{figure}
-\item Ūkio technikos sekimo veiklos diagrama:
+\item Ūkio technikos sekimo veiklos diagrama(31 pav):
 	\begin{figure}[H]
 	\centering	
 	\includegraphics[width=10cm,height=10cm,keepaspectratio]{veiklos_diagrama_technikos_sekimas.png}
 	\caption{}
 	\label{}
 	\end{figure}
-\item Teritorijos žymėjimo veiklos diagrama:
+\item Teritorijos žymėjimo veiklos diagrama(32 pav):
 	\begin{figure}[H]
 	\centering	
 	\includegraphics[width=10cm,height=10cm,keepaspectratio]{veiklos_diagrama_zymeti_teritorijas.png}
 	\caption{}
 	\label{}
 	\end{figure}
-\item Gyvūnų suvedimo veiklos diagrama:
+\item Gyvūnų suvedimo veiklos diagrama(33 pav):
 	\begin{figure}[H]
 	\centering	
 	\includegraphics[width=10cm,height=10cm,keepaspectratio]{VeiklosGyvunuSuvedimas.png}
@@ -511,7 +535,7 @@ Iš šios diagramos  matome, kad detektorius negali būt išjungtas programavimo
 	\label{fig:Deployment}
 \end{figure}
 	\begin{itemize}
-		\item D0: \hyperref[fig:Deployment]{\textit{Šioje diagramoje (17 pav.)}} parodyta, kaip išsaugomi programos duomenys. 
+		\item D0: \hyperref[fig:Deployment]{\textit{Šioje diagramoje (34 pav.)}} parodyta, kaip išsaugomi programos duomenys. 
 		Pirmoje projekto versijoje visi duomenys buvo saugomi kompiuteryje, vienintelis ryšys su internetu buvo per gismeteo.lt svetainę. Dabartinėje versijoje implementuotas duomenų saugojimas PostgreSQL duombazėje. Šioje diagramoje vaziduojamas kelias nuo naudotojo iki pasirinktos duombazės, naudojami techniniai įrenginiai ir jų sąryšiai su programinė įranga. Taip pat pridėtas žemės detektorius, kuris siunčia programai pasirinkto žemės ploto parametrų duomenis. Informacija, gauta iš žemės detektoriaus, taip pat talpinama PostgreSQL duombazėje.
 	\end{itemize}
 
