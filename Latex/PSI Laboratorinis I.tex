@@ -350,8 +350,6 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 
 
 \subsection{Kūrimo pjūvis}
-	
-
 	\begin{itemize}
 		\item Dizainas:
 		\begin{itemize}
@@ -385,28 +383,28 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\caption{}
 	\label{}
 	\end{figure}
-	\item Oru prognozė:
+	\item L2(Oru prognozė): Šioje diagramoje pavaizduotas Orų prognozės komponento veikimas. Sistema įgyvendina Orų prognozės interfeisa ir perduoda ir formacija Event log'ui. Jame laikoma informacija apie orus iš kurio reikiama info gali pasiimti Event reporteris įgyvendindamas Event log interfeisą.
 \begin{figure}[H]
 		\centering	
 	\includegraphics[width=15cm,height=15cm,keepaspectratio]{l2v2uki.png}
 	\caption{}
 	\label{fig:}
 \end{figure}
-\item L2(Ūkininkas): Ūkininkas turi prieigą prie sistemos, GUI, Event Reporter ir Event Log.
+\item L2(Ūkininkas): Ūkininko panelė gauna informaciją įgyvendindama Sistemos suskurta interfeisą. Sistema tuo tarpu įgyvendina Event log kuriamą interfeisą ir paduoda reikiamus duomenis ūkininko UI.
 \begin{figure}[H]
 		\centering	
 	\includegraphics[width=15cm,height=15cm,keepaspectratio]{2L2Admin.png}
 	\caption{}
 	\label{fig:}
 \end{figure}
-\item L2(Admin): Diagramoje pavaizduota Admin sąsaja su sistema, GUI ir Event Log. Admin taip pat turi žemės detektoriaus prieigą.
+\item L2(Admin): Diagramoje pavaizduotas Admin panelės bendravimas su sistema. Norėdamas gauti prieeiga prieš duomenų jis įgyvendina tik vieną Sistemos kuriamą interfeisą. Pati sistema visus duomenis gauna įgyvendindama kitų komponentų kuriamus interfeisus. Sistema įgyvendina Žemės deterktoriaus interfeis ir Event Log interfeisą per kuriuos sistema gauna ir vėliau perduoda duomenis Admin GUI.
 \begin{figure}[H]
 		\centering	
 	\includegraphics[width=15cm,height=15cm,keepaspectratio]{2L2Darb.png}
 	\caption{}
 	\label{fig:}
 \end{figure}
-\item L2(Darbuotojas): Diagramoje pavaizduota darbuotojo prieiga prie sistemos, GUI ir Event Log. 
+\item L2(Darbuotojas): Šioje diagramoje pademonstruojamas Darbuotojo GUI bendravimas su sistema. Sistema sukuria interfeisą kurį įgyvendina Darbuotojas GUI. Jeigu darbuotojui reikia kažkokių duomenų iš Event log ar bendrai iš sistemos Sistema įgyvendina Event Log interfeisą ir taip paduoda duomenis Darbuotojo GUI. 
 
 	\begin{figure}[H]
 		\centering	
@@ -415,7 +413,7 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\label{fig:L2SOS}
 \end{figure}
 \item L2(SOS pagalba):
-Šioje diagramoje matome, kad core kuria interface reikiamos pagalbos pasirinkimui, kurį įgyvendins vartotojas iškvietęs SOS pagalbą.
+Šioje diagramoje matome, kad core kuria interface reikiamos pagalbos pasirinkimui, kurį įgyvendins vartotojas iškvietęs SOS pagalbą. Pagalba turi galimybe gauti kažkokius įrašus iš Event Log susijusius tu kritine situacija. Perdavimas vyksta per Sistema.
 
 	\begin{figure}[H]
 	\centering	
@@ -424,7 +422,7 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\label{}
 	\end{figure}
 
-\item L2(Mikrokontroleris):
+\item L2(Mikrokontroleris): Core įgyvendina Mikrokontrolerio kuriamą interfeisą per kurį sistema ir turi galimybe koduoti patį mikrokontrolerį. Sistema gautus duomenis iš kontrolerio įrašo į Event log'a.
 \end{itemize}
 \subsection{Use case}
 \begin{itemize}
