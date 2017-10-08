@@ -7,19 +7,18 @@ public class ZemesParametrai implements Serializable{
     private String plotoPavadinimas;
     private int sluoksnis;
     private int storis;
-    private int smelisProcentais;
-    private int dregme;
-    private int ph;
-    private ZemesDetektorius detektorius;
-    private Orai orai = new Orai(); //Busimas obnjektas kuri naudosim nustatyti zemes dregmei
+    private double smelisProcentais;
+    private double dregme;
+    private double ph;
+    private ZemesDetektorius detektorius = new ZemesDetektorius();
 
     public ZemesParametrai(String plotoPavadinimas, int sluoksnis, int storis, int smelisProcentais, int dregme, int ph) {
         this.plotoPavadinimas = plotoPavadinimas;
-        this.sluoksnis = sluoksnis;
-        this.storis = storis;
-        this.smelisProcentais = smelisProcentais;
-        this.dregme = dregme;
-        this.ph = ph;
+        this.sluoksnis = 4;
+        this.storis = 3;
+        this.smelisProcentais = detektorius.getSmelis();
+        this.dregme = detektorius.getDregme();
+        this.ph = detektorius.getPh();
     }
 
     public void kadaIsdziusZeme() {
@@ -41,21 +40,18 @@ public class ZemesParametrai implements Serializable{
         return storis;
     }
 
-    public int getSmelisProcentais() {
+    public double getSmelisProcentais() {
         return smelisProcentais;
     }
 
-    public int getDregme() {
+    public double getDregme() {
         return dregme;
     }
 
-    public int getPh() {
+    public double getPh() {
         return ph;
     }
 
-    public Object getOrai() {
-        return orai;
-    }
 
     public void setPlotoPavadinimas(String plotoPavadinimas) {
         this.plotoPavadinimas = plotoPavadinimas;

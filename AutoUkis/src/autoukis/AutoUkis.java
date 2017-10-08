@@ -10,6 +10,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.*;
 import java.io.Serializable;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -1629,15 +1631,16 @@ public class AutoUkis extends javax.swing.JFrame implements Serializable {
         panelThree.add(label);
         if (!map.check(x)) {
             if (map.getPlotas() instanceof AriamasLaukas) {
+                NumberFormat f = new DecimalFormat("#0.0");  
                 label.setSize(130, 110);
                 plotas = map.getPlotas();
                 AriamasLaukas laukai = (AriamasLaukas) plotas;
                 label.setText("<html><b>" + laukai.getMsg() + "</b><br>"
                         + "Plotas: " + (String.format("%.1f", laukai.getPlotas())) + " m<sup>2</sup><br>"
-                        + "Dregmė: " + (laukai.getParametrai().getDregme()) + "<br>"
-                        + "Ph: " + (laukai.getParametrai().getPh()) + "<br>"
-                        + "Storis: " + (laukai.getParametrai().getStoris()) + "<br>"
-                        + "Smėlingumas: " + (laukai.getParametrai().getSmelisProcentais()) + "%</html>");
+                        + "Dregmė: " + (f.format(laukai.getParametrai().getDregme())) + "%<br>"
+                        + "Ph: " + (f.format(laukai.getParametrai().getPh())) + "<br>"
+                        + "Storis: " + (laukai.getParametrai().getStoris()) + "m<br>"
+                        + "Smėlingumas: " + (f.format(laukai.getParametrai().getSmelisProcentais())) + "%</html>");
             } else {
                 label.setText("<html><b>" + map.getPlotas().getMsg() + "</b><br>"
                         + "Plotas: " + (String.format("%.1f", map.getPlotas().getPlotas())) + " m<sup>2</sup></html>");
@@ -1704,13 +1707,13 @@ public class AutoUkis extends javax.swing.JFrame implements Serializable {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         boolean x = false;
         panelThree.repaint();
-         try {
+        try {
             if ((jTextField1.getText().contains(" ")) || (jPasswordField1.getText().contains(" "))) {
                 JOptionPane.showMessageDialog(null, "Vardas ir slaptažodis turi būti be tarpų", "Klaida", JOptionPane.INFORMATION_MESSAGE);
             } else {
                 x = prs.prisijungti(jTextField1.getText(), jPasswordField1.getText());
             }
-            
+
             if (x == true) {
                 reporter.reportEvent("Prisijungė vartotojas: " + jTextField1.getText());
                 currentUser = jTextField1.getText();
@@ -1727,7 +1730,7 @@ public class AutoUkis extends javax.swing.JFrame implements Serializable {
             FileInputStream fis = new FileInputStream("Ukis.ser");
             ObjectInputStream in = new ObjectInputStream(fis);
 
-            if (fis.available() == 0) {
+            if (fis.available() < 2) {
                 return;
             }
             gyvunai = (List<Gyvunas>) in.readObject();
@@ -1741,8 +1744,13 @@ public class AutoUkis extends javax.swing.JFrame implements Serializable {
             map.rep();
             tech = (UkioTechnika) in.readObject();
             in.close();
-            if (map.getSleptiNustatymus() == 1)
+            if (map.getSleptiNustatymus() == 1) {
                 done.doClick();
+            }
+            if (map.getMastelis() > 0) {
+                mastelisSlider.setVisible(false);
+                mastelisLabel.setVisible(false);
+            }
             for (Gyvunas gyv : gyvunai) {
                 jComboBox1.addItem("" + gyv.getId());
             }
@@ -1876,7 +1884,7 @@ public class AutoUkis extends javax.swing.JFrame implements Serializable {
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         boolean x = false;
-        
+
         try {
             if ((jTextField2.getText().contains(" ")) || (jPasswordField2.getText().contains(" "))) {
                 JOptionPane.showMessageDialog(null, "Vardas ir slaptažodis turi būti be tarpų", "Klaida", JOptionPane.INFORMATION_MESSAGE);
@@ -1911,7 +1919,7 @@ public class AutoUkis extends javax.swing.JFrame implements Serializable {
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
         //objektų saugojimas i failą
         try {
-            
+
             reporter.reportEvent("vartotojas " + currentUser + " baigė darbą");
             FileOutputStream fos = new FileOutputStream(new File("Ukis.ser"));
             ObjectOutputStream out = new ObjectOutputStream(fos);
@@ -1920,7 +1928,6 @@ public class AutoUkis extends javax.swing.JFrame implements Serializable {
             out.writeObject(map);
             out.writeObject(tech);
             out.close();
-
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
