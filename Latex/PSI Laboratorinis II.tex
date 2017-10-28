@@ -12,6 +12,7 @@
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{subfig}
+\usepackage{tabularx}
 \usepackage{wrapfig}
 \usepackage[%  
     colorlinks=true,
@@ -58,6 +59,19 @@
 \subsection{Duomenų suvedimas}
 \subsection{Duomenų peržiūra}
 \subsection{Vartotojo registracija}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\begin{tabularx}{\textwidth}{ |X|X|X|X| }
+  \hline
+  Numeris & Reikalavimas & Prioritetas \newline (1-10)  & Egzistavimo \newline laikas \\
+  \hline 
+ **  & Darbuotojui turi būtų leista pateikti užklausą registruotis  & 10  & ?  \\
+  \hline
+   **  & Darbuotojui turi būtų leista Užpildyti registracijos formą  & 10  & ?  \\
+  \hline
+     **  & Darbuotojui turi būtų leista patvirtinti registraciją  & 10  & ?  \\
+  \hline
+\end{tabularx}
+
 
 
 
