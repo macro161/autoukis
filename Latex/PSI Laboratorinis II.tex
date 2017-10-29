@@ -14,6 +14,7 @@
 \usepackage{subfig}
 \usepackage{tabularx}
 \usepackage{wrapfig}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \usepackage[%  
     colorlinks=true,
     linkcolor=black
@@ -52,37 +53,54 @@
 	\item Teisininkas
 \end{itemize}
 
-\section{Išoriniai sąsajos reikalavimai}
-\subsection{Vartotojo sąsajos reikalavimai}
-
 \section{Funkciniai reikalavimai}
 \subsection{Duomenų suvedimas}
+
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |X|P{3cm }| }
+       	          \hline
+           	Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+        		Ūkininkui turi būti leista pasirinkti mąstelį &  10  \\   \hline
+         		Ūkininkui turi būti leista žymėti teritorijas &  10  \\   \hline
+        		Darbuotojui turi būti leista suvesti atliktus darbus & 10  \\   \hline
+        		Ūkininkui turi būti leista keisti darbuotojo duomeis & 8 \\ \hline
+        		Visi naudotojai turi turėti galimybę suvesti gyvūmų duomenis & 10 \\ \hline
+	\end{tabularx}
+\end{table}
+
 \subsection{Duomenų peržiūra}
+
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |X|P{3cm }| }
+       	           \hline
+        		 Visi naudotojai turi turėti galimybę peržiūrėti orų prognozes pasirinktai teritorijai & 8 \\ \hline
+        		 Visi naudotojai turi turėti galimybę peržiūrėti Guvūnų duomenis & 10 \\ \hline
+        		 Ūkininkui turi būti leista pamatyti planuojamą pelną pasirinktam laikotarpiui & 10 \\ \hline
+        		 Ūkininkui turi būti leista peržiūrėti  esamus resursus & 10 \\ \hline
+        		 Adminas ir Ūkininkas turi turėti galimybę pamatyti detektorių būsenas & 9 \\ \hline
+	\end{tabularx}
+\end{table}
+
 \subsection{Vartotojo registracija}
-\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
-\begin{tabularx}{\textwidth}{ |X|X|X|X| }
-  \hline
-  Numeris & Reikalavimas & Prioritetas \newline (1-10)  & Egzistavimo \newline laikas \\
-  \hline 
- **  & Darbuotojui turi būtų leista pateikti užklausą registruotis  & 10  & ?  \\
-  \hline
-   **  & Darbuotojui turi būtų leista Užpildyti registracijos formą  & 10  & ?  \\
-  \hline
-     **  & Darbuotojui turi būtų leista patvirtinti registraciją  & 10  & ?  \\
-  \hline
-\end{tabularx}
 
-
-
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |X|P{3cm }| }
+       	          \hline
+           	Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+        		Darbuotojui turi būtų leista pateikti užklausą registruotis  &  10  \\   \hline
+         		Darbuotojui turi būtų leista Užpildyti registracijos formą  &  10  \\   \hline
+        		Darbuotojui turi būtų leista patvirtinti registraciją  & 10  \\   \hline
+        		Ūkininkas turi galėti vartotojui suteikti teisių & 10 \\ \hline
+	\end{tabularx}
+\end{table}
 
 \section{Nefunkciniai reikalavimai}
 \subsection{Naudojimo saugos reikalavimai}
 \subsection{Duomenų saugos reikalavimai}
 \subsection{Kokybės reikalavimai}
+
 \subsection{Veikimo principai}
-
-
-
-
+\section{Išoriniai sąsajos reikalavimai}
+\subsection{Vartotojo sąsajos reikalavimai}
 
 \end{document}
