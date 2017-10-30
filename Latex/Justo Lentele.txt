@@ -1,0 +1,88 @@
+\section{Funkciniai reikalavimai}
+\subsection{Duomenu suvedimas}
+
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |X|P{3cm }| }
+       	          \hline
+           	Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+        		Ukininkui turi buti leista pasirinkti masteli &  10  \\   \hline
+         		Ukininkui turi buti leista žymeti teritorijas &  10  \\   \hline
+        		Darbuotojui turi buti leista suvesti atliktus darbus & 10  \\   \hline
+        		Ukininkui turi buti leista keisti darbuotojo duomeis & 8 \\ \hline
+        		Visi naudotojai turi tureti galimybe suvesti gyvumu duomenis & 10 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsection{Duomenu peržiura}
+
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |X|P{3cm }| }
+       	           \hline
+       	            Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+        		 Visi naudotojai turi tureti galimybe peržiureti oru prognozes pasirinktai teritorijai & 8 \\ \hline
+        		 Visi naudotojai turi tureti galimybe peržiureti Guvunu duomenis & 10 \\ \hline
+        		 Ukininkui turi buti leista peržiureti  esamus resursus & 10 \\ \hline
+        		 Adminas ir Ukininkas turi tureti galimybe pamatyti detektoriu busenas & 9 \\ \hline
+        		 Adminas ir Ukininkas turi tureti galimybe sekti transporto judejima & 9 \\ \hline
+        		 Adminas ir Ukininkas turi tureti galimybe gauti ivykiu žurnala & 10 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsection{Vartotojo registracija}
+
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |X|P{3cm }| }
+       	          \hline
+           	Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+        		Darbuotojui turi butu leista pateikti užklausa registruotis  &  10  \\   \hline
+         		Darbuotojui turi butu leista Užpildyti registracijos forma  &  10  \\   \hline
+        		Darbuotojui turi butu leista patvirtinti registracija  & 10  \\   \hline
+        		Ukininkas turi galeti vartotojui suteikti teisiu & 10 \\ \hline
+        		Naujas vartotojas turi buti aktyvuojamas & 10 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsection{Finansu tvarkymas}
+
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |X|P{3cm }| }
+       	          \hline
+           	Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+        		Ukininkas turi galeti pamatyti pasirinkto laikotarpio planuojama pelna  &  9  \\   \hline
+         		Ukininkas turi galeti pamatyti kapitalo apskaita &  9  \\   \hline
+        		Ukininkas turi galeti pamatyti pasirinkto laikotarpio išlaidas  & 9  \\   \hline
+        		Ukininkui turi buti leista išmoketi algas darbuotojams & 10 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\section{Nefunkciniai reikalavimai}
+
+
+\subsection{Naudojimo saugos reikalavimai}
+
+\subsection{Duomenu saugos reikalavimai}
+
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |X|P{3cm }| }
+       	          \hline
+           	Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+        		Vartotojo slaptažodis privalo buti ne trumpesnis nei 7 simboliai  &  ?  \\   \hline
+         		Vartotojo slaptažodyje turi but bent vienas skaicius &  ? \\   \hline
+        		Vartotjo slaptažodis negali buti toks pats kaip prieš tai buves & ? \\   \hline
+        		Vartotojo slaptažodis turi buti keiciamas ne reciau nei kas 3 menesius & ? \\ \hline
+        		Keiciant slaptažodi turi buti ivedamas senas slaptažodis bei e-mail adresas & ? \\ \hline
+        		
+	\end{tabularx}
+\end{table}
+
+\subsection{Kokybes reikalavimai}
+
+\subsection{Veikimo principai}
+
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |X|P{3cm }| }
+       	          \hline
+           	Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+        		Naujas vartotojas turi buti aktyvuojamas per 1 minute  &  ?  \\   \hline
+	\end{tabularx}
+\end{table}
