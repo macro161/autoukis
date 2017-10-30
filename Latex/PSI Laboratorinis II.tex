@@ -1,0 +1,148 @@
+\documentclass[oneside]{VUMIFPSkursinis}
+\usepackage{algorithmicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsfonts}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{caption}
+\usepackage{color}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{subfig}
+\usepackage{tabularx}
+\usepackage{wrapfig}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage[%  
+    colorlinks=true,
+    linkcolor=black
+]{hyperref}
+\university{Vilniaus universitetas}
+\faculty{Matematikos ir informatikos fakultetas}
+\department{Programų sistemų katedra}
+\papertype{Laboratorinis darbas II}
+\title{Automatinė ūkio valdymo sistema}
+\titleineng{Automatic farm management system}
+\status{2 kurso 3 grupės studentai}
+\author{Matas Savickis}
+\secondauthor{Justas Tvarijonas}  
+\thirdauthor{Greta Pyrantaitė}   
+\fourthauthor{Rytautas Kvašinskas}
+\supervisor{Karolis Petrauskas, Doc., Dr.}
+\date{Vilnius – \the\year}
+
+
+\bibliography{bibliografija}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\centering
+
+\section{Įvadas}
+\subsection{Tikslas}
+\subsection{Dokumento skaitytojai}
+\begin{itemize}
+	\item Užsakovas
+	\item Projekto vadovas
+	\item Projektuotojas
+	\item Testuotojas
+	\item Teisininkas
+\end{itemize}
+
+\section{Funkciniai reikalavimai}
+\subsection{Duomenų suvedimas}
+
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |X|P{3cm }| }
+       	          \hline
+           	Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+        		Ūkininkui turi būti leista pasirinkti mąstelį &  10  \\   \hline
+         		Ūkininkui turi būti leista žymėti teritorijas &  10  \\   \hline
+        		Darbuotojui turi būti leista suvesti atliktus darbus & 10  \\   \hline
+        		Ūkininkui turi būti leista keisti darbuotojo duomeis & 8 \\ \hline
+        		Visi naudotojai turi turėti galimybę suvesti gyvūmų duomenis & 10 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsection{Duomenų peržiūra}
+
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |X|P{3cm }| }
+       	           \hline
+       	            Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+        		 Visi naudotojai turi turėti galimybę peržiūrėti orų prognozes pasirinktai teritorijai & 8 \\ \hline
+        		 Visi naudotojai turi turėti galimybę peržiūrėti Guvūnų duomenis & 10 \\ \hline
+        		 Ūkininkui turi būti leista peržiūrėti  esamus resursus & 10 \\ \hline
+        		 Adminas ir Ūkininkas turi turėti galimybę pamatyti detektorių būsenas & 9 \\ \hline
+        		 Adminas ir Ūkininkas turi turėti galimybę sekti transporto judėjimą & 9 \\ \hline
+        		 Adminas ir Ūkininkas turi turėti galimybę gauti įvykių žurnalą & 10 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsection{Vartotojo registracija}
+
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |X|P{3cm }| }
+       	          \hline
+           	Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+        		Darbuotojui turi būtų leista pateikti užklausą registruotis  &  10  \\   \hline
+         		Darbuotojui turi būtų leista Užpildyti registracijos formą  &  10  \\   \hline
+        		Darbuotojui turi būtų leista patvirtinti registraciją  & 10  \\   \hline
+        		Ūkininkas turi galėti vartotojui suteikti teisių & 10 \\ \hline
+        		Naujas vartotojas turi būti aktyvuojamas & 10 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsection{Finansų tvarkymas}
+
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |X|P{3cm }| }
+       	          \hline
+           	Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+        		Ūkininkas turi galėti pamatyti pasirinkto laikotarpio planuojamą pelną  &  9  \\   \hline
+         		Ūkininkas turi galėti pamatyti kapitalo apskaitą &  9  \\   \hline
+        		Ūkininkas turi galėti pamatyti pasirinkto laikotarpio išlaidas  & 9  \\   \hline
+        		Ūkininkui turi būti leista išmokėti algas darbuotojams & 10 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\section{Nefunkciniai reikalavimai}
+
+
+\subsection{Naudojimo saugos reikalavimai}
+
+\subsection{Duomenų saugos reikalavimai}
+
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |X|P{3cm }| }
+       	          \hline
+           	Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+        		Vartotojo slaptažodis privalo būti ne trumpesnis nei 7 simboliai  &  ?  \\   \hline
+         		Vartotojo slaptažodyje turi būt bent vienas skaičius &  ? \\   \hline
+        		Vartotjo slaptažodis negali būti toks pats kaip prieš tai buvęs & ? \\   \hline
+        		Vartotojo slaptažodis turi būti keičiamas ne rečiau nei kas 3 mėnesius & ? \\ \hline
+        		Keičiant slaptažodį turi būti įvedamas senas slaptažodis bei e-mail adresas & ? \\ \hline
+        		
+	\end{tabularx}
+\end{table}
+
+\subsection{Kokybės reikalavimai}
+
+\subsection{Veikimo principai}
+
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |X|P{3cm }| }
+       	          \hline
+           	Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+        		Naujas vartotojas turi būti aktyvuojamas per 1 minutę  &  ?  \\   \hline
+	\end{tabularx}
+\end{table}
+
+\section{Išoriniai sąsajos reikalavimai}
+\subsection{Vartotojo sąsajos reikalavimai}
+
+\end{document}
