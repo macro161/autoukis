@@ -1,0 +1,33 @@
+\BOOKMARK [1][-]{section.1}{Įvadas}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Tikslas}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Dokumento\040konvensija}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Dokumento\040skaitytojai}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Produkto\040apimtis}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.5}{Nuorodos}{section.1}% 6
+\BOOKMARK [1][-]{section.2}{Bendras\040produkto\040aprasymas}{}% 7
+\BOOKMARK [2][-]{subsection.2.1}{Produkto\040perspektyva}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.2}{Produkto\040funkcionalumas}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.3}{Vartotojų klasės ir charakteristikos}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.4}{Vykdymo\040aplinka}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.5}{Dizaino\040ir\040implementacijos\040apribojimai}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.6}{Prielaidos ir priklausomybės}{section.2}% 13
+\BOOKMARK [1][-]{section.3}{Išoriniai sąsajos reikalavimai}{}% 14
+\BOOKMARK [2][-]{subsection.3.1}{Vartotojo sąsajos reikalavimai}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.2}{Techninės įrangos sąsajos reikalavimai}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.3}{Programinės įrangos sąsąjos reikalavimai}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.4}{Komunikavimo sąsajos reikalavimai}{section.3}% 18
+\BOOKMARK [1][-]{section.4}{Produkto\040funkcijos}{}% 19
+\BOOKMARK [2][-]{subsection.4.1}{Gyvūnų sveikatos, lokacijos bei kitų parametrų sekimas}{section.4}% 20
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Pagrindinis\040scenarijus}{subsection.4.1}% 21
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Alternatyvus\040scenarijus\040\(Toks\040ID\040jau\040egzistuoja\)}{subsection.4.1}% 22
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Alternatyvus\040scenarijus\040\(Nepavyko\040prisijungti\040prie\040sistemos\)}{subsection.4.1}% 23
+\BOOKMARK [3][-]{subsubsection.4.1.4}{Funkciniai\040reikalavimai}{subsection.4.1}% 24
+\BOOKMARK [1][-]{section.5}{Kiti\040nefunkciniai\040reikalavimai}{}% 25
+\BOOKMARK [2][-]{subsection.5.1}{Našumo reikalavimai}{section.5}% 26
+\BOOKMARK [2][-]{subsection.5.2}{Saugos\040reikalavimai}{section.5}% 27
+\BOOKMARK [2][-]{subsection.5.3}{Saugumo\040reikalavimai}{section.5}% 28
+\BOOKMARK [2][-]{subsection.5.4}{Sistemos kokybės atributai}{section.5}% 29
+\BOOKMARK [2][-]{subsection.5.5}{Biznio taisyklės}{section.5}% 30
+\BOOKMARK [1][-]{section.6}{Kiti\040reikalavimai}{}% 31
+\BOOKMARK [1][-]{section*.3}{Žodynas}{}% 32
+\BOOKMARK [1][-]{section*.4}{Analizės modeliai}{}% 33
