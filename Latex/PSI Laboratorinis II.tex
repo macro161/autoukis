@@ -150,7 +150,30 @@ Automatiniam ūkio technikos valdymui naudosimes šios technologijomis:
 \subsection{Komunikavimo sąsajos reikalavimai}
 
 \section{Produkto funkcijos}
-\subsection{Pirma funkcija}
+\subsection{Gyvūnų sveikatos, lokacijos bei kitų parametrų sekimas}
+\subsubsection{Pagrindinis scenarijus}
+	Vartotojas prisijungia prie sistemos, pasirenka skiltį "Gyvūnų sveikatos ir lokacijos sekimas", įveda gyvūno duomenis. Tada vartotojas išsaugo įvestus duomenis į sąrašą, kurį jis gali peržiūrėti, redaguoti.
+\subsubsection{Alternatyvus scenarijus (Toks ID jau egzistuoja)}
+	Vartotojas prisijungia prie sistemos, pasirenka skiltį "Gyvūnų sveikatos ir lokacijos sekimas", įveda gyvūno duomenis. Tada vartotojas pasirenka išsaugoti įvestus duomenis į sąrašą, tačiau gaunama klaida, jog gyvūnas su įvestu ID jau egzistuoja sąraše. Sistema pateikia vartotojui du pasirinkimus: pakeisti ID arba pakeisti sąraše egzistuojančio elemento, su tuo pačiu ID, duomenis.
+	Pasirinkus pakeisti ID, vartotojas įveda naują ID ir pasirenka išsaugoti duomenis. 
+	Pasirinkus pakeisti sąraše egzistuojančio elemento, su tuo pačiu ID, duomenis, visi sąraše buvę duomenys pakeičiami naujais įvestais duomenimis ir išsaugomi sąraše.
+\subsubsection{Alternatyvus scenarijus (Nepavyko prisijungti prie sistemos)}
+	Vartotojas pateikia prisijungimo duomenis ir spaudžia mygtuką "Prisijungti", tačiau gaunama klaida, jog nepavyko prisijungti prie sistemos. Į ekraną išvedamas klaidos pranešimas, ir grįžtama i pagrindinį langą, kuriame vartotojas vėl gali bandyti prisijungti arba užsiregistruoti.
+\subsubsection{Funkciniai reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }
+       	          \hline
+           	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+         	FR-1.01 & Sistema leidžia vartotojui dirbti su gyvūnų duomenimis & 10  \\   \hline
+		FR-1.01.01 & Įvesti duomenis & 8 \\ \hline
+		FR-1.01.02 & Peržiūrėti duomenis & 8 \\ \hline
+		FR-1.01.03 & Redaguoti duomenis & 8 \\ \hline
+		FR-1.01.04 & Išsaugoti duomenis & 8 \\ \hline
+        	FR-1.02 & Sutampus raktiniams duomenims, sistema leidžia juos apdoroti & 9   \\   \hline
+		FR-1.02.01 & Pakeisti raktinius duomenis, kad jie skirtųsi & 8 \\ \hline
+		FR-1.02.02 & Pakeisti išsaugotus duomenis naujai įvestais duomenimis & 8 \\ \hline
+	\end{tabularx}
+\end{table}
 
 \section{Kiti nefunkciniai reikalavimai}
 \subsection{Našumo reikalavimai}
