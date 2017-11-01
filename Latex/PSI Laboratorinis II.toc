@@ -1,0 +1,69 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.}Įvadas}{2}{section.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.}Tikslas}{2}{subsection.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.}Dokumento konvensija}{2}{subsection.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.}Dokumento skaitytojai}{2}{subsection.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.}Produkto apimtis}{3}{subsection.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5.}Nuorodos}{3}{subsection.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.}Bendras produkto aprasymas}{4}{section.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.}Produkto perspektyva}{4}{subsection.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.}Produkto funkcionalumas}{4}{subsection.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.}Vartotojų klasės ir charakteristikos}{5}{subsection.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.}Vykdymo aplinka}{5}{subsection.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.}Dizaino ir implementacijos apribojimai}{5}{subsection.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.}Prielaidos ir priklausomybės}{5}{subsection.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.}Išoriniai sąsajos reikalavimai}{6}{section.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.}Vartotojo sąsajos reikalavimai}{6}{subsection.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.}Techninės įrangos sąsajos reikalavimai}{6}{subsection.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.}Programinės įrangos sąsąjos reikalavimai}{6}{subsection.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.}Komunikavimo sąsajos reikalavimai}{6}{subsection.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.}Produkto funkcijos}{7}{section.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.}Gyvūnų sveikatos, lokacijos bei kitų parametrų sekimas}{7}{subsection.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.1.}Pagrindinis scenarijus}{7}{subsubsection.4.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.2.}Alternatyvus scenarijus (Toks ID jau egzistuoja)}{7}{subsubsection.4.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.3.}Alternatyvus scenarijus (Nepavyko prisijungti prie sistemos)}{7}{subsubsection.4.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.4.}Funkciniai reikalavimai}{7}{subsubsection.4.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.}Kiti nefunkciniai reikalavimai}{8}{section.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.}Našumo reikalavimai}{8}{subsection.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.}Saugos reikalavimai}{8}{subsection.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.}Saugumo reikalavimai}{8}{subsection.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.}Sistemos kokybės atributai}{8}{subsection.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.5.}Biznio taisyklės}{8}{subsection.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.}Kiti reikalavimai}{9}{section.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Žodynas}{10}{section*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Analizės modeliai}{11}{section*.4}
