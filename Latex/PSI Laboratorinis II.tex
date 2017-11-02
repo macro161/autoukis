@@ -152,6 +152,7 @@ Tinkamas programos programos veikimas priklauso nuo daugybės faktorių. Sistema
 \subsection{Komunikavimo sąsajos reikalavimai}
 
 \section{Produkto funkcijos}
+
 \subsection{Gyvūnų sveikatos, lokacijos bei kitų parametrų sekimas}
 \subsubsection{Pagrindinis scenarijus}
 	Vartotojas prisijungia prie sistemos, pasirenka skiltį "Gyvūnų sveikatos ir lokacijos sekimas", įveda gyvūno duomenis. Tada vartotojas išsaugo įvestus duomenis į sąrašą, kurį jis gali peržiūrėti, redaguoti.
@@ -163,8 +164,7 @@ Tinkamas programos programos veikimas priklauso nuo daugybės faktorių. Sistema
 	Vartotojas pateikia prisijungimo duomenis ir spaudžia mygtuką "Prisijungti", tačiau gaunama klaida, jog nepavyko prisijungti prie sistemos. Į ekraną išvedamas klaidos pranešimas, ir grįžtama i pagrindinį langą, kuriame vartotojas vėl gali bandyti prisijungti arba užsiregistruoti.
 \subsubsection{Funkciniai reikalavimai}
 \begin{table}[htbp]
-	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }
-       	          \hline
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| } \hline
            	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
          	FR-1.01 & Sistema leidžia vartotojui dirbti su gyvūnų duomenimis & 10  \\   \hline
 		FR-1.01.01 & Įvesti duomenis & 8 \\ \hline
@@ -176,6 +176,33 @@ Tinkamas programos programos veikimas priklauso nuo daugybės faktorių. Sistema
 		FR-1.02.02 & Pakeisti išsaugotus duomenis naujai įvestais duomenimis & 8 \\ \hline
 	\end{tabularx}
 \end{table}
+
+\subsection{Ūkio technikos resursų sekimas, pirkimas ir pardavimas}
+\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka stebėti techniką realiu laiku, sistema parodo žemėlapį, kuriame matoma kur yra visos technikos priemonės, kiek apytiksliai laiko dirbs, ir ką darys toliau.
+\subsubsection{Alternatyvus scenarijus (Technikos pirkimas)}
+	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka pirkti naują technikos priemonę, sistema nuveda jį į puslapį, kuriame yra pasiūlymai jo norimai technikos rūšiai pirkti.
+\subsubsection{Alternatyvus scenarijus (Technikos pardavimas)}
+	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka parduoti technikos priemonę, sistema patikrina, ar ši priemonė yra laisva ir, jeigu ji nėra užimta, leidžia vartotojui sukurti skelbimą priemonei parduoti.
+\subsubsection{Alternatyvus scenarijus(Priemonė, kurią norima parduoti, užimta)}
+	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka parduoti technikos priemonę, sistema patikrina, ar ši priemonė yra laisva, tačiau ji yra užimta. Sistema vartotojui leidžia pakeisti šios priemonės tvarkaraštį ir nustatyti, jog jo daugiau nebūtų galima pildyti. Sistema tuomet leidžia vartotojui sukurti skelbimą priemonei parduoti.
+\subsubsection{Funkciniai reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+           	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+         	FR-2.01 & Sistema leidžia vartotojui stebėti techniką & 10  \\   \hline
+		FR-2.01.01 & Stebėti technikos būklę & 8 \\ \hline
+		FR-2.01.02 & Peržiūrėti priemonės tvarkaraštį & 8 \\ \hline
+		FR-2.01.03 & Stebėti priemonės veiklą realiu laiku & 8 \\ \hline
+        	FR-2.02 & Sistema leidžia vartotojui pirkti/parduoti techniką & 9   \\   \hline
+		FR-2.02.01 & Leidžia peržiūrėti norimos priemonės tipo skelbimus & 8 \\ \hline
+		FR-2.02.02 & Leidžia sukurti skelbimą turimos priemonės & 8 \\ \hline
+	\end{tabularx}
+\end{table}
+
+	
+
+
 
 \section{Kiti nefunkciniai reikalavimai}
 \subsection{Našumo reikalavimai}
