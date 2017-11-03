@@ -236,10 +236,33 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 		FR-14.02.02 & Suteikti apmokėjimo informaciją & 10 \\ \hline
 	\end{tabularx}
 \end{table}
-
-
-
 \subsection{Darbuotojų samdymas}
+	\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pasirenka skiltį "Darbuotojų samdymas". Vartotojui parodomas langas su dviem pasirinkimais: "Dėti darbo skelbimą" ir "Žiūrėti darbo skelbimus". Pasirinkus pirmajį pasirinkima vartotojas nukreipiamas į formą kurią vartotojas turi užpildyti apie norimą darbuotoją. Paspaudus antrajį pasirinkimą vartotojas nukreipiamas į darbo skelbimus kurie jau yra internete.
+	\subsubsection{Alternatyvus scenarijus(Neatsidaro darbo skelbimų puslapis)}
+	Vartotojas bando atidaryti darbo skelbimų puslapį spausdamas "Žiūrėti darbo skelbimus". Nepavykus pateikti puslapio vartotojui ekrane atsiranda informacinis pranešimas, kad darbo skelbimų parodyti nepavyko ir vartotojas perkels į pagrindinį programos puslapį.
+	\subsubsection{Alternatyvus scenarijus(Neteisingai suvesti duomenys bandant įdėti darbo skelbimą)}
+	Vartotojas bando užpildyti formą ir įdėti skelbimą ir padaro įvedimo klaidą(pvz. į siūlomos algos vietą įveda raides) programa pažymi vietą kur vartotojas padarė klaidą ir neleidžia išsiųsti skelbimo kol formoje yra klaidų.
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		FR-15.01 & Sistema leidžia peržiūrėti darbo skelbimų sąrašą & 9 \\ \hline
+		FR-15.01.01 & Surušiuoti darbuotojus pagal lytį & 7 \\ \hline
+		FR-15.01.02 & Surušiuoti darbuotojus pagal amžių & 7 \\ \hline
+		FR-15.01.03 & Surušiuoti darbuotojus pagal specialybę & 8  \\ \hline
+		FR-15.01.04 & Surušiuoti darbuotojus pagal darbo patirtį & 8 \\ \hline
+		FR-15.01.05 & Surušiuoti darbuotojus pagal gyvenamają vietą & 7 \\ \hline
+		FR-15.01.06 & Peržiūrėti darbuotojų gyvenimo aprašymus & 9 \\ \hline
+		FR-15.01.07 & Peržiūrėti darbuotojų motyvacinius laiškus & 5 \\ \hline
+		FR-15.02 & Sistema leidžia užpildyti darbo skelbimą & 9 \\ \hline
+		FR-15.02.01 & Pasirinkti vieną ar kelias skelbimų publikavimo platformų & 8 \\ \hline
+		FR-15.02.02 & Ištrinti darbo skelbimą & 9 \\ \hline
+		FR-15.02.03 & Koreguoti darbo skelbimą & 8 \\ \hline
+		
+	\end{tabularx}
+\end{table}	
+	
+	
 \subsection{Potencialaus pelno skaičiavimas}
 \subsection{Derliaus sekimas}
 \subsection{Buhalterijos tvarkymas}
