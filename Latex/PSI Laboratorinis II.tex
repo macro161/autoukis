@@ -243,6 +243,7 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 	Vartotojas bando atidaryti darbo skelbimų puslapį spausdamas "Žiūrėti darbo skelbimus". Nepavykus pateikti puslapio vartotojui ekrane atsiranda informacinis pranešimas, kad darbo skelbimų parodyti nepavyko ir vartotojas perkels į pagrindinį programos puslapį.
 	\subsubsection{Alternatyvus scenarijus(Neteisingai suvesti duomenys bandant įdėti darbo skelbimą)}
 	Vartotojas bando užpildyti formą ir įdėti skelbimą ir padaro įvedimo klaidą(pvz. į siūlomos algos vietą įveda raides) programa pažymi vietą kur vartotojas padarė klaidą ir neleidžia išsiųsti skelbimo kol formoje yra klaidų.
+	\subsubsection{Funkciniai reikalavimai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
 		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
@@ -258,12 +259,28 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 		FR-15.02.01 & Pasirinkti vieną ar kelias skelbimų publikavimo platformų & 8 \\ \hline
 		FR-15.02.02 & Ištrinti darbo skelbimą & 9 \\ \hline
 		FR-15.02.03 & Koreguoti darbo skelbimą & 8 \\ \hline
-		
 	\end{tabularx}
 \end{table}	
 	
 	
 \subsection{Potencialaus pelno skaičiavimas}
+	\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pasirenka "Potencialaus pelno skaičiavimas" sistemoje. Programa įjungia langą kuriame yra sąrašas visų šiuo metu vartotojo turimų pardavimui skirtų resursų. Vartotojas gali pasirinkti žiūrėti bendrą pelną kurį gautų pardavęs resursus arba pasirinkti tam tikrus resursus kuriuos norėtų parduoti ir kokį kiekį norėtų parduoti. Pagal vartotojo pasirinkimą ir rinkos kainą yra apskaičiuojamas potencialus pelnas.
+	\subsubsection{Alternatyvus scenarijus(Nartotojas neturi parduodamų resursų)}
+	Vartotojas pasirenka "Potencialaus pelno skaičiavimas" skilį. Sistemoje nėra užregistruotą jokių resursų kuriuos vartotojas galėtų parduoti. Vartotojui parodomas pranešimas apie nepavykusią opeaciją dėl resursų trūkumo. Programa įjungia pagrindinį langą. 
+	\subsection{Alternatyvus scenarijus(Neveikia išoriniai servisai suteikiantys informaciją apie rinkos kainas)}
+	Vartotojas pasirenka "Potencialaus pelno skaičiavimas" skilį. Norint apskaičiuoti potencialų pelną naudojamas išorinis servisas nustatyti rinkos kainą. Šiam servisui neveikiant programa vartotojui parodo informacinį pranešimą dėl nesėkmingo bandymo susisiekti su išoriniu servisu. Tokiu atveju programa naudoją naujausią turėtą rinkos kainą pelno skaičiavimui. Dėl senų duomenų naudojimo ir galimų netikslumų vartotojas taip pat informajamas informacine žinute.
+	\subsubsection{Funkciniai reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		FR-16.01 & Sistema pateikia vartotojui potencialų pelną & 10 \\ \hline
+		FR-16.01.01 & Pasirinkti kuriuos resursus skaičiuoti & 8 \\ \hline
+		FR-16.01.02 & Pasirinkti resursu kiekį skaičiavimui & 8 \\ \hline
+		FR-16.01.03 & Pasirinkti pagal kuriuos rinkos duomenis skaičiuoti pelną & 8 \\ \hline
+	\end{tabularx}
+\end{table}	
+	 
 \subsection{Derliaus sekimas}
 \subsection{Buhalterijos tvarkymas}
 \subsection{Rinkos kainų sekimas}
