@@ -192,11 +192,11 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
            	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
-         	FR-2.01 & Sistema leidžia vartotojui stebėti techniką & 10  \\   \hline
+         		FR-2.01 & Sistema leidžia vartotojui stebėti techniką & 10  \\   \hline
 		FR-2.01.01 & Stebėti technikos būklę & 8 \\ \hline
 		FR-2.01.02 & Peržiūrėti priemonės tvarkaraštį & 8 \\ \hline
 		FR-2.01.03 & Stebėti priemonės veiklą realiu laiku & 8 \\ \hline
-        	FR-2.02 & Sistema leidžia vartotojui pirkti/parduoti techniką & 9   \\   \hline
+        		FR-2.02 & Sistema leidžia vartotojui pirkti/parduoti techniką & 9   \\   \hline
 		FR-2.02.01 & Leidžia peržiūrėti norimos priemonės tipo skelbimus & 8 \\ \hline
 		FR-2.02.02 & Leidžia sukurti skelbimą turimos priemonės & 8 \\ \hline
 	\end{tabularx}
@@ -213,7 +213,32 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \subsection{Autonominis ūkio technikos veikimas}
 \subsection{Ūkininko valdomos teritorijos žymėjimas sutartiniais ženklais}
 \subsection{Ligų žemėlapis kaimyninėse teritorijose}
+
 \subsection{Sąskaitų išrašymas}
+	\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pasirenka skiltį "Sąskaitos". Atsidariusiame lange vartotojui parodo sąrašą visų sąskaitų kurias jam reikia apmokėti. Šalia kiekvienos sąskaitos yra mygtukas, kurį paspaudus vartotojas nukreipiamas į apmokėjimo platformą pagal vrtotojo pasirinkimą kurioje jis gali apmokėti konkrečia sąskaitą. Pagrindiniame sąskaitų lange vartotojas gali pasižiūrėti kokia sąskaitos suma ir kada ji buvo išrašyta. Taip pat gal pasižiūrėti jau apmokėtų sąskaitų istorija.
+	\subsubsection{Alternatyvus scenarijus(Nėra sąskaitų kurias reiktų apmokėti)}
+	Jeigu sistemoje nėra sąskaitų kurias vartotojas turėtų apmokėti, vartotojui paspaudus ant "Sąskaitos" mygtuko jam bus parodytas informacinis langas pranešantis, kad nėra sąskaitų kurias šiuo metu reiktu apmoketi. Lange bus galima pasirinkti arba eitį į pagrindinį meniu arba peržiūrėti sąskaitų istorija.
+	\subsubsection{Alternatyvus scenarijus(Nėra jau apmokėtų sąskaitų)}
+	jeigu vartotojas "Sąskaitos" lange bandys peržiūrėti sąskaitų istorija ir joje nieko nebus, vartotojui bus parodomas informacinis langas kuriame bus pranešimas "Sąskaitų istorijos nėra" ir vartotojas bus nukreipiamas į sąskaitas kurias reikia apmokėti arba į alternatyvų scenarijų kai nėra sąskaitų kurias reiktų apmokėti.
+	\subsubsection{Alternatyvus scenarijus(Negalima pasiekti pasirinktos apmokėjimo sistemos)}
+	Vartotojui bandant apmokėti savo sąskaitas jis gali pasirinkti iš keletos apmokėjimo platformų. Jeigu jo pasirinkta apmokėjimo platforma atmeta vartotojo apmokėjimo prašymą dėl nepakankamų lėšų, neveikiančios apmokėjimo sistemos ar kitų nenumatytų nesklandumų sistema parodys informacini pranešimą "Sąskaitos apmokėti nepavyko". Po pranešimu sistema parodys altertnatyvius apmokėjimo būdus, o jeigų tokių būdų neegzistuos sistema parodys apmokėjimo informaciją su kuria vartotojas sąskaitą galės apmokėti pats, neautomatiškai.
+	\subsubsection{Funkciniai reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		FR-14.01 & Sistema leidžia peržiūrėti sąskaitas & 10 \\ \hline
+		FR-14.01.01& Peržiūrėti sąskaitas kurias reikia apmokėti & 10 \\ \hline
+		FR-14.01.02 & Peržiūrėti apmokėtų sąskaitų istoriją & 7 \\ \hline 
+		FR-14.01.03 & Laikyti sąskaitų istoriją ilgiau negu pusę metų & 5 \\ \hline
+		FR-14.02 & Amokėti sąskaitą & 7 \\ \hline
+		FR-14.02.01 & Pateikti apmokėjimo platformų sąrašą & 9 \\ \hline
+		FR-14.02.02 & Suteikti apmokėjimo informaciją & 10 \\ \hline
+	\end{tabularx}
+\end{table}
+
+
+
 \subsection{Darbuotojų samdymas}
 \subsection{Potencialaus pelno skaičiavimas}
 \subsection{Derliaus sekimas}
