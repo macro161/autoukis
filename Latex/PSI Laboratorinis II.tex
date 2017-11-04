@@ -143,7 +143,7 @@ Pagrindinis apribojimas norit įgyvendinti automatinį technikos valdymą yra su
 
 
 \subsection{Prielaidos ir priklausomybės}
-Tinkamas programos programos veikimas priklauso nuo daugybės faktorių. Sistema iš esmės apjungia keletą išorinių komponentų į vieną itegralią sistemą. Nors sutrikus ryšiui su išoriniai komponentais kaikurios sistemos funkcijos būtų nepasiekiamos tačiau visa sistema nenutrauktų darbo. Automatinis technikos valdymas priklauso nuo ASI kompanijos programos palaikymo. Duomenų gavimas priklauso nuo to ar bus interneto ryšys ir ar pavyks pasiekti serverį, kad programa gautų prieiga prie duomenų bazės. Orų prognozė priklauso nuo to ar orų tarnyba toliau teiks prieeiga prie savo duomenų. Sąskaitų ir buhalterijos funkcionalumas priklauso nuo to \url{www.ar manager.io} toliau palaikys savo programos veikimą ir leis ja naudotis nemokamai.
+Tinkamas programos programos veikimas priklauso nuo daugybės faktorių. Sistema iš esmės apjungia keletą išorinių komponentų į vieną itegralią sistemą. Nors sutrikus ryšiui su išoriniai komponentais kaikurios sistemos funkcijos būtų nepasiekiamos tačiau visa sistema nenutrauktų darbo. Automatinis technikos valdymas priklauso nuo ASI kompanijos programos palaikymo. Duomenų gavimas priklauso nuo to ar bus interneto ryšys ir ar pavyks pasiekti serverį, kad programa gautų prieiga prie duomenų bazės. Orų prognozė priklauso nuo to ar orų tarnyba toliau teiks prieeiga prie savo duomenų. Sąskaitų ir buhalterijos funkcionalumas priklauso nuo to \url{www. ar manager.io} toliau palaikys savo programos veikimą ir leis ja naudotis nemokamai.
 \subsection{Vartotojo dokumentacija}
 Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube svetainėje. Neturintiems galimybės peržiūrėti vaizdo įrašo supažindinimas su programa bus integruotas į pačia programą. Vartotojas galės pasirinkti ar nori gauti pagalbines žinutes. Šias žinutes vartotojas galės išjungti nustatymuose. 
 
@@ -282,6 +282,26 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \end{table}	
 	 
 \subsection{Derliaus sekimas}
+	\subsubsection{Pagrindinis scenarijus}
+	Vartotojas sistemoje pasirenka "Derliaus sekimas". Programa įjungią vartotojo turimų resursų sąrašą. Saraše prie kiekvieno resurso parašyta kada jis buvo gautas ir kokia kiekvieno resurso galiojimo trukmė. Paspaudus ant konkretaus resurso pasirodo langas, kuriame pateikta detalesnė informacija konkretų resursą. Detali informacija susideda iš resurso gavimo laiko, darbuotojų kurie dirbo prie konkretaus resurso gavimo, kiek pinigų vartotojas gautų pardavęs resursus rinkos kaina.
+	\subsubsection{Alternatyvus scenarijus(Vartotojas neturi resursų kuriuos būtų galima parodyti)}
+	Vartotojas sistemoje pasirenka "Derliaus  sekimas". Sistemoje nėra užregistruota jokių resursų. Vartotojui parodomas informacinis pranešimas apie tai kad sistemoje nėra registruotų resursų. Vartotojas sukreipiamas į pagrindinį langą.
+	\subsubsection{Alternatyvus scenarijus(Neveikia rinkos skaičiavimo funkcija)}
+	Vartotojas sistemoje pasirenka "Derliaus sekimas". Sistema atidaro langą su resursais. Vartotojas pasirenka konkretų resursą norėdamas sužinoti detalesnią informaciją. Rinkos kainos funkciją dėl tam tikrų priežasčių neveikia ir neįmanoma parodyti tikslios rinkos kainos. Vartotojui parodomas informacinis pranešimas dėl netikslios kainos. Taip pat vartotojas informuojamas, kad preliminari kaina bus skaičiuojama naudojantis senais rinkos duomenimis.
+	\subsubsection{Funkciniai reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		FR-17.01 & Sistema vartotojui pateikia turimų resursų sąraša & 10 \\ \hline
+		FR-17.01.01 & Pateikti turimų resursų kiekį & 8 \\ \hline
+		FR-17.01.02 & Pateiktį turimų resursų galiojimo laiką & 8 \\ \hline
+		FR-17.01.03 & Pateikti laiką kada buvo gautas konkretus resursas & 8 \\ \hline
+		FR-17.01.04 & Pateikti sąrašą žmonių kurie dirbo prie konkretaus resurso gavimo & 6 \\ \hline
+		FR-17.01.05 & Pateikti resurso rinkos kainą & 7 \\ \hline 
+		FR-17.01.06 & Pateikti kiek pinigų vartotojas gautų pardavęs konkretų resursą, pagal rinkos kainą & 7 \\ \hline
+	\end{tabularx}
+\end{table}	
+	
 \subsection{Buhalterijos tvarkymas}
 \subsection{Rinkos kainų sekimas}
 \subsection{Automatinis žemės laistymas}
