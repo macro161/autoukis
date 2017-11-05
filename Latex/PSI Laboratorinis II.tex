@@ -368,6 +368,28 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \end{table}
 	 
 \subsection{Automatinis žemės laistymas}
+	\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pagrindiniame programos lange pasirenka "Automatinis žemė laistymas". Programa atidaro automatinės laistymo sistemos langą. Lange vartotojui yra pateikiama informacija kokia žemės dregmė kiekviename žemės žemės plote. Vartotojas gali pasirinkti kokiai žemės drėgmei esant sistema autoimatatiškai įjungtų žemės laistytuvus. Vartotojui pateikiama informacija apie laistytuvų būklę(veikia, neveikia). Sistema suteikia galimybę pasirinkti kokiu laiku sistema palaistys žemę. Taip pat yra suteikiama galimybė žemę palaistyti dabar.
+	\subsubsection{Alternatyvus scenarijus(Nepavyksta nusiųsti informacijos laistymo sistemai)}
+	Vartotojas pasirenka "Automatinis žemės laistymas". Programa atidaro laistymo sistemos langą. Vartotojas bando pakeisti laistymo nustatymus tačiau nepavyksta nurodymų nusiusti valdikliams. Vartotojas informuojamas informacine žinute, kad naujų nustatymų nusiųsti nepavyko ir sistema toliau dirbs pagal senus nustatymus. Vartotojui suteikiami keli pasirinkimai: atlikti sistemos diagnostika, išjungti 	sistemą rankiniu būdu, iškviesti sistemos techniką.
+	\subsubsection{Alternatyvus scenarijus(Sisemoje nėra vandens)}
+	Vartotojas pasirenka "Automatinis žemės laistymas". Vartotojui parodomas informacinis pranešimas dėl vandens tiekimo sutrikimo sistemoje. Vartojui siūloma atlikti diagnostika arba papildyti vandens talpas rankiniu būdu.
+	\subsubsection{Alternatyvus scenarijus(Neatsidaro vandens vožtuvai laistymui)}
+	Vartotojas pasirenka "Automatinis žemės laistymas". Vartotojas informuojamas, kad dėl sistemos gedimo nepavyksta atidaryti vandens vožtuvų. Vartotojas informuojamas, kad įvyko gedimas ir reikia gedimą pašalinti prieš tęsiant darbą. Vartotojui suteikiama galimybė išsikviesti sistemos techniką arba susitvarkyti pačiam.
+	\subsubsection{Funkciniai reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| } \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		FR-20.01 & Sistema leidžia vartotojui matyti laukus ir kontroliuoti laistymo sistemą & 9 \\ \hline
+		FR-20.01.01 & Laistyti dabar & 7 \\ \hline
+		FR-20.01.02 & Nustatyti laistymo laiko & 8\\ \hline
+		FR-20.01.03 & Nustatyti kokiai drėgmei esant laistyt žemę & 8 \\ \hline
+		FR-20.01.04 & Suteikti informaciją apie žemės dregmę & 7 \\ \hline
+		FR-20.01.05 & Suteikti informaciją apie laistytuvų būklę & 7 \\ \hline
+		FR-20.01.06 & Suteikti diagnostikos galimybes neveikimo atveju & 8 \\ \hline
+		FR-20.01.07 & Suteikti informaciją apie sistemos pataisymo galimybes & 8 \\ \hline
+	\end{tabularx}
+\end{table}
 \subsection{Pagalbos iškvietimas}
 	\subsubsection{Pagrindinis scenarijus}
 	Vartotojas pasirenka ''Pagalbos iškvietimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka reikiamos pagalbos tipą, sistema tada nusiunčia numatytąjį pranešimą su prašymų atvykti, parodo gautą atsakymą.
