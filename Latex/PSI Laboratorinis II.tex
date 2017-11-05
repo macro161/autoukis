@@ -319,6 +319,29 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \subsection{Rinkos kainų sekimas}
 \subsection{Automatinis žemės laistymas}
 \subsection{Pagalbos iškvietimas}
+	\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pasirenka ''Pagalbos iškvietimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka reikiamos pagalbos tipą, sistema tada nusiunčia numatytąjį pranešimą su prašymų atvykti, parodo gautą atsakymą.
+	\subsubsection{Alternatyvus scenarijus(nėra interneto ryšio)}
+	Vartotojas pasirenka ''Pagalbos iškvietimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka reikiamos pagalbos tipą, sistema nepavykus išsiųsti pranešimo ji parodo pranešimą, kuriame nurodo, kokiu numeriu reikia paskambinti norint išsikviesti norimą pagalbą.
+	\subsubsection{Funkciniai reikalavimai}
+	\begin{table}[htbp]
+		\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+			Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+			FR-21.01 & Sistema leidžia pasirinkti reikiamos pagalbos tipą & 10 \\ \hline
+			FR-21.01.01 & Veterinarą & 9 \\ \hline
+			FR-21.01.02 & Agronomą & 8 \\ \hline
+			FR-21.01.03 & Greitają pagalbą & 10 \\ \hline
+			FR-21.01.04 & Gaisrinę & 10 \\ \hline
+			FR-21-02 & Vartotojui pasirinkus sistema iškviečia pasirinktą pagalbą & 10 \\ \hline	
+			FR-21-02.01 & Parodo gautą atsakymą iš pagalbos suteikėjo & 9 \\ \hline
+			FR-21-03 & Sistema leidžia nustatyti numatytąjį pranešimą siunčiamą kiekvienai pagalbai & 9 \\ \hline	
+			FR-21-03 & Nesant galimybės nusiųsti pranešimo sistema parodo atitinkamos pagalbos kontaktus & 10 \\ \hline	
+			FR-21-03.01 & Tel. numeri & 10 \\ \hline	
+			FR-21-03.02 & Adresą & 8 \\ \hline	
+			FR-21-03.03 & El. paštą & 6 \\ \hline	
+						
+		\end{tabularx}
+	\end{table}
 \subsection{Ataskaitos apie ūkį sudarymas}
 	\subsubsection{Pagrindinis scenarijus}
 	Vartotojas pasirenka ''Ūkio ataskaita'' pagrindiniame meniu. Programa atidaro langą, kuriame vartotojas pasirenka norimą laikotarpį, ir peržiūri to laikotarpio ataskaitą.
@@ -326,14 +349,12 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 	Vartotojas pasirenka ''Ūkio ataskaita'' pagrindiniame meniu. Programa atidaro langą, kuriame vartotojas pasirenka noriąo laikotarpį, programa išveda klaidos pranešimą ir pasiūlo pamėginti vėliau.
 	\subsubsection{Funkciniai reikalavimai}
 	\begin{table}[htbp]
-	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
-		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
-		FR-22.01 & Sistema leidžia pasirinkti norimą laikotarpį ataskaitai & 9 \\ \hline
-		FR-22-02 & Sistema sudaro ataskaitą vartotojo pasirinktam laikotarpiui & 10 \\ \hline
-		
-		
-	\end{tabularx}
-\end{table}
+		\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+			Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+			FR-22.01 & Sistema leidžia pasirinkti norimą laikotarpį ataskaitai & 9 \\ \hline
+			FR-22-02 & Sistema sudaro ataskaitą vartotojo pasirinktam laikotarpiui & 10 \\ \hline	
+		\end{tabularx}
+	\end{table}
 \subsection{Darbų sąsašo sudarymas}
 \subsection{Žolių ir ligų katalogas}
 \subsection{Ūkio chemijos sąrašas su aprašymais ir kainomis}
