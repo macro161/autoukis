@@ -511,10 +511,58 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 
 \section{Kiti nefunkciniai reikalavimai}
 \subsection{Našumo reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		FR-5.1.01 & Ne piko metu, kai sistema naudojasi mažiau nei 200 žmonių, 95 proc. visų sistemos funkcijų turi būti įvykdoma per ne daugiau nei 2 sekundes & 10 \\ \hline
+		FR-5.1.02 & Sistemos naudojimo piko metu (11-15 val. ir 18-20 val.), kai sistema naudojasi daugiau nei 300 žmonių, 95 proc. visų sistemos funkcijų turi būti atliekama per ne daugiau nei 4 sekundes & 10 \\ \hline
+		FR-5.1.03 & Vienu metu sistema, esant didžiausiai apkrovai, gali naudotis apie 1000 vartotojų & 10 \\ \hline
+		FR-5.1.04 & Galima atlikti 15000 nuskaitymo iš duomenų bazės operacijų per valandą & 8 \\ \hline
+		FR-5.1.05 & Galima atlikti 5000 įrašymo į duomenų bazę operacijų per valandą  & 8 \\ \hline
+	\end{tabularx}
+\end{table}
 \subsection{Saugos reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		FR-5.2.01 & Naudotojas privalo saugoti prisijungimo duomenis & 9 \\ \hline
+		FR-5.2.02 & Sutrikus ūkio technikos veikimui, visi prietaisai privalo būti išjungti iki kol problema bus išspręsta & 10 \\ \hline
+		FR-5.2.03 & Ūkio technikos prietaisų valdymas turi būti patikėtas tam kvalifikuotui asmeniui & 9 \\ \hline
+	\end{tabularx}
+\end{table}
 \subsection{Saugumo reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		FR-5.3.01 & Sistemoje registruotų naudotojų asmenine informacija naudojasi patys naudotojai, ribojamą prieigą prie ūkio darbuotojų informacijos turi ūkininkas ir administruojantys asmenys & 10 \\ \hline
+		FR-5.3.02 & Trečiųjų šalių asmenims asmeniniai duomenys negali būti paviešinti & 10 \\ \hline
+		FR-5.3.03 & Sistemos administratorius ir vartotojas turi būti informuoti apie bandymą įsilaužti į vartotojo profilį & 9 \\ \hline
+		FR-5.3.04 & Serveris, kuriame talpinami duomenys turi turėti savo apsaugą ir neleisti keisti ar trinti failų tam teisių neturintiems asmenims & 10 \\ \hline
+		FR-5.3.05 & Visi vartotojai turi būti pateikę šiuos duomenis: vardą, pavardę ir elektroninį paštą  & 8 \\ \hline
+		FR-5.3.06 & Sistemos naudotojo slaptažodis turi būti saugomas užšifruotas ir neprieinamas niekam kitam, tik pačiam naudotojuii & 10 \\ \hline
+	\end{tabularx}
+\end{table}
 \subsection{Sistemos kokybės atributai}
-\subsection{Biznio taisyklės}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		FR-5.4.01 & Sistema negali būti neprieinama ar veikti nekorektiškai ilgiau kaip parą & 9 \\ \hline
+		FR-5.4.02 & Turi būti naudojama SQL reliacinė duomenų bazė  & 7 \\ \hline
+		FR-5.4.03 & Testavimo aplinka turi būti sukurta taip, kad kiekvieną finkciją būtų galima tikrinti atskirai & 7 \\ \hline
+		FR-5.4.04 & Sistemos veiksmai turi būti prognozuojami, sistema turi pateikti tą informaciją, kurios vartotojas reikalauja & 9 \\ \hline
+		FR-5.4.05 & Sistemos patikrinimas leidžiamas ne dažniau kaip kartą į mėnesį, iš anksto įspėjus naudotojus apie galimus sistemos veikimo trukdžius  & 8 \\ \hline
+	\end{tabularx}
+\end{table}
+\subsection{Veikimo taisyklės}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		FR-5.5.01 & Turi būti nurodyti administraciniai kontaktai, kuriais gali naudotis vartotojai iškilus klausimams ar ištikus problemai & 10 \\ \hline
+		FR-5.5.02 & Administratorius privalo išspręsti vartotojui iškilusias problemas arba nurodyti priežastį, kodėl problema negali būti išspręsta  & 9 \\ \hline
+		FR-5.5.03 & Administratorius privalo palaikyti sklandų produkto veikimą & 10 \\ \hline
+		FR-5.5.04 & Administraciniai asmenys privalo užtikrinti korektišką informaciją, teikiamą vartotojui & 9 \\ \hline
+	\end{tabularx}
+\end{table}
 
 \section{Kiti reikalavimai}
 \sectionnonum{Žodynas}
