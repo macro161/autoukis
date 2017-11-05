@@ -253,7 +253,22 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \end{table}
 
 \subsection{Orų prognozės sekimas}
-\subsection{Žemės parametrų spėjimas}
+\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pasirenka skiltį "Orų prognozės sekimas", sistema vartotoją nukreipia į langą, kuriame jis gali pasirinkti artimiausią iki jo miestą ir peržiūrėti šios ir sekančios dienos orų prognozes.
+\subsubsection{Alternatyvus scenarijus(Nėra prieigos prie interneto)}
+	Vartotojas pasirenka skiltį "Orų prognozės sekimas", sistema vartotoją nukreipia į langą, kuriame jis gali pasirinkti artimiausią iki jo miestą, tačiau, pasirinkęs miestą, vartotojas gauna klaidos pranešimą, jog nepavyko prisijungti prie serverio, ir yra leidžiama varototojui bandyti pasirinkti miestą dar kartą, prisijungus prie interneto.
+\subsubsection{Alternatyvus scenarijus(Andromeda įsirėžė į Paukčių Tako galaktiką)}
+	Vartotojas pasirenka skiltį "Orų prognozės sekimas", tačiau Andromeda įsirėžus į Paukščių Tako galaktiką ir nepavyksta gauti orų. Sistema išveda klaidos pranešimą ir nukreipia vartotoją į pagrindinį meniu.
+\subsubsection{Funkciniai reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+           	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+         		FR-5.01 & Sistema leidžia stebėti šios ir sekančios dienos orų prognozes & 10  \\   \hline
+			FR-5.02 & Andromedai įsirėžus į Paukščių Tako galaktiką išvesti klaidos pranešimą & 1 \\  \hline
+			FR-5.03 & Nepavykus prisijungti prie serverio, vartotojui leidžiama džbandyti dar kartą, prisijungus prie interneto & 7 \\ \hline
+	\end{tabularx}
+\end{table}
+
 \subsection{Gyvūnų maisto išteklių sekimas}
 \subsection{Automatinis gyvūnų maitinimas}
 \subsection{Automatinis maisto užsakymas}
