@@ -263,16 +263,30 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
            	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
-         		FR-5.01 & Sistema leidžia stebėti šios ir sekančios dienos orų prognozes & 10  \\   \hline
-			FR-5.02 & Andromedai įsirėžus į Paukščių Tako galaktiką išvesti klaidos pranešimą & 1 \\  \hline
-			FR-5.03 & Nepavykus prisijungti prie serverio, vartotojui leidžiama džbandyti dar kartą, prisijungus prie interneto & 7 \\ \hline
+         		FR-6.01 & Sistema leidžia stebėti šios ir sekančios dienos orų prognozes & 10  \\   \hline
+			FR-6.02 & Andromedai įsirėžus į Paukščių Tako galaktiką išvesti klaidos pranešimą & 1 \\  \hline
+			FR-6.03 & Nepavykus prisijungti prie serverio, vartotojui leidžiama bandyti dar kartą, prisijungus prie interneto & 7 \\ \hline
 	\end{tabularx}
 \end{table}
 
-\subsection{Gyvūnų maisto išteklių sekimas}
-\subsection{Automatinis gyvūnų maitinimas}
-\subsection{Automatinis maisto užsakymas}
-\subsection{Ūkio technikos sekimas realiu laiku}
+\subsection{Gyvūnų maitinimas}
+\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pasirenka skiltį "Gyvūnų maitinimas", sistema atidaro langą, kuriame matoma kiek kokio maisto turima. Vartotojas gali pasirinkti maitinti gyvūnus, arba nustatyti laiką, kada automatiškai bus pamaitinti gyvūnai. Taip pat vartotojas gali pirkti maistą, sistema nukreipia varototoją į langą, kuriame jis gali pasirinkti kiek ir kokio maisto nori pirkti ir padaro užsakymą.
+\subsubsection{Alternatyvus scenarijus(Neužtenka maisto gyvūnų maitinimui)}
+	Vartotojas pasirenka skiltį "Gyvūnų maitinimas", sistema atidaro langą, kuriame matoma kiek kokio maisto turima. Vartotojas pasirenka pamaitinti gyvunus, tačiau gauna klaidos pranešimą, jog sandelyje nėra pakankamai maisto norimam gyvūnų kiekiui pamaitinti. Vartotojas nukreipiamas į maisto pirkimo skiltį, kurioje jis gali sukurti maisto užsakymą.
+\subsubsection{Alternatyvus scenarijus(Neužtenka maisto automatiniam gyvūnų maitinimui)}
+	Vartotojas pasirenka skiltį "Gyvūnų maitinimas", sistema atidaro langą, kuriame matoma kiek kokio maisto turima. Vartotojas pasirenka pamaitinti gyvunus, tačiau gauna klaidos pranešimą, jog sandelyje nėra pakankamai maisto norimiem automatiniam maitinimam įgyvendinti. Vartotojas nukreipiamas į maisto pirkimo skiltį, kurioje jis gali sukurti maisto užsakymą.
+\subsubsection{Funkciniai reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+           	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+         		FR-7.01 & Sistema leidžia maitinti gyvūnus & 10  \\   \hline
+		FR-7.01.01 & Pamaitinti gyvūnus šiuo momentu & 8  \\ \hline
+		FR-7.01.02 & Suplanuoti automatinius gyvūnų pamaitinimus & 8 \\ \hline
+			FR-7.02 & Leidžia vartotojui sukurtu maisto užsakymus & 9 \\  \hline
+	\end{tabularx}
+\end{table}
+
 \subsection{Ūkio technikos valdymas nuotolinių būdu realiu laiku}
 \subsection{Autonominis ūkio technikos veikimas}
 \subsection{Ūkininko valdomos teritorijos žymėjimas sutartiniais ženklais}
