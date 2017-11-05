@@ -92,7 +92,6 @@ Sistema yra nauja idėja skirta modernizuoti ūkio valdymą. Produktas skirtas k
 	\item Ūkio technikos valdymas nuotolinių būdu realiu laiku
 	\item Autonominis ūkio technikos veikimas
 	\item Ūkininko valdomos teritorijos žymėjimas sutartiniais ženklais
-	\item Ligū žemėlapis kaimyninėse teritorijose
 	\item Sąskaitų išrašymas
 	\item Darbuotojų samdymas
 	\item Potencialaus pelno skaičiavimas
@@ -102,9 +101,7 @@ Sistema yra nauja idėja skirta modernizuoti ūkio valdymą. Produktas skirtas k
 	\item Automatinis žemės laistymas
 	\item Pagalbos iškvietimas
 	\item Ataskaitos apie ūkį sudarymas
-	\item Darbų sąsašo sudarymas
-	\item Žolių ir ligų katalogas
-	\item Ūkio chemijos sąrašas su aprašymais ir kainomis
+	\item Žolių, ligų ir ūkio chemijos katalogas
 \end{itemize}
 \subsection{Vartotojų klasės ir charakteristikos}
 Sistemas bus naudojama tiek mažų tiek didelių ūkių savininkų kurie nori automatizuoti savo ūkio valdymą. Žinoma visų funkcijų implremrentavimas į ūki kainuoja nepigiai todėl didiesiams ūkininkams ši sistema tūrėtų atrodyti patrauklesnė nei mažiesiams. Tačiau kaikurie funkcionalumai įgyvendinami gan lengvai ir nebrangiai. Kaikuriais sistemos funkcionalumais gali naudotis ir ūkio darbuotojai.
@@ -355,7 +352,6 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 	\end{tabularx}
 \end{table}	
 	
-	
 \subsection{Potencialaus pelno skaičiavimas}
 	\subsubsection{Pagrindinis scenarijus}
 	Vartotojas pasirenka "Potencialaus pelno skaičiavimas" sistemoje. Programa įjungia langą kuriame yra sąrašas visų šiuo metu vartotojo turimų pardavimui skirtų resursų. Vartotojas gali pasirinkti žiūrėti bendrą pelną kurį gautų pardavęs resursus arba pasirinkti tam tikrus resursus kuriuos norėtų parduoti ir kokį kiekį norėtų parduoti. Pagal vartotojo pasirinkimą ir rinkos kainą yra apskaičiuojamas potencialus pelnas.
@@ -373,7 +369,6 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 		FR-16.01.03 & Pasirinkti pagal kuriuos rinkos duomenis skaičiuoti pelną & 8 \\ \hline
 	\end{tabularx}
 \end{table}	
-	 
 \subsection{Derliaus sekimas}
 	\subsubsection{Pagrindinis scenarijus}
 	Vartotojas sistemoje pasirenka "Derliaus sekimas". Programa įjungią vartotojo turimų resursų sąrašą. Saraše prie kiekvieno resurso parašyta kada jis buvo gautas ir kokia kiekvieno resurso galiojimo trukmė. Paspaudus ant konkretaus resurso pasirodo langas, kuriame pateikta detalesnė informacija konkretų resursą. Detali informacija susideda iš resurso gavimo laiko, darbuotojų kurie dirbo prie konkretaus resurso gavimo, kiek pinigų vartotojas gautų pardavęs resursus rinkos kaina.
@@ -464,28 +459,28 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 			FR-22-02 & Sistema sudaro ataskaitą vartotojo pasirinktam laikotarpiui & 10 \\ \hline	
 		\end{tabularx}
 	\end{table}
-\subsection{Darbų sąsašo sudarymas}
-\subsection{Žolių ir ligų katalogas}
+\subsection{Žolių, ligų ir ūkio chemijos katalogas}
 	\subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka ''Žolių ir ligų katalogas'' pagrindiniame meniu. Programa atidaro langą, kuriame vartotojas gali matyti vaistinių žolelių arba ligų katalogą.
+	Vartotojas pasirenka ''Žolių ir ligų katalogas'' pagrindiniame meniu. Programa atidaro langą, kuriame vartotojas gali matyti pasirinktą katalogą.
 	\subsubsection{Alternatyvus scenarijus(Nesėkminga paieška)}
-	Vartotojas pasirenka ''Ūkio ataskaita'' pagrindiniame meniu. Programa atidaro langą, kuriame parodomas katalogas, vartotojui atlikus paiešką ir neradus jokių rezultatų išvedamas pranešimas, kad tokių duomenų kataloge nėra.
+	Vartotojas pasirenka ''Ūkio ataskaita'' pagrindiniame meniu. Programa atidaro langą, kuriame rodomas katalogas, vartotojui atlikus paiešką ir neradus jokių rezultatų išvedamas pranešimas, kad tokių duomenų kataloge nėra.
 	\subsubsection{Funkciniai reikalavimai}
 	\begin{table}[htbp]
 		\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
 			Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
 			FR-24.01 & Sistema leidžia pasirinkti norimą katalogą & 10 \\ \hline
 			FR-24.01.01 & Žolelių & 10 \\ \hline
-			FR-24.01.02 & Gyvūnų ligų & 9 \\ \hline
-			FR-24.01.03 & Žmonių ligų & 7 \\ \hline
-			FR-24.02 & Sistema leidžia atlikti paiešką  & 9 \\ \hline
-			FR-24.02.01 & Pagal simbolių eilute esančia pavadinime & 9 \\ \hline
-			FR-24.02.01 & Pagal simbolių eilute esančia aprašyme & 8 \\ \hline
-			FR-24.03 & Sistema leidžia norimą katalogą rikiuoti & 9 \\ \hline
-			FR-24.03.01 & Pagal alfabetinę tvarką  & 9 \\ \hline
+			FR-24.01.02 & Ūkio chemijos & 10 \\ \hline
+			FR-24.01.03 & Gyvūnų ligų & 9 \\ \hline
+			FR-24.01.04 & Žmonių ligų & 7 \\ \hline
+			FR-24.01.02 & Pasirinkus katalogo elementą sistema pateikia informaciją apie jį & 9 \\ \hline
+			FR-24.03 & Sistema leidžia atlikti paiešką  & 9 \\ \hline
+			FR-24.03.01 & Pagal simbolių eilute esančia pavadinime & 9 \\ \hline
+			FR-24.03.01 & Pagal simbolių eilute esančia aprašyme & 8 \\ \hline
+			FR-24.04 & Sistema leidžia norimą katalogą rikiuoti & 9 \\ \hline
+			FR-24.04.01 & Pagal alfabetinę tvarką  & 9 \\ \hline
 		\end{tabularx}
 	\end{table}
-\subsection{Ūkio chemijos sąrašas su aprašymais ir kainomis}
 
 \section{Kiti nefunkciniai reikalavimai}
 \subsection{Našumo reikalavimai}
