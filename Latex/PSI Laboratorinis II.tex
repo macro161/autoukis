@@ -312,11 +312,28 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
 		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
 		FR-18.01 & Sistema suteikia vartotojui prieeiga prie buhalterijos tvarkymo platformos & 9 \\ \hline
-		
-		
 	\end{tabularx}
 \end{table}
 \subsection{Rinkos kainų sekimas}
+	\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pagrindiniame lange pasirenka "Rinkos kainų sekimas". Programa atidaro langą langą kuriame rodos resursų kainos realiu laiku. Resursų kainos paterikiamos diagramos pavidalu. Vartotojas gali pasirinkti laiko intervalą kuriame nori stebėti rinkos kainos pokyčius ir kurių resursų kainas stebėti.
+	\subsubsection{Atlernatyvus scenarijus(Nepavyksta gauti rinkos kainų)}
+	Vartotojas pagrindiniame lange pasirenka "Rinkos kainų sekimas". Dėl tam tikrų priežasčių nepavyksta gauti dabartinės rinkos kainos. Vartotojui parodomas informacinis pranešimas dėl netikslių rinkos duomenų. Vartotojui parodoma rinkos kainų istoriją kuri yra saugoma sistemoje.
+	\subsubsection{Alternatyvus scenarijus(Nepavyksta gauti rinkos kainų istorijos)}
+	Vartotojas pagrindiniame lange pasirenka "Rinkos kainų sekimas". Dėl nenumatytų nesklandumų nepavyksta gauti dabartinių rinkos kainų ir sistemoje nėra išsaugota kainų istorija. Vartotojas informuojamas, kad nepavyksta gauti rinkos kainų realiu laiku ir kad sistemoje nėra išsaugotos kainų istorijos. Vartotojas nukreipiamas  į pagrindinį programos langą.
+	\subsubsection{Funkciniai reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| } \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		FR-19.01 & Sistema parodo rinkos kainas realius laiku &  9 \\ \hline
+		FR-19.01.01 & Rodyti diagramą & 8 \\ \hline
+		FR-19.01.02 & Leisti pasirinkti konkrečius resursus jų kainos rodymui & 8 \\ \hline
+		FR-19.01.03 & Rodyti rinkos kainų istoriją & 7 \\ \hline
+		FR-19.01.04 & Saugoti rinkos kainų istoriją & 7 \\ \hline
+		
+	\end{tabularx}
+\end{table}
+	 
 \subsection{Automatinis žemės laistymas}
 \subsection{Pagalbos iškvietimas}
 	\subsubsection{Pagrindinis scenarijus}
