@@ -309,7 +309,48 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \end{table}
 
 \subsection{Ūkio technikos valdymas nuotolinių būdu realiu laiku}
+\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pasirenka skiltį "Ūkio technikos valdymas", sistema atidaro langą, kuriame yra sąrašas ūkio technikos priemonių. Vartotojas pasirenka technikos priemonę ir, jei ji laisva, leidžia jos veikimą valdyti nuotoliniu būdu.
+\subsubsection{Alternatyvus scenarijus(Priemonė sugedus)}
+	Vartotojas pasirenka skiltį "Ūkio technikos valdymas", sistema atidaro langą, kuriame yra sąrašas ūkio technikos priemonių. Vartotojas pasirenka technikos priemonę, tačiau ji yra sugedusi. Vartotojui pasiūloma iškviesti mechaniką priemonei sutvarkyti ir leidžia vartotojui pasirinkti kitą priemonę.
+\subsubsection{Alternatyvus scenarijus(Priemonė užimta)}
+	Vartotojas pasirenka skiltį "Ūkio technikos valdymas", sistema atidaro langą, kuriame yra sąrašas ūkio technikos priemonių. Vartotojas pasirenka technikos priemonę, tačiau gauna pranešimą, jog šią priemonę šiuo metu naudoja kažkas kitas. Vartotojui pasiūloma palaukti kol ji atsilaisvins arba pasirinkti kitą priemonę.
+\subsubsection{Alternatyvus scenarijus(Nėra tinkamos įrangos)}
+	Vartotojas pasirenka skiltį "Ūkio technikos valdymas", sistema atidaro langą, kuriame išvedamas klaidos pranešimas, jog nėra tinkamos įrangos priemonėm valdyti nuotoliniu būdu. Sistema pasiūlo vartotojui įsigyti šią įrangą ir nukreipia jį į pagrindinį meniu.
+\subsubsection{Funkciniai reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+           	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+         		FR-8.01 & Sistema leidžia valdyti priemones nuotoliniu būdu & 10  \\   \hline
+		FR-8.01.01 & Sistema patikrina, ar norima priemonė nėra užimta & 8  \\ \hline
+		FR-8.01.02 & Sistema patikrina, ar norima priemonė nėra sugedusi & 7 \\ \hline
+		FR-8.01.03 & Sistema patikrina, as yra tinkama įranga nuotoliniam valdymui & 7 \\  \hline
+	\end{tabularx}
+\end{table}
+
+
 \subsection{Autonominis ūkio technikos veikimas}
+\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pasirenka skiltį "Autonominis ūkio technikos veikimas", sistema atidaro langą, kuriame matomas technikos priemonių sąrašas. Vartotojas pasirenka priemonę ir parenka plotą, kuriame priemonė dirbs.
+\subsubsection{Alternatyvus scenarijus(Priemonė užimta)}
+	Vartotojas pasirenka skiltį "Autonominis ūkio technikos veikimas", sistema atidaro langą, kuriame matomas technikos priemonių sąrašas. Vartotojas pasirenka priemonę, tačiau ji šiuo metu jau dirba. Vartotojui pasiūloma suplanuoti automatinį darbą kai priemonė atsilaisvins arba pasirinkti kitą priemonę.
+\subsubsection{Alternatyvus scenarijus(Priemonė neturi tinkamos įrangos)}
+	Vartotojas pasirenka skiltį "Autonominis ūkio technikos veikimas", sistema atidaro langą, kuriame matomas technikos priemonių sąrašas. Vartotojas pasirenka priemonę, tačiau ji neturi tinkamos įrangos autonominiam veikimui. Sistema išveda pranešimą pasiūlo įsigyti įrangą arba pasirinkti kitą priemonę.
+\subsubsection{Alternatyvus scenarijus(Netinkamas pasirinktas plotas)}
+	Vartotojas pasirenka skiltį "Autonominis ūkio technikos veikimas", sistema atidaro langą, kuriame matomas technikos priemonių sąrašas. Vartotojas pasirenka priemonę ir parenka plotą, kuriame priemonė dirbs, tačiau tame plote yra ne ariamas laukas. Sistema išveda klaidos pranešimą ir prašo vartotojo patikslinti darbo plotą.
+\subsubsection{Funkciniai reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+           	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+         		FR-9.01 & Sistema leidžia suplanuoti autonominį technikos priemonės darbą & 10  \\   \hline
+		FR-9.01.01 & Sistema patikrina, ar norima priemonė nėra užimta & 8  \\ \hline
+		FR-9.01.02 & Sistema patikrina, ar norima priemonė nėra sugedusi & 7 \\ \hline
+		FR-9.01.03 & Sistema patikrina, ar yra tinkama įrangą autonominiam veikimui & 7 \\  \hline
+		FR-9.01.04 & Sistema patikrina, ar tinkamai pažymėtas darbo plotas & 9  \\ \hline
+	FR-9.01.04.01 & Ar pažymėtas laukas tinkamas pasirinktai ūkio technikos priemonei jame dirbti & 8 \\ \hline
+	\end{tabularx}
+\end{table}
+
 \subsection{Ūkininko valdomos teritorijos žymėjimas sutartiniais ženklais}
 	\subsubsection{Pagrindinis scenarijus}
 	Vartotojas pasirenka ''Žemėlapio žymėjimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka norimą plotą pasirinktoje vietoje.
