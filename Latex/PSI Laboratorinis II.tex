@@ -86,11 +86,9 @@ Sistema yra nauja idėja skirta modernizuoti ūkio valdymą. Produktas skirtas k
 	\item Ūkio technikos resursų sekimas, pirkimas ir pardavimas
 	\item Žemės parametrų sekimas
 	\item Orų prognozės sekimas
-	\item Žemės parametrų spėjimas
 	\item Gyvūnų maisto išteklių sekimas
 	\item Automatinis gyvūnų maitinimas
 	\item Automatinis maisto užsakymas
-	\item Ūkio technikos sekimas realiu laiku
 	\item Ūkio technikos valdymas nuotolinių būdu realiu laiku
 	\item Autonominis ūkio technikos veikimas
 	\item Ūkininko valdomos teritorijos žymėjimas sutartiniais ženklais
@@ -102,9 +100,7 @@ Sistema yra nauja idėja skirta modernizuoti ūkio valdymą. Produktas skirtas k
 	\item Buhalterijos tvarkymas
 	\item Rinkos kainų sekimas
 	\item Automatinis žemės laistymas
-	\item Greitosios pagalbos iškvietimas
-	\item Apsaugos tarnybos iškvietimas
-	\item Agronomo iškvietimas
+	\item Pagalbos iškvietimas
 	\item Ataskaitos apie ūkį sudarymas
 	\item Darbų sąsašo sudarymas
 	\item Žolių ir ligų katalogas
@@ -290,8 +286,27 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \subsection{Ūkio technikos valdymas nuotolinių būdu realiu laiku}
 \subsection{Autonominis ūkio technikos veikimas}
 \subsection{Ūkininko valdomos teritorijos žymėjimas sutartiniais ženklais}
-\subsection{Ligų žemėlapis kaimyninėse teritorijose}
-
+	\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pasirenka ''Žemėlapio žymėjimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka norimą plotą pasirinktoje vietoje.
+	\subsubsection{Alternatyvus scenarijus(Plotas priklauso kitam savininkui)}
+	Vartotojas pasirenka ''Žemėlapio žymėjimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka norimą plotą pasirinktoje vietoje, tačiau tas plotas priklauso kitam ūkininkui, sistema išveda pranešimą, kad ši teritoja ūkininkui nepriklauso, bei atšaukia esamą žymėjimą.
+	\subsubsection{Alternatyvus scenarijus(Plotas jau pažymėtas)}
+	Vartotojas pasirenka ''Žemėlapio žymėjimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka norimą plotą pasirinktoje vietoje, tačiau tas plotas jau pažymėtas, sistema išveda pranešimą, bei pasiūlo pakeisti ploto paskirtį.
+	\subsubsection{Funkciniai reikalavimai}
+	\begin{table}[htbp]
+		\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+			Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+			FR-12.01 & Sistema leidžia pasirinkti žymimo ploto paskirtį & 10 \\ \hline
+			FR-12.01.01 & Ariamas laukas & 10 \\ \hline
+			FR-12.01.02 & Ūkinis pastatas & 10 \\ \hline
+			FR-12.01.03 & Ganykla & 10 \\ \hline
+			FR-12.02 & Sistema leidžia ištrinti jau pasirinką plotą & 9 \\ \hline
+			FR-12.03 & Sistema leidžia pakeisti jau pažymeto ploto paskirtį & 9 \\ \hline
+			FR-12.04 & Paspaudus ant pažymeto ploto sistema išveda to ploto informaciją & 10 \\ \hline
+			FR-12.04.01 & Paskirtį & 10 \\ \hline
+			FR-12.04.02 & Plotą & 10 \\ \hline			
+		\end{tabularx}
+	\end{table}
 \subsection{Sąskaitų išrašymas}
 	\subsubsection{Pagrindinis scenarijus}
 	Vartotojas pasirenka skiltį "Sąskaitos". Atsidariusiame lange vartotojui parodo sąrašą visų sąskaitų kurias jam reikia apmokėti. Šalia kiekvienos sąskaitos yra mygtukas, kurį paspaudus vartotojas nukreipiamas į apmokėjimo platformą pagal vrtotojo pasirinkimą kurioje jis gali apmokėti konkrečia sąskaitą. Pagrindiniame sąskaitų lange vartotojas gali pasižiūrėti kokia sąskaitos suma ir kada ji buvo išrašyta. Taip pat gal pasižiūrėti jau apmokėtų sąskaitų istorija.
@@ -346,7 +361,7 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 	Vartotojas pasirenka "Potencialaus pelno skaičiavimas" sistemoje. Programa įjungia langą kuriame yra sąrašas visų šiuo metu vartotojo turimų pardavimui skirtų resursų. Vartotojas gali pasirinkti žiūrėti bendrą pelną kurį gautų pardavęs resursus arba pasirinkti tam tikrus resursus kuriuos norėtų parduoti ir kokį kiekį norėtų parduoti. Pagal vartotojo pasirinkimą ir rinkos kainą yra apskaičiuojamas potencialus pelnas.
 	\subsubsection{Alternatyvus scenarijus(Nartotojas neturi parduodamų resursų)}
 	Vartotojas pasirenka "Potencialaus pelno skaičiavimas" skilį. Sistemoje nėra užregistruotą jokių resursų kuriuos vartotojas galėtų parduoti. Vartotojui parodomas pranešimas apie nepavykusią opeaciją dėl resursų trūkumo. Programa įjungia pagrindinį langą. 
-	\subsubsection{Alternatyvus scenarijus(Neveikia išoriniai servisai suteikiantys informaciją apie rinkos kainas)}
+	\subsection{Alternatyvus scenarijus(Neveikia išoriniai servisai suteikiantys informaciją apie rinkos kainas)}
 	Vartotojas pasirenka "Potencialaus pelno skaičiavimas" skilį. Norint apskaičiuoti potencialų pelną naudojamas išorinis servisas nustatyti rinkos kainą. Šiam servisui neveikiant programa vartotojui parodo informacinį pranešimą dėl nesėkmingo bandymo susisiekti su išoriniu servisu. Tokiu atveju programa naudoją naujausią turėtą rinkos kainą pelno skaičiavimui. Dėl senų duomenų naudojimo ir galimų netikslumų vartotojas taip pat informajamas informacine žinute.
 	\subsubsection{Funkciniai reikalavimai}
 \begin{table}[htbp]
@@ -433,8 +448,7 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 			FR-21-03 & Nesant galimybės nusiųsti pranešimo sistema parodo atitinkamos pagalbos kontaktus & 10 \\ \hline	
 			FR-21-03.01 & Tel. numeri & 10 \\ \hline	
 			FR-21-03.02 & Adresą & 8 \\ \hline	
-			FR-21-03.03 & El. paštą & 6 \\ \hline	
-						
+			FR-21-03.03 & El. paštą & 6 \\ \hline						
 		\end{tabularx}
 	\end{table}
 \subsection{Ataskaitos apie ūkį sudarymas}
