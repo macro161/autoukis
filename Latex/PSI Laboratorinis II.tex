@@ -179,15 +179,13 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 	\end{tabularx}
 \end{table}
 
-\subsection{Ūkio technikos resursų sekimas, pirkimas ir pardavimas}
+\subsection{Ūkio technikos resursų sekimas}
 \subsubsection{Pagrindinis scenarijus}
 	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka stebėti techniką realiu laiku, sistema parodo žemėlapį, kuriame matoma kur yra visos technikos priemonės, kiek apytiksliai laiko dirbs, ir ką darys toliau.
-\subsubsection{Alternatyvus scenarijus (Technikos pirkimas)}
-	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka pirkti naują technikos priemonę, sistema nuveda jį į puslapį, kuriame yra pasiūlymai jo norimai technikos rūšiai pirkti.
-\subsubsection{Alternatyvus scenarijus (Technikos pardavimas)}
-	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka parduoti technikos priemonę, sistema patikrina, ar ši priemonė yra laisva ir, jeigu ji nėra užimta, leidžia vartotojui sukurti skelbimą priemonei parduoti.
-\subsubsection{Alternatyvus scenarijus(Priemonė, kurią norima parduoti, užimta)}
-	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka parduoti technikos priemonę, sistema patikrina, ar ši priemonė yra laisva, tačiau ji yra užimta. Sistema vartotojui leidžia pakeisti šios priemonės tvarkaraštį ir nustatyti, jog jo daugiau nebūtų galima pildyti. Sistema tuomet leidžia vartotojui sukurti skelbimą priemonei parduoti.
+\subsubsection{Alternatyvus scenarijus(Nesukonfiguruoti priemonių sekikliai)}
+	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, tačiau prie būklės rašoma klaida, jog nesukonfiguruotas priemonės sekiklis. Vartotojui sistema siūlo iškviesti sistemos administratorių, kuris sukonfiguruoja sekiklius ir nukreipia nukreipia vartotoją į pagrindinį meniu.
+\subsubsection{Alternatyvus scenarijus(Pasirinkta priemonė sugedus)}
+	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, tačiau prie būklės rašoma klaida, jog priemonė sugedus. Sistema iškviečia mechaniką, išveda pranešimą, jog mechanikas iškviestas ir nukreipia vartotoją į pagrindinį meniu.
 \subsubsection{Funkciniai reikalavimai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
@@ -196,9 +194,44 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 		FR-2.01.01 & Stebėti technikos būklę & 8 \\ \hline
 		FR-2.01.02 & Peržiūrėti priemonės tvarkaraštį & 8 \\ \hline
 		FR-2.01.03 & Stebėti priemonės veiklą realiu laiku & 8 \\ \hline
-        		FR-2.02 & Sistema leidžia vartotojui pirkti/parduoti techniką & 9   \\   \hline
-		FR-2.02.01 & Leidžia peržiūrėti norimos priemonės tipo skelbimus & 8 \\ \hline
-		FR-2.02.02 & Leidžia sukurti skelbimą turimos priemonės & 8 \\ \hline
+        		FR-2.02 & Sugedus priemonės sekikliui, programa leidžia iškviesti sistemos administratorių & 9   \\   \hline
+			FR-2.03 & Sugedus priemonei, sistema iškviečia mechaniką & 9 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsection{Ūkio technikos resusrsų pirkimas}
+\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka pirkti naują technikos priemonę, sistema nuveda jį į puslapį, kuriame yra pasiūlymai jo norimai technikos rūšiai pirkti.
+\subsubsection{Alternatyvus scenarijus(Nepavyko rasti skelbimų norimai priemonei)}
+	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka pirkti naują technikos priemonę, sistema nuveda jį į puslapį, kuriame yra pasiūlymai jo norimai technikos rūšiai pirkti, tačiau pasirinktai priemonei įiuo metu nėra sukurtų jokių skelbimų. Sistema išveda pranešimą, jog pasirinktos priemonės pasiūlymų nėra.
+\subsubsection{Alternatyvus scenarijus(Nepavyko prisijungti prie serverio)}
+	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka pirkti naują technikos priemonę, tačiau sistemai nepavyko prisijungti prie serverio. Sistema išveda klaidos pranešimą ir nukreipia vartotoją į pagrindinį meniu.
+\subsubsection{Funkciniai reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+           	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+         		FR-3.01 & Sistema leidžia vartotojui pirkti techniką & 10  \\   \hline
+		FR-3.01.01 & Peržiūrėti skelbimus internete & 8 \\ \hline
+        		FR-3.02 & Neradus norimos priemonės skelbimų, sistema išveda pranešimą & 8   \\   \hline
+			FR-3.03 & Įvykus klaidai prisijungiant prie serverio, sistema išveda klaidos pranešimą ir nukreipia vartotoją į pagrindinį meniu & 8 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsection{Ūkio technikos resursų pardavimas}
+\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka parduoti technikos priemonę, sistema patikrina, ar ši priemonė yra laisva ir, jeigu ji nėra užimta, leidžia vartotojui sukurti skelbimą priemonei parduoti.
+\subsubsection{Alternatyvus scenarijus(Priemonė, kurią norima parduoti, užimta)}
+	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka parduoti technikos priemonę, sistema patikrina, ar ši priemonė yra laisva, tačiau ji yra užimta. Sistema vartotojui leidžia pakeisti šios priemonės tvarkaraštį ir nustatyti, jog jo daugiau nebūtų galima pildyti. Sistema tuomet leidžia vartotojui sukurti skelbimą priemonei parduoti.
+\subsubsection{Alternatyvus scenarijus(Priemonė, kurią norima parduoti, jau parduodama)}
+	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka parduoti technikos priemonę, sistema patikrina, ar ši priemonė yra laisva, tačiau jau yra sukurtas skelbimas jai parduoti. Vartotojui išvedamas klaidos pranešimas ir jis nuvedamas į ūkio technikos sąrašą.
+\subsubsection{Funkciniai reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+           	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+         		FR-4.01 & Sistema leidžia vartotojui parduoti techniką & 10  \\   \hline
+		FR-4.01.01 & Patikrinti, ar nėra jau sukurto skelbimo priemonei & 8 \\  \hline
+		FR-4.01.02 & Patikrinti, ar ši priemonė nėra jau parduodama & 8 \\ \hline
+		FR-4.01.03 & Sukurti skelbimus skelbimus internete & 8 \\ \hline
 	\end{tabularx}
 \end{table}
 
