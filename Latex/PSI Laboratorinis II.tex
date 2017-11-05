@@ -407,6 +407,25 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 	\end{table}
 \subsection{Darbų sąsašo sudarymas}
 \subsection{Žolių ir ligų katalogas}
+	\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pasirenka ''Žolių ir ligų katalogas'' pagrindiniame meniu. Programa atidaro langą, kuriame vartotojas gali matyti vaistinių žolelių arba ligų katalogą.
+	\subsubsection{Alternatyvus scenarijus(Nesėkminga paieška)}
+	Vartotojas pasirenka ''Ūkio ataskaita'' pagrindiniame meniu. Programa atidaro langą, kuriame parodomas katalogas, vartotojui atlikus paiešką ir neradus jokių rezultatų išvedamas pranešimas, kad tokių duomenų kataloge nėra.
+	\subsubsection{Funkciniai reikalavimai}
+	\begin{table}[htbp]
+		\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+			Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+			FR-24.01 & Sistema leidžia pasirinkti norimą katalogą & 10 \\ \hline
+			FR-24.01.01 & Žolelių & 10 \\ \hline
+			FR-24.01.02 & Gyvūnų ligų & 9 \\ \hline
+			FR-24.01.03 & Žmonių ligų & 7 \\ \hline
+			FR-24.02 & Sistema leidžia atlikti paiešką  & 9 \\ \hline
+			FR-24.02.01 & Pagal simbolių eilute esančia pavadinime & 9 \\ \hline
+			FR-24.02.01 & Pagal simbolių eilute esančia aprašyme & 8 \\ \hline
+			FR-24.03 & Sistema leidžia norimą katalogą rikiuoti & 9 \\ \hline
+			FR-24.03.01 & Pagal alfabetinę tvarką  & 9 \\ \hline
+		\end{tabularx}
+	\end{table}
 \subsection{Ūkio chemijos sąrašas su aprašymais ir kainomis}
 
 \section{Kiti nefunkciniai reikalavimai}
