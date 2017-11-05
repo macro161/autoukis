@@ -236,6 +236,22 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \end{table}
 
 \subsection{Žemės parametrų sekimas}
+\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pasirenka skiltį "Žemės parametrų sekimas", sistema nukreipia vartotoją į langą, kuriame yra sąrašas su visais prijungtais žemės parametrų sekikliais. Vartotojas pasirenka norimos teritorijos parametrų peržiūrą ir jam išvedami toje teritorijoje esančių daviklių duomenys.
+\subsubsection{Alternatyvus scenarijus(Nesukonfiguruotas daviklis)}
+	Vartotojas pasirenka skiltį "Žemės parametrų sekimas", sistema nukreipia vartotoją į langą, kuriame yra sąrašas su visais prijungtais žemės parametrų sekikliais. Vartotojas pasirenka norimos teritorijos parametrų peržiūrą, tačiau toje teritorijoje nesukonfiguruotas daviklis. Sistema išveda pranešimą ir pasiūlo vartotojui iškviesti sistemos administratorių, kuris sukonfiguruotų neveikiantį daviklį.
+\subsubsection{Alternatyvus scenarijus(Nepavyko prisijungti prie serverio)}
+	Vartotojas pasirenka skiltį "Žemės parametrų sekimas", sistema nukreipia vartotoją į langą, kuriame yra klaidos pranešimas, jog nepavyko prisijungti prie serverio ir vartotojas nukreipiamas atgal į pagrindinį meniu.
+\subsubsection{Funkciniai reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+           	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+         		FR-5.01 & Sistema leidžia stebėti žemės parametrų sekiklių duomenis & 10  \\   \hline
+			FR-5.02 & Atsiradus nesukonfiguruotam sekikliui, sistema leidžia iškviesti administratorių & 8 \\  \hline
+			FR-5.03 & Nepavykus prisijungti prie serverio, vartotojas nukreipiamas į pagrindinį meniu & 8 \\ \hline
+	\end{tabularx}
+\end{table}
+
 \subsection{Orų prognozės sekimas}
 \subsection{Žemės parametrų spėjimas}
 \subsection{Gyvūnų maisto išteklių sekimas}
