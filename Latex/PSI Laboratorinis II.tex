@@ -92,7 +92,6 @@ Sistema yra nauja idėja, skirta modernizuoti ūkio valdymą. Produktas skirtas 
 	\item Ūkio technikos valdymas nuotoliniu būdu realiu laiku
 	\item Autonominis ūkio technikos veikimas
 	\item Ūkininko valdomos teritorijos žymėjimas sutartiniais ženklais
-	\item Ligų žemėlapis kaimyninėse teritorijose
 	\item Sąskaitų išrašymas
 	\item Darbuotojų samdymas
 	\item Potencialaus pelno skaičiavimas
@@ -102,9 +101,7 @@ Sistema yra nauja idėja, skirta modernizuoti ūkio valdymą. Produktas skirtas 
 	\item Automatinis žemės laistymas
 	\item Pagalbos iškvietimas
 	\item Ataskaitos apie ūkį sudarymas
-	\item Darbų sąrašo sudarymas
-	\item Žolių ir ligų katalogas
-	\item Ūkio chemijos sąrašas su aprašymais ir kainomis
+	\item Žolių, ligų ir ūkio chemijos katalogas
 \end{itemize}
 \subsection{Vartotojų klasės ir charakteristikos}
 Sistema bus naudojama tiek mažų, tiek didelių ūkių savininkų, kurie nori automatizuoti savo ūkio valdymą. Žinoma, visų funkcijų implementavimas į ūkį kainuoja nepigiai, todėl didiesiams ūkininkams ši sistema tūrėtų atrodyti patrauklesnė nei mažiesiams, tačiau kai kurie funkcionalumai įgyvendinami gan lengvai ir nebrangiai. Kai kuriais sistemos funkcionalumais gali naudotis ir ūkio darbuotojai.
@@ -191,13 +188,13 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \subsubsection{Funkciniai reikalavimai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| } \hline
-           	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
-         	FR-1.01 & Sistema leidžia vartotojui dirbti su gyvūnų duomenimis & 10  \\   \hline
+    Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+    FR-1.01 & Sistema leidžia vartotojui dirbti su gyvūnų duomenimis & 10  \\   \hline
 		FR-1.01.01 & Įvesti duomenis & 8 \\ \hline
 		FR-1.01.02 & Peržiūrėti duomenis & 8 \\ \hline
 		FR-1.01.03 & Redaguoti duomenis & 8 \\ \hline
 		FR-1.01.04 & Išsaugoti duomenis & 8 \\ \hline
-        	FR-1.02 & Sutapus raktiniams duomenims, sistema leidžia juos apdoroti & 9   \\   \hline
+    FR-1.02 & Sutapus raktiniams duomenims, sistema leidžia juos apdoroti & 9   \\   \hline
 		FR-1.02.01 & Pakeisti raktinius duomenis, kad jie skirtųsi & 8 \\ \hline
 		FR-1.02.02 & Pakeisti išsaugotus duomenis naujai įvestais duomenimis & 8 \\ \hline
 	\end{tabularx}
@@ -251,8 +248,8 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \subsubsection{Funkciniai reikalavimai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
-           	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
-         	FR-4.01 & Sistema leidžia vartotojui parduoti techniką & 10  \\   \hline
+    Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+    FR-4.01 & Sistema leidžia vartotojui parduoti techniką & 10  \\   \hline
 		FR-4.01.01 & Patikrinti, ar nėra jau sukurto skelbimo priemonei & 8 \\  \hline
 		FR-4.01.02 & Patikrinti, ar ši priemonė nėra jau parduodama & 8 \\ \hline
 		FR-4.01.03 & Sukurti skelbimus internete & 8 \\ \hline
@@ -269,8 +266,8 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \subsubsection{Funkciniai reikalavimai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
-           	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
-         	FR-5.01 & Sistema leidžia stebėti žemės parametrų sekiklių duomenis & 10  \\   \hline
+    Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+    FR-5.01 & Sistema leidžia stebėti žemės parametrų sekiklių duomenis & 10  \\   \hline
 		FR-5.02 & Atsiradus nesukonfiguruotam sekikliui, sistema leidžia iškviesti administratorių & 8 \\  \hline
 		FR-5.03 & Nepavykus prisijungti prie serverio, vartotojas nukreipiamas į pagrindinį meniu & 8 \\ \hline
 	\end{tabularx}
@@ -286,17 +283,73 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \subsubsection{Funkciniai reikalavimai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
-           	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
-         	FR-5.01 & Sistema leidžia stebėti šios ir sekančios dienos orų prognozes & 10  \\   \hline
-		FR-5.02 & Andromedai įsirėžus į Paukščių Tako galaktiką išvesti klaidos pranešimą & 1 \\  \hline
-		FR-5.03 & Nepavykus prisijungti prie serverio, vartotojui leidžiama bandyti dar kartą prisijungus prie interneto & 7 \\ \hline
+      Nr. & Reikalavimas & Prioritetas (1-10)  \\   \hline 
+      FR-6.01 & Sistema leidžia stebėti šios ir sekančios dienos orų prognozes & 10  \\   \hline
+			FR-6.02 & Andromedai įsirėžus į Paukščių Tako galaktiką išvesti klaidos pranešimą & 1 \\  \hline
+			FR-6.03 & Nepavykus prisijungti prie serverio, vartotojui leidžiama bandyti dar kartą prisijungus prie interneto & 7 \\ \hline
 	\end{tabularx}
 \end{table}
-\subsection{Gyvūnų maisto išteklių sekimas}
-\subsection{Automatinis gyvūnų maitinimas}
-\subsection{Automatinis maisto užsakymas}
+
+\subsection{Gyvūnų maitinimas}
+\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pasirenka skiltį "Gyvūnų maitinimas", sistema atidaro langą, kuriame matoma kiek kokio maisto turima. Vartotojas gali pasirinkti maitinti gyvūnus, arba nustatyti laiką, kada automatiškai bus pamaitinti gyvūnai. Taip pat vartotojas gali pirkti maistą, sistema nukreipia varototoją į langą, kuriame jis gali pasirinkti kiek ir kokio maisto nori pirkti ir padaro užsakymą.
+\subsubsection{Alternatyvus scenarijus(Neužtenka maisto gyvūnų maitinimui)}
+	Vartotojas pasirenka skiltį "Gyvūnų maitinimas", sistema atidaro langą, kuriame matoma kiek kokio maisto turima. Vartotojas pasirenka pamaitinti gyvunus, tačiau gauna klaidos pranešimą, jog sandelyje nėra pakankamai maisto norimam gyvūnų kiekiui pamaitinti. Vartotojas nukreipiamas į maisto pirkimo skiltį, kurioje jis gali sukurti maisto užsakymą.
+\subsubsection{Alternatyvus scenarijus(Neužtenka maisto automatiniam gyvūnų maitinimui)}
+	Vartotojas pasirenka skiltį "Gyvūnų maitinimas", sistema atidaro langą, kuriame matoma kiek kokio maisto turima. Vartotojas pasirenka pamaitinti gyvunus, tačiau gauna klaidos pranešimą, jog sandelyje nėra pakankamai maisto norimiem automatiniam maitinimam įgyvendinti. Vartotojas nukreipiamas į maisto pirkimo skiltį, kurioje jis gali sukurti maisto užsakymą.
+\subsubsection{Funkciniai reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+    Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+    FR-7.01 & Sistema leidžia maitinti gyvūnus & 10  \\   \hline
+		FR-7.01.01 & Pamaitinti gyvūnus šiuo momentu & 8  \\ \hline
+		FR-7.01.02 & Suplanuoti automatinius gyvūnų pamaitinimus & 8 \\ \hline
+		FR-7.02 & Leidžia vartotojui sukurtu maisto užsakymus & 9 \\  \hline
+	\end{tabularx}
+\end{table}
+
 \subsection{Ūkio technikos valdymas nuotolinių būdu realiu laiku}
+\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pasirenka skiltį "Ūkio technikos valdymas", sistema atidaro langą, kuriame yra sąrašas ūkio technikos priemonių. Vartotojas pasirenka technikos priemonę ir, jei ji laisva, leidžia jos veikimą valdyti nuotoliniu būdu.
+\subsubsection{Alternatyvus scenarijus(Priemonė sugedus)}
+	Vartotojas pasirenka skiltį "Ūkio technikos valdymas", sistema atidaro langą, kuriame yra sąrašas ūkio technikos priemonių. Vartotojas pasirenka technikos priemonę, tačiau ji yra sugedusi. Vartotojui pasiūloma iškviesti mechaniką priemonei sutvarkyti ir leidžia vartotojui pasirinkti kitą priemonę.
+\subsubsection{Alternatyvus scenarijus(Priemonė užimta)}
+	Vartotojas pasirenka skiltį "Ūkio technikos valdymas", sistema atidaro langą, kuriame yra sąrašas ūkio technikos priemonių. Vartotojas pasirenka technikos priemonę, tačiau gauna pranešimą, jog šią priemonę šiuo metu naudoja kažkas kitas. Vartotojui pasiūloma palaukti kol ji atsilaisvins arba pasirinkti kitą priemonę.
+\subsubsection{Alternatyvus scenarijus(Nėra tinkamos įrangos)}
+	Vartotojas pasirenka skiltį "Ūkio technikos valdymas", sistema atidaro langą, kuriame išvedamas klaidos pranešimas, jog nėra tinkamos įrangos priemonėm valdyti nuotoliniu būdu. Sistema pasiūlo vartotojui įsigyti šią įrangą ir nukreipia jį į pagrindinį meniu.
+\subsubsection{Funkciniai reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+           	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+         		FR-8.01 & Sistema leidžia valdyti priemones nuotoliniu būdu & 10  \\   \hline
+		FR-8.01.01 & Sistema patikrina, ar norima priemonė nėra užimta & 8  \\ \hline
+		FR-8.01.02 & Sistema patikrina, ar norima priemonė nėra sugedusi & 7 \\ \hline
+		FR-8.01.03 & Sistema patikrina, as yra tinkama įranga nuotoliniam valdymui & 7 \\  \hline
+	\end{tabularx}
+\end{table}
+
 \subsection{Autonominis ūkio technikos veikimas}
+\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pasirenka skiltį "Autonominis ūkio technikos veikimas", sistema atidaro langą, kuriame matomas technikos priemonių sąrašas. Vartotojas pasirenka priemonę ir parenka plotą, kuriame priemonė dirbs.
+\subsubsection{Alternatyvus scenarijus(Priemonė užimta)}
+	Vartotojas pasirenka skiltį "Autonominis ūkio technikos veikimas", sistema atidaro langą, kuriame matomas technikos priemonių sąrašas. Vartotojas pasirenka priemonę, tačiau ji šiuo metu jau dirba. Vartotojui pasiūloma suplanuoti automatinį darbą kai priemonė atsilaisvins arba pasirinkti kitą priemonę.
+\subsubsection{Alternatyvus scenarijus(Priemonė neturi tinkamos įrangos)}
+	Vartotojas pasirenka skiltį "Autonominis ūkio technikos veikimas", sistema atidaro langą, kuriame matomas technikos priemonių sąrašas. Vartotojas pasirenka priemonę, tačiau ji neturi tinkamos įrangos autonominiam veikimui. Sistema išveda pranešimą pasiūlo įsigyti įrangą arba pasirinkti kitą priemonę.
+\subsubsection{Alternatyvus scenarijus(Netinkamas pasirinktas plotas)}
+	Vartotojas pasirenka skiltį "Autonominis ūkio technikos veikimas", sistema atidaro langą, kuriame matomas technikos priemonių sąrašas. Vartotojas pasirenka priemonę ir parenka plotą, kuriame priemonė dirbs, tačiau tame plote yra ne ariamas laukas. Sistema išveda klaidos pranešimą ir prašo vartotojo patikslinti darbo plotą.
+\subsubsection{Funkciniai reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+    Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+    FR-9.01 & Sistema leidžia suplanuoti autonominį technikos priemonės darbą & 10  \\   \hline
+		FR-9.01.01 & Sistema patikrina, ar norima priemonė nėra užimta & 8  \\ \hline
+		FR-9.01.02 & Sistema patikrina, ar norima priemonė nėra sugedusi & 7 \\ \hline
+		FR-9.01.03 & Sistema patikrina, ar yra tinkama įrangą autonominiam veikimui & 7 \\  \hline
+		FR-9.01.04 & Sistema patikrina, ar tinkamai pažymėtas darbo plotas & 9  \\ \hline
+	FR-9.01.04.01 & Ar pažymėtas laukas tinkamas pasirinktai ūkio technikos priemonei jame dirbti & 8 \\ \hline
+	\end{tabularx}
+\end{table}
+
 \subsection{Ūkininko valdomos teritorijos žymėjimas sutartiniais ženklais}
 	\subsubsection{Pagrindinis scenarijus}
 	Vartotojas pasirenka ''Žemėlapio žymėjimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka norimą plotą pasirinktoje vietoje.
@@ -384,7 +437,6 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 		FR-16.01.03 & Pasirinkti, pagal kuriuos rinkos duomenis skaičiuoti pelną & 8 \\ \hline
 	\end{tabularx}
 \end{table}	
-	 
 \subsection{Derliaus sekimas}
 	\subsubsection{Pagrindinis scenarijus}
 	Vartotojas sistemoje pasirenka "Derliaus sekimas". Programa įjungią vartotojo turimų resursų sąrašą. Saraše prie kiekvieno resurso parašyta, kada jis buvo gautas ir kokia kiekvieno resurso galiojimo trukmė. Paspaudus ant konkretaus resurso pasirodo langas, kuriame pateikta detalesnė informacija apie konkretų resursą. Detali informacija susideda iš resurso gavimo laiko, darbuotojų kurie dirbo prie konkretaus resurso gavimo, kiek pinigų vartotojas gautų pardavęs resursus rinkos kaina.
@@ -438,6 +490,28 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \end{table}
 	 
 \subsection{Automatinis žemės laistymas}
+	\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pagrindiniame programos lange pasirenka "Automatinis žemė laistymas". Programa atidaro automatinės laistymo sistemos langą. Lange vartotojui yra pateikiama informacija kokia žemės dregmė kiekviename žemės žemės plote. Vartotojas gali pasirinkti kokiai žemės drėgmei esant sistema autoimatatiškai įjungtų žemės laistytuvus. Vartotojui pateikiama informacija apie laistytuvų būklę(veikia, neveikia). Sistema suteikia galimybę pasirinkti kokiu laiku sistema palaistys žemę. Taip pat yra suteikiama galimybė žemę palaistyti dabar.
+	\subsubsection{Alternatyvus scenarijus(Nepavyksta nusiųsti informacijos laistymo sistemai)}
+	Vartotojas pasirenka "Automatinis žemės laistymas". Programa atidaro laistymo sistemos langą. Vartotojas bando pakeisti laistymo nustatymus tačiau nepavyksta nurodymų nusiusti valdikliams. Vartotojas informuojamas informacine žinute, kad naujų nustatymų nusiųsti nepavyko ir sistema toliau dirbs pagal senus nustatymus. Vartotojui suteikiami keli pasirinkimai: atlikti sistemos diagnostika, išjungti 	sistemą rankiniu būdu, iškviesti sistemos techniką.
+	\subsubsection{Alternatyvus scenarijus(Sisemoje nėra vandens)}
+	Vartotojas pasirenka "Automatinis žemės laistymas". Vartotojui parodomas informacinis pranešimas dėl vandens tiekimo sutrikimo sistemoje. Vartojui siūloma atlikti diagnostika arba papildyti vandens talpas rankiniu būdu.
+	\subsubsection{Alternatyvus scenarijus(Neatsidaro vandens vožtuvai laistymui)}
+	Vartotojas pasirenka "Automatinis žemės laistymas". Vartotojas informuojamas, kad dėl sistemos gedimo nepavyksta atidaryti vandens vožtuvų. Vartotojas informuojamas, kad įvyko gedimas ir reikia gedimą pašalinti prieš tęsiant darbą. Vartotojui suteikiama galimybė išsikviesti sistemos techniką arba susitvarkyti pačiam.
+	\subsubsection{Funkciniai reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| } \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		FR-20.01 & Sistema leidžia vartotojui matyti laukus ir kontroliuoti laistymo sistemą & 9 \\ \hline
+		FR-20.01.01 & Laistyti dabar & 7 \\ \hline
+		FR-20.01.02 & Nustatyti laistymo laiko & 8\\ \hline
+		FR-20.01.03 & Nustatyti kokiai drėgmei esant laistyt žemę & 8 \\ \hline
+		FR-20.01.04 & Suteikti informaciją apie žemės dregmę & 7 \\ \hline
+		FR-20.01.05 & Suteikti informaciją apie laistytuvų būklę & 7 \\ \hline
+		FR-20.01.06 & Suteikti diagnostikos galimybes neveikimo atveju & 8 \\ \hline
+		FR-20.01.07 & Suteikti informaciją apie sistemos pataisymo galimybes & 8 \\ \hline
+	\end{tabularx}
+\end{table}
 \subsection{Pagalbos iškvietimas}
 	\subsubsection{Pagrindinis scenarijus}
 	Vartotojas pasirenka ''Pagalbos iškvietimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka reikiamos pagalbos tipą, sistema tada nusiunčia numatytąjį pranešimą su prašymų atvykti, parodo gautą atsakymą.
@@ -474,28 +548,28 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 			FR-22-02 & Sistema sudaro ataskaitą vartotojo pasirinktam laikotarpiui & 10 \\ \hline	
 		\end{tabularx}
 	\end{table}
-\subsection{Darbų sąsašo sudarymas}
-\subsection{Žolių ir ligų katalogas}
+\subsection{Žolių, ligų ir ūkio chemijos katalogas}
 	\subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka ''Žolių ir ligų katalogas'' pagrindiniame meniu. Programa atidaro langą, kuriame vartotojas gali matyti vaistinių žolelių arba ligų katalogą.
+	Vartotojas pasirenka ''Žolių ir ligų katalogas'' pagrindiniame meniu. Programa atidaro langą, kuriame vartotojas gali matyti pasirinktą katalogą.
 	\subsubsection{Alternatyvus scenarijus(Nesėkminga paieška)}
-	Vartotojas pasirenka ''Ūkio ataskaita'' pagrindiniame meniu. Programa atidaro langą, kuriame parodomas katalogas. Vartotojui atlikus paiešką ir neradus jokių rezultatų išvedamas pranešimas, kad tokių duomenų kataloge nėra.
+	Vartotojas pasirenka ''Ūkio ataskaita'' pagrindiniame meniu. Programa atidaro langą, kuriame rodomas katalogas. Vartotojui atlikus paiešką ir neradus jokių rezultatų išvedamas pranešimas, kad tokių duomenų kataloge nėra.
 	\subsubsection{Funkciniai reikalavimai}
 	\begin{table}[htbp]
 		\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
 			Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
 			FR-24.01 & Sistema leidžia pasirinkti norimą katalogą & 10 \\ \hline
 			FR-24.01.01 & Žolelių & 10 \\ \hline
-			FR-24.01.02 & Gyvūnų ligų & 9 \\ \hline
-			FR-24.01.03 & Žmonių ligų & 7 \\ \hline
-			FR-24.02 & Sistema leidžia atlikti paiešką  & 9 \\ \hline
-			FR-24.02.01 & Pagal simbolių eilutę esančią pavadinime & 9 \\ \hline
-			FR-24.02.01 & Pagal simbolių eilutę esančią aprašyme & 8 \\ \hline
-			FR-24.03 & Sistema leidžia norimą katalogą rikiuoti & 9 \\ \hline
-			FR-24.03.01 & Pagal alfabetinę tvarką  & 9 \\ \hline
+			FR-24.01.02 & Ūkio chemijos & 10 \\ \hline
+			FR-24.01.03 & Gyvūnų ligų & 9 \\ \hline
+			FR-24.01.04 & Žmonių ligų & 7 \\ \hline
+			FR-24.01.02 & Pasirinkus katalogo elementą sistema pateikia informaciją apie jį & 9 \\ \hline
+			FR-24.03 & Sistema leidžia atlikti paiešką  & 9 \\ \hline
+			FR-24.03.01 & Pagal simbolių eilutę esančią pavadinime & 9 \\ \hline
+			FR-24.03.01 & Pagal simbolių eilutę esančią aprašyme & 8 \\ \hline
+			FR-24.04 & Sistema leidžia norimą katalogą rikiuoti & 9 \\ \hline
+			FR-24.04.01 & Pagal alfabetinę tvarką  & 9 \\ \hline
 		\end{tabularx}
 	\end{table}
-\subsection{Ūkio chemijos sąrašas su aprašymais ir kainomis}
 
 \section{Nefunkciniai reikalavimai}
 \subsection{Našumo reikalavimai}
