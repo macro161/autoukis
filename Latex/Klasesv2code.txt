@@ -1,0 +1,38 @@
+@startuml
+
+title Klasiu diagrama
+
+class AriamasLaukas
+class ZemesTeritorija
+class Ganykla
+class ZemesTeritorija
+class UkinisPastatas
+class VartotojoSasaja
+class AutoUkis
+class Orai
+class Naudotojas
+class Zemelapis
+class UkioTechnika
+class Gyvunas
+class RinkosAnalizatorius
+class Saskaita
+class Finansai
+class Skaiciavimas
+
+VartotojoSasaja o-down-Orai: Agregacija
+VartotojoSasaja o-down-Zemelapis: Agregacija
+VartotojoSasaja o-down-UkioTechnika: Agregacija
+VartotojoSasaja <-down-Naudotojas: Asociacija
+RinkosAnalizatorius <--Naudotojas: Asociacija
+Saskaita <-- Naudotojas: Asociacija
+Finansai <-- RinkosAnalizatorius: Asociacija
+Skaiciavimas <-- RinkosAnalizatorius: Asociacija
+AutoUkis o-- VartotojoSasaja: Agregacija
+VartotojoSasaja o-- ZemesTeritorija: Agregacija
+ZemesTeritorija <|-- Ganykla: Paveldejimas
+ZemesTeritorija<|-- AriamasLaukas: Paveldejimas
+ZemesTeritorija<|-- UkinisPastatas: Paveldejimas
+Gyvunas <-- UkinisPastatas:Asociacija
+
+
+@enduml
