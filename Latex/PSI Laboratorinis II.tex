@@ -24,7 +24,7 @@
 \department{Programų sistemų katedra}
 \papertype{Laboratorinis darbas II}
 \title{Automatinė ūkio valdymo sistema}
-\titleineng{Automatic farm management system}
+\titleineng{Automatic Farm Management System}
 \status{2 kurso 3 grupės studentai}
 \author{Matas Savickis}
 \secondauthor{Justas Tvarijonas}  
@@ -48,38 +48,38 @@
 
 \section{Įvadas}
 \subsection{Tikslas}
-Šiuo dokumentu siekiame detaliai perteikti Automatinės ūkio valdymo sistemos aprašą. Dokumente pateikti sistemos tikslai, jų įgyvendinimas, sąsajos su išore. Taip pat pateikiami funkciniai ir nefunkciniai sistemos reikalavimai. Šis dokumentas turėtų padėti susipažinti su sistema programuotojams, testuotojams, investuotojams bei vartotojams norintiems labiau įsigilinti į programos veikimą.
+Šiuo dokumentu siekiame detaliai perteikti Automatinės ūkio valdymo sistemos aprašą. Dokumente pateikti sistemos tikslai, jų įgyvendinimas, sąsajos su išore. Taip pat pateikiami funkciniai ir nefunkciniai sistemos reikalavimai. Šis dokumentas turėtų padėti susipažinti su sistema programuotojams, testuotojams, investuotojams bei vartotojams, norintiems labiau įsigilinti į programos veikimą.
 \subsection{Dokumento konvensija}
 \begin{itemize}
-	\item Dokumentas struktūrizuotas pagal IEEE 830 Software requirements šabloną.
-	\item Dokumentas formatuotas prisilaikant kursinio darbo metodinius reikalavimus.
+	\item Dokumentas struktūrizuotas pagal IEEE 830 Software Requirements šabloną.
+	\item Dokumentas formatuotas prisilaikant kursinio darbo metodinių reikalavimų.
 \end{itemize}
 \subsection{Dokumento skaitytojai}
 \begin{itemize}
-	\item Užsakovas - dokumento informacija leis išsiaiškinti kokius funkcionalus programa atliks ir kokių ne. Šis dokumentas padės išvengti neaiškumų bendraujant su sistemos kūrėjais.
-	\item Projekto vadovas - dokumentas leis išvengti nesutarimų su užsakovų. Taip pat šio dokumento pagalba bus galima pasakyti koks apytiksliai biudžetas bus reikalingas įgyvendintas visus funkcionalumus, kiek laiko tai gali užtrukti ir kokių kitų resursų gali prireikti siekiant tinkamai įvykdyti projektą.
-	\item Projektuotojas - dokumento informacija padės išsiaiškinti kokius technologinius ir architektūrinius sprendimus reiks priimti siekiant užtikrinti sistemos įgyvendinimą.
-	\item Testuotojas - dokumentas leis suprasti koks yra numatytas programos veikimas ir kas yra nenumatytos klaidos, bei nenumatytas programos veikimas.
-	\item Teisininkas - iškilus teisiniams nesklandumams tarp užsakovo ir darbų vykdytojų dokumentas leis įvertinti ar buvo įvykdyti visi funkcionalumai užsibrėžti darbų vykdytojų. Iškilus kitiems teisiniams nesklandumams, tokiems kaip ar programa nepažeidžia įstatymų dokumentas leis išsiaiškinti, kurios sistemos dalys buvo sukurtos planuotai o kurios ne.
-	\item Naudotoja - dokumentas suteiks detalenią informaciją apie sistemą vartotojams norintiems pagilinti žianis apie tai kaip veikia programa.
-	\item Programuotojas - dokumentas leis naujiems programuotojams susipažinti su bendru sistemos veikimu ir lengviau bei greičiau prisidėti prie sistemos tobulinimo. ir palaikymo.
-	\item Rinkodaros personalas - dokumentas leis išskirti sistemos funkcionalumus ir lengiau juos pateikti vartotojams reklamuose bei kituose rinkodarinėse kampanijose.
+	\item Užsakovas - dokumento informacija leis išsiaiškinti, kokius funkcionalus programa atliks, ir kokių ne. Šis dokumentas padės išvengti neaiškumų bendraujant su sistemos kūrėjais.
+	\item Projekto vadovas - dokumentas leis išvengti nesutarimų su užsakovųu. Taip pat šio dokumento pagalba bus galima pasakyti, koks apytiksliai biudžetas bus reikalingas įgyvendinti visus funkcionalumus, kiek laiko tai gali užtrukti, ir kokių kitų resursų gali prireikti siekiant tinkamai įvykdyti projektą.
+	\item Projektuotojas - dokumento informacija padės išsiaiškinti, kokius technologinius ir architektūrinius sprendimus reiks priimti siekiant užtikrinti sistemos įgyvendinimą.
+	\item Testuotojas - dokumentas leis suprasti, koks yra numatytas programos veikimas, ir kas yra nenumatytos klaidos bei nenumatytas programos veikimas.
+	\item Teisininkas - iškilus teisiniams nesklandumams tarp užsakovo ir darbų vykdytojų, dokumentas leis įvertinti, ar buvo įvykdyti visi funkcionalumai, užsibrėžti darbų vykdytojų. Iškilus kitiems teisiniams nesklandumams, tokiems kaip, ar programa nepažeidžia įstatymų, dokumentas leis išsiaiškinti, kurios sistemos dalys buvo sukurtos planuotai, o kurios ne.
+	\item Naudotojas - dokumentas suteiks detalią informaciją apie sistemą vartotojams, norintiems pagilinti žianis apie tai, kaip veikia programa.
+	\item Programuotojas - dokumentas leis naujiems programuotojams susipažinti su bendru sistemos veikimu ir lengviau bei greičiau prisidėti prie sistemos tobulinimo ir palaikymo.
+	\item Rinkodaros personalas - dokumentas leis išskirti sistemos funkcionalumus ir lengiau juos pateikti vartotojams reklamose bei kitose rinkodarinėse kampanijose.
 \end{itemize}
 \pagebreak
-\subsection{Produkto apimtis} Automatinė ūkio valdymo sistema yra produktas skirta modernizuoti ūkio valdymą. Sistema leidžia vartotojui nuotoliniu būdu stebėti gyvulių parametrus, sekti turimus žmogiškuosius ir tertinius išteklius. Sistema taip pat leidžia valdyti išteklius, samdyti darbuotojus, pirkti ir parduoti techniką, stebint rinkos kainas parduoti turimą derlių. Pagrindinis sistemos privalumas tas, kad ūkininkui nebūtina būti savo valdomoje teritorijoje norit užtikrinti ūkio valdymą. Su šia sistema ūki galima valdyti su išnamuoju telefonu ar kompiuteriu iš betokios vietos kur yra interneto ryšys. Sistema pritaikyta tiek mažiems tiek dideliems ūkiams valdyti. 
+\subsection{Produkto apimtis} Automatinė ūkio valdymo sistema yra produktas, skirtas modernizuoti ūkio valdymą. Sistema leidžia vartotojui nuotoliniu būdu stebėti gyvulių parametrus, sekti turimus, žmogiškuosius ir turtinius išteklius. Sistema taip pat leidžia valdyti išteklius, samdyti darbuotojus, pirkti ir parduoti techniką, stebint rinkos kainas parduoti turimą derlių. Pagrindinis sistemos privalumas tas, kad ūkininkui nebūtina būti savo valdomoje teritorijoje norit užtikrinti ūkio valdymą. Su šia sistema ūkį galima valdyti su išmaniuoju telefonu ar kompiuteriu iš bet kokios vietos, kur yra interneto ryšys. Sistema pritaikyta tiek mažiems, tiek dideliems ūkiams valdyti. 
 \subsection{Nuorodos}
 \begin{itemize}
 	\item Diagramoms braižyti naudojome \url{www.draw.io} bei \url{www.planttext.com}
-	\item Dokumentas parašytas paga IEEE 830 šabloną \url{https://en.wikipedia.org/wiki/Software_requirements_specification}
-	\item Panaši programa jau egzistuojanti rinkoje \url{www.farmis.lt}
+	\item Dokumentas parašytas pagal IEEE 830 šabloną \url{https://en.wikipedia.org/wiki/Software_requirements_specification}
+	\item Panaši programa, jau egzistuojanti rinkoje \url{www.farmis.lt}
 	\item Kursinio darbo metodiniai nurodymai \url{http://www.mif.vu.lt/katedros/se/Studentams/KURSINIO%20DARBO%20METODINIAI%20NURODYMAI%202011_AL.pdf}
-	\item AutoMtinis ūkio technikos valdymas \url{https://www.asirobots.com/platforms/mobius/}
+	\item Automatinis ūkio technikos valdymas \url{https://www.asirobots.com/platforms/mobius/}
 	\item Buhalterija ir sąskaitos \url{https://www.manager.io/}
 \end{itemize}
 
-\section{Bendras produkto aprasymas}
+\section{Bendras produkto aprašymas}
 \subsection{Produkto perspektyva}
-Sistema yra nauja idėja skirta modernizuoti ūkio valdymą. Produktas skirtas konkuruoti su rinkoje jau egzistuojančia Farmis ūkio valdymo sistema. Mūsų kuriama sistema papildys konkurentų jau turimą sistemą naujais funkcionalumais kurie turėtų dominti ūkinikus norinčius labiau moternizuoti ir automatizuoti savo turimą ūkį ir verslą. 
+Sistema yra nauja idėja, skirta modernizuoti ūkio valdymą. Produktas skirtas konkuruoti su rinkoje jau egzistuojančia Farmis ūkio valdymo sistema. Mūsų kuriama sistema papildys konkurentų jau turimą sistemą naujais funkcionalumais, kurie turėtų dominti ūkininkus, norinčius labiau moternizuoti ir automatizuoti savo turimą ūkį ir verslą. 
 \subsection{Produkto funkcionalumas}
 \begin{itemize}
 	\item Gyvūnų sveikatos, lokacijos bei kitų paramterų sekimas
@@ -89,10 +89,10 @@ Sistema yra nauja idėja skirta modernizuoti ūkio valdymą. Produktas skirtas k
 	\item Gyvūnų maisto išteklių sekimas
 	\item Automatinis gyvūnų maitinimas
 	\item Automatinis maisto užsakymas
-	\item Ūkio technikos valdymas nuotolinių būdu realiu laiku
+	\item Ūkio technikos valdymas nuotoliniu būdu realiu laiku
 	\item Autonominis ūkio technikos veikimas
 	\item Ūkininko valdomos teritorijos žymėjimas sutartiniais ženklais
-	\item Ligū žemėlapis kaimyninėse teritorijose
+	\item Ligų žemėlapis kaimyninėse teritorijose
 	\item Sąskaitų išrašymas
 	\item Darbuotojų samdymas
 	\item Potencialaus pelno skaičiavimas
@@ -102,12 +102,12 @@ Sistema yra nauja idėja skirta modernizuoti ūkio valdymą. Produktas skirtas k
 	\item Automatinis žemės laistymas
 	\item Pagalbos iškvietimas
 	\item Ataskaitos apie ūkį sudarymas
-	\item Darbų sąsašo sudarymas
+	\item Darbų sąrašo sudarymas
 	\item Žolių ir ligų katalogas
 	\item Ūkio chemijos sąrašas su aprašymais ir kainomis
 \end{itemize}
 \subsection{Vartotojų klasės ir charakteristikos}
-Sistemas bus naudojama tiek mažų tiek didelių ūkių savininkų kurie nori automatizuoti savo ūkio valdymą. Žinoma visų funkcijų implremrentavimas į ūki kainuoja nepigiai todėl didiesiams ūkininkams ši sistema tūrėtų atrodyti patrauklesnė nei mažiesiams. Tačiau kaikurie funkcionalumai įgyvendinami gan lengvai ir nebrangiai. Kaikuriais sistemos funkcionalumais gali naudotis ir ūkio darbuotojai.
+Sistema bus naudojama tiek mažų, tiek didelių ūkių savininkų, kurie nori automatizuoti savo ūkio valdymą. Žinoma, visų funkcijų implementavimas į ūkį kainuoja nepigiai, todėl didiesiams ūkininkams ši sistema tūrėtų atrodyti patrauklesnė nei mažiesiams, tačiau kai kurie funkcionalumai įgyvendinami gan lengvai ir nebrangiai. Kai kuriais sistemos funkcionalumais gali naudotis ir ūkio darbuotojai.
 \subsection{Vykdymo aplinka}
 Duomenys bus saugomi serveryje, duomenų bazėje. Bus naudojamos šios technologijos:
 	\begin{itemize}
@@ -130,18 +130,18 @@ Kompiuterio aplikacija bus sukurta su šiomis technologijomis:
 		\item Arduino moisture sensor
 		\item Photosensor
 	\end{itemize}
-Automatiniam ūkio technikos valdymui naudosimes šios technologijomis:
+Automatiniam ūkio technikos valdymui naudosimės šiomis technologijomis:
 	\begin{itemize}		
 		\item ASI Mobius
 	\end{itemize}
 \subsection{Dizaino ir implementacijos apribojimai}
-Pagrindinis apribojimas norit įgyvendinti automatinį technikos valdymą yra sutartis su ASI kompanija dėl Mobius technologijos naudojimo. Šis sistemos funkcionalumas priklauso nuo galimybės susitarti dėl technologijos naudojimo ir nuo to ar ASI ir toliau palaikys savo technologijos palaikymą. Kitas technologinis apribojimas yra skirtingos išmaniųjų telefonų versijos. Norint užtikrinti kad sistema veiktų ant daugumos Android operacinės sistemso versijų reiks atsižvelgti į tas operacines sistemas. 
+Pagrindinis apribojimas, norint įgyvendinti automatinį technikos valdymą, yra sutartis su ASI kompanija dėl Mobius technologijos naudojimo. Šis sistemos funkcionalumas priklauso nuo galimybės susitarti dėl technologijos naudojimo ir nuo to, ar ASI ir toliau palaikys savo technologijos palaikymą. Kitas technologinis apribojimas yra skirtingos išmaniųjų telefonų versijos. Norint užtikrinti, kad sistema veiktų ant daugumos Android operacinės sistemos versijų, reiks atsižvelgti į tas operacines sistemas. 
 
 
 \subsection{Prielaidos ir priklausomybės}
-Tinkamas programos programos veikimas priklauso nuo daugybės faktorių. Sistema iš esmės apjungia keletą išorinių komponentų į vieną itegralią sistemą. Nors sutrikus ryšiui su išoriniai komponentais kaikurios sistemos funkcijos būtų nepasiekiamos tačiau visa sistema nenutrauktų darbo. Automatinis technikos valdymas priklauso nuo ASI kompanijos programos palaikymo. Duomenų gavimas priklauso nuo to ar bus interneto ryšys ir ar pavyks pasiekti serverį, kad programa gautų prieiga prie duomenų bazės. Orų prognozė priklauso nuo to ar orų tarnyba toliau teiks prieeiga prie savo duomenų. Sąskaitų ir buhalterijos funkcionalumas priklauso nuo to \url{www. ar manager.io} toliau palaikys savo programos veikimą ir leis ja naudotis nemokamai.
+Tinkamas programos programos veikimas priklauso nuo daugybės faktorių. Sistema iš esmės apjungia keletą išorinių komponentų į vieną integralią sistemą. Net jei sutrikus ryšiui su išoriniai komponentais kai kurios sistemos funkcijos būtų nepasiekiamos, visa sistema nenutrauktų darbo. Automatinis technikos valdymas priklauso nuo ASI kompanijos programos palaikymo. Duomenų gavimas priklauso nuo to, ar bus interneto ryšys, ir ar pavyks pasiekti serverį, kad programa gautų prieigą prie duomenų bazės. Orų prognozė priklauso nuo to, ar orų tarnyba toliau teiks prieigą prie savo duomenų. Sąskaitų ir buhalterijos funkcionalumas priklauso nuo to, ar \url{www. ar manager.io} toliau palaikys savo programos veikimą ir leis ja naudotis nemokamai.
 \subsection{Vartotojo dokumentacija}
-Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube svetainėje. Neturintiems galimybės peržiūrėti vaizdo įrašo supažindinimas su programa bus integruotas į pačia programą. Vartotojas galės pasirinkti ar nori gauti pagalbines žinutes. Šias žinutes vartotojas galės išjungti nustatymuose. 
+Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube svetainėje. Neturintiems galimybės peržiūrėti vaizdo, įrašo supažindinimas su programa bus integruotas į pačią programą. Vartotojas galės pasirinkti, ar nori gauti pagalbines žinutes. Šias žinutes vartotojas galės išjungti nustatymuose. 
 
 \section{Išoriniai sąsajos reikalavimai}
 \subsection{Vartotojo sąsajos reikalavimai}
@@ -187,7 +187,7 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 	Pasirinkus pakeisti ID, vartotojas įveda naują ID ir pasirenka išsaugoti duomenis. 
 	Pasirinkus pakeisti sąraše egzistuojančio elemento, su tuo pačiu ID, duomenis, visi sąraše buvę duomenys pakeičiami naujais įvestais duomenimis ir išsaugomi sąraše.
 \subsubsection{Alternatyvus scenarijus (Nepavyko prisijungti prie sistemos)}
-	Vartotojas pateikia prisijungimo duomenis ir spaudžia mygtuką "Prisijungti", tačiau gaunama klaida, jog nepavyko prisijungti prie sistemos. Į ekraną išvedamas klaidos pranešimas, ir grįžtama i pagrindinį langą, kuriame vartotojas vėl gali bandyti prisijungti arba užsiregistruoti.
+	Vartotojas pateikia prisijungimo duomenis ir spaudžia mygtuką "Prisijungti", tačiau gaunama klaida, jog nepavyko prisijungti prie sistemos. Į ekraną išvedamas klaidos pranešimas ir grįžtama į pagrindinį langą, kuriame vartotojas vėl gali bandyti prisijungti arba užsiregistruoti.
 \subsubsection{Funkciniai reikalavimai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| } \hline
@@ -197,7 +197,7 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 		FR-1.01.02 & Peržiūrėti duomenis & 8 \\ \hline
 		FR-1.01.03 & Redaguoti duomenis & 8 \\ \hline
 		FR-1.01.04 & Išsaugoti duomenis & 8 \\ \hline
-        	FR-1.02 & Sutampus raktiniams duomenims, sistema leidžia juos apdoroti & 9   \\   \hline
+        	FR-1.02 & Sutapus raktiniams duomenims, sistema leidžia juos apdoroti & 9   \\   \hline
 		FR-1.02.01 & Pakeisti raktinius duomenis, kad jie skirtųsi & 8 \\ \hline
 		FR-1.02.02 & Pakeisti išsaugotus duomenis naujai įvestais duomenimis & 8 \\ \hline
 	\end{tabularx}
@@ -205,45 +205,45 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 
 \subsection{Ūkio technikos resursų sekimas}
 \subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka stebėti techniką realiu laiku, sistema parodo žemėlapį, kuriame matoma kur yra visos technikos priemonės, kiek apytiksliai laiko dirbs, ir ką darys toliau.
+	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka stebėti techniką realiu laiku, sistema parodo žemėlapį, kuriame matoma,e kur yra visos technikos priemonės, kiek apytiksliai laiko dirbs, ir ką darys toliau.
 \subsubsection{Alternatyvus scenarijus(Nesukonfiguruoti priemonių sekikliai)}
 	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, tačiau prie būklės rašoma klaida, jog nesukonfiguruotas priemonės sekiklis. Vartotojui sistema siūlo iškviesti sistemos administratorių, kuris sukonfiguruoja sekiklius ir nukreipia nukreipia vartotoją į pagrindinį meniu.
 \subsubsection{Alternatyvus scenarijus(Pasirinkta priemonė sugedus)}
-	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, tačiau prie būklės rašoma klaida, jog priemonė sugedus. Sistema iškviečia mechaniką, išveda pranešimą, jog mechanikas iškviestas ir nukreipia vartotoją į pagrindinį meniu.
+	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, tačiau prie būklės rašoma klaida, jog priemonė sugedus. Sistema iškviečia mechaniką, išveda pranešimą, jog mechanikas iškviestas, ir nukreipia vartotoją į pagrindinį meniu.
 \subsubsection{Funkciniai reikalavimai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
            	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
-         		FR-2.01 & Sistema leidžia vartotojui stebėti techniką & 10  \\   \hline
+         	FR-2.01 & Sistema leidžia vartotojui stebėti techniką & 10  \\   \hline
 		FR-2.01.01 & Stebėti technikos būklę & 8 \\ \hline
 		FR-2.01.02 & Peržiūrėti priemonės tvarkaraštį & 8 \\ \hline
 		FR-2.01.03 & Stebėti priemonės veiklą realiu laiku & 8 \\ \hline
-        		FR-2.02 & Sugedus priemonės sekikliui, programa leidžia iškviesti sistemos administratorių & 9   \\   \hline
-			FR-2.03 & Sugedus priemonei, sistema iškviečia mechaniką & 9 \\ \hline
+        	FR-2.02 & Sugedus priemonės sekikliui, programa leidžia iškviesti sistemos administratorių & 9   \\   \hline
+		FR-2.03 & Sugedus priemonei, sistema iškviečia mechaniką & 9 \\ \hline
 	\end{tabularx}
 \end{table}
 
-\subsection{Ūkio technikos resusrsų pirkimas}
+\subsection{Ūkio technikos resursų pirkimas}
 \subsubsection{Pagrindinis scenarijus}
 	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka pirkti naują technikos priemonę, sistema nuveda jį į puslapį, kuriame yra pasiūlymai jo norimai technikos rūšiai pirkti.
 \subsubsection{Alternatyvus scenarijus(Nepavyko rasti skelbimų norimai priemonei)}
-	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka pirkti naują technikos priemonę, sistema nuveda jį į puslapį, kuriame yra pasiūlymai jo norimai technikos rūšiai pirkti, tačiau pasirinktai priemonei įiuo metu nėra sukurtų jokių skelbimų. Sistema išveda pranešimą, jog pasirinktos priemonės pasiūlymų nėra.
+	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka pirkti naują technikos priemonę, sistema nuveda jį į puslapį, kuriame yra pasiūlymai jo norimai technikos rūšiai pirkti, tačiau pasirinktai priemonei šiuo metu nėra sukurtų jokių skelbimų. Sistema išveda pranešimą, jog pasirinktos priemonės pasiūlymų nėra.
 \subsubsection{Alternatyvus scenarijus(Nepavyko prisijungti prie serverio)}
 	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka pirkti naują technikos priemonę, tačiau sistemai nepavyko prisijungti prie serverio. Sistema išveda klaidos pranešimą ir nukreipia vartotoją į pagrindinį meniu.
 \subsubsection{Funkciniai reikalavimai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
            	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
-         		FR-3.01 & Sistema leidžia vartotojui pirkti techniką & 10  \\   \hline
+         	FR-3.01 & Sistema leidžia vartotojui pirkti techniką & 10  \\   \hline
 		FR-3.01.01 & Peržiūrėti skelbimus internete & 8 \\ \hline
-        		FR-3.02 & Neradus norimos priemonės skelbimų, sistema išveda pranešimą & 8   \\   \hline
-			FR-3.03 & Įvykus klaidai prisijungiant prie serverio, sistema išveda klaidos pranešimą ir nukreipia vartotoją į pagrindinį meniu & 8 \\ \hline
+        	FR-3.02 & Neradus norimos priemonės skelbimų, sistema išveda pranešimą & 8   \\   \hline
+		FR-3.03 & Įvykus klaidai prisijungiant prie serverio, sistema išveda klaidos pranešimą ir nukreipia vartotoją į pagrindinį meniu & 8 \\ \hline
 	\end{tabularx}
 \end{table}
 
 \subsection{Ūkio technikos resursų pardavimas}
 \subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka parduoti technikos priemonę, sistema patikrina, ar ši priemonė yra laisva ir, jeigu ji nėra užimta, leidžia vartotojui sukurti skelbimą priemonei parduoti.
+	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka parduoti technikos priemonę, sistema patikrina, ar ši priemonė yra laisva, ir, jeigu ji nėra užimta, leidžia vartotojui sukurti skelbimą priemonei parduoti.
 \subsubsection{Alternatyvus scenarijus(Priemonė, kurią norima parduoti, užimta)}
 	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka parduoti technikos priemonę, sistema patikrina, ar ši priemonė yra laisva, tačiau ji yra užimta. Sistema vartotojui leidžia pakeisti šios priemonės tvarkaraštį ir nustatyti, jog jo daugiau nebūtų galima pildyti. Sistema tuomet leidžia vartotojui sukurti skelbimą priemonei parduoti.
 \subsubsection{Alternatyvus scenarijus(Priemonė, kurią norima parduoti, jau parduodama)}
@@ -252,10 +252,10 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
            	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
-         		FR-4.01 & Sistema leidžia vartotojui parduoti techniką & 10  \\   \hline
+         	FR-4.01 & Sistema leidžia vartotojui parduoti techniką & 10  \\   \hline
 		FR-4.01.01 & Patikrinti, ar nėra jau sukurto skelbimo priemonei & 8 \\  \hline
 		FR-4.01.02 & Patikrinti, ar ši priemonė nėra jau parduodama & 8 \\ \hline
-		FR-4.01.03 & Sukurti skelbimus skelbimus internete & 8 \\ \hline
+		FR-4.01.03 & Sukurti skelbimus internete & 8 \\ \hline
 	\end{tabularx}
 \end{table}
 
@@ -265,31 +265,31 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \subsubsection{Alternatyvus scenarijus(Nesukonfiguruotas daviklis)}
 	Vartotojas pasirenka skiltį "Žemės parametrų sekimas", sistema nukreipia vartotoją į langą, kuriame yra sąrašas su visais prijungtais žemės parametrų sekikliais. Vartotojas pasirenka norimos teritorijos parametrų peržiūrą, tačiau toje teritorijoje nesukonfiguruotas daviklis. Sistema išveda pranešimą ir pasiūlo vartotojui iškviesti sistemos administratorių, kuris sukonfiguruotų neveikiantį daviklį.
 \subsubsection{Alternatyvus scenarijus(Nepavyko prisijungti prie serverio)}
-	Vartotojas pasirenka skiltį "Žemės parametrų sekimas", sistema nukreipia vartotoją į langą, kuriame yra klaidos pranešimas, jog nepavyko prisijungti prie serverio ir vartotojas nukreipiamas atgal į pagrindinį meniu.
+	Vartotojas pasirenka skiltį "Žemės parametrų sekimas", sistema nukreipia vartotoją į langą, kuriame yra klaidos pranešimas, jog nepavyko prisijungti prie serverio, ir vartotojas nukreipiamas atgal į pagrindinį meniu.
 \subsubsection{Funkciniai reikalavimai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
            	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
-         		FR-5.01 & Sistema leidžia stebėti žemės parametrų sekiklių duomenis & 10  \\   \hline
-			FR-5.02 & Atsiradus nesukonfiguruotam sekikliui, sistema leidžia iškviesti administratorių & 8 \\  \hline
-			FR-5.03 & Nepavykus prisijungti prie serverio, vartotojas nukreipiamas į pagrindinį meniu & 8 \\ \hline
+         	FR-5.01 & Sistema leidžia stebėti žemės parametrų sekiklių duomenis & 10  \\   \hline
+		FR-5.02 & Atsiradus nesukonfiguruotam sekikliui, sistema leidžia iškviesti administratorių & 8 \\  \hline
+		FR-5.03 & Nepavykus prisijungti prie serverio, vartotojas nukreipiamas į pagrindinį meniu & 8 \\ \hline
 	\end{tabularx}
 \end{table}
 
 \subsection{Orų prognozės sekimas}
 \subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka skiltį "Orų prognozės sekimas", sistema vartotoją nukreipia į langą, kuriame jis gali pasirinkti artimiausią iki jo miestą ir peržiūrėti šios ir sekančios dienos orų prognozes.
+	Vartotojas pasirenka skiltį "Orų prognozės sekimas", sistema vartotoją nukreipia į langą, kuriame jis gali pasirinkti artimiausią iki jo miestą ir peržiūrėti šios bei sekančios dienos orų prognozes.
 \subsubsection{Alternatyvus scenarijus(Nėra prieigos prie interneto)}
-	Vartotojas pasirenka skiltį "Orų prognozės sekimas", sistema vartotoją nukreipia į langą, kuriame jis gali pasirinkti artimiausią iki jo miestą, tačiau, pasirinkęs miestą, vartotojas gauna klaidos pranešimą, jog nepavyko prisijungti prie serverio, ir yra leidžiama varototojui bandyti pasirinkti miestą dar kartą, prisijungus prie interneto.
+	Vartotojas pasirenka skiltį "Orų prognozės sekimas", sistema vartotoją nukreipia į langą, kuriame jis gali pasirinkti artimiausią iki jo miestą, tačiau, pasirinkęs miestą, vartotojas gauna klaidos pranešimą, jog nepavyko prisijungti prie serverio, ir yra leidžiama varototojui bandyti pasirinkti miestą dar kartą prisijungus prie interneto.
 \subsubsection{Alternatyvus scenarijus(Andromeda įsirėžė į Paukčių Tako galaktiką)}
 	Vartotojas pasirenka skiltį "Orų prognozės sekimas", tačiau Andromeda įsirėžus į Paukščių Tako galaktiką ir nepavyksta gauti orų. Sistema išveda klaidos pranešimą ir nukreipia vartotoją į pagrindinį meniu.
 \subsubsection{Funkciniai reikalavimai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
            	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
-         		FR-5.01 & Sistema leidžia stebėti šios ir sekančios dienos orų prognozes & 10  \\   \hline
-			FR-5.02 & Andromedai įsirėžus į Paukščių Tako galaktiką išvesti klaidos pranešimą & 1 \\  \hline
-			FR-5.03 & Nepavykus prisijungti prie serverio, vartotojui leidžiama džbandyti dar kartą, prisijungus prie interneto & 7 \\ \hline
+         	FR-5.01 & Sistema leidžia stebėti šios ir sekančios dienos orų prognozes & 10  \\   \hline
+		FR-5.02 & Andromedai įsirėžus į Paukščių Tako galaktiką išvesti klaidos pranešimą & 1 \\  \hline
+		FR-5.03 & Nepavykus prisijungti prie serverio, vartotojui leidžiama bandyti dar kartą prisijungus prie interneto & 7 \\ \hline
 	\end{tabularx}
 \end{table}
 \subsection{Gyvūnų maisto išteklių sekimas}
@@ -301,9 +301,9 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 	\subsubsection{Pagrindinis scenarijus}
 	Vartotojas pasirenka ''Žemėlapio žymėjimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka norimą plotą pasirinktoje vietoje.
 	\subsubsection{Alternatyvus scenarijus(Plotas priklauso kitam savininkui)}
-	Vartotojas pasirenka ''Žemėlapio žymėjimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka norimą plotą pasirinktoje vietoje, tačiau tas plotas priklauso kitam ūkininkui, sistema išveda pranešimą, kad ši teritoja ūkininkui nepriklauso, bei atšaukia esamą žymėjimą.
+	Vartotojas pasirenka ''Žemėlapio žymėjimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka norimą plotą pasirinktoje vietoje, tačiau tas plotas priklauso kitam ūkininkui. Sistema išveda pranešimą, kad ši teritoja ūkininkui nepriklauso, bei atšaukia esamą žymėjimą.
 	\subsubsection{Alternatyvus scenarijus(Plotas jau pažymėtas)}
-	Vartotojas pasirenka ''Žemėlapio žymėjimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka norimą plotą pasirinktoje vietoje, tačiau tas plotas jau pažymėtas, sistema išveda pranešimą, bei pasiūlo pakeisti ploto paskirtį.
+	Vartotojas pasirenka ''Žemėlapio žymėjimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka norimą plotą pasirinktoje vietoje, tačiau tas plotas jau pažymėtas. Sistema išveda pranešimą, bei pasiūlo pakeisti ploto paskirtį.
 	\subsubsection{Funkciniai reikalavimai}
 	\begin{table}[htbp]
 		\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
@@ -321,19 +321,19 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 	\end{table}
 \subsection{Sąskaitų išrašymas}
 	\subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka skiltį "Sąskaitos". Atsidariusiame lange vartotojui parodo sąrašą visų sąskaitų kurias jam reikia apmokėti. Šalia kiekvienos sąskaitos yra mygtukas, kurį paspaudus vartotojas nukreipiamas į apmokėjimo platformą pagal vrtotojo pasirinkimą kurioje jis gali apmokėti konkrečia sąskaitą. Pagrindiniame sąskaitų lange vartotojas gali pasižiūrėti kokia sąskaitos suma ir kada ji buvo išrašyta. Taip pat gal pasižiūrėti jau apmokėtų sąskaitų istorija.
-	\subsubsection{Alternatyvus scenarijus(Nėra sąskaitų kurias reiktų apmokėti)}
-	Jeigu sistemoje nėra sąskaitų kurias vartotojas turėtų apmokėti, vartotojui paspaudus ant "Sąskaitos" mygtuko jam bus parodytas informacinis langas pranešantis, kad nėra sąskaitų kurias šiuo metu reiktu apmoketi. Lange bus galima pasirinkti arba eitį į pagrindinį meniu arba peržiūrėti sąskaitų istorija.
+	Vartotojas pasirenka skiltį "Sąskaitos". Atsidariusiame lange vartotojui parodo sąrašą visų sąskaitų, kurias jam reikia apmokėti. Šalia kiekvienos sąskaitos yra mygtukas, kurį paspaudus vartotojas nukreipiamas į apmokėjimo platformą pagal vartotojo pasirinkimą, kurioje jis gali apmokėti konkrečią sąskaitą. Pagrindiniame sąskaitų lange vartotojas gali pasižiūrėti, kokia sąskaitos suma, ir kada ji buvo išrašyta. Taip pat gali pasižiūrėti jau apmokėtų sąskaitų istoriją.
+	\subsubsection{Alternatyvus scenarijus(Nėra sąskaitų, kurias reiktų apmokėti)}
+	Jeigu sistemoje nėra sąskaitų, kurias vartotojas turėtų apmokėti, vartotojui paspaudus ant "Sąskaitos" mygtuko jam bus parodytas informacinis langas, pranešantis, kad nėra sąskaitų, kurias šiuo metu reiktų apmoketi. Lange bus galima pasirinkti arba eitį į pagrindinį meniu, arba peržiūrėti sąskaitų istoriją.
 	\subsubsection{Alternatyvus scenarijus(Nėra jau apmokėtų sąskaitų)}
-	jeigu vartotojas "Sąskaitos" lange bandys peržiūrėti sąskaitų istorija ir joje nieko nebus, vartotojui bus parodomas informacinis langas kuriame bus pranešimas "Sąskaitų istorijos nėra" ir vartotojas bus nukreipiamas į sąskaitas kurias reikia apmokėti arba į alternatyvų scenarijų kai nėra sąskaitų kurias reiktų apmokėti.
+	Jeigu vartotojas "Sąskaitos" lange bandys peržiūrėti sąskaitų istoriją ir joje nieko nebus, vartotojui bus parodomas informacinis langas, kuriame bus pranešimas "Sąskaitų istorijos nėra", ir vartotojas bus nukreipiamas į sąskaitas, kurias reikia apmokėti, arba į alternatyvų scenarijų, kai nėra sąskaitų, kurias reiktų apmokėti.
 	\subsubsection{Alternatyvus scenarijus(Negalima pasiekti pasirinktos apmokėjimo sistemos)}
-	Vartotojui bandant apmokėti savo sąskaitas jis gali pasirinkti iš keletos apmokėjimo platformų. Jeigu jo pasirinkta apmokėjimo platforma atmeta vartotojo apmokėjimo prašymą dėl nepakankamų lėšų, neveikiančios apmokėjimo sistemos ar kitų nenumatytų nesklandumų sistema parodys informacini pranešimą "Sąskaitos apmokėti nepavyko". Po pranešimu sistema parodys altertnatyvius apmokėjimo būdus, o jeigų tokių būdų neegzistuos sistema parodys apmokėjimo informaciją su kuria vartotojas sąskaitą galės apmokėti pats, neautomatiškai.
+	Vartotojui bandant apmokėti savo sąskaitas jis gali pasirinkti iš keletos apmokėjimo platformų. Jeigu jo pasirinkta apmokėjimo platforma atmeta vartotojo apmokėjimo prašymą dėl nepakankamų lėšų, neveikiančios apmokėjimo sistemos ar kitų nenumatytų nesklandumų, sistema parodys informacini pranešimą "Sąskaitos apmokėti nepavyko". Po pranešimu sistema parodys alternatyvius apmokėjimo būdus, o jeigų tokių būdų nėra, sistema parodys apmokėjimo informaciją, su kuria vartotojas sąskaitą galės apmokėti pats, neautomatiškai.
 	\subsubsection{Funkciniai reikalavimai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
 		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
 		FR-14.01 & Sistema leidžia peržiūrėti sąskaitas & 10 \\ \hline
-		FR-14.01.01& Peržiūrėti sąskaitas kurias reikia apmokėti & 10 \\ \hline
+		FR-14.01.01& Peržiūrėti sąskaitas, kurias reikia apmokėti & 10 \\ \hline
 		FR-14.01.02 & Peržiūrėti apmokėtų sąskaitų istoriją & 7 \\ \hline 
 		FR-14.01.03 & Laikyti sąskaitų istoriją ilgiau negu pusę metų & 5 \\ \hline
 		FR-14.02 & Amokėti sąskaitą & 7 \\ \hline
@@ -343,99 +343,97 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \end{table}
 \subsection{Darbuotojų samdymas}
 	\subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka skiltį "Darbuotojų samdymas". Vartotojui parodomas langas su dviem pasirinkimais: "Dėti darbo skelbimą" ir "Žiūrėti darbo skelbimus". Pasirinkus pirmajį pasirinkima vartotojas nukreipiamas į formą kurią vartotojas turi užpildyti apie norimą darbuotoją. Paspaudus antrajį pasirinkimą vartotojas nukreipiamas į darbo skelbimus kurie jau yra internete.
+	Vartotojas pasirenka skiltį "Darbuotojų samdymas". Vartotojui parodomas langas su dviem pasirinkimais: "Dėti darbo skelbimą" ir "Žiūrėti darbo skelbimus". Pasirinkus pirmąjį pasirinkimą, vartotojas nukreipiamas į formą, kurią vartotojas turi užpildyti apie norimą darbuotoją. Paspaudus antrajį pasirinkimą, vartotojas nukreipiamas į darbo skelbimus, kurie jau yra internete.
 	\subsubsection{Alternatyvus scenarijus(Neatsidaro darbo skelbimų puslapis)}
-	Vartotojas bando atidaryti darbo skelbimų puslapį spausdamas "Žiūrėti darbo skelbimus". Nepavykus pateikti puslapio vartotojui ekrane atsiranda informacinis pranešimas, kad darbo skelbimų parodyti nepavyko ir vartotojas perkels į pagrindinį programos puslapį.
+	Vartotojas bando atidaryti darbo skelbimų puslapį, spausdamas "Žiūrėti darbo skelbimus". Nepavykus pateikti puslapio vartotojui, ekrane atsiranda informacinis pranešimas, kad darbo skelbimų parodyti nepavyko, ir vartotojas bus perkeliamas į pagrindinį programos puslapį.
 	\subsubsection{Alternatyvus scenarijus(Neteisingai suvesti duomenys bandant įdėti darbo skelbimą)}
-	Vartotojas bando užpildyti formą ir įdėti skelbimą ir padaro įvedimo klaidą(pvz. į siūlomos algos vietą įveda raides) programa pažymi vietą kur vartotojas padarė klaidą ir neleidžia išsiųsti skelbimo kol formoje yra klaidų.
+	Vartotojas bando užpildyti formą ir įdėti skelbimą, bet padaro įvedimo klaidą(pvz. į siūlomos algos vietą įveda raides). Programa pažymi vietą, kur vartotojas padarė klaidą, ir neleidžia išsiųsti skelbimo kol formoje yra klaidų.
 	\subsubsection{Funkciniai reikalavimai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
 		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
 		FR-15.01 & Sistema leidžia peržiūrėti darbo skelbimų sąrašą & 9 \\ \hline
-		FR-15.01.01 & Surušiuoti darbuotojus pagal lytį & 7 \\ \hline
-		FR-15.01.02 & Surušiuoti darbuotojus pagal amžių & 7 \\ \hline
-		FR-15.01.03 & Surušiuoti darbuotojus pagal specialybę & 8  \\ \hline
-		FR-15.01.04 & Surušiuoti darbuotojus pagal darbo patirtį & 8 \\ \hline
-		FR-15.01.05 & Surušiuoti darbuotojus pagal gyvenamają vietą & 7 \\ \hline
+		FR-15.01.01 & Surūšiuoti darbuotojus pagal lytį & 7 \\ \hline
+		FR-15.01.02 & Surūšiuoti darbuotojus pagal amžių & 7 \\ \hline
+		FR-15.01.03 & Surūšiuoti darbuotojus pagal specialybę & 8  \\ \hline
+		FR-15.01.04 & Surūšiuoti darbuotojus pagal darbo patirtį & 8 \\ \hline
+		FR-15.01.05 & Surūšiuoti darbuotojus pagal gyvenamąją vietą & 7 \\ \hline
 		FR-15.01.06 & Peržiūrėti darbuotojų gyvenimo aprašymus & 9 \\ \hline
 		FR-15.01.07 & Peržiūrėti darbuotojų motyvacinius laiškus & 5 \\ \hline
 		FR-15.02 & Sistema leidžia užpildyti darbo skelbimą & 9 \\ \hline
-		FR-15.02.01 & Pasirinkti vieną ar kelias skelbimų publikavimo platformų & 8 \\ \hline
+		FR-15.02.01 & Pasirinkti vieną ar kelias skelbimų publikavimo platformamas & 8 \\ \hline
 		FR-15.02.02 & Ištrinti darbo skelbimą & 9 \\ \hline
 		FR-15.02.03 & Koreguoti darbo skelbimą & 8 \\ \hline
 	\end{tabularx}
 \end{table}	
-	
-	
+
 \subsection{Potencialaus pelno skaičiavimas}
 	\subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka "Potencialaus pelno skaičiavimas" sistemoje. Programa įjungia langą kuriame yra sąrašas visų šiuo metu vartotojo turimų pardavimui skirtų resursų. Vartotojas gali pasirinkti žiūrėti bendrą pelną kurį gautų pardavęs resursus arba pasirinkti tam tikrus resursus kuriuos norėtų parduoti ir kokį kiekį norėtų parduoti. Pagal vartotojo pasirinkimą ir rinkos kainą yra apskaičiuojamas potencialus pelnas.
+	Vartotojas pasirenka "Potencialaus pelno skaičiavimas" sistemoje. Programa įjungia langą, kuriame yra sąrašas visų šiuo metu vartotojo turimų pardavimui skirtų resursų. Vartotojas gali pasirinkti žiūrėti bendrą pelną, kurį gautų pardavęs resursus, arba pasirinkti tam tikrus resursus, kuriuos norėtų parduoti, ir kokį kiekį norėtų parduoti. Pagal vartotojo pasirinkimą ir rinkos kainą yra apskaičiuojamas potencialus pelnas.
 	\subsubsection{Alternatyvus scenarijus(Nartotojas neturi parduodamų resursų)}
-	Vartotojas pasirenka "Potencialaus pelno skaičiavimas" skilį. Sistemoje nėra užregistruotą jokių resursų kuriuos vartotojas galėtų parduoti. Vartotojui parodomas pranešimas apie nepavykusią opeaciją dėl resursų trūkumo. Programa įjungia pagrindinį langą. 
-	\subsection{Alternatyvus scenarijus(Neveikia išoriniai servisai suteikiantys informaciją apie rinkos kainas)}
-	Vartotojas pasirenka "Potencialaus pelno skaičiavimas" skilį. Norint apskaičiuoti potencialų pelną naudojamas išorinis servisas nustatyti rinkos kainą. Šiam servisui neveikiant programa vartotojui parodo informacinį pranešimą dėl nesėkmingo bandymo susisiekti su išoriniu servisu. Tokiu atveju programa naudoją naujausią turėtą rinkos kainą pelno skaičiavimui. Dėl senų duomenų naudojimo ir galimų netikslumų vartotojas taip pat informajamas informacine žinute.
+	Vartotojas pasirenka "Potencialaus pelno skaičiavimas" skiltį. Sistemoje nėra užregistruota jokių resursų, kuriuos vartotojas galėtų parduoti. Vartotojui parodomas pranešimas apie nepavykusią operaciją dėl resursų trūkumo. Programa įjungia pagrindinį langą. 
+	\subsection{Alternatyvus scenarijus(Neveikia išoriniai servisai, suteikiantys informaciją apie rinkos kainas)}
+	Vartotojas pasirenka "Potencialaus pelno skaičiavimas" skiltį. Norint apskaičiuoti potencialų pelną naudojamas išorinis servisas nustatyti rinkos kainą. Šiam servisui neveikiant programa vartotojui parodo informacinį pranešimą dėl nesėkmingo bandymo susisiekti su išoriniu servisu. Tokiu atveju programa naudoja naujausią turėtą rinkos kainą pelno skaičiavimui. Dėl senų duomenų naudojimo ir galimų netikslumų vartotojas taip pat informajamas informacine žinute.
 	\subsubsection{Funkciniai reikalavimai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
 		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
 		FR-16.01 & Sistema pateikia vartotojui potencialų pelną & 10 \\ \hline
-		FR-16.01.01 & Pasirinkti kuriuos resursus skaičiuoti & 8 \\ \hline
-		FR-16.01.02 & Pasirinkti resursu kiekį skaičiavimui & 8 \\ \hline
-		FR-16.01.03 & Pasirinkti pagal kuriuos rinkos duomenis skaičiuoti pelną & 8 \\ \hline
+		FR-16.01.01 & Pasirinkti, kuriuos resursus skaičiuoti & 8 \\ \hline
+		FR-16.01.02 & Pasirinkti resursų kiekį skaičiavimui & 8 \\ \hline
+		FR-16.01.03 & Pasirinkti, pagal kuriuos rinkos duomenis skaičiuoti pelną & 8 \\ \hline
 	\end{tabularx}
 \end{table}	
 	 
 \subsection{Derliaus sekimas}
 	\subsubsection{Pagrindinis scenarijus}
-	Vartotojas sistemoje pasirenka "Derliaus sekimas". Programa įjungią vartotojo turimų resursų sąrašą. Saraše prie kiekvieno resurso parašyta kada jis buvo gautas ir kokia kiekvieno resurso galiojimo trukmė. Paspaudus ant konkretaus resurso pasirodo langas, kuriame pateikta detalesnė informacija konkretų resursą. Detali informacija susideda iš resurso gavimo laiko, darbuotojų kurie dirbo prie konkretaus resurso gavimo, kiek pinigų vartotojas gautų pardavęs resursus rinkos kaina.
-	\subsubsection{Alternatyvus scenarijus(Vartotojas neturi resursų kuriuos būtų galima parodyti)}
-	Vartotojas sistemoje pasirenka "Derliaus  sekimas". Sistemoje nėra užregistruota jokių resursų. Vartotojui parodomas informacinis pranešimas apie tai kad sistemoje nėra registruotų resursų. Vartotojas sukreipiamas į pagrindinį langą.
+	Vartotojas sistemoje pasirenka "Derliaus sekimas". Programa įjungią vartotojo turimų resursų sąrašą. Saraše prie kiekvieno resurso parašyta, kada jis buvo gautas ir kokia kiekvieno resurso galiojimo trukmė. Paspaudus ant konkretaus resurso pasirodo langas, kuriame pateikta detalesnė informacija apie konkretų resursą. Detali informacija susideda iš resurso gavimo laiko, darbuotojų kurie dirbo prie konkretaus resurso gavimo, kiek pinigų vartotojas gautų pardavęs resursus rinkos kaina.
+	\subsubsection{Alternatyvus scenarijus(Vartotojas neturi resursų, kuriuos būtų galima parodyti)}
+	Vartotojas sistemoje pasirenka "Derliaus sekimas". Sistemoje nėra užregistruota jokių resursų. Vartotojui parodomas informacinis pranešimas apie tai, kad sistemoje nėra registruotų resursų. Vartotojas nukreipiamas į pagrindinį langą.
 	\subsubsection{Alternatyvus scenarijus(Neveikia rinkos skaičiavimo funkcija)}
-	Vartotojas sistemoje pasirenka "Derliaus sekimas". Sistema atidaro langą su resursais. Vartotojas pasirenka konkretų resursą norėdamas sužinoti detalesnią informaciją. Rinkos kainos funkciją dėl tam tikrų priežasčių neveikia ir neįmanoma parodyti tikslios rinkos kainos. Vartotojui parodomas informacinis pranešimas dėl netikslios kainos. Taip pat vartotojas informuojamas, kad preliminari kaina bus skaičiuojama naudojantis senais rinkos duomenimis.
+	Vartotojas sistemoje pasirenka "Derliaus sekimas". Sistema atidaro langą su resursais. Vartotojas pasirenka konkretų resursą, norėdamas sužinoti detalesnią informaciją. Rinkos kainos funkcija dėl tam tikrų priežasčių neveikia ir neįmanoma parodyti tikslios rinkos kainos. Vartotojui parodomas informacinis pranešimas dėl netikslios kainos. Taip pat vartotojas informuojamas, kad preliminari kaina bus skaičiuojama naudojantis senais rinkos duomenimis.
 	\subsubsection{Funkciniai reikalavimai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
 		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
-		FR-17.01 & Sistema vartotojui pateikia turimų resursų sąraša & 10 \\ \hline
+		FR-17.01 & Sistema vartotojui pateikia turimų resursų sąrašą & 10 \\ \hline
 		FR-17.01.01 & Pateikti turimų resursų kiekį & 8 \\ \hline
-		FR-17.01.02 & Pateiktį turimų resursų galiojimo laiką & 8 \\ \hline
-		FR-17.01.03 & Pateikti laiką kada buvo gautas konkretus resursas & 8 \\ \hline
-		FR-17.01.04 & Pateikti sąrašą žmonių kurie dirbo prie konkretaus resurso gavimo & 6 \\ \hline
+		FR-17.01.02 & Pateikti turimų resursų galiojimo laiką & 8 \\ \hline
+		FR-17.01.03 & Pateikti laiką, kada buvo gautas konkretus resursas & 8 \\ \hline
+		FR-17.01.04 & Pateikti sąrašą žmonių, kurie dirbo prie konkretaus resurso gavimo & 6 \\ \hline
 		FR-17.01.05 & Pateikti resurso rinkos kainą & 7 \\ \hline 
-		FR-17.01.06 & Pateikti kiek pinigų vartotojas gautų pardavęs konkretų resursą, pagal rinkos kainą & 7 \\ \hline
+		FR-17.01.06 & Pateikti, kiek pinigų vartotojas gautų pardavęs konkretų resursą pagal rinkos kainą & 7 \\ \hline
 	\end{tabularx}
 \end{table}	
 	
 \subsection{Buhalterijos tvarkymas}
 	\subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka "Buhalterijos tvarkymas" pagrindiniame meniu. Programa atidaro langą kuriame vartotojas nukreipiamas į buhalterijos tvarkymo platforma. Vartotojas prisijungia prie platformos naudodamas savo duomenis.
+	Vartotojas pasirenka "Buhalterijos tvarkymas" pagrindiniame meniu. Programa atidaro langą, kuriame vartotojas nukreipiamas į buhalterijos tvarkymo platformą. Vartotojas prisijungia prie platformos naudodamas savo duomenis.
 	\subsubsection{Alternatyvus scenarijus(Neveikia buhalterijos servisas)}
-	Vartotojas pasirenka "Buhalterijos tvarkymas". Išorinis buhalterijos servisas neveikia. Vartotojui parodomas in formacinis pranešimas, kad dėl tam tikrų priežasčių buhalterijos tvarkymo servisas šiuo metu neveikia. Vartotojas kureipiamas į darbalaukio aplikaciją kurioje ji gali tvarkyti buhalteriją
+	Vartotojas pasirenka "Buhalterijos tvarkymas". Išorinis buhalterijos servisas neveikia. Vartotojui parodomas informacinis pranešimas, kad dėl tam tikrų priežasčių buhalterijos tvarkymo servisas šiuo metu neveikia. Vartotojas nureipiamas į darbalaukio aplikaciją, kurioje ji gali tvarkyti buhalteriją.
 	\subsubsection{Funkciniai reikalavimai}
 	\begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
 		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
-		FR-18.01 & Sistema suteikia vartotojui prieeiga prie buhalterijos tvarkymo platformos & 9 \\ \hline
+		FR-18.01 & Sistema suteikia vartotojui prieigą prie buhalterijos tvarkymo platformos & 9 \\ \hline
 	\end{tabularx}
 \end{table}
 \subsection{Rinkos kainų sekimas}
 	\subsubsection{Pagrindinis scenarijus}
-	Vartotojas pagrindiniame lange pasirenka "Rinkos kainų sekimas". Programa atidaro langą langą kuriame rodos resursų kainos realiu laiku. Resursų kainos paterikiamos diagramos pavidalu. Vartotojas gali pasirinkti laiko intervalą kuriame nori stebėti rinkos kainos pokyčius ir kurių resursų kainas stebėti.
+	Vartotojas pagrindiniame lange pasirenka "Rinkos kainų sekimas". Programa atidaro langą, kuriame rodomos resursų kainos realiu laiku. Resursų kainos pateikiamos diagramos pavidalu. Vartotojas gali pasirinkti laiko intervalą, kuriame nori stebėti rinkos kainos pokyčius, ir kurių resursų kainas stebėti.
 	\subsubsection{Atlernatyvus scenarijus(Nepavyksta gauti rinkos kainų)}
-	Vartotojas pagrindiniame lange pasirenka "Rinkos kainų sekimas". Dėl tam tikrų priežasčių nepavyksta gauti dabartinės rinkos kainos. Vartotojui parodomas informacinis pranešimas dėl netikslių rinkos duomenų. Vartotojui parodoma rinkos kainų istoriją kuri yra saugoma sistemoje.
+	Vartotojas pagrindiniame lange pasirenka "Rinkos kainų sekimas". Dėl tam tikrų priežasčių nepavyksta gauti dabartinės rinkos kainos. Vartotojui parodomas informacinis pranešimas dėl netikslių rinkos duomenų. Vartotojui parodoma rinkos kainų istorija, kuri yra saugoma sistemoje.
 	\subsubsection{Alternatyvus scenarijus(Nepavyksta gauti rinkos kainų istorijos)}
-	Vartotojas pagrindiniame lange pasirenka "Rinkos kainų sekimas". Dėl nenumatytų nesklandumų nepavyksta gauti dabartinių rinkos kainų ir sistemoje nėra išsaugota kainų istorija. Vartotojas informuojamas, kad nepavyksta gauti rinkos kainų realiu laiku ir kad sistemoje nėra išsaugotos kainų istorijos. Vartotojas nukreipiamas  į pagrindinį programos langą.
+	Vartotojas pagrindiniame lange pasirenka "Rinkos kainų sekimas". Dėl nenumatytų nesklandumų nepavyksta gauti dabartinių rinkos kainų ir sistemoje nėra išsaugota kainų istorija. Vartotojas informuojamas, kad nepavyksta gauti rinkos kainų realiu laiku, ir kad sistemoje nėra išsaugotos kainų istorijos. Vartotojas nukreipiamas į pagrindinį programos langą.
 	\subsubsection{Funkciniai reikalavimai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| } \hline
 		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
-		FR-19.01 & Sistema parodo rinkos kainas realius laiku &  9 \\ \hline
+		FR-19.01 & Sistema parodo rinkos kainas realiu laiku &  9 \\ \hline
 		FR-19.01.01 & Rodyti diagramą & 8 \\ \hline
 		FR-19.01.02 & Leisti pasirinkti konkrečius resursus jų kainos rodymui & 8 \\ \hline
 		FR-19.01.03 & Rodyti rinkos kainų istoriją & 7 \\ \hline
 		FR-19.01.04 & Saugoti rinkos kainų istoriją & 7 \\ \hline
-		
 	\end{tabularx}
 \end{table}
 	 
@@ -444,7 +442,7 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 	\subsubsection{Pagrindinis scenarijus}
 	Vartotojas pasirenka ''Pagalbos iškvietimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka reikiamos pagalbos tipą, sistema tada nusiunčia numatytąjį pranešimą su prašymų atvykti, parodo gautą atsakymą.
 	\subsubsection{Alternatyvus scenarijus(nėra interneto ryšio)}
-	Vartotojas pasirenka ''Pagalbos iškvietimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka reikiamos pagalbos tipą, sistema nepavykus išsiųsti pranešimo ji parodo pranešimą, kuriame nurodo, kokiu numeriu reikia paskambinti norint išsikviesti norimą pagalbą.
+	Vartotojas pasirenka ''Pagalbos iškvietimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka reikiamos pagalbos tipą, sistemai nepavykus išsiųsti pranešimo parodomas pranešimas, kuriame nurodoma, kokiu numeriu reikia paskambinti norint išsikviesti norimą pagalbą.
 	\subsubsection{Funkciniai reikalavimai}
 	\begin{table}[htbp]
 		\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
@@ -456,9 +454,9 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 			FR-21.01.04 & Gaisrinę & 10 \\ \hline
 			FR-21-02 & Vartotojui pasirinkus sistema iškviečia pasirinktą pagalbą & 10 \\ \hline	
 			FR-21-02.01 & Parodo gautą atsakymą iš pagalbos suteikėjo & 9 \\ \hline
-			FR-21-03 & Sistema leidžia nustatyti numatytąjį pranešimą siunčiamą kiekvienai pagalbai & 9 \\ \hline	
-			FR-21-03 & Nesant galimybės nusiųsti pranešimo sistema parodo atitinkamos pagalbos kontaktus & 10 \\ \hline	
-			FR-21-03.01 & Tel. numeri & 10 \\ \hline	
+			FR-21-03 & Sistema leidžia nustatyti numatytąjį pranešimą, siunčiamą kiekvienai pagalbai & 9 \\ \hline	
+			FR-21-03 & Nesant galimybės nusiųsti pranešimui sistema parodo atitinkamos pagalbos kontaktus & 10 \\ \hline	
+			FR-21-03.01 & Tel. numerį & 10 \\ \hline	
 			FR-21-03.02 & Adresą & 8 \\ \hline	
 			FR-21-03.03 & El. paštą & 6 \\ \hline						
 		\end{tabularx}
@@ -467,7 +465,7 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 	\subsubsection{Pagrindinis scenarijus}
 	Vartotojas pasirenka ''Ūkio ataskaita'' pagrindiniame meniu. Programa atidaro langą, kuriame vartotojas pasirenka norimą laikotarpį, ir peržiūri to laikotarpio ataskaitą.
 	\subsubsection{Alternatyvus scenarijus(Nepasiekiama duomenų bazė)}
-	Vartotojas pasirenka ''Ūkio ataskaita'' pagrindiniame meniu. Programa atidaro langą, kuriame vartotojas pasirenka noriąo laikotarpį, programa išveda klaidos pranešimą ir pasiūlo pamėginti vėliau.
+	Vartotojas pasirenka ''Ūkio ataskaita'' pagrindiniame meniu. Programa atidaro langą, kuriame vartotojas pasirenka norimą laikotarpį. Programa išveda klaidos pranešimą ir pasiūlo pamėginti vėliau.
 	\subsubsection{Funkciniai reikalavimai}
 	\begin{table}[htbp]
 		\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
@@ -481,7 +479,7 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 	\subsubsection{Pagrindinis scenarijus}
 	Vartotojas pasirenka ''Žolių ir ligų katalogas'' pagrindiniame meniu. Programa atidaro langą, kuriame vartotojas gali matyti vaistinių žolelių arba ligų katalogą.
 	\subsubsection{Alternatyvus scenarijus(Nesėkminga paieška)}
-	Vartotojas pasirenka ''Ūkio ataskaita'' pagrindiniame meniu. Programa atidaro langą, kuriame parodomas katalogas, vartotojui atlikus paiešką ir neradus jokių rezultatų išvedamas pranešimas, kad tokių duomenų kataloge nėra.
+	Vartotojas pasirenka ''Ūkio ataskaita'' pagrindiniame meniu. Programa atidaro langą, kuriame parodomas katalogas. Vartotojui atlikus paiešką ir neradus jokių rezultatų išvedamas pranešimas, kad tokių duomenų kataloge nėra.
 	\subsubsection{Funkciniai reikalavimai}
 	\begin{table}[htbp]
 		\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
@@ -491,66 +489,66 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 			FR-24.01.02 & Gyvūnų ligų & 9 \\ \hline
 			FR-24.01.03 & Žmonių ligų & 7 \\ \hline
 			FR-24.02 & Sistema leidžia atlikti paiešką  & 9 \\ \hline
-			FR-24.02.01 & Pagal simbolių eilute esančia pavadinime & 9 \\ \hline
-			FR-24.02.01 & Pagal simbolių eilute esančia aprašyme & 8 \\ \hline
+			FR-24.02.01 & Pagal simbolių eilutę esančią pavadinime & 9 \\ \hline
+			FR-24.02.01 & Pagal simbolių eilutę esančią aprašyme & 8 \\ \hline
 			FR-24.03 & Sistema leidžia norimą katalogą rikiuoti & 9 \\ \hline
 			FR-24.03.01 & Pagal alfabetinę tvarką  & 9 \\ \hline
 		\end{tabularx}
 	\end{table}
 \subsection{Ūkio chemijos sąrašas su aprašymais ir kainomis}
 
-\section{Kiti nefunkciniai reikalavimai}
+\section{Nefunkciniai reikalavimai}
 \subsection{Našumo reikalavimai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
 		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
-		FR-5.1.01 & Ne piko metu, kai sistema naudojasi mažiau nei 200 žmonių, 95 proc. visų sistemos funkcijų turi būti įvykdoma per ne daugiau nei 2 sekundes & 10 \\ \hline
-		FR-5.1.02 & Sistemos naudojimo piko metu (11-15 val. ir 18-20 val.), kai sistema naudojasi daugiau nei 300 žmonių, 95 proc. visų sistemos funkcijų turi būti atliekama per ne daugiau nei 4 sekundes & 10 \\ \hline
-		FR-5.1.03 & Vienu metu sistema, esant didžiausiai apkrovai, gali naudotis apie 1000 vartotojų & 10 \\ \hline
-		FR-5.1.04 & Galima atlikti 15000 nuskaitymo iš duomenų bazės operacijų per valandą & 8 \\ \hline
-		FR-5.1.05 & Galima atlikti 5000 įrašymo į duomenų bazę operacijų per valandą  & 8 \\ \hline
+		NFR-5.1.01 & Ne piko metu, kai sistema naudojasi mažiau nei 200 žmonių, 95 proc. visų sistemos funkcijų turi būti įvykdoma per ne daugiau nei 2 sekundes & 10 \\ \hline
+		NFR-5.1.02 & Sistemos naudojimo piko metu (11-15 val. ir 18-20 val.), kai sistema naudojasi daugiau nei 300 žmonių, 95 proc. visų sistemos funkcijų turi būti atliekama per ne daugiau nei 4 sekundes & 10 \\ \hline
+		NFR-5.1.03 & Vienu metu sistema, esant didžiausiai apkrovai, gali naudotis apie 1000 vartotojų & 10 \\ \hline
+		NFR-5.1.04 & Galima atlikti 15000 nuskaitymo iš duomenų bazės operacijų per valandą & 8 \\ \hline
+		NFR-5.1.05 & Galima atlikti 5000 įrašymo į duomenų bazę operacijų per valandą  & 8 \\ \hline
 	\end{tabularx}
 \end{table}
 \subsection{Saugos reikalavimai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
 		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
-		FR-5.2.01 & Naudotojas privalo saugoti prisijungimo duomenis & 9 \\ \hline
-		FR-5.2.02 & Sutrikus ūkio technikos veikimui, visi prietaisai privalo būti išjungti iki kol problema bus išspręsta & 10 \\ \hline
-		FR-5.2.03 & Ūkio technikos prietaisų valdymas turi būti patikėtas tam kvalifikuotui asmeniui & 9 \\ \hline
+		NFR-5.2.01 & Naudotojas privalo saugoti prisijungimo duomenis & 9 \\ \hline
+		NFR-5.2.02 & Sutrikus ūkio technikos veikimui, visi prietaisai privalo būti išjungti iki kol problema bus išspręsta & 10 \\ \hline
+		NFR-5.2.03 & Ūkio technikos prietaisų valdymas turi būti patikėtas tam kvalifikuotui asmeniui & 9 \\ \hline
 	\end{tabularx}
 \end{table}
 \subsection{Saugumo reikalavimai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
 		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
-		FR-5.3.01 & Sistemoje registruotų naudotojų asmenine informacija naudojasi patys naudotojai, ribojamą prieigą prie ūkio darbuotojų informacijos turi ūkininkas ir administruojantys asmenys & 10 \\ \hline
-		FR-5.3.02 & Trečiųjų šalių asmenims asmeniniai duomenys negali būti paviešinti & 10 \\ \hline
-		FR-5.3.03 & Sistemos administratorius ir vartotojas turi būti informuoti apie bandymą įsilaužti į vartotojo profilį & 9 \\ \hline
-		FR-5.3.04 & Serveris, kuriame talpinami duomenys turi turėti savo apsaugą ir neleisti keisti ar trinti failų tam teisių neturintiems asmenims & 10 \\ \hline
-		FR-5.3.05 & Visi vartotojai turi būti pateikę šiuos duomenis: vardą, pavardę ir elektroninį paštą  & 8 \\ \hline
-		FR-5.3.06 & Sistemos naudotojo slaptažodis turi būti saugomas užšifruotas ir neprieinamas niekam kitam, tik pačiam naudotojuii & 10 \\ \hline
+		NFR-5.3.01 & Sistemoje registruotų naudotojų asmenine informacija naudojasi patys naudotojai, ribojamą prieigą prie ūkio darbuotojų informacijos turi ūkininkas ir administruojantys asmenys & 10 \\ \hline
+		NFR-5.3.02 & Trečiųjų šalių asmenims asmeniniai duomenys negali būti paviešinti & 10 \\ \hline
+		NFR-5.3.03 & Sistemos administratorius ir vartotojas turi būti informuoti apie bandymą įsilaužti į vartotojo profilį & 9 \\ \hline
+		NFR-5.3.04 & Serveris, kuriame talpinami duomenys turi turėti savo apsaugą ir neleisti keisti ar trinti failų tam teisių neturintiems asmenims & 10 \\ \hline
+		NFR-5.3.05 & Visi vartotojai turi būti pateikę šiuos duomenis: vardą, pavardę ir elektroninį paštą  & 8 \\ \hline
+		NFR-5.3.06 & Sistemos naudotojo slaptažodis turi būti saugomas užšifruotas ir neprieinamas niekam kitam, tik pačiam naudotojuii & 10 \\ \hline
 	\end{tabularx}
 \end{table}
 \subsection{Sistemos kokybės atributai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
 		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
-		FR-5.4.01 & Sistema negali būti neprieinama ar veikti nekorektiškai ilgiau kaip parą & 9 \\ \hline
-		FR-5.4.02 & Turi būti naudojama SQL reliacinė duomenų bazė  & 7 \\ \hline
-		FR-5.4.03 & Testavimo aplinka turi būti sukurta taip, kad kiekvieną finkciją būtų galima tikrinti atskirai & 7 \\ \hline
-		FR-5.4.04 & Sistemos veiksmai turi būti prognozuojami, sistema turi pateikti tą informaciją, kurios vartotojas reikalauja & 9 \\ \hline
-		FR-5.4.05 & Sistemos patikrinimas leidžiamas ne dažniau kaip kartą į mėnesį, iš anksto įspėjus naudotojus apie galimus sistemos veikimo trukdžius  & 8 \\ \hline
+		NFR-5.4.01 & Sistema negali būti neprieinama ar veikti nekorektiškai ilgiau kaip parą & 9 \\ \hline
+		NFR-5.4.02 & Turi būti naudojama SQL reliacinė duomenų bazė  & 7 \\ \hline
+		NFR-5.4.03 & Testavimo aplinka turi būti sukurta taip, kad kiekvieną finkciją būtų galima tikrinti atskirai & 7 \\ \hline
+		NFR-5.4.04 & Sistemos veiksmai turi būti prognozuojami, sistema turi pateikti tą informaciją, kurios vartotojas reikalauja & 9 \\ \hline
+		NFR-5.4.05 & Sistemos patikrinimas leidžiamas ne dažniau kaip kartą į mėnesį, iš anksto įspėjus naudotojus apie galimus sistemos veikimo trukdžius  & 8 \\ \hline
 	\end{tabularx}
 \end{table}
 \subsection{Veikimo taisyklės}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
 		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
-		FR-5.5.01 & Turi būti nurodyti administraciniai kontaktai, kuriais gali naudotis vartotojai iškilus klausimams ar ištikus problemai & 10 \\ \hline
-		FR-5.5.02 & Administratorius privalo išspręsti vartotojui iškilusias problemas arba nurodyti priežastį, kodėl problema negali būti išspręsta  & 9 \\ \hline
-		FR-5.5.03 & Administratorius privalo palaikyti sklandų produkto veikimą & 10 \\ \hline
-		FR-5.5.04 & Administraciniai asmenys privalo užtikrinti korektišką informaciją, teikiamą vartotojui & 9 \\ \hline
+		NFR-5.5.01 & Turi būti nurodyti administraciniai kontaktai, kuriais gali naudotis vartotojai iškilus klausimams ar ištikus problemai & 10 \\ \hline
+		NFR-5.5.02 & Administratorius privalo išspręsti vartotojui iškilusias problemas arba nurodyti priežastį, kodėl problema negali būti išspręsta  & 9 \\ \hline
+		NFR-5.5.03 & Administratorius privalo palaikyti sklandų produkto veikimą & 10 \\ \hline
+		NFR-5.5.04 & Administraciniai asmenys privalo užtikrinti korektišką informaciją, teikiamą vartotojui & 9 \\ \hline
 	\end{tabularx}
 \end{table}
 
