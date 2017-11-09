@@ -1,4 +1,5 @@
-\documentclass[oneside]{VUMIFPSkursinis}
+
+	\documentclass[oneside]{VUMIFPSkursinis}
 \usepackage{algorithmicx}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
@@ -343,7 +344,7 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\begin{itemize}
 		\item Dizainas:
 			\begin{itemize}
-				\item Visas programos dizainas(16 pav) paremtas Top to Bottom principu. Pradėjome galvoti dideliais objektais ir juos išskirstėm į mažesnius. Pagrindinė klasė yra AutoUkis, kuris iškviečia VartotojoSasaja klasę, kuri ir piešia visą prieinamumą vartotojams. Galima nesunkiai pridėti kitokią vartotojo sąsają ar bet kokią kitą UI piešimo galimybę, kaip, pavyzdžiui, piešti UI išmaniajame telefone. Programos modalumas leidžia nesunkiai pridėti funkionalumo, nes programos dalys yra atskiros viena nuo kitos. Pavyzdžiui, ištrynus klasę ŪkinisPastatas visos programos veikimas nesutriktų. Tuo pačiu metu norint pridėti naują ūkinį pastatą galima nesunkiai tai padaryti įvykdžius paveldėjimą iš tėvinės UkinisPastatas klasės taip, kaip tai daro klasės Garažas, Tvartas ir Sandelis.  
+				\item Visas programos dizainas(16 pav) paremtas Top to Bottom principu. Pradėjome galvoti dideliais objektais ir juos išskirstėm į mažesnius. Pagrindinė klasė yra AutoUkis, kuris iškviečia VartotojoSasaja klasę, kuri ir piešia visą prieinamumą vartotojams. Galima nesunkiai pridėti kitokią vartotojo sąsają ar bet kokią kitą UI piešimo galimybę, kaip, pavyzdžiui, piešti UI išmaniajame telefone. Programos modalumas leidžia nesunkiai pridėti funkionalumo, nes programos dalys yra atskiros viena nuo kitos. Pavyzdžiui, ištrynus klasę ŪkinisPastatas visos programos veikimas nesutriktų. 
 			\end{itemize}
 		\item Funkionalumas: 
 			\begin{itemize}
@@ -368,7 +369,7 @@ Pirmoji programos versija buvo suprogramuota ir suprojektuota perdaug negalvojan
 	\begin{itemize}
 		\item Dizainas:
 		\begin{itemize}
-			\item Programos dizainas stipriai paremtas Top to bottom projektavimo principu ir objektinio programavimo enkapsuliacijos paradigma. Sistema(18 pav) sukuria ir įgyvendina kitų sistemų intefeisus. Pagrindiniai trys interfeisai, sukuriami programos, yra UkininkasUI, DarbuotojasUI ir AdminasUI. Šie interfeisai suteikia prieigą prie sistemos skirtingas privilegijas turintiems vartojams. Auto ūkis taip pat įgyvendina kitų sistemų suteikiamus interfeisus, kuriuos naudoja progamos logikoje duomenis gauti. Įgyvendinami interfeisai yra OruTarnybaAPI, SOSPagalbaAPI ir MikrokontrolerisAPI.
+			\item Programos dizainas stipriai paremtas Top to bottom projektavimo principu ir objektinio programavimo enkapsuliacijos paradigma. Sistema(18 pav) sukuria ir įgyvendina kitų sistemų intefeisus. Pagrindiniai keturi interfeisai, sukuriami programos, yra UkininkasUI, DarbuotojasUI ir AdminasUI, SOSPagalbaUI. Šie interfeisai suteikia prieigą prie sistemos skirtingas privilegijas turintiems vartojams. Sistema įgyvendina OruAPI kuriam interfeisą.
 
 		\end{itemize}
 	\end{itemize}
