@@ -174,21 +174,21 @@ Automatinė ūkio valdymo sistema (toliau - Auto ūkis) yra programa, leidžiant
 \pagebreak
 
 \subsection{Proceso pjūvis}
-Šiame skyriuje pagrinde koncentruojamasi į programos elgseną jos vykdymo metu.
+Šiame skyriuje pagrinde koncentruojamasi į programos elgseną jos vykdymo metu. Nurodomi pagrindiniai sistemos naudotojai ir jų atliekami veiksmai.
 \subsubsection{Sekų diagramos}
 \begin{itemize}
-\item Diagramoje (27 pav)  pavaizduota seka, kurią programa atlieka Ukininkui norint gauti planuojamą jo pasirinkto laikotarpio pelną.
+\item Diagramoje (6 pav)  pavaizduota seka, kurią programa atlieka Ukininkui norint gauti planuojamą jo pasirinkto laikotarpio pelną.
 		\begin{figure}[H]
 		\centering	
 	\includegraphics[width=17cm,height=20cm,keepaspectratio]{PelnoSkaičiavimas.png}
 	\caption{}
 	\label{fig:PelnoSkaičiavimas}
 \end{figure}
-Šioje diagramoje(27 pav) matome, kad ūkininkui pateikus užklausą planuojamui pelnui gauti, Ūkininkas UI kreipiasi į Calculations klasę su prašymu jį apskaičiuoti. Ši savo ruožtu norėdama gauti reikiamus duomenis kreipiasi į klases UkioTechnika, Map ir Orai.
+Šioje diagramoje(6 pav) matome, kad ūkininkui pateikus užklausą planuojamui pelnui gauti, Ūkininkas UI kreipiasi į Skaičiavimai klasę su prašymu jį apskaičiuoti. Ši savo ruožtu norėdama gauti reikiamus duomenis kreipiasi į klases UkioTechnika, Žemėpalis ir Orai. Visi veiksmai atliekami vienas po kitos todėl neturėtų kilti ,,race" situacijos. Atlernatyviai būtų galimą į skaičiavimą įkelti gyvūnų biologinę statistiką(amžius, tikikmybė susirgti ligomis), bet tokia skaičiavimai būtų žymiai sudėtingesni.
 
 \pagebreak
 
-\item Teritorijos žimėjimo seka(28pav):
+\item Teritorijos žimėjimo seka(7pav):
 	\begin{figure}[H]
 		\centering	
 	\includegraphics[width=10cm,height=10cm,keepaspectratio]{ŽymėtiTeritorijas.png}
@@ -196,10 +196,12 @@ Automatinė ūkio valdymo sistema (toliau - Auto ūkis) yra programa, leidžiant
 	\label{fig:ŽymėtiTeritorijas}
 \end{figure}
 
+Šioje diagramoje pavaizduotas veiksmų seka kurią atlieka sistema kai ūkininkas nori pažymėti kažkokią teritoriją žemėlapyje. Ūkininkas pasirinkimus padaro per Ukininkas UI ir ši klasė kreipiasi į Žemėlapis klasę. Alternatyviai būtų galima Žemėlapis klasę išskirstyti į kelias kitas klases dėl aiškumo.
+
 \end{itemize}
 \subsubsection{Būsenų diagramos}
 \begin{itemize}
-\item Detektoriaus būsenų diagrama(29 pav):
+\item Detektoriaus būsenų diagrama(8 pav):
 
 		\begin{figure}[H]
 		\centering	
@@ -209,23 +211,28 @@ Automatinė ūkio valdymo sistema (toliau - Auto ūkis) yra programa, leidžiant
 \end{figure}
 
 \end{itemize}
-Iš šios(29 pav) diagramos  matome, kad detektorius negali būt išjungtas programavimo metu, kad nekiltų klaidos vėlesnių paleidimų metu.
+Iš šios(29 pav) diagramos  matome, kad detektorius negali būt išjungtas programavimo metu, kad nekiltų klaidos vėlesnių paleidimų metu. Toks programos veikimas užtikriną, kad nebus prarandami kodo duomenys. 
 \subsubsection{Veiklos diagramos}
 \begin{itemize}
-\item Orų sekimo veiklos diagrama(30 pav):
+\item Orų sekimo veiklos diagrama(9 pav):
 	\begin{figure}[H]
 	\centering	
 	\includegraphics[width=10cm,height=10cm,keepaspectratio]{veiklos_diagrama_orai.png}
 	\caption{}
 	\label{}
 	\end{figure}
-\item Ūkio technikos sekimo veiklos diagrama(31 pav):
+
+Šioje diagramoje pavaizduotas programos vykdymo žingsniai norint peržiūrėti orus. Vartotojas negali patekti į pagrindinį meniu nesuvedęs teisingų prisijungimo duomenų. Pagrindiniame meniu vartotojas pasirenka orų stebėjimą. Tuomet sistema atidaro Orų peržūros langą kuriame vartotojas gali pasirinkti norimą miestą orų stebėjimui. betkuriuo metu po prisijungimo vartotojas turi galimybę baigti darbą.
+
+\item Ūkio technikos sekimo veiklos diagrama(10 pav):
 	\begin{figure}[H]
 	\centering	
 	\includegraphics[width=10cm,height=10cm,keepaspectratio]{veiklos_diagrama_technikos_sekimas.png}
 	\caption{}
 	\label{}
 	\end{figure}
+Šioje pavaizduota kai programa veikia vartotojui norint naudotis ūkio technikos sekimo galimybe. Prieš pradedant darbą vartotojas turi prisijungti prie sistemos , kad galėtų pasinaudoti sistemos galimybėmis. Pagrindiniame sistemos lange psirenka technikos lokacijos sekimo galimybę ir sistema atidaro atitinkamą panelę. Iš ten vartotojas pasirenka technikos priemonės ID ir jeigu dėl kažkokių priežasčių sistemai nepavyksta rasti technikos priemonės vartotojas nukreipiamas atgal į technikos lokacijos sekimo panelę. Pavykus surasti technikos priemonę pagal jos ID vartotojui parodomas žemėlapis kuriame ir pademonstruota pasirinkta technikos priemonė. Iš žemėlapio vartotojas gali grįšti ir pasirinkti kitą transporto priemonę arba baigti darbą.
+\pagebreak
 \item Teritorijos žymėjimo veiklos diagrama(32 pav):
 	\begin{figure}[H]
 	\centering	
@@ -233,14 +240,16 @@ Iš šios(29 pav) diagramos  matome, kad detektorius negali būt išjungtas prog
 	\caption{}
 	\label{}
 	\end{figure}
-\item Gyvūnų suvedimo veiklos diagrama(33 pav):
+
+Šioje diagramoje pavaizduotas sistemos veikimas vartotojui norint žymėti teritoriją. Norint pasinaudoti galimybę vartotojas turi prieijungti. Sėkmingai prisijungus vartotojas nukeliamas į pagrindinį programos meniu ir kurio gali pasirinkti žemėlapio žymėjimą. Pasirinkus žymėjima sistema atidaro Zemėlapio žymėjimo panelę kurioje vartotojas turi pasirinkti kokia yra norimos pažymėti žemės ploto paskirtis. Pasirinkus ploto paskirti vartotojas žemėlapyje pažymi žemės teritoriją ir išsaugo savo pažymėjimą. Po išsaugojimo vartotojas gali arba baigti darbą arba būti nukeltas į žymėjimo panelę ir žymėti žemėlapi toliau.
+\item Gyvūnų suvedimo veiklos diagrama(12 pav):
 	\begin{figure}[H]
 	\centering	
 	\includegraphics[width=10cm,height=10cm,keepaspectratio]{VeiklosGyvunuSuvedimas.png}
 	\caption{}
 	\label{}
 	\end{figure}
-\item Šiose diagramose matoma, kaip įgyvendinamas atitinkamas scenarijus programos vykdymo metu.
+\item Šiose diagramose matoma, kaip įgyvendinamas atitinkamas scenarijus programos vykdymo metu. Vartotojui norint pasinaudoti programos galimybėmis reikia įvesti teisingus prisijungimo duomenis. Tuomet vartotojas nukeliamas į pagrindinį parogramos meniu. Iš ten vartotojas pasirenka rodyti duomenų suvedimą. Sistema parodo gyvųnų duomenų langą ir tame pačiame lange vartotojas gali suvesti naujo gyvūno duomenis. Neteisingai suvedus duomenis varotojui duodamas pasirinkimas arba bandyti duomenis suvesti iš naudjo arba baigti darbą.
 \end{itemize}
 \subsection{Fizinis pjūvis}
 	Šiame skyriuje parodoma programos naudojama aparatinė įranga, komunikacija tarp tinklo mazgų bei programos komponentų išdėstymas juose.
