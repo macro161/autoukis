@@ -149,7 +149,7 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 		FR-3.1.02 & Kiekvieno lango poraštėje turi būti pagalbos mygtukas & 8 \\ \hline
 		FR-3.1.03 & Iš kiekvieno lango turi būti įmanoma grįžti į prieš tai buvusį langą & 8 \\ \hline
 		FR-3.1.04 & GUI sukurti naudojamas Xamarin.Forms & 7 \\ \hline
-		FR-3.1.05 & Registracijos lange privalo būti tokie laukai: vardas, pavardė, elektroninis paštas, slaptažodis, slaptažodžio patvirtinimas & 7 \\ \hline
+		FR-3.1.05 & Registracijos lange privalo būti tokie laukai: vardas, pavardė, elektroninis paštas, slaptažodis, slaptažodžio patvirtinimas, bei ūkio id & 8 \\ \hline
 		FR-3.1.06 & Įvykus klaidai ar išimčiai turi iššokti langas su informacija apie problemą ir sprendimo būdus & 9 \\ \hline
 	\end{tabularx}
 \end{table}
@@ -176,6 +176,23 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 
 \section{Produkto funkcijos}
 
+\begin{itemize}
+\item Diagramoje (26 pav) pavaizduoti veiksmai, kuriuos apdoroja komponentas resursai, bei kiti komponentai, kuria kuria interfeisus minėtajam.
+		\begin{figure}[H]
+		\centering	
+	\includegraphics[width=15cm,height=17cm,keepaspectratio]{ResursaiUseCase.png}
+	\caption{Use case. part 1}
+	\label{fig:UseCaseFull}
+\end{figure}
+\item Šioje diagramoje pavaizduoti likusieji galimi veiksmai.
+		\begin{figure}[H]
+		\centering	
+	\includegraphics[width=15cm,height=17cm,keepaspectratio]{UseCase2.png}
+	\caption{Use case. part 2}
+	\label{fig:UseCaseFull}
+\end{figure}
+\end{itemize}
+
 \subsection{Gyvūnų sveikatos, lokacijos bei kitų parametrų sekimas}
 \subsubsection{Pagrindinis scenarijus}
 	Vartotojas prisijungia prie sistemos, pasirenka skiltį "Gyvūnų sveikatos ir lokacijos sekimas", įveda gyvūno duomenis. Tada vartotojas išsaugo įvestus duomenis į sąrašą, kurį jis gali peržiūrėti, redaguoti.
@@ -198,11 +215,11 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 		FR-1.02.01 & Pakeisti raktinius duomenis, kad jie skirtųsi & 8 \\ \hline
 		FR-1.02.02 & Pakeisti išsaugotus duomenis naujai įvestais duomenimis & 8 \\ \hline
 	\end{tabularx}
-\end{table}
+\end{table}                                    %Rytauto
 
 \subsection{Ūkio technikos resursų sekimas}
 \subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka stebėti techniką realiu laiku, sistema parodo žemėlapį, kuriame matoma,e kur yra visos technikos priemonės, kiek apytiksliai laiko dirbs, ir ką darys toliau.
+	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka stebėti techniką realiu laiku, sistema parodo žemėlapį, kuriame matome, kur yra visos technikos priemonės, kiek apytiksliai laiko dirbs, ir ką darys toliau. Vartotojui baigus stebebėjimą grįžtama į pradinį meniu.
 \subsubsection{Alternatyvus scenarijus(Nesukonfiguruoti priemonių sekikliai)}
 	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, tačiau prie būklės rašoma klaida, jog nesukonfiguruotas priemonės sekiklis. Vartotojui sistema siūlo iškviesti sistemos administratorių, kuris sukonfiguruoja sekiklius ir nukreipia nukreipia vartotoją į pagrindinį meniu.
 \subsubsection{Alternatyvus scenarijus(Pasirinkta priemonė sugedus)}
@@ -222,7 +239,7 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 
 \subsection{Ūkio technikos resursų pirkimas}
 \subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka pirkti naują technikos priemonę, sistema nuveda jį į puslapį, kuriame yra pasiūlymai jo norimai technikos rūšiai pirkti.
+	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka pirkti naują technikos priemonę, sistema nuveda jį į puslapį, kuriame yra pasiūlymai jo norimai technikos rūšiai pirkti. Vartotojui baigus grįžtama į pradinį meniu.
 \subsubsection{Alternatyvus scenarijus(Nepavyko rasti skelbimų norimai priemonei)}
 	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka pirkti naują technikos priemonę, sistema nuveda jį į puslapį, kuriame yra pasiūlymai jo norimai technikos rūšiai pirkti, tačiau pasirinktai priemonei šiuo metu nėra sukurtų jokių skelbimų. Sistema išveda pranešimą, jog pasirinktos priemonės pasiūlymų nėra.
 \subsubsection{Alternatyvus scenarijus(Nepavyko prisijungti prie serverio)}
@@ -240,7 +257,7 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 
 \subsection{Ūkio technikos resursų pardavimas}
 \subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka parduoti technikos priemonę, sistema patikrina, ar ši priemonė yra laisva, ir, jeigu ji nėra užimta, leidžia vartotojui sukurti skelbimą priemonei parduoti.
+	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka parduoti technikos priemonę, sistema patikrina, ar ši priemonė yra laisva, ir, jeigu ji nėra užimta, leidžia vartotojui sukurti skelbimą priemonei parduoti. sukūrus skelbimą grįžtama į pagrindinį meniu.
 \subsubsection{Alternatyvus scenarijus(Priemonė, kurią norima parduoti, užimta)}
 	Vartotojas pasirenka skiltį "Technikos sekimas realiu laiku", sistema parodo sąrašą, kuriame rodoma ūkio technika, jos užimtumas, būklė, darbo tvarkaraštis. Vartotojas pasirenka parduoti technikos priemonę, sistema patikrina, ar ši priemonė yra laisva, tačiau ji yra užimta. Sistema vartotojui leidžia pakeisti šios priemonės tvarkaraštį ir nustatyti, jog jo daugiau nebūtų galima pildyti. Sistema tuomet leidžia vartotojui sukurti skelbimą priemonei parduoti.
 \subsubsection{Alternatyvus scenarijus(Priemonė, kurią norima parduoti, jau parduodama)}
@@ -250,17 +267,17 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
     Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
     FR-4.01 & Sistema leidžia vartotojui parduoti techniką & 10  \\   \hline
-		FR-4.01.01 & Patikrinti, ar nėra jau sukurto skelbimo priemonei & 8 \\  \hline
 		FR-4.01.02 & Patikrinti, ar ši priemonė nėra jau parduodama & 8 \\ \hline
-		FR-4.01.03 & Sukurti skelbimus internete & 8 \\ \hline
+		FR-4.01.03 & Sukurti skelbimus internete & 9 \\ \hline
+		FR-4.01.04 & Kuriant skelbimą sistema įveda ūkininko tel. numerį bei el. paštą į skelbimo informaciją & 8 \\ \hline
 	\end{tabularx}
 \end{table}
 
 \subsection{Žemės parametrų sekimas}
 \subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka skiltį "Žemės parametrų sekimas", sistema nukreipia vartotoją į langą, kuriame yra sąrašas su visais prijungtais žemės parametrų sekikliais. Vartotojas pasirenka norimos teritorijos parametrų peržiūrą ir jam išvedami toje teritorijoje esančių daviklių duomenys.
+	Vartotojas pasirenka skiltį "Žemės parametrų sekimas", sistema nukreipia vartotoją į langą, kuriame yra sąrašas su visais prijungtais žemės parametrų sekikliais. Vartotojas pasirenka norimos teritorijos parametrų peržiūrą ir jam išvedami toje teritorijoje esančių daviklių duomenys. Vartotojui susipažinus su duomenimis grįžtamą į žemės parametrų detektorių sąrašą.
 \subsubsection{Alternatyvus scenarijus(Nesukonfiguruotas daviklis)}
-	Vartotojas pasirenka skiltį "Žemės parametrų sekimas", sistema nukreipia vartotoją į langą, kuriame yra sąrašas su visais prijungtais žemės parametrų sekikliais. Vartotojas pasirenka norimos teritorijos parametrų peržiūrą, tačiau toje teritorijoje nesukonfiguruotas daviklis. Sistema išveda pranešimą ir pasiūlo vartotojui iškviesti sistemos administratorių, kuris sukonfiguruotų neveikiantį daviklį.
+	Vartotojas pasirenka skiltį "Žemės parametrų sekimas", sistema nukreipia vartotoją į langą, kuriame yra sąrašas su visais prijungtais žemės parametrų sekikliais. Vartotojas pasirenka norimos teritorijos parametrų peržiūrą, tačiau toje teritorijoje nesukonfiguruotas daviklis. Sistema išveda pranešimą ir pasiūlo vartotojui iškviesti sistemos administratorių, kuris sukonfiguruotų neveikiantį daviklį, sistema vartotoją nukreipią į pagrindinį meniu.
 \subsubsection{Alternatyvus scenarijus(Nepavyko prisijungti prie serverio)}
 	Vartotojas pasirenka skiltį "Žemės parametrų sekimas", sistema nukreipia vartotoją į langą, kuriame yra klaidos pranešimas, jog nepavyko prisijungti prie serverio, ir vartotojas nukreipiamas atgal į pagrindinį meniu.
 \subsubsection{Funkciniai reikalavimai}
@@ -310,7 +327,7 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 
 \subsection{Ūkio technikos valdymas nuotolinių būdu realiu laiku}
 \subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka skiltį "Ūkio technikos valdymas", sistema atidaro langą, kuriame yra sąrašas ūkio technikos priemonių. Vartotojas pasirenka technikos priemonę ir, jei ji laisva, leidžia jos veikimą valdyti nuotoliniu būdu.
+	Vartotojas pasirenka skiltį "Ūkio technikos valdymas", sistema atidaro langą, kuriame yra sąrašas ūkio technikos priemonių. Vartotojas pasirenka technikos priemonę ir, jei ji laisva, leidžia jos veikimą valdyti nuotoliniu būdu. Vartotojui baigus valdymą grįžtama į pagrindinį meniu.
 \subsubsection{Alternatyvus scenarijus(Priemonė sugedus)}
 	Vartotojas pasirenka skiltį "Ūkio technikos valdymas", sistema atidaro langą, kuriame yra sąrašas ūkio technikos priemonių. Vartotojas pasirenka technikos priemonę, tačiau ji yra sugedusi. Vartotojui pasiūloma iškviesti mechaniką priemonei sutvarkyti ir leidžia vartotojui pasirinkti kitą priemonę.
 \subsubsection{Alternatyvus scenarijus(Priemonė užimta)}
@@ -330,7 +347,7 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 
 \subsection{Autonominis ūkio technikos veikimas}
 \subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka skiltį "Autonominis ūkio technikos veikimas", sistema atidaro langą, kuriame matomas technikos priemonių sąrašas. Vartotojas pasirenka priemonę ir parenka plotą, kuriame priemonė dirbs.
+	Vartotojas pasirenka skiltį "Autonominis ūkio technikos veikimas", sistema atidaro langą, kuriame matomas technikos priemonių sąrašas. Vartotojas pasirenka priemonę, parenka plotą, kuriame priemonė dirbs, bei nustato norimą darbo laiką. Atlikus šiuos veiksmus sistema vartotoją nukreipia į pagrindinį meniu.
 \subsubsection{Alternatyvus scenarijus(Priemonė užimta)}
 	Vartotojas pasirenka skiltį "Autonominis ūkio technikos veikimas", sistema atidaro langą, kuriame matomas technikos priemonių sąrašas. Vartotojas pasirenka priemonę, tačiau ji šiuo metu jau dirba. Vartotojui pasiūloma suplanuoti automatinį darbą kai priemonė atsilaisvins arba pasirinkti kitą priemonę.
 \subsubsection{Alternatyvus scenarijus(Priemonė neturi tinkamos įrangos)}
@@ -352,7 +369,7 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 
 \subsection{Ūkininko valdomos teritorijos žymėjimas sutartiniais ženklais}
 	\subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka ''Žemėlapio žymėjimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka norimą plotą pasirinktoje vietoje.
+	Vartotojas pasirenka ''Žemėlapio žymėjimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka norimą plotą pasirinktoje vietoje. Atlikus žimėjimą sistema pasiūlo pažymeti dar vieną plotą, vartotojui atsisakius grįžtama į pagrindinį meniu.
 	\subsubsection{Alternatyvus scenarijus(Plotas priklauso kitam savininkui)}
 	Vartotojas pasirenka ''Žemėlapio žymėjimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka norimą plotą pasirinktoje vietoje, tačiau tas plotas priklauso kitam ūkininkui. Sistema išveda pranešimą, kad ši teritoja ūkininkui nepriklauso, bei atšaukia esamą žymėjimą.
 	\subsubsection{Alternatyvus scenarijus(Plotas jau pažymėtas)}
@@ -374,7 +391,7 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 	\end{table}
 \subsection{Sąskaitų išrašymas}
 	\subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka skiltį "Sąskaitos". Atsidariusiame lange vartotojui parodo sąrašą visų sąskaitų, kurias jam reikia apmokėti. Šalia kiekvienos sąskaitos yra mygtukas, kurį paspaudus vartotojas nukreipiamas į apmokėjimo platformą pagal vartotojo pasirinkimą, kurioje jis gali apmokėti konkrečią sąskaitą. Pagrindiniame sąskaitų lange vartotojas gali pasižiūrėti, kokia sąskaitos suma, ir kada ji buvo išrašyta. Taip pat gali pasižiūrėti jau apmokėtų sąskaitų istoriją.
+	Vartotojas pasirenka skiltį "Sąskaitos". Atsidariusiame lange vartotojui parodo sąrašą visų sąskaitų, kurias jam reikia apmokėti. Šalia kiekvienos sąskaitos yra mygtukas, kurį paspaudus vartotojas nukreipiamas į apmokėjimo platformą pagal vartotojo pasirinkimą, kurioje jis gali apmokėti konkrečią sąskaitą. Pagrindiniame sąskaitų lange vartotojas gali pasižiūrėti, kokia sąskaitos suma, ir kada ji buvo išrašyta. Taip pat gali pasižiūrėti jau apmokėtų sąskaitų istoriją. Apmokėjus sąskaitą vartotojas nukreipiamas į dar neapmokėtų sąskaitų sąrašą, jeigu jau visos sąskaitos apmokėtos parodomas apmokėtų sąskaitų sąrašas.
 	\subsubsection{Alternatyvus scenarijus(Nėra sąskaitų, kurias reiktų apmokėti)}
 	Jeigu sistemoje nėra sąskaitų, kurias vartotojas turėtų apmokėti, vartotojui paspaudus ant "Sąskaitos" mygtuko jam bus parodytas informacinis langas, pranešantis, kad nėra sąskaitų, kurias šiuo metu reiktų apmoketi. Lange bus galima pasirinkti arba eitį į pagrindinį meniu, arba peržiūrėti sąskaitų istoriją.
 	\subsubsection{Alternatyvus scenarijus(Nėra jau apmokėtų sąskaitų)}
@@ -422,7 +439,7 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 
 \subsection{Potencialaus pelno skaičiavimas}
 	\subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka "Potencialaus pelno skaičiavimas" sistemoje. Programa įjungia langą, kuriame yra sąrašas visų šiuo metu vartotojo turimų pardavimui skirtų resursų. Vartotojas gali pasirinkti žiūrėti bendrą pelną, kurį gautų pardavęs resursus, arba pasirinkti tam tikrus resursus, kuriuos norėtų parduoti, ir kokį kiekį norėtų parduoti. Pagal vartotojo pasirinkimą ir rinkos kainą yra apskaičiuojamas potencialus pelnas.
+	Vartotojas pasirenka "Potencialaus pelno skaičiavimas" sistemoje. Programa įjungia langą, kuriame yra sąrašas visų šiuo metu vartotojo turimų pardavimui skirtų resursų. Vartotojas gali pasirinkti žiūrėti bendrą pelną, kurį gautų pardavęs resursus, arba pasirinkti tam tikrus resursus, kuriuos norėtų parduoti, ir kokį kiekį norėtų parduoti. Pagal vartotojo pasirinkimą ir rinkos kainą yra apskaičiuojamas potencialus pelnas. Vartotojui susipažinus su potencialiu pelnu grįžtama į pagrindinį meniu.
 	\subsubsection{Alternatyvus scenarijus(Nartotojas neturi parduodamų resursų)}
 	Vartotojas pasirenka "Potencialaus pelno skaičiavimas" skiltį. Sistemoje nėra užregistruota jokių resursų, kuriuos vartotojas galėtų parduoti. Vartotojui parodomas pranešimas apie nepavykusią operaciją dėl resursų trūkumo. Programa įjungia pagrindinį langą. 
 	\subsection{Alternatyvus scenarijus(Neveikia išoriniai servisai, suteikiantys informaciją apie rinkos kainas)}
@@ -439,7 +456,7 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \end{table}	
 \subsection{Derliaus sekimas}
 	\subsubsection{Pagrindinis scenarijus}
-	Vartotojas sistemoje pasirenka "Derliaus sekimas". Programa įjungią vartotojo turimų resursų sąrašą. Saraše prie kiekvieno resurso parašyta, kada jis buvo gautas ir kokia kiekvieno resurso galiojimo trukmė. Paspaudus ant konkretaus resurso pasirodo langas, kuriame pateikta detalesnė informacija apie konkretų resursą. Detali informacija susideda iš resurso gavimo laiko, darbuotojų kurie dirbo prie konkretaus resurso gavimo, kiek pinigų vartotojas gautų pardavęs resursus rinkos kaina.
+	Vartotojas sistemoje pasirenka "Derliaus sekimas". Programa įjungią vartotojo turimų resursų sąrašą. Saraše prie kiekvieno resurso parašyta, kada jis buvo gautas ir kokia kiekvieno resurso galiojimo trukmė. Paspaudus ant konkretaus resurso pasirodo langas, kuriame pateikta detalesnė informacija apie konkretų resursą. Detali informacija susideda iš resurso gavimo laiko, darbuotojų kurie dirbo prie konkretaus resurso gavimo, kiek pinigų vartotojas gautų pardavęs resursus rinkos kaina. Vartotojui baigus peržiūrą grįžtama į pagrindinį meniu.
 	\subsubsection{Alternatyvus scenarijus(Vartotojas neturi resursų, kuriuos būtų galima parodyti)}
 	Vartotojas sistemoje pasirenka "Derliaus sekimas". Sistemoje nėra užregistruota jokių resursų. Vartotojui parodomas informacinis pranešimas apie tai, kad sistemoje nėra registruotų resursų. Vartotojas nukreipiamas į pagrindinį langą.
 	\subsubsection{Alternatyvus scenarijus(Neveikia rinkos skaičiavimo funkcija)}
@@ -566,6 +583,34 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 			FR-24.03.01 & Pagal simbolių eilutę esančią aprašyme & 8 \\ \hline
 			FR-24.04 & Sistema leidžia norimą katalogą rikiuoti & 9 \\ \hline
 			FR-24.04.01 & Pagal alfabetinę tvarką  & 9 \\ \hline
+		\end{tabularx}
+	\end{table}
+	
+	\subsection{Atsakymas į pagalbos iškvietimą}
+	\subsubsection{Pagrindinis scenarijus}
+	Pagalbos teikėjas pasirenka skiltį ''pagalbos prašymai'' pasirenką norimą pagalbos prašymą ir parašo pranešimą siuntėjui su informacija kada atvyks, kiekvienas pagalbos prašymas pradingta po 24h.
+	\subsubsection{Alternatyvus scenarijus(Nėra pagalbos prašymų)}
+	Pagalbos teikėjas pasirenka skiltį ''pagalbos prašymai'', jam sistema parodo pranešimą, kad šiuo metu jokių pagalbos prašymų nėra, jis grąžinamas į pagrindinį langą.
+	\subsubsection{Funkciniai reikalavimai}
+	\begin{table}[htbp]
+		\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+			Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+			FR-24.01 & Sistema turi leisti išsiųsti atsakymą pagalbos iškvietėjui & 10 \\ \hline
+			FR-24.02 & Prieš išsiunčiant atsakymą, pagalbos teikėjas turi įvesti planuojamą atvykimo laiką & 9 \\ \hline
+		\end{tabularx}
+	\end{table}
+	
+	\subsection{Detektoriaus konfiguracijos keitimas}
+	\subsubsection{Pagrindinis scenarijus}
+	Administratorius pasirenką ''Detektorių kodavimas'' pagrindiniame meniu, naujame lange pasirenka norimą koduotį detektorių. Po šio veiksmo iššoka langas, kuriame Administratorius gali keisti detektoriaus konfiguraciją, jam paspaudus mygtuką ''išsaugoti'' grįžtama į pagrindinį meniu.
+	\subsubsection{Alternatyvus scenarijus(Negalima pasiekti detektoriaus)}
+	Administratorius pasirenką ''Detektorių kodavimas'' pagrindiniame meniu, naujame lange pasirenka norimą koduotį detektorių. Sistemai negalint susisiekti su detektoriumi išvedamas atitinkamas pranešimas su to detektoriaus koordinatėmis, grįžtama į detektorių sąrašą.
+	\subsubsection{Funkciniai reikalavimai}
+	\begin{table}[htbp]
+		\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+			Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+			FR-24.01 &  Sistema turi leisti pasirinkti norimą detektoriu & 10 \\ \hline
+			FR-24.02 &  Sistema leidžia surikiuoti detektorių sąrašą pagal paskutinio atnaujinimo datą & 9 \\ \hline
 		\end{tabularx}
 	\end{table}
 
