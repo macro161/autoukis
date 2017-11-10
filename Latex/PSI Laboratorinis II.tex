@@ -215,6 +215,27 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \end{table}
 \subsection{Gyvūnų lokacijos sekimas}
 \subsection{Gyvūnų duomenų peržiūra}
+subsubsection{Pagrindinis scenarijus}
+	Vartotojas pasirenka skiltį "Gyvūnų duomenų peržiūra", sistema atidaro sąrašą, kuriame išvardinti gyvūnai pagal id numerį, paspaudus ant id numerio iššoka langas, kuriame parodoma detalesnė gyvūno informacija. Norėdamas baigti vartotojas paspaudžia mygtuką ''Grįžti'', kuriuo nukreipiamas į pagrindinį meniu.
+\subsubsection{Alternatyvus scenarijus(Nepavyksta pasiekti gyvūnų sąrašo)}
+	Vartotojas pasirenka skiltį "Gyvūnų duomenų peržiūra", sistema išveda pranešimą, kad šiuo metu negali pasiekti gyvūnų duomenų, pasiūlo pabandyti vėliau, bet nukreipia atgal į pagrindinį meniu.
+\subsubsection{Alternatyvus scenarijus(Sąrašas tuščias)}
+	Vartotojas pasirenka skiltį "Gyvūnų duomenų peržiūra", sistema išveda pranešimą, kad gyvūnų sąrašas tuščias, bei pasiūlo pereiti į gyvūnų registraciją, vartotojui atsisakius grįžtama į pagrindinį meniu.
+\subsubsection{Funkciniai reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+           	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+         	FR-3.01 & Sistema leidžia rikiuoti duomenis pagal: & 10  \\   \hline
+		FR-3.01.01 & ID & 7 \\ \hline
+		FR-3.01.02 & Svorį & 9 \\ \hline
+		FR-3.01.02 & Amžių & 8 \\ \hline
+        	FR-3.02 & Vartotojui pasirinkus gyvūno ID sistema parodo šiuos duomenis: & 10   \\   \hline
+		FR-3.02.01 & ID & 9 \\ \hline
+		FR-3.02.01 & Svorį & 9 \\ \hline
+		FR-3.02.01 & Amžių & 9 \\ \hline
+		FR-3.02.01 & Lytį & 8 \\ \hline
+	\end{tabularx}
+\end{table}
 
 \subsection{Ūkio technikos resursų sekimas}
 \subsubsection{Pagrindinis scenarijus}
