@@ -717,7 +717,20 @@ subsubsection{Pagrindinis scenarijus}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
 		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
-		NFR-7.01 & Sistema pritaikyta naudoti bet kurioje iš Microsoft Windows, Linux ir Mac OS operacinių sistemų & 10 \\ \hline
+		NFR-7.01 & Sistema turi veikiti Windows 7 aplinkoje & 10 \\ \hline
+		NFR-7.02 & Sistema turi veikiti Windows 8 aplinkoje & 10 \\ \hline
+		NFR-7.03 & Sistema turi veikiti Windows 8.1 aplinkoje & 10 \\ \hline
+		NFR-7.04 & Sistema turi veikiti Windows 10 aplinkoje & 10 \\ \hline
+		NFR-7.05 & Sistema turi veikiti Windows 7 aplinkoje & 10 \\ \hline
+		NFR-7.06 & Sistema turi veikiti iOS 9 aplinkoje & 10 \\ \hline
+		NFR-7.07 & Sistema turi veikiti iOS 10 aplinkoje & 10 \\ \hline
+		NFR-7.08 & Sistema turi veikiti iOS 11 aplinkoje & 10 \\ \hline
+		NFR-7.09 & Sistema turi veikti Linux Ubuntu aplinkoje & 8 \\ \hline
+		NFR-7.10 & Sistema turi veikti Android 5 aplinkoje & 10 \\ \hline
+		NFR-7.11 & Sistema turi veikti Android 6 aplinkoje & 10 \\ \hline
+		NFR-7.12 & Sistema turi veikti Android 7 aplinkoje & 10 \\ \hline
+		NFR-7.13 & Sistema turi veikti Android 8 aplinkoje & 10 \\ \hline
+		 
 	\end{tabularx}
 \end{table}
 
@@ -725,8 +738,8 @@ subsubsection{Pagrindinis scenarijus}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
 		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
-		NFR-7.02 & Sistema naudoja duomenų bazę, kurioje saugomi gyvūnų bei žemėlapių duomenys, taip pat ir vartotojų prisijungimo duomenys & 10\\ \hline
-		NFR-7.03 & Duomenų mainų interfeisai turi būti SQL ir PL/SQL & 8   \\ \hline
+		NFR-7.14 & Sistema duomenų saugojimui turi naudoti duomenų bazę  & 10\\ \hline
+		NFR-7.15 & Sistemos duomenų bazės valdymo sistema turi būti PostgreSQL & 8   \\ \hline
 	\end{tabularx}
 \end{table}
 
@@ -735,9 +748,13 @@ subsubsection{Pagrindinis scenarijus}
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
 		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
 		NFR-7.04 & Importuojami žemėlapiai privalo būti JPG formato & 10 \\ \hline
-		NFR-7.05 &  &  \\ \hline
 	\end{tabularx}
 \end{table}
+
+\begin{center}
+\end{center}
+
+\pagebreak
 
 \subsubsection{Darbo kompjuterių tinkluose reikalavimai}
 \begin{table}[htbp]
@@ -747,6 +764,8 @@ subsubsection{Pagrindinis scenarijus}
 		NFR-7.07 & Sistemos pilnam funkcionalumui pasiekti reikalingas interneto ryšys & 5   \\ \hline
 	\end{tabularx}
 \end{table}
+
+
 
 \subsubsection{Sąveikos su kitomis programomis reikalavimai}
 \begin{table}[htbp]
@@ -760,9 +779,16 @@ subsubsection{Pagrindinis scenarijus}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
 		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
-		NFR-7.09 & Sistema privalo būti įgyvendinta naudojant C\# programavimo kalbą & 10 \\ \hline
+		NFR-7.20 & Programuotojui turi būti suteikta prieeiga prie Visual Studio 2017 & 10
+		NFR-7.21 & Visual Studio 2017 turi būti įdiegtas Xamarin paketas & 10
+		NFR-7.22 & Visual Studio 2017 turi būti įdiegtas Android SDK paketas & 10
+		NFR-7.23 & Visual Studio 2017 turi būti įdiegtas Android emuliatorius & 10
+		NFR-7.23 & Visual Studio 2017 turi būti įdiegtas iOS SDK & 10
+		NFR-7.23 & Visual Studio 2017 turi būti įdiegtas iOS emuliatorius & 10
 	\end{tabularx}
 \end{table}
+
+\pagebreak
 
 \subsection{Veikimo reikalavimai}
 \subsubsection{Tikslumo reikalavimai}
@@ -798,6 +824,8 @@ subsubsection{Pagrindinis scenarijus}
 		NFR-7.22 & Sistema gali sutrikti ne dažniau kaip kartą per mėnesį & 10 \\ \hline
 	\end{tabularx}
 \end{table}
+
+\pagebreak
 
 \subsubsection{Gyvybingumo reikalavimai}
 \begin{table}[htbp]
