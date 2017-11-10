@@ -5,12 +5,15 @@ skinparam componentStyle uml2
 
 [Auto Ukis] -left--() UkininkasUI 
 [Auto Ukis] -right-() AdminasUI
-[Auto Ukis] -left--() DarbuotojasUI
+[Auto Ukis] -up-() DarbuotojasUI
 :Darbuotojas: -down--(DarbuotojasUI
-:Ukininkas: -down--( UkininkasUI
+:Ukininkas: -down-( UkininkasUI
 :Adminas: -down-( AdminasUI
-:SOS pagalba: -right-() SOSPagalbaUI
-[Auto Ukis] -down-( SOSPagalbaUI
+[Auto Ukis] -down-() SOSPagalbaUI
+:SOSPagalba: -left-( SOSPagalbaUI
+[WebAPI] -down-() JSonData
+[Auto Ukis] -down( JSonData
+
 
 
 @enduml
