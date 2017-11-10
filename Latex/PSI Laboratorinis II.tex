@@ -711,5 +711,118 @@ subsubsection{Pagrindinis scenarijus}
 \end{table}
 
 \section{Kiti reikalavimai}
+
+\subsection{Vidinių interfeisų reikalavimai}
+\subsubsection{Operacinės sistemos reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		NFR-7.01 & Sistema pritaikyta naudoti bet kurioje iš Microsoft Windows, Linux ir Mac OS operacinių sistemų & 10 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsubsection{Sąveikos su duomenų baze reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		NFR-7.02 & Sistema naudoja duomenų bazę, kurioje saugomi gyvūnų bei žemėlapių duomenys, taip pat ir vartotojų prisijungimo duomenys & 10\\ \hline
+		NFR-7.03 & Duomenų mainų interfeisai turi būti SQL ir PL/SQL & 8   \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsubsection{Dokumentų mainų reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		NFR-7.04 & Importuojami žemėlapiai privalo būti JPG formato & 10 \\ \hline
+		NFR-7.05 &  &  \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsubsection{Darbo kompjuterių tinkluose reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		NFR-7.06 & Sistema privalo dirbti pagal TCP/IP protokolą & 10 \\ \hline
+		NFR-7.07 & Sistemos pilnam funkcionalumui pasiekti reikalingas interneto ryšys & 5   \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsubsection{Sąveikos su kitomis programomis reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		NFR-7.08 & Sistema privalo naudoti Web API orų prognozėms, rinkos kainoms bei informaciniams katalogams peržiūrėti & 10 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsubsection{Programavimo aplinkos}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		NFR-7.09 & Sistema privalo būti įgyvendinta naudojant C\# programavimo kalbą & 10 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsection{Veikimo reikalavimai}
+\subsubsection{Tikslumo reikalavimai}
+\subsubsubsection{Vaizdavimo tikslumo reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		NFR-7.10 & Sistemoje pinigai turi būti vaizduojami centų tikslumu & 10 \\ \hline
+		NFR-7.11 & Sistemoje data ir laikas turi būti vaizduojami minučių(min) tikslumu & 10 \\ \hline
+		NFR-7.12 & Sistemoje ilgiai(pločiai) turi būti vaizduojami metrų(m) tikslumu & 10 \\ \hline
+		NFR-7.13 & Sistemoje plotas turi būti vaizduojamas kvadratinių decimetrų(m²) tikslumu & 10 \\ \hline
+		NFR-7.14 & Sistemoje temperatūra turi būti vaizduojama laipsnių Celsijaus(°C) tikslumu & 10 \\ \hline
+		NFR-7.15 & Sistemoje slėgis turi būti vaizduojamas milimetrų gyvsidabrio(mmHg) tikslumu & 10 \\ \hline
+		NFR-7.16 & Sistemoje vėjo greitis turi būti vaizduojamas metrų per sekundę(m/s) tikslumu & 10 \\ \hline
+		NFR-7.17 & Sistemoje maisto kiekis turi būti vaizduojamas kilogramų(kg) tikslumu & 10 \\ \hline
+	\end{tabularx}
+\end{table}
+\subsubsubsection{Skaičiavimų tikslumo reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		NFR-7.18 & Sistemoje piniginės operacijos atliekamos centų tikslumu & 10 \\ \hline
+		NFR-7.19 & Sistemoje ilgio(pločio) skaičiavimo operacijos atliekamos metrų(m) tikslumu & 10 \\ \hline
+		NFR-7.20 & Sistemoje ploto skaičiavimo operacijos atliekamos kvadratinių metrų(m²) tikslumu & 10 \\ \hline
+		NFR-7.21 & Sistemoje maisto kiekio skaičiavimo operacijos atliekamos kilogramų(kg) tikslumu & 10 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsubsection{Patikimumo reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		NFR-7.22 & Sistema gali sutrikti ne dažniau kaip kartą per mėnesį & 10 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsubsection{Gyvybingumo reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		NFR-7.23 & Sutrikus interneto ryšiui, sistema privalo išvesti informacinį pranešimą, indikuojantį, jog nėra interneto ryšio ir neleisti vartotojui pasinaudoti funkcijomis, kurios to reikalauja & 10 \\ \hline
+		NFR-7.24 & Sutrikus ryšiui su DB, sistema privalo išvesti informacinį pranešimą, indikuojantį vartotoją apie ryšio nebuvimą ir baigti darbą & 10 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsection{Tiražuojamumo reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		NFR-7.25 & Sistema bus platinama keliems užsakovams, todėl DB turi būti tam pritaikyta & 10 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsection{Juridiniai reikalavimai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		NFR-7.23 & Sistema privalo atskirai nekaipti asmeninės klientų informacijos, jei ji nėra reikalinga užduotims įvykdyti & 10 \\ \hline
+	\end{tabularx}
+\end{table}
+
 \sectionnonum{Žodynas}
 \end{document}
