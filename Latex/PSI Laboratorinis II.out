@@ -1,0 +1,135 @@
+\BOOKMARK [1][-]{section.1}{Įvadas}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Tikslas}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Dokumento\040konvensija}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Dokumento\040skaitytojai}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Produkto\040apimtis}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.5}{Nuorodos}{section.1}% 6
+\BOOKMARK [1][-]{section.2}{Bendras produkto aprašymas}{}% 7
+\BOOKMARK [2][-]{subsection.2.1}{Produkto\040perspektyva}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.2}{Produkto\040funkcionalumas}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.3}{Vartotojų klasės ir charakteristikos}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.4}{Vykdymo\040aplinka}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.5}{Dizaino\040ir\040implementacijos\040apribojimai}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.6}{Prielaidos ir priklausomybės}{section.2}% 13
+\BOOKMARK [2][-]{subsection.2.7}{Vartotojo\040dokumentacija}{section.2}% 14
+\BOOKMARK [1][-]{section.3}{Išoriniai sąsajos reikalavimai}{}% 15
+\BOOKMARK [2][-]{subsection.3.1}{Vartotojo sąsajos reikalavimai}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.2}{Techninės įrangos sąsajos reikalavimai}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.3}{Programinės įrangos sąsąjos reikalavimai}{section.3}% 18
+\BOOKMARK [1][-]{section.4}{Produkto\040funkcijos}{}% 19
+\BOOKMARK [2][-]{subsection.4.1}{Gyvūnų sveikatos, lokacijos bei kitų parametrų sekimas}{section.4}% 20
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Pagrindinis\040scenarijus}{subsection.4.1}% 21
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Alternatyvus\040scenarijus\040\(Toks\040ID\040jau\040egzistuoja\)}{subsection.4.1}% 22
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Alternatyvus\040scenarijus\040\(Nepavyko\040prisijungti\040prie\040sistemos\)}{subsection.4.1}% 23
+\BOOKMARK [3][-]{subsubsection.4.1.4}{Funkciniai\040reikalavimai}{subsection.4.1}% 24
+\BOOKMARK [2][-]{subsection.4.2}{Ūkio technikos resursų sekimas}{section.4}% 25
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Pagrindinis\040scenarijus}{subsection.4.2}% 26
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Alternatyvus scenarijus\(Nesukonfiguruoti priemonių sekikliai\)}{subsection.4.2}% 27
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Alternatyvus scenarijus\(Pasirinkta priemonė sugedus\)}{subsection.4.2}% 28
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Funkciniai\040reikalavimai}{subsection.4.2}% 29
+\BOOKMARK [2][-]{subsection.4.3}{Ūkio technikos resursų pirkimas}{section.4}% 30
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Pagrindinis\040scenarijus}{subsection.4.3}% 31
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Alternatyvus scenarijus\(Nepavyko rasti skelbimų norimai priemonei\)}{subsection.4.3}% 32
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Alternatyvus\040scenarijus\(Nepavyko\040prisijungti\040prie\040serverio\)}{subsection.4.3}% 33
+\BOOKMARK [3][-]{subsubsection.4.3.4}{Funkciniai\040reikalavimai}{subsection.4.3}% 34
+\BOOKMARK [2][-]{subsection.4.4}{Ūkio technikos resursų pardavimas}{section.4}% 35
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Pagrindinis\040scenarijus}{subsection.4.4}% 36
+\BOOKMARK [3][-]{subsubsection.4.4.2}{Alternatyvus scenarijus\(Priemonė, kurią norima parduoti, užimta\)}{subsection.4.4}% 37
+\BOOKMARK [3][-]{subsubsection.4.4.3}{Alternatyvus scenarijus\(Priemonė, kurią norima parduoti, jau parduodama\)}{subsection.4.4}% 38
+\BOOKMARK [3][-]{subsubsection.4.4.4}{Funkciniai\040reikalavimai}{subsection.4.4}% 39
+\BOOKMARK [2][-]{subsection.4.5}{Žemės parametrų sekimas}{section.4}% 40
+\BOOKMARK [3][-]{subsubsection.4.5.1}{Pagrindinis\040scenarijus}{subsection.4.5}% 41
+\BOOKMARK [3][-]{subsubsection.4.5.2}{Alternatyvus\040scenarijus\(Nesukonfiguruotas\040daviklis\)}{subsection.4.5}% 42
+\BOOKMARK [3][-]{subsubsection.4.5.3}{Alternatyvus\040scenarijus\(Nepavyko\040prisijungti\040prie\040serverio\)}{subsection.4.5}% 43
+\BOOKMARK [3][-]{subsubsection.4.5.4}{Funkciniai\040reikalavimai}{subsection.4.5}% 44
+\BOOKMARK [2][-]{subsection.4.6}{Orų prognozės sekimas}{section.4}% 45
+\BOOKMARK [3][-]{subsubsection.4.6.1}{Pagrindinis\040scenarijus}{subsection.4.6}% 46
+\BOOKMARK [3][-]{subsubsection.4.6.2}{Alternatyvus scenarijus\(Nėra prieigos prie interneto\)}{subsection.4.6}% 47
+\BOOKMARK [3][-]{subsubsection.4.6.3}{Alternatyvus scenarijus\(Andromeda įsirėžė į Paukčių Tako galaktiką\)}{subsection.4.6}% 48
+\BOOKMARK [3][-]{subsubsection.4.6.4}{Funkciniai\040reikalavimai}{subsection.4.6}% 49
+\BOOKMARK [2][-]{subsection.4.7}{Gyvūnų maitinimas}{section.4}% 50
+\BOOKMARK [3][-]{subsubsection.4.7.1}{Pagrindinis\040scenarijus}{subsection.4.7}% 51
+\BOOKMARK [3][-]{subsubsection.4.7.2}{Alternatyvus scenarijus\(Neužtenka maisto gyvūnų maitinimui\)}{subsection.4.7}% 52
+\BOOKMARK [3][-]{subsubsection.4.7.3}{Alternatyvus scenarijus\(Neužtenka maisto automatiniam gyvūnų maitinimui\)}{subsection.4.7}% 53
+\BOOKMARK [3][-]{subsubsection.4.7.4}{Funkciniai\040reikalavimai}{subsection.4.7}% 54
+\BOOKMARK [2][-]{subsection.4.8}{Ūkio technikos valdymas nuotolinių būdu realiu laiku}{section.4}% 55
+\BOOKMARK [3][-]{subsubsection.4.8.1}{Pagrindinis\040scenarijus}{subsection.4.8}% 56
+\BOOKMARK [3][-]{subsubsection.4.8.2}{Alternatyvus scenarijus\(Priemonė sugedus\)}{subsection.4.8}% 57
+\BOOKMARK [3][-]{subsubsection.4.8.3}{Alternatyvus scenarijus\(Priemonė užimta\)}{subsection.4.8}% 58
+\BOOKMARK [3][-]{subsubsection.4.8.4}{Alternatyvus scenarijus\(Nėra tinkamos įrangos\)}{subsection.4.8}% 59
+\BOOKMARK [3][-]{subsubsection.4.8.5}{Funkciniai\040reikalavimai}{subsection.4.8}% 60
+\BOOKMARK [2][-]{subsection.4.9}{Autonominis ūkio technikos veikimas}{section.4}% 61
+\BOOKMARK [3][-]{subsubsection.4.9.1}{Pagrindinis\040scenarijus}{subsection.4.9}% 62
+\BOOKMARK [3][-]{subsubsection.4.9.2}{Alternatyvus scenarijus\(Priemonė užimta\)}{subsection.4.9}% 63
+\BOOKMARK [3][-]{subsubsection.4.9.3}{Alternatyvus scenarijus\(Priemonė neturi tinkamos įrangos\)}{subsection.4.9}% 64
+\BOOKMARK [3][-]{subsubsection.4.9.4}{Alternatyvus\040scenarijus\(Netinkamas\040pasirinktas\040plotas\)}{subsection.4.9}% 65
+\BOOKMARK [3][-]{subsubsection.4.9.5}{Funkciniai\040reikalavimai}{subsection.4.9}% 66
+\BOOKMARK [2][-]{subsection.4.10}{Ūkininko valdomos teritorijos žymėjimas sutartiniais ženklais}{section.4}% 67
+\BOOKMARK [3][-]{subsubsection.4.10.1}{Pagrindinis\040scenarijus}{subsection.4.10}% 68
+\BOOKMARK [3][-]{subsubsection.4.10.2}{Alternatyvus\040scenarijus\(Plotas\040priklauso\040kitam\040savininkui\)}{subsection.4.10}% 69
+\BOOKMARK [3][-]{subsubsection.4.10.3}{Alternatyvus scenarijus\(Plotas jau pažymėtas\)}{subsection.4.10}% 70
+\BOOKMARK [3][-]{subsubsection.4.10.4}{Funkciniai\040reikalavimai}{subsection.4.10}% 71
+\BOOKMARK [2][-]{subsection.4.11}{Sąskaitų išrašymas}{section.4}% 72
+\BOOKMARK [3][-]{subsubsection.4.11.1}{Pagrindinis\040scenarijus}{subsection.4.11}% 73
+\BOOKMARK [3][-]{subsubsection.4.11.2}{Alternatyvus scenarijus\(Nėra sąskaitų, kurias reiktų apmokėti\)}{subsection.4.11}% 74
+\BOOKMARK [3][-]{subsubsection.4.11.3}{Alternatyvus scenarijus\(Nėra jau apmokėtų sąskaitų\)}{subsection.4.11}% 75
+\BOOKMARK [3][-]{subsubsection.4.11.4}{Alternatyvus scenarijus\(Negalima pasiekti pasirinktos apmokėjimo sistemos\)}{subsection.4.11}% 76
+\BOOKMARK [3][-]{subsubsection.4.11.5}{Funkciniai\040reikalavimai}{subsection.4.11}% 77
+\BOOKMARK [2][-]{subsection.4.12}{Darbuotojų samdymas}{section.4}% 78
+\BOOKMARK [3][-]{subsubsection.4.12.1}{Pagrindinis\040scenarijus}{subsection.4.12}% 79
+\BOOKMARK [3][-]{subsubsection.4.12.2}{Alternatyvus scenarijus\(Neatsidaro darbo skelbimų puslapis\)}{subsection.4.12}% 80
+\BOOKMARK [3][-]{subsubsection.4.12.3}{Alternatyvus scenarijus\(Neteisingai suvesti duomenys bandant įdėti darbo skelbimą\)}{subsection.4.12}% 81
+\BOOKMARK [3][-]{subsubsection.4.12.4}{Funkciniai\040reikalavimai}{subsection.4.12}% 82
+\BOOKMARK [2][-]{subsection.4.13}{Potencialaus pelno skaičiavimas}{section.4}% 83
+\BOOKMARK [3][-]{subsubsection.4.13.1}{Pagrindinis\040scenarijus}{subsection.4.13}% 84
+\BOOKMARK [3][-]{subsubsection.4.13.2}{Alternatyvus scenarijus\(Nartotojas neturi parduodamų resursų\)}{subsection.4.13}% 85
+\BOOKMARK [2][-]{subsection.4.14}{Alternatyvus scenarijus\(Neveikia išoriniai servisai, suteikiantys informaciją apie rinkos kainas\)}{section.4}% 86
+\BOOKMARK [3][-]{subsubsection.4.14.1}{Funkciniai\040reikalavimai}{subsection.4.14}% 87
+\BOOKMARK [2][-]{subsection.4.15}{Derliaus\040sekimas}{section.4}% 88
+\BOOKMARK [3][-]{subsubsection.4.15.1}{Pagrindinis\040scenarijus}{subsection.4.15}% 89
+\BOOKMARK [3][-]{subsubsection.4.15.2}{Alternatyvus scenarijus\(Vartotojas neturi resursų, kuriuos būtų galima parodyti\)}{subsection.4.15}% 90
+\BOOKMARK [3][-]{subsubsection.4.15.3}{Alternatyvus scenarijus\(Neveikia rinkos skaičiavimo funkcija\)}{subsection.4.15}% 91
+\BOOKMARK [3][-]{subsubsection.4.15.4}{Funkciniai\040reikalavimai}{subsection.4.15}% 92
+\BOOKMARK [2][-]{subsection.4.16}{Buhalterijos\040tvarkymas}{section.4}% 93
+\BOOKMARK [3][-]{subsubsection.4.16.1}{Pagrindinis\040scenarijus}{subsection.4.16}% 94
+\BOOKMARK [3][-]{subsubsection.4.16.2}{Alternatyvus\040scenarijus\(Neveikia\040buhalterijos\040servisas\)}{subsection.4.16}% 95
+\BOOKMARK [3][-]{subsubsection.4.16.3}{Funkciniai\040reikalavimai}{subsection.4.16}% 96
+\BOOKMARK [2][-]{subsection.4.17}{Rinkos kainų sekimas}{section.4}% 97
+\BOOKMARK [3][-]{subsubsection.4.17.1}{Pagrindinis\040scenarijus}{subsection.4.17}% 98
+\BOOKMARK [3][-]{subsubsection.4.17.2}{Atlernatyvus scenarijus\(Nepavyksta gauti rinkos kainų\)}{subsection.4.17}% 99
+\BOOKMARK [3][-]{subsubsection.4.17.3}{Alternatyvus scenarijus\(Nepavyksta gauti rinkos kainų istorijos\)}{subsection.4.17}% 100
+\BOOKMARK [3][-]{subsubsection.4.17.4}{Funkciniai\040reikalavimai}{subsection.4.17}% 101
+\BOOKMARK [2][-]{subsection.4.18}{Automatinis žemės laistymas}{section.4}% 102
+\BOOKMARK [3][-]{subsubsection.4.18.1}{Pagrindinis\040scenarijus}{subsection.4.18}% 103
+\BOOKMARK [3][-]{subsubsection.4.18.2}{Alternatyvus scenarijus\(Nepavyksta nusiųsti informacijos laistymo sistemai\)}{subsection.4.18}% 104
+\BOOKMARK [3][-]{subsubsection.4.18.3}{Alternatyvus scenarijus\(Sisemoje nėra vandens\)}{subsection.4.18}% 105
+\BOOKMARK [3][-]{subsubsection.4.18.4}{Alternatyvus scenarijus\(Neatsidaro vandens vožtuvai laistymui\)}{subsection.4.18}% 106
+\BOOKMARK [3][-]{subsubsection.4.18.5}{Funkciniai\040reikalavimai}{subsection.4.18}% 107
+\BOOKMARK [2][-]{subsection.4.19}{Pagalbos iškvietimas}{section.4}% 108
+\BOOKMARK [3][-]{subsubsection.4.19.1}{Pagrindinis\040scenarijus}{subsection.4.19}% 109
+\BOOKMARK [3][-]{subsubsection.4.19.2}{Alternatyvus scenarijus\(nėra interneto ryšio\)}{subsection.4.19}% 110
+\BOOKMARK [3][-]{subsubsection.4.19.3}{Funkciniai\040reikalavimai}{subsection.4.19}% 111
+\BOOKMARK [2][-]{subsection.4.20}{Ataskaitos apie ūkį sudarymas}{section.4}% 112
+\BOOKMARK [3][-]{subsubsection.4.20.1}{Pagrindinis\040scenarijus}{subsection.4.20}% 113
+\BOOKMARK [3][-]{subsubsection.4.20.2}{Alternatyvus scenarijus\(Nepasiekiama duomenų bazė\)}{subsection.4.20}% 114
+\BOOKMARK [3][-]{subsubsection.4.20.3}{Funkciniai\040reikalavimai}{subsection.4.20}% 115
+\BOOKMARK [2][-]{subsection.4.21}{Žolių, ligų ir ūkio chemijos katalogas}{section.4}% 116
+\BOOKMARK [3][-]{subsubsection.4.21.1}{Pagrindinis\040scenarijus}{subsection.4.21}% 117
+\BOOKMARK [3][-]{subsubsection.4.21.2}{Alternatyvus scenarijus\(Nesėkminga paieška\)}{subsection.4.21}% 118
+\BOOKMARK [3][-]{subsubsection.4.21.3}{Funkciniai\040reikalavimai}{subsection.4.21}% 119
+\BOOKMARK [2][-]{subsection.4.22}{Atsakymas į pagalbos iškvietimą}{section.4}% 120
+\BOOKMARK [3][-]{subsubsection.4.22.1}{Pagrindinis\040scenarijus}{subsection.4.22}% 121
+\BOOKMARK [3][-]{subsubsection.4.22.2}{Alternatyvus scenarijus\(Nėra pagalbos prašymų\)}{subsection.4.22}% 122
+\BOOKMARK [3][-]{subsubsection.4.22.3}{Funkciniai\040reikalavimai}{subsection.4.22}% 123
+\BOOKMARK [2][-]{subsection.4.23}{Detektoriaus\040konfiguracijos\040keitimas}{section.4}% 124
+\BOOKMARK [3][-]{subsubsection.4.23.1}{Pagrindinis\040scenarijus}{subsection.4.23}% 125
+\BOOKMARK [3][-]{subsubsection.4.23.2}{Alternatyvus\040scenarijus\(Negalima\040pasiekti\040detektoriaus\)}{subsection.4.23}% 126
+\BOOKMARK [3][-]{subsubsection.4.23.3}{Funkciniai\040reikalavimai}{subsection.4.23}% 127
+\BOOKMARK [1][-]{section.5}{Nefunkciniai\040reikalavimai}{}% 128
+\BOOKMARK [2][-]{subsection.5.1}{Našumo reikalavimai}{section.5}% 129
+\BOOKMARK [2][-]{subsection.5.2}{Saugos\040reikalavimai}{section.5}% 130
+\BOOKMARK [2][-]{subsection.5.3}{Saugumo\040reikalavimai}{section.5}% 131
+\BOOKMARK [2][-]{subsection.5.4}{Sistemos kokybės atributai}{section.5}% 132
+\BOOKMARK [2][-]{subsection.5.5}{Veikimo taisyklės}{section.5}% 133
+\BOOKMARK [1][-]{section.6}{Kiti\040reikalavimai}{}% 134
+\BOOKMARK [1][-]{section*.34}{Žodynas}{}% 135
