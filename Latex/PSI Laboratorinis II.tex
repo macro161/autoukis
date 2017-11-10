@@ -472,9 +472,9 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \end{table}
 \subsection{Rinkos kainų sekimas}
 	\subsubsection{Pagrindinis scenarijus}
-	Vartotojas pagrindiniame lange pasirenka "Rinkos kainų sekimas". Programa atidaro langą, kuriame rodomos resursų kainos realiu laiku. Resursų kainos pateikiamos diagramos pavidalu. Vartotojas gali pasirinkti laiko intervalą, kuriame nori stebėti rinkos kainos pokyčius, ir kurių resursų kainas stebėti.
+	Vartotojas pagrindiniame lange pasirenka "Rinkos kainų sekimas". Programa atidaro langą, kuriame rodomos resursų kainos realiu laiku. Vartotojas gali pasirinkti laiko intervalą, kuriame nori stebėti rinkos kainos pokyčius, ir kurių resursų kainas stebėti. Vartotojas taip pat gali grįžti į pagrindinį programos langą.
 	\subsubsection{Atlernatyvus scenarijus(Nepavyksta gauti rinkos kainų)}
-	Vartotojas pagrindiniame lange pasirenka "Rinkos kainų sekimas". Dėl tam tikrų priežasčių nepavyksta gauti dabartinės rinkos kainos. Vartotojui parodomas informacinis pranešimas dėl netikslių rinkos duomenų. Vartotojui parodoma rinkos kainų istorija, kuri yra saugoma sistemoje.
+	Vartotojas pagrindiniame lange pasirenka "Rinkos kainų sekimas". Dėl tam tikrų priežasčių nepavyksta gauti dabartinės rinkos kainos. Vartotojui parodomas informacinis pranešimas dėl netikslių rinkos duomenų. Vartotojui parodoma rinkos kainų istorija, kuri yra saugoma sistemoje. Taip pat suteikiama galimybė sugrįši į pagrindinį sistemos langą.
 	\subsubsection{Alternatyvus scenarijus(Nepavyksta gauti rinkos kainų istorijos)}
 	Vartotojas pagrindiniame lange pasirenka "Rinkos kainų sekimas". Dėl nenumatytų nesklandumų nepavyksta gauti dabartinių rinkos kainų ir sistemoje nėra išsaugota kainų istorija. Vartotojas informuojamas, kad nepavyksta gauti rinkos kainų realiu laiku, ir kad sistemoje nėra išsaugotos kainų istorijos. Vartotojas nukreipiamas į pagrindinį programos langą.
 	\subsubsection{Funkciniai reikalavimai}
@@ -482,22 +482,22 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| } \hline
 		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
 		FR-19.01 & Sistema parodo rinkos kainas realiu laiku &  9 \\ \hline
-		FR-19.01.01 & Rodyti diagramą & 8 \\ \hline
-		FR-19.01.02 & Leisti pasirinkti konkrečius resursus jų kainos rodymui & 8 \\ \hline
-		FR-19.01.03 & Rodyti rinkos kainų istoriją & 7 \\ \hline
-		FR-19.01.04 & Saugoti rinkos kainų istoriją & 7 \\ \hline
+		FR-19.01.01 & Leisti pasirinkti konkrečius resursus jų kainos rodymui & 8 \\ \hline
+		FR-19.01.02 & Rodyti rinkos kainų istoriją & 7 \\ \hline
+		FR-19.01.03 & Saugoti rinkos kainų istoriją & 7 \\ \hline
+	
 	\end{tabularx}
 \end{table}
 	 
 \subsection{Automatinis žemės laistymas}
 	\subsubsection{Pagrindinis scenarijus}
-	Vartotojas pagrindiniame programos lange pasirenka "Automatinis žemė laistymas". Programa atidaro automatinės laistymo sistemos langą. Lange vartotojui yra pateikiama informacija kokia žemės dregmė kiekviename žemės žemės plote. Vartotojas gali pasirinkti kokiai žemės drėgmei esant sistema autoimatatiškai įjungtų žemės laistytuvus. Vartotojui pateikiama informacija apie laistytuvų būklę(veikia, neveikia). Sistema suteikia galimybę pasirinkti kokiu laiku sistema palaistys žemę. Taip pat yra suteikiama galimybė žemę palaistyti dabar.
+	Vartotojas pagrindiniame programos lange pasirenka "Automatinis žemė laistymas". Programa atidaro automatinės laistymo sistemos langą. Lange vartotojui yra pateikiama informacija kokia žemės dregmė kiekviename žemės plote. Vartotojas gali pasirinkti kokiai žemės drėgmei esant sistema automatatiškai įjungtų žemės laistytuvus. Vartotojui pateikiama informacija apie laistytuvų būklę(veikia, neveikia). Sistema suteikia galimybę pasirinkti kokiu laiku sistema palaistys žemę. Taip pat yra suteikiama galimybė žemę palaistyti dabar. Atlikus norimus veiksmus vartotojui suteikiama galimybė grįžti į pagrindinį programos langą.
 	\subsubsection{Alternatyvus scenarijus(Nepavyksta nusiųsti informacijos laistymo sistemai)}
-	Vartotojas pasirenka "Automatinis žemės laistymas". Programa atidaro laistymo sistemos langą. Vartotojas bando pakeisti laistymo nustatymus tačiau nepavyksta nurodymų nusiusti valdikliams. Vartotojas informuojamas informacine žinute, kad naujų nustatymų nusiųsti nepavyko ir sistema toliau dirbs pagal senus nustatymus. Vartotojui suteikiami keli pasirinkimai: atlikti sistemos diagnostika, išjungti 	sistemą rankiniu būdu, iškviesti sistemos techniką.
+	Vartotojas pasirenka "Automatinis žemės laistymas". Programa atidaro laistymo sistemos langą. Vartotojas bando pakeisti laistymo nustatymus tačiau nepavyksta nurodymų nusiųsti valdikliams. Vartotojas informuojamas informacine žinute, kad naujų nustatymų nusiųsti nepavyko ir sistema toliau dirbs pagal senus nustatymus. Vartotojui suteikiami keli pasirinkimai: atlikti sistemos diagnostika, išjungti sistemą rankiniu būdu(kartu su instrukcijomis kaip tai padaryti), iškviesti sistemos techniką arba grįžti į pagrindinį programos langą.
 	\subsubsection{Alternatyvus scenarijus(Sisemoje nėra vandens)}
-	Vartotojas pasirenka "Automatinis žemės laistymas". Vartotojui parodomas informacinis pranešimas dėl vandens tiekimo sutrikimo sistemoje. Vartojui siūloma atlikti diagnostika arba papildyti vandens talpas rankiniu būdu.
+	Vartotojas pasirenka "Automatinis žemės laistymas". Vartotojui parodomas informacinis pranešimas dėl vandens tiekimo sutrikimo sistemoje. Vartojui siūloma atlikti diagnostika arba papildyti vandens talpas rankiniu būdu(parodomas instrukcinis pranešimas kaip tai padaryti) arba vartotojas gali grįšti į pagrindinį programos meniu.
 	\subsubsection{Alternatyvus scenarijus(Neatsidaro vandens vožtuvai laistymui)}
-	Vartotojas pasirenka "Automatinis žemės laistymas". Vartotojas informuojamas, kad dėl sistemos gedimo nepavyksta atidaryti vandens vožtuvų. Vartotojas informuojamas, kad įvyko gedimas ir reikia gedimą pašalinti prieš tęsiant darbą. Vartotojui suteikiama galimybė išsikviesti sistemos techniką arba susitvarkyti pačiam.
+	Vartotojas pasirenka "Automatinis žemės laistymas". Vartotojas informuojamas, kad dėl sistemos gedimo nepavyksta atidaryti vandens vožtuvų. Vartotojas informuojamas, kad įvyko gedimas ir reikia gedimą pašalinti prieš tęsiant darbą. Vartotojui suteikiama galimybė išsikviesti sistemos techniką arba susitvarkyti pačiam(pateikiama instrukcija kaip tai padaryti).  Vartotojas taip pat gali grįšti į pagrindinį programos langą.
 	\subsubsection{Funkciniai reikalavimai}
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| } \hline
@@ -514,9 +514,9 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \end{table}
 \subsection{Pagalbos iškvietimas}
 	\subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka ''Pagalbos iškvietimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka reikiamos pagalbos tipą, sistema tada nusiunčia skubų numatytąjį pranešimą su prašymų atvykti, vartotojui praneša, kad pranešimas išsiųstas, bei praneša, kai gavėjas jį pamato.
+	Vartotojas pasirenka ''Pagalbos iškvietimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka reikiamos pagalbos tipą, sistema tada nusiunčia skubų numatytąjį pranešimą su prašymų atvykti, vartotojui praneša, kad pranešimas išsiųstas, bei praneša, kai gavėjas jį pamato. Vartotojui suteikiama galimybė išsiūsti kitą pagalbos pranešimą arba grįšti į pagrindinį langą.
 	\subsubsection{Alternatyvus scenarijus(nėra interneto ryšio)}
-	Vartotojas pasirenka ''Pagalbos iškvietimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka reikiamos pagalbos tipą, sistemai nepavykus išsiųsti pranešimo parodomas pranešimas, kuriame nurodoma, kokiu numeriu reikia paskambinti norint išsikviesti norimą pagalbą.
+	Vartotojas pasirenka ''Pagalbos iškvietimas'' pagrindiniame meniu. Programa atidaro langą, kuriama vartotojas pasirenka reikiamos pagalbos tipą, sistemai nepavykus išsiųsti pranešimo parodomas pranešimas, kuriame nurodoma, kokiu numeriu reikia paskambinti norint išsikviesti norimą pagalbą. Vartotojui suteikiama galimybė grįžti į pagrindinį langą.
 	\subsubsection{Funkciniai reikalavimai}
 	\begin{table}[htbp]
 		\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
@@ -535,9 +535,9 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 	\end{table}
 \subsection{Ataskaitos apie ūkį sudarymas}
 	\subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka ''Ūkio ataskaita'' pagrindiniame meniu. Programa atidaro langą, kuriame vartotojas pasirenka norimą laikotarpį, ir peržiūri to laikotarpio ataskaitą.
+	Vartotojas pasirenka ''Ūkio ataskaita'' pagrindiniame meniu. Programa atidaro langą, kuriame vartotojas pasirenka norimą laikotarpį, ir peržiūri to laikotarpio ataskaitą. Peržiūrėjęs ataskaita vartotojas gali baigti darbą ir grįžti į pagrindinį langą arba vėl vesti laikotarpį ir gauti naują ataskaitą.
 	\subsubsection{Alternatyvus scenarijus(Nepasiekiama duomenų bazė)}
-	Vartotojas pasirenka ''Ūkio ataskaita'' pagrindiniame meniu. Programa atidaro langą, kuriame vartotojas pasirenka norimą laikotarpį. Programa išveda klaidos pranešimą ir pasiūlo pamėginti vėliau.
+	Vartotojas pasirenka ''Ūkio ataskaita'' pagrindiniame meniu. Programa atidaro langą, kuriame vartotojas pasirenka norimą laikotarpį. Programa išveda klaidos pranešimą ir pasiūlo pamėginti vėliau ir suteikiama galimybė grįžti į pagrindinį programos langą.
 	\subsubsection{Funkciniai reikalavimai}
 	\begin{table}[htbp]
 		\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
@@ -548,9 +548,9 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 	\end{table}
 \subsection{Žolių, ligų ir ūkio chemijos katalogas}
 	\subsubsection{Pagrindinis scenarijus}
-	Vartotojas pasirenka ''Žolių ir ligų katalogas'' pagrindiniame meniu. Programa atidaro langą, kuriame vartotojas gali matyti pasirinktą katalogą.
+	Vartotojas pasirenka ''Žolių ir ligų katalogas'' pagrindiniame meniu. Programa atidaro langą, kuriame vartotojas gali matyti pasirinktą katalogą, jame ieškoti ir peržiūrėti konkrečia ligą arba žolę. Pabaigęs darbą vartotojas turi galimybę grįšti į pagrindinį meniu.
 	\subsubsection{Alternatyvus scenarijus(Nesėkminga paieška)}
-	Vartotojas pasirenka ''Ūkio ataskaita'' pagrindiniame meniu. Programa atidaro langą, kuriame rodomas katalogas. Vartotojui atlikus paiešką ir neradus jokių rezultatų išvedamas pranešimas, kad tokių duomenų kataloge nėra.
+	Vartotojas pasirenka ''Žolių ir ligų katalogas'' pagrindiniame meniu. Programa atidaro langą, kuriame rodomas katalogas. Vartotojui atlikus paiešką ir neradus jokių rezultatų išvedamas pranešimas, kad tokių duomenų kataloge nėra. Vėl parodomas pilnas katalogas ir vartotojas gali daryti kitą paieškos užklausą.
 	\subsubsection{Funkciniai reikalavimai}
 	\begin{table}[htbp]
 		\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
