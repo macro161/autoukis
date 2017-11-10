@@ -214,6 +214,24 @@ Naujiems vartotojams supažindinti su sistema bus sukurta video pamokų Youtube 
 \end{tabularx}
 \end{table}
 \subsection{Gyvūnų lokacijos sekimas}
+	\subsubsection{Pagrindinis scenarijus}
+	Vartotojas pasirenka ,,Gyvūnų lokacijos sekimas". Sistema atidaro langą kuriame varotojui gali stebėti kiekvieno gyvūno lokaciją žemėlapyje . Vartotojui taip pat pateikiamas gyvūnų sąrašas kuriame galima pasirinkti vieną ar kelis gyvūnus stebėjimui. Saraše parašyta gyvūno ID ir tiksli gyvūno lokacija koordinatėmis. Vartotojui suteikiama galimybė grįžti į pagrindinį programos langą.
+	\subsubsection{Alternatyvus scenarijus(Nėra gyvūnų kuriuos būtų galima stebėti)}
+	Vartotojas pasirenka ,,Gyvūnų lokacijos sekimas" tačiau sistemoje nėra jokių užregistruotų gyvūnų. Vartotojui parodomas informacinis pranešimas apie įvykusia klaidą. Vartotojui suteikiama galimybė eiti į gyvūnų registracijos funkciją arba grįžti į pagrindinį meniu.
+	\subsubsection{Alternatyvus scenarijus(Neveikia gyvūno lokacijos detektorius)}
+	Vartotojas pasirenka ,,Gyvūnų lokacijos sekimas". Sistema parodo informacinį pranešimą, kad vienas arba kelis gyvūnų lokacijos detektoriai neveikia. Vartotojas informuojamas kurių gyvūnų(jų ID) detektoriai neveikia ir kokia buvo paskutinė gyvūnų lokaciją prieš detektoriui nustojant veikti.
+	\subsubsection{Funkciniai reikalavimai}
+\begin{table}[htbp]
+	Nr. & Reikalavimas &  Prioritetas (1-10)  \\   \hline 
+	FR-3.01 & Vartotojui pateikiama kiekvieno gyvūno lokacija & 9 \\   \hline  
+	FR-3.01.01 & Parodo gyvūną pagal pasirinktą ID & 7 \\   \hline 
+	FR-3.01.02 & Leidžia pasirinkti kelis gyvūnus iš sąrąšo & 8 \\   \hline 
+	FR-3.02 & Saugo gyvūno lokaciją sistemoje & 8 \\   \hline 
+	FR-3.03 & Suteikia informaciją apie pabėgusius gyvūnus & 6 \\   \hline 
+\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+\end{tabularx}
+\end{table}
+	
 \subsection{Gyvūnų duomenų peržiūra}
 
 \subsection{Ūkio technikos resursų sekimas}
