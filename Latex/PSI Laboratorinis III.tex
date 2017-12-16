@@ -38,7 +38,6 @@
 
 \begin{document}
 \maketitle
-\centering
 \tableofcontents
 
 
@@ -244,6 +243,17 @@ Išsiaiškinti, kurie funkcionalumai yra aktualiausi vartotojams, pateikiant pot
 		\item{Sistemos pritaikymas dideliems ūkiams: siekiant apimti kuo didesį rinkos gabalą sistema bus pritaikyta ir didliesiams ūkininkams. Vartotojui bus suteiktos galimybės laistyti didelius žemės plotus, stebėti žemės parametus, sekti rinkos kainas, užsisakyti autonominę ūkio techniką bei tvarkyti buhalteriją.}
 	\end{itemize}
 \section{Sistemos naudojimo scenarijus}
+\subsection{scenarijai}
+\begin{itemize}
+\item Sistemos administratorius gali būti perspėtas dėl netinkamai funkcionuojančių detektorių
+\begin{figure}[H]
+		\centering	
+	\includegraphics[width=18cm,height=20cm,keepaspectratio]{gedimoŠalinimas.png}
+	\caption{Detektoriaus gedimo šalinimo sekų diagrama}
+	\label{fig:gedimoŠalinimas}
+	\end{figure}
+	Tam, kad sistemos administratoriui nereiktų nuolat tikrinti ar visi žemės detektoriai tinkamai funkcionuoja, programos vartotojas turi galimybe pranešti apie jo nuomone netinkamai funkcionuojanti prietaisą, po šio pranešimo administratorius patikrina jo pagrįstuma ir klaidos atveju pasistengia ją kuo greičiau ištaisyti.
+\end{itemize}
 \section{Sistemos įgyvendinimo planas}
 Sistemą įgyvendinsime pagal žemiau pateiktą diagramą. 
 \begin{figure}[H]
@@ -252,7 +262,6 @@ Sistemą įgyvendinsime pagal žemiau pateiktą diagramą.
 	\caption{Sistemos įgyvendinimo planas}
 	\label{fig:Sistemos įgyvendinimo planas}
 \end{figure}
-
 Pirmoje sistemos įgyvendinimo fazėje mūsų komanda pasamdys du programuotojus: Fullstack programuotoją ir arduino programuotoją/elektroniką. Fullstack programuotojas bus atsakingas už svetainės, serverių ir duombazės kūrimą bei palaikymą. Arduino programuotojas kurs sistemą kuri valdys sensorius ir gyvūnų maitinimą. Tuo tarpu dalis mūsų komandos kurs Android/iOS aplikacijas, o kita dalis rūpisis derėjimusi su tiekėjais, investuotoju pritraukimu ir jeigu reikės banko paskolos gavimu. Kai sistema artės prie parduodamo produkto mūsų komanda pradės reklamuoti mūsų sistema suinteresuotiems pirkėjams. Paskutinioje fazėje programuotojai apjungs viską į vieną sistema ir sistema bus pateikta pardavimui klientams. 
 
 
