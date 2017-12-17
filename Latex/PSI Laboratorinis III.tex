@@ -43,7 +43,8 @@
 
 \section{Įvadas}
 Pasaulyje technologijos vystosi labai sparčiai. Prognozuojama, kad ateityje robotizacija pakeis žmonių darbo jėgą ir žmonių darbo jėga bus nebereikalinga. Kol kas pasaulio ir Lietuvos ūkio sektoriuje robotizacija vykdoma minimaliai. Mūsų kuriama sistema siekia įnešti šią ūkio automatizaciją į Lietuvos rinką. Sistemos tikslas automatizuoti kuo daugiau ūkio veiklų. Šio laboratorinio darbo tikslas atlikti verslo analizę: atlikti išorinę ir vidinę procesų analizę, atlikti SWOT analizę, sukurti verslo vystymo strategiją ir išsiaiškinti, ar turint dabartinę rinkos, technologijų ir žinių situaciją, sistemos kūrimas ir implementavimas pasiteisintų kaip verslo planas.
-\section{Verslo proceso aprašas}
+\section{Verslo sritis}
+	Automatinė ūkio valdymo sistemos sritis yra žemės ūkio technologijų automatizavimas, robotizavimas ir informacijos apie ūkį pateikimas. Sistema apima ūkio valdymo programinės įrangos kūrimą, automatinių sistemų įgyvendinimą, plėtojimą ir palaikymą. Į mūsų sistemos ribas neįeina vartotojo daromi verslo sprendimai bei ūkio vystymo strateginiai sprendimai. Sistemos kūrėjai neatsako už vartotojo pelno praradimą, bankrotą bei visas kitas su finansais susijusias sritis. Kūrėjai taip pat neatsako už padarytą žalą netinkamai naudojantis sistema.   
 
 \section{Išorinė analizė}
 	\subsection{Black Box analizė}
@@ -240,7 +241,28 @@ Taktikos - surinkti inormaciją dėl programos turinio, atliekant potencialių v
 Išanalizuoti panašias sistemas, įvertinti, kokia informacija yra plačiausiai naudojama jose.
 Paruošti apklausą bei apklausą vykdančius darbuotojus, kurios tikslas būtų išrinkti tinkamiausią grafinę vartotojo sąsają.
 Išsiaiškinti, kurie funkcionalumai yra aktualiausi vartotojams, pateikiant potancialiems vartotojams apklausas.
-	\subsection{Proceso pjūvis}
+	\section{Proceso pjūvis}
+	\begin{itemize}
+	\item Transporto valdymo proceso pjūvis
+	\begin{figure}[H]
+		\centering	
+	\includegraphics[width=18cm,height=20cm,keepaspectratio]{BPMN_transportoValdymas.png}
+	\caption{BPMN transporto valdymo diagrama}
+	\label{fig:BPMN_transportoValdymas}
+\end{figure}
+\end{itemize}
+Šioje diagramoje matome, kaip bendrauja *(taisant gramatika įrašyti) vykstant transporto priemonės valdymo procesui, iš jos matome, kad vartotojui atliekant šį procesą jis siunčia sistemai pranešimus, kad ji atliktu tam tikrus patikrinimus.
+	\begin{itemize}
+	\item Parametrų sekimo proceso pjūvis
+	\begin{figure}[H]
+		\centering	
+	\includegraphics[width=18cm,height=20cm,keepaspectratio]{BPMN_ParametruSekimas.png}
+	\caption{BPMN parametrų sekimo diagrama}
+	\label{fig:BPMN_ParametruSekimas}
+\end{figure}
+Šioje diagramoje matome, kad sistema kas 24h automatiškai patikrina žemės parametrus ir randa akivaizdžių jų suprastėjimų apie juos praneša vartotojui, kuris juo vėliau gali sutvarkyti.
+\end{itemize}
+
 	\subsection{Veiklos principai}
 	\subsection{Rodikliai}
 \section{Analizės rezultatai, apibendrinimas}
@@ -267,7 +289,7 @@ Išsiaiškinti, kurie funkcionalumai yra aktualiausi vartotojams, pateikiant pot
 	\subsection{Pavojai}
 	\begin{itemize}
 	\item Yra nemažai konkurentų, kurie teikia kokybišką produktą ir turi realistiškesnį panaudojimą.
-	\item Kadangi publika, į kurią taikomės yra labai specifiška ir negausi, nėra didelės tikimybįs, kad investicijos pasiteisins ir mūsų produktas taps populiarus.
+	\item Kadangi publika, į kurią taikomės yra labai specifiška ir negausi, nėra didelės tikimybės, kad investicijos pasiteisins ir mūsų produktas taps populiarus.
 	\item Dėl mažos paklausos galimas mažas pelnas.
 	\item Dėl didelių sistemos įgyvendinimo kaštų dar labiau sumažėjau paklausa.
 	\item Sistema labai sudėtinga, priklausoma, labai daug niuansų, kuriuos ateityje gali būti sunku suvaldyti.
@@ -282,9 +304,9 @@ Mūsų misija yra sukurti sistemą, kuri padėtų ūkininkams valdyti ūkius su 
 	\begin{itemize}
 		\item{Sistemos kainos mažinimas: atlikdami verslo analizę supratome, kad norėdami išlikti kompetetingi rinkoje turime kiek galima sumažinti sistemos kainą. Kainą mažinsime pirkėjui suteikdami galimybę rinktis mažesnį ir paprastesnį sistemos variantą.  Vietoj pilnos sistemos, kuri valdo ūkio techniką ir automatiškai šeria gyvunus, mes suteiksime galimybę pasirinkti tik žemės parametrų sekimą ir automatinį laistymą. Taip pat suteiksime vartotojams galimybę patiems įsidiegti sistemą jeigu jie nenorės mokėti už mūsų diegimo paslaugas. Toks modalumas leistų sistemą įdiegti net ir sodybose ir drastiškai sumažintų primityvios sistemos kainą.}
 		\item{Sistemos prieinamumas seniems žmonėms bei žmonėms su negalia: kurdami interfeiso dizainą atsižvelgsime į dizaino prieinamumą(accessability). Programinės įrangos interfeisas bus kontrastingų spalvų. Bus galima pakeisti sąsajos komponentų dydžius. Tai suteiks lengvesnį prieinamumą žmonėms su motorinėmis ar regos negalėmis. Suteiksime išsamius paaiškinimus kaip naudotis sistema. Vartotojui pageidaujant atvyksime įdiegti ir sukonfiguruoti sistemą}
-		\item{Sistemos panaudojimas mažiems ūkiams: siekiant pritraukti kuo didesnį kiekį vartotojų savo produktą kursime ne tik didiesiams ūkininkams, bet taip pat ir sodybų savininkams, turintiems nedidelius žemės plotus. Mažų žemės plotų savininkai galės nusipirkti tik laistymo ir parametrų stebėjimo funkciją. Minimalus sistemos variantas kainuotų salyginai pigiai ir vartotojas galėtų palikti savo žemę programos priežiūroje, kuri ją laistytų.}
+		\item{Sistemos panaudojimas mažiems ūkiams: siekiant pritraukti kuo didesnį kiekį vartotojų savo produktą kursime ne tik didiesiems ūkininkams, bet taip pat ir sodybų savininkams, turintiems nedidelius žemės plotus. Mažų žemės plotų savininkai galės nusipirkti tik laistymo ir parametrų stebėjimo funkciją. Minimalus sistemos variantas kainuotų salyginai pigiai ir vartotojas galėtų palikti savo žemę programos priežiūroje, kuri ją laistytų.}
 		\item{Informavimas apie ūkį: savo sistema sieksime ūkininką kuo labiau informuoti apie jo valdomą teritoriją, suteikti informaciją apie žemės parametrus ir pateikti rekomendacijas, ką daryti kokioje situacijoje. Sistema suteiks rekomendacijas, kada laistyti žemę, kada nuimti derlių, kokiomis trašomis tręšti žemę, kada sėti. Sistema suteiktų informacijos net ir norintiems pradėti užsiimti ūkininkavimu.}
-		\item{Sistemos pritaikymas dideliems ūkiams: siekiant apimti kuo didesį rinkos gabalą sistema bus pritaikyta ir didiesiams ūkininkams. Vartotojui bus suteiktos galimybės laistyti didelius žemės plotus, stebėti žemės parametus, sekti rinkos kainas, užsisakyti autonominę ūkio techniką bei tvarkyti buhalteriją.}
+		\item{Sistemos pritaikymas dideliems ūkiams: siekiant apimti kuo didesnį rinkos gabalą sistema bus pritaikyta ir didiesiems ūkininkams. Vartotojui bus suteiktos galimybės laistyti didelius žemės plotus, stebėti žemės parametus, sekti rinkos kainas, užsisakyti autonominę ūkio techniką bei tvarkyti buhalteriją.}
 	\end{itemize}
 \section{Sistemos naudojimo scenarijus}
 \subsection{scenarijai}
@@ -298,6 +320,9 @@ Mūsų misija yra sukurti sistemą, kuri padėtų ūkininkams valdyti ūkius su 
 	\end{figure}
 	Tam, kad sistemos administratoriui nereiktų nuolat tikrinti, ar visi žemės detektoriai tinkamai funkcionuoja, programos vartotojas turi galimybę pranešti apie jo nuomone netinkamai funkcionuojantį prietaisą. Po šio pranešimo administratorius patikrina jo pagrįstumą ir klaidos atveju pasistengia ją kuo greičiau ištaisyti.
 \end{itemize}
+
+\subsection{Sistemos teikiama nauda}
+
 \section{Sistemos įgyvendinimo planas}
 Sistemą įgyvendinsime pagal žemiau pateiktą diagramą. 
 \begin{figure}[H]
@@ -314,25 +339,85 @@ Pirmoje sistemos įgyvendinimo fazėje mūsų komanda pasamdys du programuotojus
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{7.5cm}|X| }  \hline
 		Problema & Problemos pašalinimas \\ \hline
-		Vartotojai nežinos šios programos & Išreklamuoti programą įvairiuose ūkininkam aktualiuose puslapiuose, bet ūkininkam aktualių televizijos laidų metu \\ \hline
+		Vartotojai nežinos šios programos & Išreklamuoti programą įvairiuose ūkininkams aktualiuose puslapiuose, bet ūkininkams aktualių televizijos laidų metu \\ \hline
 		Vartotojai nemokės naudotis programa & Sistemoje įterpti naudojimo instrukciją \\ \hline
 	\end{tabularx}
 \end{table}
-\subsection{Sistemos kokybės atributai}
-\begin{table}[htbp]
-	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
-		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
-		NFR-5.4.01 & Testavimo aplinka turi būti sukurta taip, kad kiekvieną finkciją būtų galima tikrinti atskirai & 7 \\ \hline
-		NFR-5.4.02 & Sistemos veiksmai turi būti prognozuojami, sistema turi pateikti tą informaciją, kurios vartotojas reikalauja & 9 \\ \hline
-		NFR-5.4.03 & Sistemos patikrinimas leidžiamas ne dažniau kaip kartą į mėnesį, iš anksto įspėjus naudotojus apie galimus sistemos veikimo trukdžius  & 8 \\ \hline
-	\end{tabularx}
-\end{table}
 	\subsection{Techninė analizė}
-Atlikę techninę analizę išsigryninom idėjas, kokių techninių komponentų reikia įgyvendinti sistemą. Visas ūkio valdymas būtų vykdomas Arduino mikrokontroleriu, kurį galima nusipirkti iš nevieno tiekėjo. Kartu su kontroleriu sistemai reiktų sensorių bei laidų, kuriuos taip pat galima nesunkiai įsigyti. Sistemos veikimui užtikrinti reiktų duombazės, kurioje būtų saugoma įvairi informacija. Duombazė būtų laikoma serveryje. Autonominę techniką gautume iš ASI Robots, kartu su technika gautume ir programinę įrangą, skirtą kontroliuoti šią techniką.
+Atlikę techninę analizę išgryninom idėjas, kokių techninių komponentų reikia įgyvendinti sistemą. Visas ūkio valdymas būtų vykdomas Arduino mikrokontroleriu, kurį galima nusipirkti iš nevieno tiekėjo. Kartu su kontroleriu sistemai reiktų sensorių bei laidų, kuriuos taip pat galima nesunkiai įsigyti. Sistemos veikimui užtikrinti reiktų duombazės, kurioje būtų saugoma įvairi informacija. Duombazė būtų laikoma serveryje. Autonominę techniką gautume iš ASI Robots, kartu su technika gautume ir programinę įrangą, skirtą kontroliuoti šią techniką.
 	\subsection{Ekonominio įgyvendinamumo analizė}
+	\begin{itemize}
+		\item{Išlaidos: Savo įmonės išlaidas išskirsime į dvi kategorijas: kiek kainuos kiekviena siūloma paslauga ir kiek pinigų reikės verslui pradėti ir sistemai sukurti}
+		\begin{itemize}
+			Siulomos paslaugos ir jū išlaidos:
+			\newline
+			Mažo ūkininko paketas
+			\item{Arduino mikrokontroleris 20eu}
+			\item{Laidai sujungimui 20eu}
+			\item{Laisrymo žarna: 60eu(priklauso nuo žemės ploto)}
+			\item{Sprinkleriai: 20eu}
+			\item{Sensoriai: 100eu}
+			\item{Savikaina: 220eu}	
+			\item{Kaina: 500eu}
+			\newline
+			Vidutinio ūkininko paketas(įeina viskas kas viršuje plius kas pateikta apačioje)
+			\item{Automatinio maitinimo įranga: 500eu(pagal reikalinga kiekį)}
+			\item{Gyvūnų sekimo iranga: 1000eu (priklauso nuo gyvūnu kiekio)}
+			\item{Savikaina: 2000eu}
+			\item{Kaina: 3000eu}
+			\newline
+			Didelio ūkininko paketas(viskas kas viršuje):
+			\item{Automatizuota technika: 100000eu(priklausomi nuo technikos kiekio)}
+			\item{Savikaina 140000eu}
+			\item{Kaina: 150000eu}
+			\newline
+			Kaina yra kiek preliminariai planuojam prašyti už paslaugą
+			
+		\end{itemize}
+		\item{Išlaidos reikalingos komandai išlaikyti:}
+		\begin{itemize}
+			\item{Fullstack programuotojo atlyginimas mėnesiui 2000eu}
+			\item{Administratorius 500eu}
+			\item{Arduino programuotojas/elektronikas 2000eu}
+			\item{Serverio išlaidos: 100eu mėnesiui}
+			\item{Verslo licensija: 1000eu}
+			\item{Reklama mėnesiai: 500eu}
+		\end{itemize}
+		Įkuriant įmonė reikės susimokėti licensijos mokestį 1000eu ir realaus produkto pateiki vartotojui negalėsime dar 4 mėnesius nes reikės ją sukurti, šią kainą sumažiną tai, kad mes patys galėsime prisidėti prie sistemos kūrimo programuojant. Kas mėnesį įmonės išlaikymas mums kainuos maždaug 5500eu. Taigi praždžiai reikės maždaug 20000eu investicijos. 
+		\newline
+	
+
+		
+		\item{Pajamos:}
+Lietuvoje yra maždaug 120000 ūkių iki 30 hektarų. Šiems ūkiams galėtume pasiūlyti savo mažo ūkininko paketa. Jeigu manysime kad pavyks 1 procentui ūkininkų parduoti mažiausią sistemos paketą gautime 300000eu pelno.Papildomai vartotojas turėtų mokėti prenumeratos mokestį už sistemos palaikyma ir gedimų šalinimą 50eu per mėnesiui. Sistema veiktų maždaug pusę metų(žiemą nereikia laistyti) už sistemos prenumeratas per metus turėtume gauti 200000eu pelno išskaičiavus taisymo kainas.
+		\newline
+		Lietuvoje yra 4000 ūki kurių plotas nuo 30 iki 100 hektarų. Šiem ūkininkam siūlytume vidutinį paketa. Jeigu pavyktų parduoti procentui šių ūkininkų vidutinę sistemą sistemą gautume maždaug 40000eu pelno. Už mėnesinę prenumeratą gautume 12000eu.
+		\newline
+		Ūkių turinčių daugiau negu 100 hektarų žemės tėra 500. Todėl manome, kad didžiausią paketą pavyktų parduoti tik vienetams. Todėl galimo pelno skaičiuoti neverta.
+		
+		\item{Apibendrinimas:}
+		\newline
+		Atlikę ekonominę analizę išsiaiškinome, kad prasmingia būtų sumažinti projekto apimtį ir tiekti mažajį ir vidutinį ūkininko paketus siekiant minimalizuoti riziką.
+
+
+	\end{itemize}
 	\subsection{Teisinė analizė}
 Mūsų kuriamai sistemai svarbiausias teisinis klausimas - ar nebus pažeistas asmens duomenų teisinės apsaugos įstatymas. Mūsų sistemos funkcionalumas ir tikslai nepažeidžia asmens duomenų apsaugos įstatymo tikslo - “ginti žmogaus privataus gyvenimo neliečiamumo teisę tvarkant asmens duomenis”. Mūsų sistema registracijos metu neprašo jokių asmeninių duomenų. Prašome tik susisiekimui su vartotoju reikalingos informacijos bei vartotojui kuriantis paskyrą bus prašoma įvesti jo paties sugalvotą slapyvardį, kuris bus naudojamas jo identifikacijai, nuslepiant jo tapatybę.
 \section{Išvados}
+	Šia darbe išanalizavome mūsų verso idėją. Įvertinome vidinius ir išorius veiksnius. Analizės metu supratome, kad mūsų idėjos apimtis Lietuvai yra per didelė. Mažoje Lietuvos rinkoje nepavykų įgyvendinti autonominės ūkio technikos idėjos, nes kaštai būtų per dideli relityviai mažiems Lietuvos ūkininkams. Tačiau padarėmę išvadą, kad atitinkiamai pritaikius sistemą mažiems ūkiams ir sodyboms idėja turi šansų susilaukti dėmesio. Lietuvos rinkoje jau yra automatizuotų ūkių sprendimų, tačiau jie labiau pritaikyti dideliems ūkiam. Taikantis į sodybas ir mažus ūkius, bandant kuo labiau sumažinti sistemos kainas yra galimybė gauti pelno. Verta paminėti, kad vienas Lietuvos rinkos privalumas yra tai, kad programuotojų algos yra mažesnės negu kitos šalyje, kas sumažintų pradinę sistemos kūrimo kainą.
+	
+ 
 \section{Žodynas}
+\begin{itemize}
+\item ASI - kompanija, kuri teikia automatiškai valdomą transportą.
+\item Automatiškai valdoma - valdymui nereikalinga žmogaus pagalba.
+\item Black Box - programa, sistema ar įrenginys, į kurį galima žvelgti kaip į jo įeitį/išeitį nežinant, kaip jis iš tiesų veikia viduje.
+\item Dalykinė sritis – sritis, kurioje naudojama sistema.
+\item Detektorius - Arduino mikro kontroleris, skirtas ūkio sekimui.
+\item Naudotojas/vartotojas - žmogus, kuris naudojasi programa.
+\item Penkių Porterio jėgų modelis - nagrinėja naujų konkurentų įėjimo baimę, vartotojų (pirkėjų) perkamąją galią, tiekėjų derėjimosi galią, substitutų baimę bei konkurenciją šakoje.
+\item Manager.io - buhalterijos valdymo sistema
+\item SWOT - strengths, weaknesses, opportunities, ir threats santrumpa (stiprybės, silpnybės, galimybės, pavojai).
+\end{itemize}
 
 \end{document}
