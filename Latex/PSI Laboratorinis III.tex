@@ -234,6 +234,16 @@ Iš įvertinimų socialiniuose tinluose, Google Play ir Apple parduotuvėse nesu
 \end{figure}
 \end{itemize}
 Šioje diagramoje matome, kaip bendrauja *(taisant gramatika įrašyti) vykstant transporto priemonės valdymo procesui, iš jos matome, kad vartotojui atliekant šį procesą jis siunčia sistemai pranešimus, kad ji atliktu tam tikrus patikrinimus.
+	\begin{itemize}
+	\item Parametrų sekimo proceso pjūvis
+	\begin{figure}[H]
+		\centering	
+	\includegraphics[width=18cm,height=20cm,keepaspectratio]{BPMN_ParametruSekimas.png}
+	\caption{BPMN parametrų sekimo diagrama}
+	\label{fig:BPMN_ParametruSekimas}
+\end{figure}
+Šioje diagramoje matome, kad sistema kas 24h automatiškai patikrina žemės parametrus ir randa akivaizdžių jų suprastėjimų apie juos praneša vartotojui, kuris juo vėliau gali sutvarkyti.
+\end{itemize}
 	\subsection{Veiklos principai}
 	\subsection{Rodikliai}
 \section{Analizės rezultatai, apibendrinimas}
@@ -260,7 +270,7 @@ Iš įvertinimų socialiniuose tinluose, Google Play ir Apple parduotuvėse nesu
 	\subsection{Pavojai}
 	\begin{itemize}
 	\item Yra nemažai konkurentų, kurie teikia kokybišką produktą ir turi realistiškesnį panaudojimą.
-	\item Kadangi publika, į kurią taikomės yra labai specifiška ir negausi, nėra didelės tikimybįs, kad investicijos pasiteisins ir mūsų produktas taps populiarus.
+	\item Kadangi publika, į kurią taikomės yra labai specifiška ir negausi, nėra didelės tikimybės, kad investicijos pasiteisins ir mūsų produktas taps populiarus.
 	\item Dėl mažos paklausos galimas mažas pelnas.
 	\item Dėl didelių sistemos įgyvendinimo kaštų dar labiau sumažėjau paklausa.
 	\item Sistema labai sudėtinga, priklausoma, labai daug niuansų, kuriuos ateityje gali būti sunku suvaldyti.
@@ -278,20 +288,20 @@ Sukurti patogią, patrauklią bei paprastą grafinę vartotojo sąsają.
 \subsection{Strategies}
 Strategijos - surinkti informaciją dėl programos turinio, sužinoti, kokia informacija ūkininkams yra esminė prižiūrint ūkį.
 Išpopuliarinti sistemą tarp Lietuvos ūkininkų.
-Surinkti informaciją apie tinkamą, patogią ir patrauklią grafinę varototojo sąsają.
+Surinkti informaciją apie tinkamą, patogią ir patrauklią grafinę vartotojo sąsają.
 \subsection{Tactics}
-Taktikos - surinkti inormaciją dėl programos turinio, atliekant potencialių vartotojų apklausą.
+Taktikos - surinkti informaciją dėl programos turinio, atliekant potencialių vartotojų apklausą.
 Išanalizuoti panašias sistemas, įvertinti, kokia informacija yra plačiausiai naudojama jose.
 Paruošti apklausą bei apklausą vykdančius darbuotojus, kurios tikslas būtų išrinkti tinkamiausią grafinę vartotojo sąsają.
-Išsiaiškinti, kurie funkcionalumai yra aktualiausi vartotojams, pateikiant potancialiems vartotojams apklausas.
+Išsiaiškinti, kurie funkcionalumai yra aktualiausi vartotojams, pateikiant potencialiems vartotojams apklausas.
 \section{Strateginiai tikslai}
 	Mūsų pagrindinis tikslas yra padaryti, kad ūkio valdyme būtų kuo mažiau žmogaus įsikišimo. Atlikdami verslo analizę supratome, kad Lietuvos rinka yra salyginai maža, o ekonominė situacija prasta lyginant su kitomis šalimis. Todėl nutarėme, kad mūsų sistema turi būti kuo prieinamesnė ir pigesnė vartotojui, paaukojant kuo mažiau funkcionalumų. Dalis ūkininkų yra senyvi žmonės, per daug nesusipažinę su technologijomis. Taip pat Lietuvoje nėra tiek daug didelių žemės ūkių, todėl savo strategijoje turime atsižvelgti ir į mažus ūkininkus ar net žmones turinčius sodybas. Savo strategija sieksime padaryti, kad kiekvienas ūkininkas būtų kuo labiau informuotas apie savo turimą ūkį. Mūsų pagrindinės strategijos žingsniai bus:
 	\begin{itemize}
 		\item{Sistemos kainos mažinimas: atlikdami verslo analizę supratome, kad norėdami išlikti kompetetingi rinkoje turime kiek galima sumažinti sistemos kainą. Kainą mažinsime pirkėjui suteikdami galimybę rinktis mažesnį ir paprastesnį sistemos variantą.  Vietoj pilnos sistemos, kuri valdo ūkio techniką ir automatiškai šeria gyvunus, mes suteiksime galimybę pasirinkti tik žemės parametrų sekimą ir automatinį laistymą. Taip pat suteiksime vartotojams galimybę patiems įsidiegti sistemą jeigu jie nenorės mokėti už mūsų diegimo paslaugas. Toks modalumas leistų sistemą įdiegti net ir sodybose ir drastiškai sumažintų primityvios sistemos kainą.}
 		\item{Sistemos prieinamumas seniems žmonėms bei žmonėms su negalia: kurdami interfeiso dizainą atsižvelgsime į dizaino prieinamumą(accessability). Programinės įrangos interfeisas bus kontrastingų spalvų. Bus galima pakeisti sąsajos komponentų dydžius. Tai suteiks lengvesnį prieinamumą žmonėms su motorinėmis ar regos negalėmis. Suteiksime išsamius paaiškinimus kaip naudotis sistema. Vartotojui pageidaujant atvyksime įdiegti ir sukonfiguruoti sistemą}
-		\item{Sistemos panaudojimas mažiems ūkiams: siekiant pritraukti kuo didesnį kiekį vartotojų savo produktą kursime ne tik didiesiams ūkininkams, bet taip pat ir sodybų savininkams, turintiems nedidelius žemės plotus. Mažų žemės plotų savininkai galės nusipirkti tik laistymo ir parametrų stebėjimo funkciją. Minimalus sistemos variantas kainuotų salyginai pigiai ir vartotojas galėtų palikti savo žemę programos priežiūroje, kuri ją laistytų.}
+		\item{Sistemos panaudojimas mažiems ūkiams: siekiant pritraukti kuo didesnį kiekį vartotojų savo produktą kursime ne tik didiesiems ūkininkams, bet taip pat ir sodybų savininkams, turintiems nedidelius žemės plotus. Mažų žemės plotų savininkai galės nusipirkti tik laistymo ir parametrų stebėjimo funkciją. Minimalus sistemos variantas kainuotų salyginai pigiai ir vartotojas galėtų palikti savo žemę programos priežiūroje, kuri ją laistytų.}
 		\item{Informavimas apie ūkį: savo sistema sieksime ūkininką kuo labiau informuoti apie jo valdomą teritoriją, suteikti informaciją apie žemės parametrus ir pateikti rekomendacijas, ką daryti kokioje situacijoje. Sistema suteiks rekomendacijas, kada laistyti žemę, kada nuimti derlių, kokiomis trašomis tręšti žemę, kada sėti. Sistema suteiktų informacijos net ir norintiems pradėti užsiimti ūkininkavimu.}
-		\item{Sistemos pritaikymas dideliems ūkiams: siekiant apimti kuo didesį rinkos gabalą sistema bus pritaikyta ir didiesiams ūkininkams. Vartotojui bus suteiktos galimybės laistyti didelius žemės plotus, stebėti žemės parametus, sekti rinkos kainas, užsisakyti autonominę ūkio techniką bei tvarkyti buhalteriją.}
+		\item{Sistemos pritaikymas dideliems ūkiams: siekiant apimti kuo didesnį rinkos gabalą sistema bus pritaikyta ir didiesiems ūkininkams. Vartotojui bus suteiktos galimybės laistyti didelius žemės plotus, stebėti žemės parametus, sekti rinkos kainas, užsisakyti autonominę ūkio techniką bei tvarkyti buhalteriją.}
 	\end{itemize}
 \section{Sistemos naudojimo scenarijus}
 \subsection{scenarijai}
@@ -321,21 +331,12 @@ Pirmoje sistemos įgyvendinimo fazėje mūsų komanda pasamdys du programuotojus
 \begin{table}[htbp]
 	\begin{tabularx}{1\textwidth}{ |P{7.5cm}|X| }  \hline
 		Problema & Problemos pašalinimas \\ \hline
-		Vartotojai nežinos šios programos & Išreklamuoti programą įvairiuose ūkininkam aktualiuose puslapiuose, bet ūkininkam aktualių televizijos laidų metu \\ \hline
+		Vartotojai nežinos šios programos & Išreklamuoti programą įvairiuose ūkininkams aktualiuose puslapiuose, bet ūkininkams aktualių televizijos laidų metu \\ \hline
 		Vartotojai nemokės naudotis programa & Sistemoje įterpti naudojimo instrukciją \\ \hline
 	\end{tabularx}
 \end{table}
-\subsection{Sistemos kokybės atributai}
-\begin{table}[htbp]
-	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
-		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
-		NFR-5.4.01 & Testavimo aplinka turi būti sukurta taip, kad kiekvieną finkciją būtų galima tikrinti atskirai & 7 \\ \hline
-		NFR-5.4.02 & Sistemos veiksmai turi būti prognozuojami, sistema turi pateikti tą informaciją, kurios vartotojas reikalauja & 9 \\ \hline
-		NFR-5.4.03 & Sistemos patikrinimas leidžiamas ne dažniau kaip kartą į mėnesį, iš anksto įspėjus naudotojus apie galimus sistemos veikimo trukdžius  & 8 \\ \hline
-	\end{tabularx}
-\end{table}
 	\subsection{Techninė analizė}
-Atlikę techninę analizę išsigryninom idėjas, kokių techninių komponentų reikia įgyvendinti sistemą. Visas ūkio valdymas būtų vykdomas Arduino mikrokontroleriu, kurį galima nusipirkti iš nevieno tiekėjo. Kartu su kontroleriu sistemai reiktų sensorių bei laidų, kuriuos taip pat galima nesunkiai įsigyti. Sistemos veikimui užtikrinti reiktų duombazės, kurioje būtų saugoma įvairi informacija. Duombazė būtų laikoma serveryje. Autonominę techniką gautume iš ASI Robots, kartu su technika gautume ir programinę įrangą, skirtą kontroliuoti šią techniką.
+Atlikę techninę analizę išgryninom idėjas, kokių techninių komponentų reikia įgyvendinti sistemą. Visas ūkio valdymas būtų vykdomas Arduino mikrokontroleriu, kurį galima nusipirkti iš nevieno tiekėjo. Kartu su kontroleriu sistemai reiktų sensorių bei laidų, kuriuos taip pat galima nesunkiai įsigyti. Sistemos veikimui užtikrinti reiktų duombazės, kurioje būtų saugoma įvairi informacija. Duombazė būtų laikoma serveryje. Autonominę techniką gautume iš ASI Robots, kartu su technika gautume ir programinę įrangą, skirtą kontroliuoti šią techniką.
 	\subsection{Ekonominio įgyvendinamumo analizė}
 	\subsection{Teisinė analizė}
 Mūsų kuriamai sistemai svarbiausias teisinis klausimas - ar nebus pažeistas asmens duomenų teisinės apsaugos įstatymas. Mūsų sistemos funkcionalumas ir tikslai nepažeidžia asmens duomenų apsaugos įstatymo tikslo - “ginti žmogaus privataus gyvenimo neliečiamumo teisę tvarkant asmens duomenis”. Mūsų sistema registracijos metu neprašo jokių asmeninių duomenų. Prašome tik susisiekimui su vartotoju reikalingos informacijos bei vartotojui kuriantis paskyrą bus prašoma įvesti jo paties sugalvotą slapyvardį, kuris bus naudojamas jo identifikacijai, nuslepiant jo tapatybę.
