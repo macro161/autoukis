@@ -308,6 +308,22 @@ Pirmoje sistemos įgyvendinimo fazėje mūsų komanda pasamdys du programuotojus
 
 \section{Įgyvendinamumo analizė}
 	\subsection{Operacinė analizė}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{7.5cm}|X| }  \hline
+		Problema & Problemos pašalinimas \\ \hline
+		Vartotojai nežinos šios programos & Išreklamuoti programą įvairiuose ūkininkam aktualiuose puslapiuose, bet ūkininkam aktualių televizijos laidų metu \\ \hline
+		Vartotojai nemokės naudotis programa & Sistemoje įterpti naudojimo instrukciją \\ \hline
+	\end{tabularx}
+\end{table}
+\subsection{Sistemos kokybės atributai}
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		NFR-5.4.01 & Testavimo aplinka turi būti sukurta taip, kad kiekvieną finkciją būtų galima tikrinti atskirai & 7 \\ \hline
+		NFR-5.4.02 & Sistemos veiksmai turi būti prognozuojami, sistema turi pateikti tą informaciją, kurios vartotojas reikalauja & 9 \\ \hline
+		NFR-5.4.03 & Sistemos patikrinimas leidžiamas ne dažniau kaip kartą į mėnesį, iš anksto įspėjus naudotojus apie galimus sistemos veikimo trukdžius  & 8 \\ \hline
+	\end{tabularx}
+\end{table}
 	\subsection{Techninė analizė}
 Atlikę techninę analizę išsigryninom idėjas, kokių techninių komponentų reikia įgyvendinti sistemą. Visas ūkio valdymas būtų vykdomas Arduino mikrokontroleriu, kurį galima nusipirkti iš nevieno tiekėjo. Kartu su kontroleriu sistemai reiktų sensorių bei laidų, kuriuos taip pat galima nesunkiai įsigyti. Sistemos veikimui užtikrinti reiktų duombazės, kurioje būtų saugoma įvairi informacija. Duombazė būtų laikoma serveryje. Autonominę techniką gautume iš ASI Robots, kartu su technika gautume ir programinę įrangą, skirtą kontroliuoti šią techniką.
 	\subsection{Ekonominio įgyvendinamumo analizė}
