@@ -295,6 +295,9 @@ Išsiaiškinti, kurie funkcionalumai yra aktualiausi vartotojams, pateikiant pot
 	\end{figure}
 	Tam, kad sistemos administratoriui nereiktų nuolat tikrinti, ar visi žemės detektoriai tinkamai funkcionuoja, programos vartotojas turi galimybę pranešti apie jo nuomone netinkamai funkcionuojantį prietaisą. Po šio pranešimo administratorius patikrina jo pagrįstumą ir klaidos atveju pasistengia ją kuo greičiau ištaisyti.
 \end{itemize}
+
+\subsection{Sistemos teikiama nauda}
+
 \section{Sistemos įgyvendinimo planas}
 Sistemą įgyvendinsime pagal žemiau pateiktą diagramą. 
 \begin{figure}[H]
@@ -315,18 +318,65 @@ Pirmoje sistemos įgyvendinimo fazėje mūsų komanda pasamdys du programuotojus
 		Vartotojai nemokės naudotis programa & Sistemoje įterpti naudojimo instrukciją \\ \hline
 	\end{tabularx}
 \end{table}
-\subsection{Sistemos kokybės atributai}
-\begin{table}[htbp]
-	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
-		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
-		NFR-5.4.01 & Testavimo aplinka turi būti sukurta taip, kad kiekvieną finkciją būtų galima tikrinti atskirai & 7 \\ \hline
-		NFR-5.4.02 & Sistemos veiksmai turi būti prognozuojami, sistema turi pateikti tą informaciją, kurios vartotojas reikalauja & 9 \\ \hline
-		NFR-5.4.03 & Sistemos patikrinimas leidžiamas ne dažniau kaip kartą į mėnesį, iš anksto įspėjus naudotojus apie galimus sistemos veikimo trukdžius  & 8 \\ \hline
-	\end{tabularx}
-\end{table}
+
 	\subsection{Techninė analizė}
 Atlikę techninę analizę išsigryninom idėjas, kokių techninių komponentų reikia įgyvendinti sistemą. Visas ūkio valdymas būtų vykdomas Arduino mikrokontroleriu, kurį galima nusipirkti iš nevieno tiekėjo. Kartu su kontroleriu sistemai reiktų sensorių bei laidų, kuriuos taip pat galima nesunkiai įsigyti. Sistemos veikimui užtikrinti reiktų duombazės, kurioje būtų saugoma įvairi informacija. Duombazė būtų laikoma serveryje. Autonominę techniką gautume iš ASI Robots, kartu su technika gautume ir programinę įrangą, skirtą kontroliuoti šią techniką.
 	\subsection{Ekonominio įgyvendinamumo analizė}
+	\begin{itemize}
+		\item{Išlaidos: Savo įmonės išlaidas išskirsime į dvi kategorijas: kiek kainuos kiekviena siūloma paslauga ir kiek pinigų reikės verslui pradėti ir sistemai sukurti}
+		\begin{itemize}
+			Siulomos paslaugos ir jū išlaidos:
+			\newline
+			Mažo ūkininko paketas
+			\item{Arduino mikrokontroleris 20eu}
+			\item{Laidai sujungimui 20eu}
+			\item{Laisrymo žarna: 60eu(priklauso nuo žemės ploto)}
+			\item{Sprinkleriai: 20eu}
+			\item{Sensoriai: 100eu}
+			\item{Savikaina: 220eu}	
+			\item{Kaina: 500eu}
+			\newline
+			Vidutinio ūkininko paketas(įeina viskas kas viršuje plius kas pateikta apačioje)
+			\item{Automatinio maitinimo įranga: 500eu(pagal reikalinga kiekį)}
+			\item{Gyvūnų sekimo iranga: 1000eu (priklauso nuo gyvūnu kiekio)}
+			\item{Savikaina: 2000eu}
+			\item{Kaina: 3000eu}
+			\newline
+			Didelio ūkininko paketas(viskas kas viršuje):
+			\item{Automatizuota technika: 100000eu(priklausomi nuo technikos kiekio)}
+			\item{Savikaina 140000eu}
+			\item{Kaina: 150000eu}
+			\newline
+			Kaina yra kiek preliminariai planuojam prašyti už paslaugą
+			
+		\end{itemize}
+		\item{Išlaidos reikalingos komandai išlaikyti:}
+		\begin{itemize}
+			\item{Fullstack programuotojo atlyginimas mėnesiui 2000eu}
+			\item{Administratorius 500eu}
+			\item{Arduino programuotojas/elektronikas 2000eu}
+			\item{Serverio išlaidos: 100eu mėnesiui}
+			\item{Verslo licensija: 1000eu}
+			\item{Reklama mėnesiai: 500eu}
+		\end{itemize}
+		Įkuriant įmonė reikės susimokėti licensijos mokestį 1000eu ir realaus produkto pateiki vartotojui negalėsime dar 4 mėnesius nes reikės ją sukurti, šią kainą sumažiną tai, kad mes patys galėsime prisidėti prie sistemos kūrimo programuojant. Kas mėnesį įmonės išlaikymas mums kainuos maždaug 5500eu. Taigi praždžiai reikės maždaug 20000eu investicijos. 
+		\newline
+	
+
+		
+		\item{Pajamos:}
+Lietuvoje yra maždaug 120000 ūkių iki 30 hektarų. Šiems ūkiams galėtume pasiūlyti savo mažo ūkininko paketa. Jeigu manysime kad pavyks 1 procentui ūkininkų parduoti mažiausią sistemos paketą gautime 300000eu pelno.Papildomai vartotojas turėtų mokėti prenumeratos mokestį už sistemos palaikyma ir gedimų šalinimą 50eu per mėnesiui. Sistema veiktų maždaug pusę metų(žiemą nereikia laistyti) už sistemos prenumeratas per metus turėtume gauti 200000eu pelno išskaičiavus taisymo kainas.
+		\newline
+		Lietuvoje yra 4000 ūki kurių plotas nuo 30 iki 100 hektarų. Šiem ūkininkam siūlytume vidutinį paketa. Jeigu pavyktų parduoti procentui šių ūkininkų vidutinę sistemą sistemą gautume maždaug 40000eu pelno. Už mėnesinę prenumeratą gautume 12000eu.
+		\newline
+		Ūkių turinčių daugiau negu 100 hektarų žemės tėra 500. Todėl manome, kad didžiausią paketą pavyktų parduoti tik vienetams. Todėl galimo pelno skaičiuoti neverta.
+		
+		\item{Apibendrinimas:}
+		\newline
+		Atlikę ekonominę analizę išsiaiškinome, kad prasmingia būtų sumažinti projekto apimtį ir tiekti mažajį ir vidutinį ūkininko paketus siekiant minimalizuoti riziką.
+
+
+	\end{itemize}
 	\subsection{Teisinė analizė}
 Mūsų kuriamai sistemai svarbiausias teisinis klausimas - ar nebus pažeistas asmens duomenų teisinės apsaugos įstatymas. Mūsų sistemos funkcionalumas ir tikslai nepažeidžia asmens duomenų apsaugos įstatymo tikslo - “ginti žmogaus privataus gyvenimo neliečiamumo teisę tvarkant asmens duomenis”. Mūsų sistema registracijos metu neprašo jokių asmeninių duomenų. Prašome tik susisiekimui su vartotoju reikalingos informacijos bei vartotojui kuriantis paskyrą bus prašoma įvesti jo paties sugalvotą slapyvardį, kuris bus naudojamas jo identifikacijai, nuslepiant jo tapatybę.
 \section{Išvados}
