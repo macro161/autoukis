@@ -1,0 +1,87 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.}Įvadas}{2}{section.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.}Verslo sritis}{3}{section.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.}Išorinė analizė}{4}{section.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.}Black Box analizė}{4}{subsection.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.}Tiekimo grandinė}{6}{subsection.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.1.}Pirkėjų apibrėžimas}{6}{subsubsection.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.2.}Pirkėjų poreikiai}{6}{subsubsection.3.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.3.}Derybinės galimybės su tiekėjais}{7}{subsubsection.3.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.}5 Porterio jegų analizė}{7}{subsection.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.}Canvas}{9}{subsection.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.1.}Kuriama vertė}{9}{subsubsection.3.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.2.}Klientų segmentai}{9}{subsubsection.3.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.3.}Komunikavimo kanalai}{9}{subsubsection.3.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.4.}Santykių su klientais valdymas}{9}{subsubsection.3.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.5.}Pajamų struktūra}{9}{subsubsection.3.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.6.}Resursai}{9}{subsubsection.3.4.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.7.}Pagrindiniai partneriai}{10}{subsubsection.3.4.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.8.}Veiklos}{10}{subsubsection.3.4.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.9.}Kaštų struktūra}{10}{subsubsection.3.4.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.}Įverčiai}{11}{subsection.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.}Vidinė dalykinės srities analizė}{13}{section.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.}Vertės grandinė}{13}{subsection.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.}Tikslai}{14}{subsection.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.}Strategijos}{14}{subsection.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.}Taktikos}{14}{subsection.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.}Misija ir vizija}{15}{section.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.}Procesų pjūvis}{16}{section.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.}Analizės rezultatai, apibendrinimas}{18}{section.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.}Stiprybės}{18}{subsection.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.}Silpnybės}{18}{subsection.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.}Galimybės}{18}{subsection.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4.}Pavojai}{18}{subsection.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.}Strateginiai tikslai}{19}{section.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.}Sistemos naudojimo scenarijus}{20}{section.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.}Sistemos įgyvendinimo planas}{23}{section.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.}Įgyvendinamumo analizė}{24}{section.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.1.}Operacinė analizė}{24}{subsection.11.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.2.}Techninė analizė}{24}{subsection.11.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.3.}Ekonominė analizė}{24}{subsection.11.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.4.}Teisinė analizė}{25}{subsection.11.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.}Išvados}{27}{section.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.}Žodynas}{28}{section.13}
